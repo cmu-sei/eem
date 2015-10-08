@@ -1,0 +1,9 @@
+grammar edu.cmu.sei.eebm.EEBM with org.eclipse.xtext.common.Terminals
+
+generate eEBM "http://www.cmu.edu/sei/eebm/EEBM"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
