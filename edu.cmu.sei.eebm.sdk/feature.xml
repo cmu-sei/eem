@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="edu.cmu.sei.eebm.sdk"
+	label="EEBM SDK Feature "
+	version="1.0.0.qualifier">
+	<plugin
+			id="edu.cmu.sei.eebm"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+	<plugin
+			id="edu.cmu.sei.eebm.ui"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+</feature>
