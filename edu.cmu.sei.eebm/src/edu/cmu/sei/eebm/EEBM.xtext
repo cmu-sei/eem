@@ -7,3 +7,15 @@ Model:
 	
 Greeting:
 	'Hello' name=ID '!';
+
+	
+	// roadmap: solutions
+	// solutions: technology + implementation_strategy + impl_date
+	// technology: vendor, version, cost, language
+	// strategy: 
+	// preferences: alternative, stakeholder
+	// alternative: solutions
+	// stakeholder
+	// constraints: cost, schedule, risk
+	
+	
