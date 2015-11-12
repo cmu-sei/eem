@@ -1,21 +1,52 @@
-grammar edu.cmu.sei.eebm.EEBM with org.eclipse.xtext.common.Terminals
+grammar edu.cmu.sei.eebm.EEBM with org.eclipse.xtext.xbase.Xbase
 
 generate eEBM "http://www.cmu.edu/sei/eebm/EEBM"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 
-Model:
-	greetings+=Greeting*;
-	
-Greeting:
-	'Hello' name=ID '!';
+EEBM: Goals|Participants|Options  ;
 
+Options:
 	
-	// roadmap: solutions
-	// solutions: technology + implementation_strategy + impl_date
-	// technology: vendor, version, cost, language
-	// strategy: 
-	// preferences: alternative, stakeholder
-	// alternative: solutions
-	// stakeholder
-	// constraints: cost, schedule, risk
+;
+
+Participants:
 	
+;
+
+
+Goals: 'Goal' name=QualifiedName (':' title=STRING)?
+	'[' 
+	(	description=Description? 
+		&content+=Goal* 
+	    &('see' 'document'  docReference+=STRING)? 
+		&('issues' issues+=STRING+ )?
+				)
+	']'
+;
+
+//NE: we could just import this from ALISA
+Goal returns Goal:
+	'goal' name=ID (':'  title=STRING )? // short string for title
+'['  
+	 (  description=Description)? 
+	 &(rationale=Rationale)? 
+//	 &(changeUncertainty=Uncertainty)? 
+	 &('see' 'document'  docReference+=STRING)? 
+		&('issues' issues+=STRING+ )?
 	
+	 ']';
+	 
+// This comes from ALISA/AADL, and would probably be better taken from there, 
+// e.g. the AADL properties and unit types. Xbase may have these too. 
+// @TODO determine what unit types are necessary and where to define them.
+Description : 
+	'description' description += DescriptionElement+
+;
+
+DescriptionElement :
+ 	text = STRING //| showValue = ShowValue |thisTarget?='this'| image=ImageReference
+ ;
+
+Rationale: 'rationale' text=STRING ;
