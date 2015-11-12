@@ -1,0 +1,8 @@
+//translate the FDA powerpoint roadmap into a DSL
+
+Goals determine objectives and are affected by constraints.
+Roadmap contains tasks, is for a set of stakeholders and prepared by consultants. 
+Each task has a set of milestones and set of response measures.
+
+Decision points aggregate options. Once a decision is taken, the set of options is narrowed to a task.
+Options have attributes including time, cost, schedule, cost of delay.
