@@ -5,32 +5,39 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
 import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 
-EEBM: Goals|Participants|Options  ;
-
-Options:
-	
+Plan: 
+	(name = 'Plan' STRING)?
+	parts += (Goal|Participant|Option)+
 ;
 
-Participants:
-	
-;
-
-
-Goals: 'Goal' name=QualifiedName (':' title=STRING)?
+Option: 'Option' name=QualifiedName (':' title=STRING)? 
 	'[' 
-	(	description=Description? 
-		&content+=Goal* 
-	    &('see' 'document'  docReference+=STRING)? 
-		&('issues' issues+=STRING+ )?
-				)
+	( description=Description?
+	  		
+	)
 	']'
 ;
 
+Participant:
+	name=STRING
+;
+
+
+//Goal: 'Goal' name=QualifiedName (':' title=STRING)?
+//	'[' 
+//	(	description=Description? 
+//		&content+=Goal* 
+//	    ('see' 'document'  docReference+=STRING)? 
+//		('issues' issues+=STRING+ )?
+//				)
+//	']'
+//;
+
 //NE: we could just import this from ALISA
 Goal returns Goal:
-	'goal' name=ID (':'  title=STRING )? // short string for title
+	'Goal' name=QualifiedName (':'  title=STRING )? ("refines" superType=[Goal])? // short string for title
 '['  
-	 (  description=Description)? 
+	 (description=Description)? 
 	 &(rationale=Rationale)? 
 //	 &(changeUncertainty=Uncertainty)? 
 	 &('see' 'document'  docReference+=STRING)? 
