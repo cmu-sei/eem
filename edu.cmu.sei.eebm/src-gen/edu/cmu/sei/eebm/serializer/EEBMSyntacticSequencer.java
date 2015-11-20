@@ -11,6 +11,9 @@ import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.GroupAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
+import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 
@@ -18,17 +21,73 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected EEBMGrammarAccess grammarAccess;
+	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_3_1_a;
+	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_3_1_p;
+	protected AbstractElementAlias match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q;
+	protected AbstractElementAlias match_XBlockExpression_SemicolonKeyword_2_1_q;
+	protected AbstractElementAlias match_XExpressionInClosure_SemicolonKeyword_1_1_q;
+	protected AbstractElementAlias match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q;
+	protected AbstractElementAlias match_XImportDeclaration_SemicolonKeyword_2_q;
+	protected AbstractElementAlias match_XParenthesizedExpression_LeftParenthesisKeyword_0_a;
+	protected AbstractElementAlias match_XParenthesizedExpression_LeftParenthesisKeyword_0_p;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (EEBMGrammarAccess) access;
+		match_Goal_RightSquareBracketKeyword_3_1_a = new TokenAlias(true, true, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1());
+		match_Goal_RightSquareBracketKeyword_3_1_p = new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1());
+		match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q = new GroupAlias(false, true, new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1()), new TokenAlias(false, false, grammarAccess.getGoalAccess().getIssuesKeyword_3_0_0()));
+		match_XBlockExpression_SemicolonKeyword_2_1_q = new TokenAlias(false, true, grammarAccess.getXBlockExpressionAccess().getSemicolonKeyword_2_1());
+		match_XExpressionInClosure_SemicolonKeyword_1_1_q = new TokenAlias(false, true, grammarAccess.getXExpressionInClosureAccess().getSemicolonKeyword_1_1());
+		match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getXFunctionTypeRefAccess().getLeftParenthesisKeyword_0_0()), new TokenAlias(false, false, grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()));
+		match_XImportDeclaration_SemicolonKeyword_2_q = new TokenAlias(false, true, grammarAccess.getXImportDeclarationAccess().getSemicolonKeyword_2());
+		match_XParenthesizedExpression_LeftParenthesisKeyword_0_a = new TokenAlias(true, true, grammarAccess.getXParenthesizedExpressionAccess().getLeftParenthesisKeyword_0());
+		match_XParenthesizedExpression_LeftParenthesisKeyword_0_p = new TokenAlias(true, false, grammarAccess.getXParenthesizedExpressionAccess().getLeftParenthesisKeyword_0());
 	}
 	
 	@Override
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if(ruleCall.getRule() == grammarAccess.getArrayBracketsRule())
+			return getArrayBracketsToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getOpSingleAssignRule())
+			return getOpSingleAssignToken(semanticObject, ruleCall, node);
+		else if(ruleCall.getRule() == grammarAccess.getSTRINGRule())
+			return getSTRINGToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
+	/**
+	 * ArrayBrackets :
+	 * 	'[' ']'
+	 * ;
+	 */
+	protected String getArrayBracketsToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "[]";
+	}
+	
+	/**
+	 * OpSingleAssign:
+	 * 	'='
+	 * ;
+	 */
+	protected String getOpSingleAssignToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "=";
+	}
+	
+	/**
+	 * terminal STRING: 
+	 * 			'"' ( '\\' .  | !('\\'|'"') )* '"'? |
+	 * 			"'" ( '\\' .  | !('\\'|"'") )* "'"?;
+	 */
+	protected String getSTRINGToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "\"";
+	}
 	
 	@Override
 	protected void emitUnassignedTokens(EObject semanticObject, ISynTransition transition, INode fromNode, INode toNode) {
@@ -36,8 +95,250 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			acceptNodes(getLastNavigableState(), syntaxNodes);
+			if(match_Goal_RightSquareBracketKeyword_3_1_a.equals(syntax))
+				emit_Goal_RightSquareBracketKeyword_3_1_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Goal_RightSquareBracketKeyword_3_1_p.equals(syntax))
+				emit_Goal_RightSquareBracketKeyword_3_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q.equals(syntax))
+				emit_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_XBlockExpression_SemicolonKeyword_2_1_q.equals(syntax))
+				emit_XBlockExpression_SemicolonKeyword_2_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_XExpressionInClosure_SemicolonKeyword_1_1_q.equals(syntax))
+				emit_XExpressionInClosure_SemicolonKeyword_1_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q.equals(syntax))
+				emit_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_XImportDeclaration_SemicolonKeyword_2_q.equals(syntax))
+				emit_XImportDeclaration_SemicolonKeyword_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_XParenthesizedExpression_LeftParenthesisKeyword_0_a.equals(syntax))
+				emit_XParenthesizedExpression_LeftParenthesisKeyword_0_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_XParenthesizedExpression_LeftParenthesisKeyword_0_p.equals(syntax))
+				emit_XParenthesizedExpression_LeftParenthesisKeyword_0_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
 
+	/**
+	 * Ambiguous syntax:
+	 *     ']'*
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     (rule start) (ambiguity) 'Goal' name=QualifiedName
+	 *     (rule start) (ambiguity) 'issues' issues+=STRING
+	 *     (rule start) (ambiguity) 'see' 'document' docReference+=STRING
+	 *     (rule start) (ambiguity) (rule start)
+	 *     (rule start) (ambiguity) rationale=Rationale
+	 *     description=Description (ambiguity) 'Goal' name=QualifiedName
+	 *     description=Description (ambiguity) 'issues' issues+=STRING
+	 *     description=Description (ambiguity) 'see' 'document' docReference+=STRING
+	 *     description=Description (ambiguity) (rule end)
+	 *     description=Description (ambiguity) rationale=Rationale
+	 *     docReference+=STRING (ambiguity) 'Goal' name=QualifiedName
+	 *     docReference+=STRING (ambiguity) 'issues' issues+=STRING
+	 *     docReference+=STRING (ambiguity) 'see' 'document' docReference+=STRING
+	 *     docReference+=STRING (ambiguity) (rule end)
+	 *     docReference+=STRING (ambiguity) rationale=Rationale
+	 *     name=QualifiedName '[' (ambiguity) 'Goal' name=QualifiedName
+	 *     name=QualifiedName '[' (ambiguity) 'issues' issues+=STRING
+	 *     name=QualifiedName '[' (ambiguity) 'see' 'document' docReference+=STRING
+	 *     name=QualifiedName '[' (ambiguity) (rule end)
+	 *     name=QualifiedName '[' (ambiguity) rationale=Rationale
+	 *     rationale=Rationale (ambiguity) 'Goal' name=QualifiedName
+	 *     rationale=Rationale (ambiguity) 'issues' issues+=STRING
+	 *     rationale=Rationale (ambiguity) 'see' 'document' docReference+=STRING
+	 *     rationale=Rationale (ambiguity) (rule end)
+	 *     rationale=Rationale (ambiguity) rationale=Rationale
+	 *     superType=[Goal|ID] '[' (ambiguity) 'Goal' name=QualifiedName
+	 *     superType=[Goal|ID] '[' (ambiguity) 'issues' issues+=STRING
+	 *     superType=[Goal|ID] '[' (ambiguity) 'see' 'document' docReference+=STRING
+	 *     superType=[Goal|ID] '[' (ambiguity) (rule end)
+	 *     superType=[Goal|ID] '[' (ambiguity) rationale=Rationale
+	 *     title=STRING '[' (ambiguity) 'Goal' name=QualifiedName
+	 *     title=STRING '[' (ambiguity) 'issues' issues+=STRING
+	 *     title=STRING '[' (ambiguity) 'see' 'document' docReference+=STRING
+	 *     title=STRING '[' (ambiguity) (rule end)
+	 *     title=STRING '[' (ambiguity) rationale=Rationale
+	 */
+	protected void emit_Goal_RightSquareBracketKeyword_3_1_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ']'+
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     issues+=STRING (ambiguity) 'Goal' name=QualifiedName
+	 *     issues+=STRING (ambiguity) 'see' 'document' docReference+=STRING
+	 *     issues+=STRING (ambiguity) (rule end)
+	 *     issues+=STRING (ambiguity) rationale=Rationale
+	 */
+	protected void emit_Goal_RightSquareBracketKeyword_3_1_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     (']'+ 'issues')?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     issues+=STRING (ambiguity) issues+=STRING
+	 */
+	protected void emit_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ';'?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     expressions+=XExpressionOrVarDeclaration (ambiguity) '}' ')' (rule end)
+	 *     expressions+=XExpressionOrVarDeclaration (ambiguity) '}' (rule end)
+	 *     expressions+=XExpressionOrVarDeclaration (ambiguity) expressions+=XExpressionOrVarDeclaration
+	 */
+	protected void emit_XBlockExpression_SemicolonKeyword_2_1_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ';'?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     expressions+=XExpressionOrVarDeclaration (ambiguity) (rule end)
+	 *     expressions+=XExpressionOrVarDeclaration (ambiguity) expressions+=XExpressionOrVarDeclaration
+	 */
+	protected void emit_XExpressionInClosure_SemicolonKeyword_1_1_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ('(' ')')?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     (rule start) (ambiguity) '=>' returnType=JvmTypeReference
+	 */
+	protected void emit_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ';'?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     importedNamespace=QualifiedNameWithWildcard (ambiguity) (rule end)
+	 *     importedType=[JvmDeclaredType|QualifiedName] (ambiguity) (rule end)
+	 *     memberName=ValidID (ambiguity) (rule end)
+	 *     wildcard?='*' (ambiguity) (rule end)
+	 */
+	protected void emit_XImportDeclaration_SemicolonKeyword_2_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     '('*
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     (rule start) (ambiguity) '#' '[' ']' (rule start)
+	 *     (rule start) (ambiguity) '#' '[' elements+=XExpression
+	 *     (rule start) (ambiguity) '#' '{' '}' (rule start)
+	 *     (rule start) (ambiguity) '#' '{' elements+=XExpression
+	 *     (rule start) (ambiguity) '<' typeArguments+=JvmArgumentTypeReference
+	 *     (rule start) (ambiguity) '[' declaredFormalParameters+=JvmFormalParameter
+	 *     (rule start) (ambiguity) '[' explicitSyntax?='|'
+	 *     (rule start) (ambiguity) '[' expression=XExpressionInClosure
+	 *     (rule start) (ambiguity) 'do' body=XExpression
+	 *     (rule start) (ambiguity) 'false' (rule start)
+	 *     (rule start) (ambiguity) 'for' '(' ';' ';' ')' eachExpression=XExpression
+	 *     (rule start) (ambiguity) 'for' '(' ';' ';' updateExpressions+=XExpression
+	 *     (rule start) (ambiguity) 'for' '(' ';' expression=XExpression
+	 *     (rule start) (ambiguity) 'for' '(' declaredParam=JvmFormalParameter
+	 *     (rule start) (ambiguity) 'for' '(' initExpressions+=XExpressionOrVarDeclaration
+	 *     (rule start) (ambiguity) 'if' '(' if=XExpression
+	 *     (rule start) (ambiguity) 'new' constructor=[JvmConstructor|QualifiedName]
+	 *     (rule start) (ambiguity) 'null' (rule start)
+	 *     (rule start) (ambiguity) 'return' (rule start)
+	 *     (rule start) (ambiguity) 'return' expression=XExpression
+	 *     (rule start) (ambiguity) 'switch' '(' declaredParam=JvmFormalParameter
+	 *     (rule start) (ambiguity) 'switch' declaredParam=JvmFormalParameter
+	 *     (rule start) (ambiguity) 'switch' switch=XExpression
+	 *     (rule start) (ambiguity) 'synchronized' '(' param=XExpression
+	 *     (rule start) (ambiguity) 'throw' expression=XExpression
+	 *     (rule start) (ambiguity) 'try' expression=XExpression
+	 *     (rule start) (ambiguity) 'typeof' '(' type=[JvmType|QualifiedName]
+	 *     (rule start) (ambiguity) 'while' '(' predicate=XExpression
+	 *     (rule start) (ambiguity) '{' '}' (rule start)
+	 *     (rule start) (ambiguity) '{' expressions+=XExpressionOrVarDeclaration
+	 *     (rule start) (ambiguity) feature=[JvmIdentifiableElement|FeatureCallID]
+	 *     (rule start) (ambiguity) feature=[JvmIdentifiableElement|IdOrSuper]
+	 *     (rule start) (ambiguity) feature=[JvmIdentifiableElement|OpUnary]
+	 *     (rule start) (ambiguity) isTrue?='true'
+	 *     (rule start) (ambiguity) value=Number
+	 *     (rule start) (ambiguity) value=STRING
+	 *     (rule start) (ambiguity) {XAssignment.assignable=}
+	 *     (rule start) (ambiguity) {XBinaryOperation.leftOperand=}
+	 *     (rule start) (ambiguity) {XCastedExpression.target=}
+	 *     (rule start) (ambiguity) {XInstanceOfExpression.expression=}
+	 *     (rule start) (ambiguity) {XMemberFeatureCall.memberCallTarget=}
+	 *     (rule start) (ambiguity) {XPostfixOperation.operand=}
+	 */
+	protected void emit_XParenthesizedExpression_LeftParenthesisKeyword_0_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     '('+
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     (rule start) (ambiguity) '#' '[' ']' ')' (rule start)
+	 *     (rule start) (ambiguity) '#' '[' elements+=XExpression
+	 *     (rule start) (ambiguity) '#' '{' '}' ')' (rule start)
+	 *     (rule start) (ambiguity) '#' '{' elements+=XExpression
+	 *     (rule start) (ambiguity) '<' typeArguments+=JvmArgumentTypeReference
+	 *     (rule start) (ambiguity) '[' declaredFormalParameters+=JvmFormalParameter
+	 *     (rule start) (ambiguity) '[' explicitSyntax?='|'
+	 *     (rule start) (ambiguity) '[' expression=XExpressionInClosure
+	 *     (rule start) (ambiguity) 'do' body=XExpression
+	 *     (rule start) (ambiguity) 'false' ')' (rule start)
+	 *     (rule start) (ambiguity) 'for' '(' ';' ';' ')' eachExpression=XExpression
+	 *     (rule start) (ambiguity) 'for' '(' ';' ';' updateExpressions+=XExpression
+	 *     (rule start) (ambiguity) 'for' '(' ';' expression=XExpression
+	 *     (rule start) (ambiguity) 'for' '(' declaredParam=JvmFormalParameter
+	 *     (rule start) (ambiguity) 'for' '(' initExpressions+=XExpressionOrVarDeclaration
+	 *     (rule start) (ambiguity) 'if' '(' if=XExpression
+	 *     (rule start) (ambiguity) 'new' constructor=[JvmConstructor|QualifiedName]
+	 *     (rule start) (ambiguity) 'null' ')' (rule start)
+	 *     (rule start) (ambiguity) 'return' ')' (rule start)
+	 *     (rule start) (ambiguity) 'return' expression=XExpression
+	 *     (rule start) (ambiguity) 'switch' '(' declaredParam=JvmFormalParameter
+	 *     (rule start) (ambiguity) 'switch' declaredParam=JvmFormalParameter
+	 *     (rule start) (ambiguity) 'switch' switch=XExpression
+	 *     (rule start) (ambiguity) 'synchronized' '(' param=XExpression
+	 *     (rule start) (ambiguity) 'throw' expression=XExpression
+	 *     (rule start) (ambiguity) 'try' expression=XExpression
+	 *     (rule start) (ambiguity) 'typeof' '(' type=[JvmType|QualifiedName]
+	 *     (rule start) (ambiguity) 'while' '(' predicate=XExpression
+	 *     (rule start) (ambiguity) '{' '}' ')' (rule start)
+	 *     (rule start) (ambiguity) '{' expressions+=XExpressionOrVarDeclaration
+	 *     (rule start) (ambiguity) feature=[JvmIdentifiableElement|FeatureCallID]
+	 *     (rule start) (ambiguity) feature=[JvmIdentifiableElement|IdOrSuper]
+	 *     (rule start) (ambiguity) feature=[JvmIdentifiableElement|OpUnary]
+	 *     (rule start) (ambiguity) isTrue?='true'
+	 *     (rule start) (ambiguity) value=Number
+	 *     (rule start) (ambiguity) value=STRING
+	 *     (rule start) (ambiguity) {XAssignment.assignable=}
+	 *     (rule start) (ambiguity) {XBinaryOperation.leftOperand=}
+	 *     (rule start) (ambiguity) {XCastedExpression.target=}
+	 *     (rule start) (ambiguity) {XInstanceOfExpression.expression=}
+	 *     (rule start) (ambiguity) {XMemberFeatureCall.memberCallTarget=}
+	 *     (rule start) (ambiguity) {XPostfixOperation.operand=}
+	 */
+	protected void emit_XParenthesizedExpression_LeftParenthesisKeyword_0_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
 }

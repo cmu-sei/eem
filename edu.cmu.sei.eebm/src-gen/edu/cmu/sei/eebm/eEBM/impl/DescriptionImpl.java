@@ -2,9 +2,9 @@
  */
 package edu.cmu.sei.eebm.eEBM.impl;
 
+import edu.cmu.sei.eebm.eEBM.Description;
+import edu.cmu.sei.eebm.eEBM.DescriptionElement;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
-import edu.cmu.sei.eebm.eEBM.Greeting;
-import edu.cmu.sei.eebm.eEBM.Model;
 
 import java.util.Collection;
 
@@ -22,35 +22,35 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Model</b></em>'.
+ * An implementation of the model object '<em><b>Description</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.ModelImpl#getGreetings <em>Greetings</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl#getDescription <em>Description</em>}</li>
+ * </ul>
  *
  * @generated
  */
-public class ModelImpl extends MinimalEObjectImpl.Container implements Model
+public class DescriptionImpl extends MinimalEObjectImpl.Container implements Description
 {
   /**
-   * The cached value of the '{@link #getGreetings() <em>Greetings</em>}' containment reference list.
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getGreetings()
+   * @see #getDescription()
    * @generated
    * @ordered
    */
-  protected EList<Greeting> greetings;
+  protected EList<DescriptionElement> description;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected ModelImpl()
+  protected DescriptionImpl()
   {
     super();
   }
@@ -63,7 +63,7 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   @Override
   protected EClass eStaticClass()
   {
-    return EEBMPackage.Literals.MODEL;
+    return EEBMPackage.Literals.DESCRIPTION;
   }
 
   /**
@@ -71,13 +71,13 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Greeting> getGreetings()
+  public EList<DescriptionElement> getDescription()
   {
-    if (greetings == null)
+    if (description == null)
     {
-      greetings = new EObjectContainmentEList<Greeting>(Greeting.class, this, EEBMPackage.MODEL__GREETINGS);
+      description = new EObjectContainmentEList<DescriptionElement>(DescriptionElement.class, this, EEBMPackage.DESCRIPTION__DESCRIPTION);
     }
-    return greetings;
+    return description;
   }
 
   /**
@@ -90,8 +90,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case EEBMPackage.MODEL__GREETINGS:
-        return ((InternalEList<?>)getGreetings()).basicRemove(otherEnd, msgs);
+      case EEBMPackage.DESCRIPTION__DESCRIPTION:
+        return ((InternalEList<?>)getDescription()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -106,8 +106,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case EEBMPackage.MODEL__GREETINGS:
-        return getGreetings();
+      case EEBMPackage.DESCRIPTION__DESCRIPTION:
+        return getDescription();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -123,9 +123,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case EEBMPackage.MODEL__GREETINGS:
-        getGreetings().clear();
-        getGreetings().addAll((Collection<? extends Greeting>)newValue);
+      case EEBMPackage.DESCRIPTION__DESCRIPTION:
+        getDescription().clear();
+        getDescription().addAll((Collection<? extends DescriptionElement>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +141,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case EEBMPackage.MODEL__GREETINGS:
-        getGreetings().clear();
+      case EEBMPackage.DESCRIPTION__DESCRIPTION:
+        getDescription().clear();
         return;
     }
     super.eUnset(featureID);
@@ -158,10 +158,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case EEBMPackage.MODEL__GREETINGS:
-        return greetings != null && !greetings.isEmpty();
+      case EEBMPackage.DESCRIPTION__DESCRIPTION:
+        return description != null && !description.isEmpty();
     }
     return super.eIsSet(featureID);
   }
 
-} //ModelImpl
+} //DescriptionImpl

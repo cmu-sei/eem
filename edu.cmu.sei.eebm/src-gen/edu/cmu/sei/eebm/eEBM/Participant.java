@@ -6,21 +6,21 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Greeting</b></em>'.
+ * A representation of the model object '<em><b>Participant</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
- * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Greeting#getName <em>Name</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.Participant#getName <em>Name</em>}</li>
+ * </ul>
  *
- * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getGreeting()
+ * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getParticipant()
  * @model
  * @generated
  */
-public interface Greeting extends EObject
+public interface Participant extends EObject
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -32,14 +32,14 @@ public interface Greeting extends EObject
    * <!-- end-user-doc -->
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getGreeting_Name()
+   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getParticipant_Name()
    * @model
    * @generated
    */
   String getName();
 
   /**
-   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Greeting#getName <em>Name</em>}' attribute.
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Participant#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Name</em>' attribute.
@@ -48,4 +48,4 @@ public interface Greeting extends EObject
    */
   void setName(String value);
 
-} // Greeting
+} // Participant

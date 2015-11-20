@@ -25,7 +25,7 @@ public class EEBMParser extends org.eclipse.xtext.parser.antlr.AbstractAntlrPars
 	
 	@Override 
 	protected String getDefaultRuleName() {
-		return "Model";
+		return "Plan";
 	}
 	
 	public EEBMGrammarAccess getGrammarAccess() {

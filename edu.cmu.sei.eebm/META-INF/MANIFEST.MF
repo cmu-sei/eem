@@ -13,7 +13,8 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.xtext.xbase.lib,
  org.antlr.runtime,
  org.eclipse.xtext.common.types,
- org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
+ org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional,
+ org.eclipse.xtext.xbase
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: edu.cmu.sei.eebm,
@@ -27,4 +28,5 @@ Export-Package: edu.cmu.sei.eebm,
  edu.cmu.sei.eebm.validation,
  edu.cmu.sei.eebm.scoping,
  edu.cmu.sei.eebm.generator,
- edu.cmu.sei.eebm.formatting
+ edu.cmu.sei.eebm.formatting,
+ edu.cmu.sei.eebm.jvmmodel

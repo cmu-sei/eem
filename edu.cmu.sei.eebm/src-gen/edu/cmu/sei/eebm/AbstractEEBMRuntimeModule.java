@@ -14,7 +14,7 @@ import com.google.inject.name.Names;
  * Manual modifications go to {edu.cmu.sei.eebm.EEBMRuntimeModule}
  */
 @SuppressWarnings("all")
-public abstract class AbstractEEBMRuntimeModule extends org.eclipse.xtext.common.types.DefaultCommonTypesRuntimeModule {
+public abstract class AbstractEEBMRuntimeModule extends org.eclipse.xtext.xbase.DefaultXbaseRuntimeModule {
 
 	protected Properties properties = null;
 
@@ -93,29 +93,19 @@ public abstract class AbstractEEBMRuntimeModule extends org.eclipse.xtext.common
 		return org.eclipse.xtext.parser.antlr.AntlrTokenDefProvider.class;
 	}
 
+	// contributed by org.eclipse.xtext.generator.parser.antlr.XtextAntlrGeneratorFragment
+	public Class<? extends org.eclipse.xtext.parser.antlr.IUnorderedGroupHelper> bindIUnorderedGroupHelper() {
+		return org.eclipse.xtext.parser.antlr.UnorderedGroupHelper.class;
+	}
+
 	// contributed by org.eclipse.xtext.generator.validation.ValidatorFragment
 	@org.eclipse.xtext.service.SingletonBinding(eager=true)	public Class<? extends edu.cmu.sei.eebm.validation.EEBMValidator> bindEEBMValidator() {
 		return edu.cmu.sei.eebm.validation.EEBMValidator.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.scoping.AbstractScopingFragment
-	public Class<? extends org.eclipse.xtext.scoping.IScopeProvider> bindIScopeProvider() {
-		return edu.cmu.sei.eebm.scoping.EEBMScopeProvider.class;
-	}
-
-	// contributed by org.eclipse.xtext.generator.scoping.AbstractScopingFragment
-	public void configureIScopeProviderDelegate(com.google.inject.Binder binder) {
-		binder.bind(org.eclipse.xtext.scoping.IScopeProvider.class).annotatedWith(com.google.inject.name.Names.named(org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider.NAMED_DELEGATE)).to(org.eclipse.xtext.scoping.impl.ImportedNamespaceAwareLocalScopeProvider.class);
-	}
-
-	// contributed by org.eclipse.xtext.generator.scoping.AbstractScopingFragment
 	public void configureIgnoreCaseLinking(com.google.inject.Binder binder) {
 		binder.bindConstant().annotatedWith(org.eclipse.xtext.scoping.IgnoreCaseLinking.class).to(false);
-	}
-
-	// contributed by org.eclipse.xtext.generator.exporting.QualifiedNamesFragment
-	public Class<? extends org.eclipse.xtext.naming.IQualifiedNameProvider> bindIQualifiedNameProvider() {
-		return org.eclipse.xtext.naming.DefaultDeclarativeQualifiedNameProvider.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.builder.BuilderIntegrationFragment
@@ -138,19 +128,49 @@ public abstract class AbstractEEBMRuntimeModule extends org.eclipse.xtext.common
 		binder.bind(org.eclipse.xtext.resource.IResourceDescriptions.class).annotatedWith(com.google.inject.name.Names.named(org.eclipse.xtext.resource.impl.ResourceDescriptionsProvider.PERSISTED_DESCRIPTIONS)).to(org.eclipse.xtext.resource.impl.ResourceSetBasedResourceDescriptions.class);
 	}
 
-	// contributed by org.eclipse.xtext.generator.generator.GeneratorFragment
-	public Class<? extends org.eclipse.xtext.generator.IGenerator> bindIGenerator() {
-		return edu.cmu.sei.eebm.generator.EEBMGenerator.class;
-	}
-
 	// contributed by org.eclipse.xtext.generator.formatting.FormatterFragment
 	public Class<? extends org.eclipse.xtext.formatting.IFormatter> bindIFormatter() {
 		return edu.cmu.sei.eebm.formatting.EEBMFormatter.class;
 	}
 
-	// contributed by org.eclipse.xtext.generator.types.TypesGeneratorFragment
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.naming.IQualifiedNameProvider> bindIQualifiedNameProvider() {
+		return org.eclipse.xtext.xbase.scoping.XbaseQualifiedNameProvider.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.resource.ILocationInFileProvider> bindILocationInFileProvider() {
+		return org.eclipse.xtext.xbase.jvmmodel.JvmLocationInFileProvider.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
 	public Class<? extends org.eclipse.xtext.scoping.IGlobalScopeProvider> bindIGlobalScopeProvider() {
 		return org.eclipse.xtext.common.types.xtext.TypesAwareDefaultGlobalScopeProvider.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.xbase.validation.FeatureNameValidator> bindFeatureNameValidator() {
+		return org.eclipse.xtext.xbase.validation.LogicalContainerAwareFeatureNameValidator.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.xbase.typesystem.internal.DefaultBatchTypeResolver> bindDefaultBatchTypeResolver() {
+		return org.eclipse.xtext.xbase.typesystem.internal.LogicalContainerAwareBatchTypeResolver.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.xbase.typesystem.internal.DefaultReentrantTypeResolver> bindDefaultReentrantTypeResolver() {
+		return org.eclipse.xtext.xbase.typesystem.internal.LogicalContainerAwareReentrantTypeResolver.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.validation.IResourceValidator> bindIResourceValidator() {
+		return org.eclipse.xtext.xbase.annotations.validation.DerivedStateAwareResourceValidator.class;
+	}
+
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.xbase.jvmmodel.IJvmModelInferrer> bindIJvmModelInferrer() {
+		return edu.cmu.sei.eebm.jvmmodel.EEBMJvmModelInferrer.class;
 	}
 
 }

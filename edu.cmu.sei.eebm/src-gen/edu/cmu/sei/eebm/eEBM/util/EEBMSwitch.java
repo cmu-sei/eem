@@ -50,7 +50,7 @@ public class EEBMSwitch<T> extends Switch<T>
    * Checks whether this is a switch for the given package.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @parameter ePackage the package in question.
+   * @param ePackage the package in question.
    * @return whether this is a switch for the given package.
    * @generated
    */
@@ -72,17 +72,52 @@ public class EEBMSwitch<T> extends Switch<T>
   {
     switch (classifierID)
     {
-      case EEBMPackage.MODEL:
+      case EEBMPackage.PLAN:
       {
-        Model model = (Model)theEObject;
-        T result = caseModel(model);
+        Plan plan = (Plan)theEObject;
+        T result = casePlan(plan);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EEBMPackage.GREETING:
+      case EEBMPackage.OPTION:
       {
-        Greeting greeting = (Greeting)theEObject;
-        T result = caseGreeting(greeting);
+        Option option = (Option)theEObject;
+        T result = caseOption(option);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.PARTICIPANT:
+      {
+        Participant participant = (Participant)theEObject;
+        T result = caseParticipant(participant);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.GOAL:
+      {
+        Goal goal = (Goal)theEObject;
+        T result = caseGoal(goal);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.DESCRIPTION:
+      {
+        Description description = (Description)theEObject;
+        T result = caseDescription(description);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.DESCRIPTION_ELEMENT:
+      {
+        DescriptionElement descriptionElement = (DescriptionElement)theEObject;
+        T result = caseDescriptionElement(descriptionElement);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.RATIONALE:
+      {
+        Rationale rationale = (Rationale)theEObject;
+        T result = caseRationale(rationale);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -91,33 +126,113 @@ public class EEBMSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Model</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Plan</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Model</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Plan</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseModel(Model object)
+  public T casePlan(Plan object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Greeting</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Option</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Greeting</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Option</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseGreeting(Greeting object)
+  public T caseOption(Option object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Participant</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Participant</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseParticipant(Participant object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Goal</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Goal</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseGoal(Goal object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Description</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Description</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseDescription(Description object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Description Element</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Description Element</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseDescriptionElement(DescriptionElement object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Rationale</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Rationale</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRationale(Rationale object)
   {
     return null;
   }

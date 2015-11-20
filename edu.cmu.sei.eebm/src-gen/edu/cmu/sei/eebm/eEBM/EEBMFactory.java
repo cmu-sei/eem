@@ -23,22 +23,67 @@ public interface EEBMFactory extends EFactory
   EEBMFactory eINSTANCE = edu.cmu.sei.eebm.eEBM.impl.EEBMFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Model</em>'.
+   * Returns a new object of class '<em>Plan</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Model</em>'.
+   * @return a new object of class '<em>Plan</em>'.
    * @generated
    */
-  Model createModel();
+  Plan createPlan();
 
   /**
-   * Returns a new object of class '<em>Greeting</em>'.
+   * Returns a new object of class '<em>Option</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Greeting</em>'.
+   * @return a new object of class '<em>Option</em>'.
    * @generated
    */
-  Greeting createGreeting();
+  Option createOption();
+
+  /**
+   * Returns a new object of class '<em>Participant</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Participant</em>'.
+   * @generated
+   */
+  Participant createParticipant();
+
+  /**
+   * Returns a new object of class '<em>Goal</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Goal</em>'.
+   * @generated
+   */
+  Goal createGoal();
+
+  /**
+   * Returns a new object of class '<em>Description</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Description</em>'.
+   * @generated
+   */
+  Description createDescription();
+
+  /**
+   * Returns a new object of class '<em>Description Element</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Description Element</em>'.
+   * @generated
+   */
+  DescriptionElement createDescriptionElement();
+
+  /**
+   * Returns a new object of class '<em>Rationale</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Rationale</em>'.
+   * @generated
+   */
+  Rationale createRationale();
 
   /**
    * Returns the package supported by this factory.

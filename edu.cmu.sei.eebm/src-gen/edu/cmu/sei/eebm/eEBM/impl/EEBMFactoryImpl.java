@@ -64,8 +64,13 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
   {
     switch (eClass.getClassifierID())
     {
-      case EEBMPackage.MODEL: return createModel();
-      case EEBMPackage.GREETING: return createGreeting();
+      case EEBMPackage.PLAN: return createPlan();
+      case EEBMPackage.OPTION: return createOption();
+      case EEBMPackage.PARTICIPANT: return createParticipant();
+      case EEBMPackage.GOAL: return createGoal();
+      case EEBMPackage.DESCRIPTION: return createDescription();
+      case EEBMPackage.DESCRIPTION_ELEMENT: return createDescriptionElement();
+      case EEBMPackage.RATIONALE: return createRationale();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -76,10 +81,10 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Model createModel()
+  public Plan createPlan()
   {
-    ModelImpl model = new ModelImpl();
-    return model;
+    PlanImpl plan = new PlanImpl();
+    return plan;
   }
 
   /**
@@ -87,10 +92,65 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Greeting createGreeting()
+  public Option createOption()
   {
-    GreetingImpl greeting = new GreetingImpl();
-    return greeting;
+    OptionImpl option = new OptionImpl();
+    return option;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Participant createParticipant()
+  {
+    ParticipantImpl participant = new ParticipantImpl();
+    return participant;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Goal createGoal()
+  {
+    GoalImpl goal = new GoalImpl();
+    return goal;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Description createDescription()
+  {
+    DescriptionImpl description = new DescriptionImpl();
+    return description;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public DescriptionElement createDescriptionElement()
+  {
+    DescriptionElementImpl descriptionElement = new DescriptionElementImpl();
+    return descriptionElement;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Rationale createRationale()
+  {
+    RationaleImpl rationale = new RationaleImpl();
+    return rationale;
   }
 
   /**

@@ -75,14 +75,39 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
     new EEBMSwitch<Adapter>()
     {
       @Override
-      public Adapter caseModel(Model object)
+      public Adapter casePlan(Plan object)
       {
-        return createModelAdapter();
+        return createPlanAdapter();
       }
       @Override
-      public Adapter caseGreeting(Greeting object)
+      public Adapter caseOption(Option object)
       {
-        return createGreetingAdapter();
+        return createOptionAdapter();
+      }
+      @Override
+      public Adapter caseParticipant(Participant object)
+      {
+        return createParticipantAdapter();
+      }
+      @Override
+      public Adapter caseGoal(Goal object)
+      {
+        return createGoalAdapter();
+      }
+      @Override
+      public Adapter caseDescription(Description object)
+      {
+        return createDescriptionAdapter();
+      }
+      @Override
+      public Adapter caseDescriptionElement(DescriptionElement object)
+      {
+        return createDescriptionElementAdapter();
+      }
+      @Override
+      public Adapter caseRationale(Rationale object)
+      {
+        return createRationaleAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -107,31 +132,106 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
 
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Model <em>Model</em>}'.
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Plan <em>Plan</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Model
+   * @see edu.cmu.sei.eebm.eEBM.Plan
    * @generated
    */
-  public Adapter createModelAdapter()
+  public Adapter createPlanAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Greeting <em>Greeting</em>}'.
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Option <em>Option</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Greeting
+   * @see edu.cmu.sei.eebm.eEBM.Option
    * @generated
    */
-  public Adapter createGreetingAdapter()
+  public Adapter createOptionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Participant <em>Participant</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Participant
+   * @generated
+   */
+  public Adapter createParticipantAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Goal <em>Goal</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Goal
+   * @generated
+   */
+  public Adapter createGoalAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Description <em>Description</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Description
+   * @generated
+   */
+  public Adapter createDescriptionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.DescriptionElement <em>Description Element</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.DescriptionElement
+   * @generated
+   */
+  public Adapter createDescriptionElementAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Rationale <em>Rationale</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Rationale
+   * @generated
+   */
+  public Adapter createRationaleAdapter()
   {
     return null;
   }

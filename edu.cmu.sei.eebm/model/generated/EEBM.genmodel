@@ -4,14 +4,38 @@
     editorDirectory="/edu.cmu.sei.eebm.editor/src" modelPluginID="edu.cmu.sei.eebm"
     forceOverwrite="true" modelName="EEBM" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="6.0" copyrightFields="false" editPluginID="edu.cmu.sei.eebm.edit"
-    editorPluginID="edu.cmu.sei.eebm.editor" runtimeVersion="2.10">
+    editorPluginID="edu.cmu.sei.eebm.editor" runtimeVersion="2.11">
   <genPackages prefix="EEBM" basePackage="edu.cmu.sei.eebm" disposableProviderFactory="true"
       fileExtensions="eebm" ecorePackage="EEBM.ecore#/">
-    <genClasses ecoreClass="EEBM.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Model/greetings"/>
+    <genClasses ecoreClass="EEBM.ecore#//Plan">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Plan/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Plan/parts"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Greeting">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Greeting/name"/>
+    <genClasses ecoreClass="EEBM.ecore#//Option">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Option/description"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Participant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Participant/name"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Goal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/title"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/superType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/rationale"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/docReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/issues"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Description">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Description/description"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//DescriptionElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//DescriptionElement/text"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Rationale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Rationale/text"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
