@@ -7,17 +7,31 @@
     editorPluginID="edu.cmu.sei.eebm.editor" runtimeVersion="2.11">
   <genPackages prefix="EEBM" basePackage="edu.cmu.sei.eebm" disposableProviderFactory="true"
       fileExtensions="eebm" ecorePackage="EEBM.ecore#/">
-    <genClasses ecoreClass="EEBM.ecore#//Plan">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Plan/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Plan/parts"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EEBM.ecore#//PriorityEnum">
+      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/HIGH"/>
+      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/MED"/>
+      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/LOW"/>
+    </genEnums>
+    <genClasses ecoreClass="EEBM.ecore#//Roadmap">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Roadmap/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Roadmap/parts"/>
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//Option">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/title"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Option/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/priority"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Stakeholder">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Stakeholder/name"/>
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//Participant">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Participant/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Participant/preferences"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Consultant"/>
+    <genClasses ecoreClass="EEBM.ecore#//Preference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/first"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/last"/>
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//Goal">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/name"/>

@@ -10,7 +10,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.eclipse.xtext.junit4.util.ParseHelper
 import java.io.IOException
-import edu.cmu.sei.eebm.eEBM.Plan
+import edu.cmu.sei.eebm.eEBM.Roadmap
 import java.nio.file.Files
 import java.nio.file.Paths
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper
@@ -19,7 +19,7 @@ import org.eclipse.xtext.junit4.validation.ValidationTestHelper
 @InjectWith(typeof(EEBMInjectorProvider))
 
 class EEBMParserTest {
-	@Inject extension ParseHelper<Plan>
+	@Inject extension ParseHelper<Roadmap>
 	@Inject extension ValidationTestHelper
 	
 	@Test

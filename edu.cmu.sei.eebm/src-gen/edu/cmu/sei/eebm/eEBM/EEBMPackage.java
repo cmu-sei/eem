@@ -4,6 +4,7 @@ package edu.cmu.sei.eebm.eEBM;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -57,14 +58,14 @@ public interface EEBMPackage extends EPackage
   EEBMPackage eINSTANCE = edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl.init();
 
   /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.PlanImpl <em>Plan</em>}' class.
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl <em>Roadmap</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.PlanImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPlan()
+   * @see edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRoadmap()
    * @generated
    */
-  int PLAN = 0;
+  int ROADMAP = 0;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -73,7 +74,7 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PLAN__NAME = 0;
+  int ROADMAP__NAME = 0;
 
   /**
    * The feature id for the '<em><b>Parts</b></em>' containment reference list.
@@ -82,16 +83,16 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PLAN__PARTS = 1;
+  int ROADMAP__PARTS = 1;
 
   /**
-   * The number of structural features of the '<em>Plan</em>' class.
+   * The number of structural features of the '<em>Roadmap</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PLAN_FEATURE_COUNT = 2;
+  int ROADMAP_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl <em>Option</em>}' class.
@@ -131,13 +132,50 @@ public interface EEBMPackage extends EPackage
   int OPTION__DESCRIPTION = 2;
 
   /**
+   * The feature id for the '<em><b>Priority</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPTION__PRIORITY = 3;
+
+  /**
    * The number of structural features of the '<em>Option</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int OPTION_FEATURE_COUNT = 3;
+  int OPTION_FEATURE_COUNT = 4;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl <em>Stakeholder</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getStakeholder()
+   * @generated
+   */
+  int STAKEHOLDER = 2;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int STAKEHOLDER__NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>Stakeholder</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int STAKEHOLDER_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl <em>Participant</em>}' class.
@@ -147,7 +185,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getParticipant()
    * @generated
    */
-  int PARTICIPANT = 2;
+  int PARTICIPANT = 3;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -156,7 +194,16 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARTICIPANT__NAME = 0;
+  int PARTICIPANT__NAME = STAKEHOLDER__NAME;
+
+  /**
+   * The feature id for the '<em><b>Preferences</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARTICIPANT__PREFERENCES = STAKEHOLDER_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Participant</em>' class.
@@ -165,7 +212,72 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARTICIPANT_FEATURE_COUNT = 1;
+  int PARTICIPANT_FEATURE_COUNT = STAKEHOLDER_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl <em>Consultant</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getConsultant()
+   * @generated
+   */
+  int CONSULTANT = 4;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CONSULTANT__NAME = STAKEHOLDER__NAME;
+
+  /**
+   * The number of structural features of the '<em>Consultant</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CONSULTANT_FEATURE_COUNT = STAKEHOLDER_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl <em>Preference</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPreference()
+   * @generated
+   */
+  int PREFERENCE = 5;
+
+  /**
+   * The feature id for the '<em><b>First</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PREFERENCE__FIRST = 0;
+
+  /**
+   * The feature id for the '<em><b>Last</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PREFERENCE__LAST = 1;
+
+  /**
+   * The number of structural features of the '<em>Preference</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PREFERENCE_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl <em>Goal</em>}' class.
@@ -175,7 +287,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getGoal()
    * @generated
    */
-  int GOAL = 3;
+  int GOAL = 6;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -257,7 +369,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescription()
    * @generated
    */
-  int DESCRIPTION = 4;
+  int DESCRIPTION = 7;
 
   /**
    * The feature id for the '<em><b>Description</b></em>' containment reference list.
@@ -285,7 +397,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescriptionElement()
    * @generated
    */
-  int DESCRIPTION_ELEMENT = 5;
+  int DESCRIPTION_ELEMENT = 8;
 
   /**
    * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -313,7 +425,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRationale()
    * @generated
    */
-  int RATIONALE = 6;
+  int RATIONALE = 9;
 
   /**
    * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -333,38 +445,48 @@ public interface EEBMPackage extends EPackage
    */
   int RATIONALE_FEATURE_COUNT = 1;
 
-
   /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Plan <em>Plan</em>}'.
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.PriorityEnum <em>Priority Enum</em>}' enum.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Plan</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Plan
+   * @see edu.cmu.sei.eebm.eEBM.PriorityEnum
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPriorityEnum()
    * @generated
    */
-  EClass getPlan();
+  int PRIORITY_ENUM = 10;
+
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Plan#getName <em>Name</em>}'.
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Roadmap <em>Roadmap</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Roadmap</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Roadmap
+   * @generated
+   */
+  EClass getRoadmap();
+
+  /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Roadmap#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Plan#getName()
-   * @see #getPlan()
+   * @see edu.cmu.sei.eebm.eEBM.Roadmap#getName()
+   * @see #getRoadmap()
    * @generated
    */
-  EAttribute getPlan_Name();
+  EAttribute getRoadmap_Name();
 
   /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Plan#getParts <em>Parts</em>}'.
+   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Roadmap#getParts <em>Parts</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Parts</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Plan#getParts()
-   * @see #getPlan()
+   * @see edu.cmu.sei.eebm.eEBM.Roadmap#getParts()
+   * @see #getRoadmap()
    * @generated
    */
-  EReference getPlan_Parts();
+  EReference getRoadmap_Parts();
 
   /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Option <em>Option</em>}'.
@@ -410,6 +532,38 @@ public interface EEBMPackage extends EPackage
   EReference getOption_Description();
 
   /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Option#getPriority <em>Priority</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Priority</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Option#getPriority()
+   * @see #getOption()
+   * @generated
+   */
+  EAttribute getOption_Priority();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Stakeholder <em>Stakeholder</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Stakeholder</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Stakeholder
+   * @generated
+   */
+  EClass getStakeholder();
+
+  /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Stakeholder#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Stakeholder#getName()
+   * @see #getStakeholder()
+   * @generated
+   */
+  EAttribute getStakeholder_Name();
+
+  /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Participant <em>Participant</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -420,15 +574,57 @@ public interface EEBMPackage extends EPackage
   EClass getParticipant();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Participant#getName <em>Name</em>}'.
+   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Participant#getPreferences <em>Preferences</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Participant#getName()
+   * @return the meta object for the containment reference list '<em>Preferences</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Participant#getPreferences()
    * @see #getParticipant()
    * @generated
    */
-  EAttribute getParticipant_Name();
+  EReference getParticipant_Preferences();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Consultant <em>Consultant</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Consultant</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Consultant
+   * @generated
+   */
+  EClass getConsultant();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Preference <em>Preference</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Preference</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Preference
+   * @generated
+   */
+  EClass getPreference();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Preference#getFirst <em>First</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>First</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Preference#getFirst()
+   * @see #getPreference()
+   * @generated
+   */
+  EReference getPreference_First();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Preference#getLast <em>Last</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Last</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Preference#getLast()
+   * @see #getPreference()
+   * @generated
+   */
+  EReference getPreference_Last();
 
   /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Goal <em>Goal</em>}'.
@@ -581,6 +777,16 @@ public interface EEBMPackage extends EPackage
   EAttribute getRationale_Text();
 
   /**
+   * Returns the meta object for enum '{@link edu.cmu.sei.eebm.eEBM.PriorityEnum <em>Priority Enum</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for enum '<em>Priority Enum</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.PriorityEnum
+   * @generated
+   */
+  EEnum getPriorityEnum();
+
+  /**
    * Returns the factory that creates the instances of the model.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -604,14 +810,14 @@ public interface EEBMPackage extends EPackage
   interface Literals
   {
     /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.PlanImpl <em>Plan</em>}' class.
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl <em>Roadmap</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.PlanImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPlan()
+     * @see edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRoadmap()
      * @generated
      */
-    EClass PLAN = eINSTANCE.getPlan();
+    EClass ROADMAP = eINSTANCE.getRoadmap();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -619,7 +825,7 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PLAN__NAME = eINSTANCE.getPlan_Name();
+    EAttribute ROADMAP__NAME = eINSTANCE.getRoadmap_Name();
 
     /**
      * The meta object literal for the '<em><b>Parts</b></em>' containment reference list feature.
@@ -627,7 +833,7 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PLAN__PARTS = eINSTANCE.getPlan_Parts();
+    EReference ROADMAP__PARTS = eINSTANCE.getRoadmap_Parts();
 
     /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl <em>Option</em>}' class.
@@ -664,6 +870,32 @@ public interface EEBMPackage extends EPackage
     EReference OPTION__DESCRIPTION = eINSTANCE.getOption_Description();
 
     /**
+     * The meta object literal for the '<em><b>Priority</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute OPTION__PRIORITY = eINSTANCE.getOption_Priority();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl <em>Stakeholder</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getStakeholder()
+     * @generated
+     */
+    EClass STAKEHOLDER = eINSTANCE.getStakeholder();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute STAKEHOLDER__NAME = eINSTANCE.getStakeholder_Name();
+
+    /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl <em>Participant</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -674,12 +906,48 @@ public interface EEBMPackage extends EPackage
     EClass PARTICIPANT = eINSTANCE.getParticipant();
 
     /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Preferences</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PARTICIPANT__NAME = eINSTANCE.getParticipant_Name();
+    EReference PARTICIPANT__PREFERENCES = eINSTANCE.getParticipant_Preferences();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl <em>Consultant</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getConsultant()
+     * @generated
+     */
+    EClass CONSULTANT = eINSTANCE.getConsultant();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl <em>Preference</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPreference()
+     * @generated
+     */
+    EClass PREFERENCE = eINSTANCE.getPreference();
+
+    /**
+     * The meta object literal for the '<em><b>First</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PREFERENCE__FIRST = eINSTANCE.getPreference_First();
+
+    /**
+     * The meta object literal for the '<em><b>Last</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PREFERENCE__LAST = eINSTANCE.getPreference_Last();
 
     /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl <em>Goal</em>}' class.
@@ -800,6 +1068,16 @@ public interface EEBMPackage extends EPackage
      * @generated
      */
     EAttribute RATIONALE__TEXT = eINSTANCE.getRationale_Text();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.PriorityEnum <em>Priority Enum</em>}' enum.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.PriorityEnum
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPriorityEnum()
+     * @generated
+     */
+    EEnum PRIORITY_ENUM = eINSTANCE.getPriorityEnum();
 
   }
 

@@ -5,6 +5,7 @@ package edu.cmu.sei.eebm.eEBM.impl;
 import edu.cmu.sei.eebm.eEBM.*;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -64,9 +65,12 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
   {
     switch (eClass.getClassifierID())
     {
-      case EEBMPackage.PLAN: return createPlan();
+      case EEBMPackage.ROADMAP: return createRoadmap();
       case EEBMPackage.OPTION: return createOption();
+      case EEBMPackage.STAKEHOLDER: return createStakeholder();
       case EEBMPackage.PARTICIPANT: return createParticipant();
+      case EEBMPackage.CONSULTANT: return createConsultant();
+      case EEBMPackage.PREFERENCE: return createPreference();
       case EEBMPackage.GOAL: return createGoal();
       case EEBMPackage.DESCRIPTION: return createDescription();
       case EEBMPackage.DESCRIPTION_ELEMENT: return createDescriptionElement();
@@ -81,10 +85,44 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Plan createPlan()
+  @Override
+  public Object createFromString(EDataType eDataType, String initialValue)
   {
-    PlanImpl plan = new PlanImpl();
-    return plan;
+    switch (eDataType.getClassifierID())
+    {
+      case EEBMPackage.PRIORITY_ENUM:
+        return createPriorityEnumFromString(eDataType, initialValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String convertToString(EDataType eDataType, Object instanceValue)
+  {
+    switch (eDataType.getClassifierID())
+    {
+      case EEBMPackage.PRIORITY_ENUM:
+        return convertPriorityEnumToString(eDataType, instanceValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Roadmap createRoadmap()
+  {
+    RoadmapImpl roadmap = new RoadmapImpl();
+    return roadmap;
   }
 
   /**
@@ -103,10 +141,43 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public Stakeholder createStakeholder()
+  {
+    StakeholderImpl stakeholder = new StakeholderImpl();
+    return stakeholder;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Participant createParticipant()
   {
     ParticipantImpl participant = new ParticipantImpl();
     return participant;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Consultant createConsultant()
+  {
+    ConsultantImpl consultant = new ConsultantImpl();
+    return consultant;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Preference createPreference()
+  {
+    PreferenceImpl preference = new PreferenceImpl();
+    return preference;
   }
 
   /**
@@ -151,6 +222,28 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
   {
     RationaleImpl rationale = new RationaleImpl();
     return rationale;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PriorityEnum createPriorityEnumFromString(EDataType eDataType, String initialValue)
+  {
+    PriorityEnum result = PriorityEnum.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String convertPriorityEnumToString(EDataType eDataType, Object instanceValue)
+  {
+    return instanceValue == null ? null : instanceValue.toString();
   }
 
   /**

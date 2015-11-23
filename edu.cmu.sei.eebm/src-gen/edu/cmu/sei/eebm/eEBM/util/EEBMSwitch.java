@@ -72,10 +72,10 @@ public class EEBMSwitch<T> extends Switch<T>
   {
     switch (classifierID)
     {
-      case EEBMPackage.PLAN:
+      case EEBMPackage.ROADMAP:
       {
-        Plan plan = (Plan)theEObject;
-        T result = casePlan(plan);
+        Roadmap roadmap = (Roadmap)theEObject;
+        T result = caseRoadmap(roadmap);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -86,10 +86,33 @@ public class EEBMSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case EEBMPackage.STAKEHOLDER:
+      {
+        Stakeholder stakeholder = (Stakeholder)theEObject;
+        T result = caseStakeholder(stakeholder);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case EEBMPackage.PARTICIPANT:
       {
         Participant participant = (Participant)theEObject;
         T result = caseParticipant(participant);
+        if (result == null) result = caseStakeholder(participant);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.CONSULTANT:
+      {
+        Consultant consultant = (Consultant)theEObject;
+        T result = caseConsultant(consultant);
+        if (result == null) result = caseStakeholder(consultant);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.PREFERENCE:
+      {
+        Preference preference = (Preference)theEObject;
+        T result = casePreference(preference);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -126,17 +149,17 @@ public class EEBMSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Plan</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Roadmap</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Plan</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Roadmap</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T casePlan(Plan object)
+  public T caseRoadmap(Roadmap object)
   {
     return null;
   }
@@ -158,6 +181,22 @@ public class EEBMSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Stakeholder</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Stakeholder</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStakeholder(Stakeholder object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Participant</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -169,6 +208,38 @@ public class EEBMSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseParticipant(Participant object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Consultant</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Consultant</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseConsultant(Consultant object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Preference</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Preference</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePreference(Preference object)
   {
     return null;
   }

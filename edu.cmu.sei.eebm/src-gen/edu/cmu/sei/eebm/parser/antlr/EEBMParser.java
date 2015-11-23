@@ -25,7 +25,7 @@ public class EEBMParser extends org.eclipse.xtext.parser.antlr.AbstractAntlrPars
 	
 	@Override 
 	protected String getDefaultRuleName() {
-		return "Plan";
+		return "Roadmap";
 	}
 	
 	public EEBMGrammarAccess getGrammarAccess() {

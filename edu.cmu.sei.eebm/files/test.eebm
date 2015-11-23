@@ -1,11 +1,11 @@
-Plan 'FDA MARCS'
+Roadmap 'FDA MARCS'
 
 Goal hp : 'high performance' [
 	description "a Description"
 ]
 
-/* Roadmap r [
-	Option opt = 'use Oracle' [
-		priority 6
-	]
-]*/
+Option opt : 'use Oracle' [
+		priority=HIGH
+]
+
+Participant neil prefers(A,B)

@@ -5,6 +5,7 @@ package edu.cmu.sei.eebm.eEBM.impl;
 import edu.cmu.sei.eebm.eEBM.Description;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.Option;
+import edu.cmu.sei.eebm.eEBM.PriorityEnum;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,6 +27,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getName <em>Name</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getTitle <em>Title</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getPriority <em>Priority</em>}</li>
  * </ul>
  *
  * @generated
@@ -81,6 +83,26 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * @ordered
    */
   protected Description description;
+
+  /**
+   * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPriority()
+   * @generated
+   * @ordered
+   */
+  protected static final PriorityEnum PRIORITY_EDEFAULT = PriorityEnum.HIGH;
+
+  /**
+   * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPriority()
+   * @generated
+   * @ordered
+   */
+  protected PriorityEnum priority = PRIORITY_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -202,6 +224,29 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
+  public PriorityEnum getPriority()
+  {
+    return priority;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setPriority(PriorityEnum newPriority)
+  {
+    PriorityEnum oldPriority = priority;
+    priority = newPriority == null ? PRIORITY_EDEFAULT : newPriority;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__PRIORITY, oldPriority, priority));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -229,6 +274,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
         return getTitle();
       case EEBMPackage.OPTION__DESCRIPTION:
         return getDescription();
+      case EEBMPackage.OPTION__PRIORITY:
+        return getPriority();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -251,6 +298,9 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
         return;
       case EEBMPackage.OPTION__DESCRIPTION:
         setDescription((Description)newValue);
+        return;
+      case EEBMPackage.OPTION__PRIORITY:
+        setPriority((PriorityEnum)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -275,6 +325,9 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
       case EEBMPackage.OPTION__DESCRIPTION:
         setDescription((Description)null);
         return;
+      case EEBMPackage.OPTION__PRIORITY:
+        setPriority(PRIORITY_EDEFAULT);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -295,6 +348,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
         return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
       case EEBMPackage.OPTION__DESCRIPTION:
         return description != null;
+      case EEBMPackage.OPTION__PRIORITY:
+        return priority != PRIORITY_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -314,6 +369,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
     result.append(name);
     result.append(", title: ");
     result.append(title);
+    result.append(", priority: ");
+    result.append(priority);
     result.append(')');
     return result.toString();
   }

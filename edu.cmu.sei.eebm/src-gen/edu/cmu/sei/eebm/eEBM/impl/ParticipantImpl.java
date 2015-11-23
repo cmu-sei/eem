@@ -4,13 +4,19 @@ package edu.cmu.sei.eebm.eEBM.impl;
 
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.Participant;
+import edu.cmu.sei.eebm.eEBM.Preference;
 
-import org.eclipse.emf.common.notify.Notification;
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,32 +26,22 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl#getPreferences <em>Preferences</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ParticipantImpl extends MinimalEObjectImpl.Container implements Participant
+public class ParticipantImpl extends StakeholderImpl implements Participant
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getPreferences() <em>Preferences</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getPreferences()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
+  protected EList<Preference> preferences;
 
   /**
    * <!-- begin-user-doc -->
@@ -73,9 +69,13 @@ public class ParticipantImpl extends MinimalEObjectImpl.Container implements Par
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public EList<Preference> getPreferences()
   {
-    return name;
+    if (preferences == null)
+    {
+      preferences = new EObjectContainmentEList<Preference>(Preference.class, this, EEBMPackage.PARTICIPANT__PREFERENCES);
+    }
+    return preferences;
   }
 
   /**
@@ -83,12 +83,15 @@ public class ParticipantImpl extends MinimalEObjectImpl.Container implements Par
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setName(String newName)
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PARTICIPANT__NAME, oldName, name));
+    switch (featureID)
+    {
+      case EEBMPackage.PARTICIPANT__PREFERENCES:
+        return ((InternalEList<?>)getPreferences()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
@@ -101,8 +104,8 @@ public class ParticipantImpl extends MinimalEObjectImpl.Container implements Par
   {
     switch (featureID)
     {
-      case EEBMPackage.PARTICIPANT__NAME:
-        return getName();
+      case EEBMPackage.PARTICIPANT__PREFERENCES:
+        return getPreferences();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -112,13 +115,15 @@ public class ParticipantImpl extends MinimalEObjectImpl.Container implements Par
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case EEBMPackage.PARTICIPANT__NAME:
-        setName((String)newValue);
+      case EEBMPackage.PARTICIPANT__PREFERENCES:
+        getPreferences().clear();
+        getPreferences().addAll((Collection<? extends Preference>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -134,8 +139,8 @@ public class ParticipantImpl extends MinimalEObjectImpl.Container implements Par
   {
     switch (featureID)
     {
-      case EEBMPackage.PARTICIPANT__NAME:
-        setName(NAME_EDEFAULT);
+      case EEBMPackage.PARTICIPANT__PREFERENCES:
+        getPreferences().clear();
         return;
     }
     super.eUnset(featureID);
@@ -151,27 +156,10 @@ public class ParticipantImpl extends MinimalEObjectImpl.Container implements Par
   {
     switch (featureID)
     {
-      case EEBMPackage.PARTICIPANT__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case EEBMPackage.PARTICIPANT__PREFERENCES:
+        return preferences != null && !preferences.isEmpty();
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(')');
-    return result.toString();
   }
 
 } //ParticipantImpl

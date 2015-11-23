@@ -1,7 +1,7 @@
 package edu.cmu.sei.eebm.jvmmodel;
 
 import com.google.inject.Inject;
-import edu.cmu.sei.eebm.eEBM.Plan;
+import edu.cmu.sei.eebm.eEBM.Roadmap;
 import java.util.Arrays;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
@@ -49,12 +49,12 @@ public class EEBMJvmModelInferrer extends AbstractModelInferrer {
    *            rely on linking using the index if isPreIndexingPhase is
    *            <code>true</code>.
    */
-  protected void _infer(final Plan element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
+  protected void _infer(final Roadmap element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
   }
   
   public void infer(final EObject element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
-    if (element instanceof Plan) {
-      _infer((Plan)element, acceptor, isPreIndexingPhase);
+    if (element instanceof Roadmap) {
+      _infer((Roadmap)element, acceptor, isPreIndexingPhase);
       return;
     } else if (element != null) {
       _infer(element, acceptor, isPreIndexingPhase);

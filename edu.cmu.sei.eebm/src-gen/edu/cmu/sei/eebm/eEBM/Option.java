@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Option#getName <em>Name</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Option#getTitle <em>Title</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Option#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.Option#getPriority <em>Priority</em>}</li>
  * </ul>
  *
  * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getOption()
@@ -101,5 +102,34 @@ public interface Option extends EObject
    * @generated
    */
   void setDescription(Description value);
+
+  /**
+   * Returns the value of the '<em><b>Priority</b></em>' attribute.
+   * The literals are from the enumeration {@link edu.cmu.sei.eebm.eEBM.PriorityEnum}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Priority</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Priority</em>' attribute.
+   * @see edu.cmu.sei.eebm.eEBM.PriorityEnum
+   * @see #setPriority(PriorityEnum)
+   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getOption_Priority()
+   * @model
+   * @generated
+   */
+  PriorityEnum getPriority();
+
+  /**
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Option#getPriority <em>Priority</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Priority</em>' attribute.
+   * @see edu.cmu.sei.eebm.eEBM.PriorityEnum
+   * @see #getPriority()
+   * @generated
+   */
+  void setPriority(PriorityEnum value);
 
 } // Option

@@ -2,6 +2,7 @@
  */
 package edu.cmu.sei.eebm.eEBM.impl;
 
+import edu.cmu.sei.eebm.eEBM.Consultant;
 import edu.cmu.sei.eebm.eEBM.Description;
 import edu.cmu.sei.eebm.eEBM.DescriptionElement;
 import edu.cmu.sei.eebm.eEBM.EEBMFactory;
@@ -9,11 +10,15 @@ import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.Goal;
 import edu.cmu.sei.eebm.eEBM.Option;
 import edu.cmu.sei.eebm.eEBM.Participant;
-import edu.cmu.sei.eebm.eEBM.Plan;
+import edu.cmu.sei.eebm.eEBM.Preference;
+import edu.cmu.sei.eebm.eEBM.PriorityEnum;
 import edu.cmu.sei.eebm.eEBM.Rationale;
+import edu.cmu.sei.eebm.eEBM.Roadmap;
+import edu.cmu.sei.eebm.eEBM.Stakeholder;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -32,7 +37,7 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass planEClass = null;
+  private EClass roadmapEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -46,7 +51,28 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass stakeholderEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass participantEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass consultantEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass preferenceEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -75,6 +101,13 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * @generated
    */
   private EClass rationaleEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum priorityEnumEEnum = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -144,9 +177,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getPlan()
+  public EClass getRoadmap()
   {
-    return planEClass;
+    return roadmapEClass;
   }
 
   /**
@@ -154,9 +187,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPlan_Name()
+  public EAttribute getRoadmap_Name()
   {
-    return (EAttribute)planEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)roadmapEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -164,9 +197,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getPlan_Parts()
+  public EReference getRoadmap_Parts()
   {
-    return (EReference)planEClass.getEStructuralFeatures().get(1);
+    return (EReference)roadmapEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -214,6 +247,36 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getOption_Priority()
+  {
+    return (EAttribute)optionEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getStakeholder()
+  {
+    return stakeholderEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getStakeholder_Name()
+  {
+    return (EAttribute)stakeholderEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getParticipant()
   {
     return participantEClass;
@@ -224,9 +287,49 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getParticipant_Name()
+  public EReference getParticipant_Preferences()
   {
-    return (EAttribute)participantEClass.getEStructuralFeatures().get(0);
+    return (EReference)participantEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getConsultant()
+  {
+    return consultantEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getPreference()
+  {
+    return preferenceEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getPreference_First()
+  {
+    return (EReference)preferenceEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getPreference_Last()
+  {
+    return (EReference)preferenceEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -374,6 +477,16 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EEnum getPriorityEnum()
+  {
+    return priorityEnumEEnum;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EEBMFactory getEEBMFactory()
   {
     return (EEBMFactory)getEFactoryInstance();
@@ -399,17 +512,27 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
     isCreated = true;
 
     // Create classes and their features
-    planEClass = createEClass(PLAN);
-    createEAttribute(planEClass, PLAN__NAME);
-    createEReference(planEClass, PLAN__PARTS);
+    roadmapEClass = createEClass(ROADMAP);
+    createEAttribute(roadmapEClass, ROADMAP__NAME);
+    createEReference(roadmapEClass, ROADMAP__PARTS);
 
     optionEClass = createEClass(OPTION);
     createEAttribute(optionEClass, OPTION__NAME);
     createEAttribute(optionEClass, OPTION__TITLE);
     createEReference(optionEClass, OPTION__DESCRIPTION);
+    createEAttribute(optionEClass, OPTION__PRIORITY);
+
+    stakeholderEClass = createEClass(STAKEHOLDER);
+    createEAttribute(stakeholderEClass, STAKEHOLDER__NAME);
 
     participantEClass = createEClass(PARTICIPANT);
-    createEAttribute(participantEClass, PARTICIPANT__NAME);
+    createEReference(participantEClass, PARTICIPANT__PREFERENCES);
+
+    consultantEClass = createEClass(CONSULTANT);
+
+    preferenceEClass = createEClass(PREFERENCE);
+    createEReference(preferenceEClass, PREFERENCE__FIRST);
+    createEReference(preferenceEClass, PREFERENCE__LAST);
 
     goalEClass = createEClass(GOAL);
     createEAttribute(goalEClass, GOAL__NAME);
@@ -428,6 +551,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
 
     rationaleEClass = createEClass(RATIONALE);
     createEAttribute(rationaleEClass, RATIONALE__TEXT);
+
+    // Create enums
+    priorityEnumEEnum = createEEnum(PRIORITY_ENUM);
   }
 
   /**
@@ -459,19 +585,31 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    participantEClass.getESuperTypes().add(this.getStakeholder());
+    consultantEClass.getESuperTypes().add(this.getStakeholder());
 
     // Initialize classes and features; add operations and parameters
-    initEClass(planEClass, Plan.class, "Plan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getPlan_Name(), ecorePackage.getEString(), "name", null, 0, 1, Plan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPlan_Parts(), ecorePackage.getEObject(), null, "parts", null, 0, -1, Plan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(roadmapEClass, Roadmap.class, "Roadmap", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRoadmap_Name(), ecorePackage.getEString(), "name", null, 0, 1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRoadmap_Parts(), ecorePackage.getEObject(), null, "parts", null, 0, -1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(optionEClass, Option.class, "Option", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getOption_Name(), ecorePackage.getEString(), "name", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getOption_Title(), ecorePackage.getEString(), "title", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getOption_Description(), this.getDescription(), null, "description", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getOption_Priority(), this.getPriorityEnum(), "priority", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(stakeholderEClass, Stakeholder.class, "Stakeholder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getStakeholder_Name(), ecorePackage.getEString(), "name", null, 0, 1, Stakeholder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(participantEClass, Participant.class, "Participant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getParticipant_Name(), ecorePackage.getEString(), "name", null, 0, 1, Participant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParticipant_Preferences(), this.getPreference(), null, "preferences", null, 0, -1, Participant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(consultantEClass, Consultant.class, "Consultant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(preferenceEClass, Preference.class, "Preference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getPreference_First(), this.getOption(), null, "first", null, 0, 1, Preference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPreference_Last(), this.getOption(), null, "last", null, 0, 1, Preference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(goalEClass, Goal.class, "Goal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getGoal_Name(), ecorePackage.getEString(), "name", null, 0, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -490,6 +628,12 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
 
     initEClass(rationaleEClass, Rationale.class, "Rationale", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRationale_Text(), ecorePackage.getEString(), "text", null, 0, 1, Rationale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    // Initialize enums and add enum literals
+    initEEnum(priorityEnumEEnum, PriorityEnum.class, "PriorityEnum");
+    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.HIGH);
+    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.MED);
+    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.LOW);
 
     // Create resource
     createResource(eNS_URI);

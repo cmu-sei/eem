@@ -37,7 +37,8 @@ public class EEBMParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getPlanAccess().getPartsAlternatives_1_0(), "rule__Plan__PartsAlternatives_1_0");
+					put(grammarAccess.getRoadmapAccess().getPartsAlternatives_1_0(), "rule__Roadmap__PartsAlternatives_1_0");
+					put(grammarAccess.getStakeholderAccess().getAlternatives(), "rule__Stakeholder__Alternatives");
 					put(grammarAccess.getXAssignmentAccess().getAlternatives(), "rule__XAssignment__Alternatives");
 					put(grammarAccess.getOpMultiAssignAccess().getAlternatives(), "rule__OpMultiAssign__Alternatives");
 					put(grammarAccess.getOpEqualityAccess().getAlternatives(), "rule__OpEquality__Alternatives");
@@ -77,10 +78,14 @@ public class EEBMParser extends AbstractContentAssistParser {
 					put(grammarAccess.getJvmWildcardTypeReferenceAccess().getAlternatives_2(), "rule__JvmWildcardTypeReference__Alternatives_2");
 					put(grammarAccess.getXImportDeclarationAccess().getAlternatives_1(), "rule__XImportDeclaration__Alternatives_1");
 					put(grammarAccess.getXImportDeclarationAccess().getAlternatives_1_0_3(), "rule__XImportDeclaration__Alternatives_1_0_3");
-					put(grammarAccess.getPlanAccess().getGroup(), "rule__Plan__Group__0");
-					put(grammarAccess.getPlanAccess().getGroup_0(), "rule__Plan__Group_0__0");
+					put(grammarAccess.getPriorityEnumAccess().getAlternatives(), "rule__PriorityEnum__Alternatives");
+					put(grammarAccess.getRoadmapAccess().getGroup(), "rule__Roadmap__Group__0");
+					put(grammarAccess.getRoadmapAccess().getGroup_0(), "rule__Roadmap__Group_0__0");
 					put(grammarAccess.getOptionAccess().getGroup(), "rule__Option__Group__0");
 					put(grammarAccess.getOptionAccess().getGroup_2(), "rule__Option__Group_2__0");
+					put(grammarAccess.getParticipantAccess().getGroup_1(), "rule__Participant__Group_1__0");
+					put(grammarAccess.getConsultantAccess().getGroup(), "rule__Consultant__Group__0");
+					put(grammarAccess.getPreferenceAccess().getGroup(), "rule__Preference__Group__0");
 					put(grammarAccess.getGoalAccess().getGroup_0(), "rule__Goal__Group_0__0");
 					put(grammarAccess.getGoalAccess().getGroup_0_2(), "rule__Goal__Group_0_2__0");
 					put(grammarAccess.getGoalAccess().getGroup_0_3(), "rule__Goal__Group_0_3__0");
@@ -268,12 +273,17 @@ public class EEBMParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXImportDeclarationAccess().getGroup(), "rule__XImportDeclaration__Group__0");
 					put(grammarAccess.getXImportDeclarationAccess().getGroup_1_0(), "rule__XImportDeclaration__Group_1_0__0");
 					put(grammarAccess.getQualifiedNameInStaticImportAccess().getGroup(), "rule__QualifiedNameInStaticImport__Group__0");
-					put(grammarAccess.getPlanAccess().getNameAssignment_0_0(), "rule__Plan__NameAssignment_0_0");
-					put(grammarAccess.getPlanAccess().getPartsAssignment_1(), "rule__Plan__PartsAssignment_1");
+					put(grammarAccess.getRoadmapAccess().getNameAssignment_0_0(), "rule__Roadmap__NameAssignment_0_0");
+					put(grammarAccess.getRoadmapAccess().getPartsAssignment_1(), "rule__Roadmap__PartsAssignment_1");
 					put(grammarAccess.getOptionAccess().getNameAssignment_1(), "rule__Option__NameAssignment_1");
 					put(grammarAccess.getOptionAccess().getTitleAssignment_2_1(), "rule__Option__TitleAssignment_2_1");
-					put(grammarAccess.getOptionAccess().getDescriptionAssignment_4(), "rule__Option__DescriptionAssignment_4");
-					put(grammarAccess.getParticipantAccess().getNameAssignment(), "rule__Participant__NameAssignment");
+					put(grammarAccess.getOptionAccess().getDescriptionAssignment_4_0(), "rule__Option__DescriptionAssignment_4_0");
+					put(grammarAccess.getOptionAccess().getPriorityAssignment_4_1(), "rule__Option__PriorityAssignment_4_1");
+					put(grammarAccess.getParticipantAccess().getPreferencesAssignment_0(), "rule__Participant__PreferencesAssignment_0");
+					put(grammarAccess.getParticipantAccess().getNameAssignment_1_1(), "rule__Participant__NameAssignment_1_1");
+					put(grammarAccess.getConsultantAccess().getNameAssignment_1(), "rule__Consultant__NameAssignment_1");
+					put(grammarAccess.getPreferenceAccess().getFirstAssignment_1(), "rule__Preference__FirstAssignment_1");
+					put(grammarAccess.getPreferenceAccess().getLastAssignment_3(), "rule__Preference__LastAssignment_3");
 					put(grammarAccess.getGoalAccess().getNameAssignment_0_1(), "rule__Goal__NameAssignment_0_1");
 					put(grammarAccess.getGoalAccess().getTitleAssignment_0_2_1(), "rule__Goal__TitleAssignment_0_2_1");
 					put(grammarAccess.getGoalAccess().getSuperTypeAssignment_0_3_1(), "rule__Goal__SuperTypeAssignment_0_3_1");
@@ -428,6 +438,8 @@ public class EEBMParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXImportDeclarationAccess().getMemberNameAssignment_1_0_3_1(), "rule__XImportDeclaration__MemberNameAssignment_1_0_3_1");
 					put(grammarAccess.getXImportDeclarationAccess().getImportedTypeAssignment_1_1(), "rule__XImportDeclaration__ImportedTypeAssignment_1_1");
 					put(grammarAccess.getXImportDeclarationAccess().getImportedNamespaceAssignment_1_2(), "rule__XImportDeclaration__ImportedNamespaceAssignment_1_2");
+					put(grammarAccess.getOptionAccess().getUnorderedGroup_4(), "rule__Option__UnorderedGroup_4");
+					put(grammarAccess.getParticipantAccess().getUnorderedGroup(), "rule__Participant__UnorderedGroup");
 					put(grammarAccess.getGoalAccess().getUnorderedGroup(), "rule__Goal__UnorderedGroup");
 				}
 			};
@@ -439,7 +451,7 @@ public class EEBMParser extends AbstractContentAssistParser {
 	protected Collection<FollowElement> getFollowElements(AbstractInternalContentAssistParser parser) {
 		try {
 			edu.cmu.sei.eebm.ui.contentassist.antlr.internal.InternalEEBMParser typedParser = (edu.cmu.sei.eebm.ui.contentassist.antlr.internal.InternalEEBMParser) parser;
-			typedParser.entryRulePlan();
+			typedParser.entryRuleRoadmap();
 			return typedParser.getFollowElements();
 		} catch(RecognitionException ex) {
 			throw new RuntimeException(ex);

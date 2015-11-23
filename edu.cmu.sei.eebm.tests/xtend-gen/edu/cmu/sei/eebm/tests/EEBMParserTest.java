@@ -2,7 +2,7 @@ package edu.cmu.sei.eebm.tests;
 
 import com.google.inject.Inject;
 import edu.cmu.sei.eebm.EEBMInjectorProvider;
-import edu.cmu.sei.eebm.eEBM.Plan;
+import edu.cmu.sei.eebm.eEBM.Roadmap;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -25,7 +25,7 @@ import org.junit.runner.RunWith;
 public class EEBMParserTest {
   @Inject
   @Extension
-  private ParseHelper<Plan> _parseHelper;
+  private ParseHelper<Roadmap> _parseHelper;
   
   @Inject
   @Extension
@@ -35,7 +35,7 @@ public class EEBMParserTest {
   public void testParsing() {
     try {
       final String plan = this.load("test.eebm");
-      Plan _parse = this._parseHelper.parse(plan);
+      Roadmap _parse = this._parseHelper.parse(plan);
       this._validationTestHelper.assertNoErrors(_parse);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);

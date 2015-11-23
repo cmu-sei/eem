@@ -23,13 +23,13 @@ public interface EEBMFactory extends EFactory
   EEBMFactory eINSTANCE = edu.cmu.sei.eebm.eEBM.impl.EEBMFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Plan</em>'.
+   * Returns a new object of class '<em>Roadmap</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Plan</em>'.
+   * @return a new object of class '<em>Roadmap</em>'.
    * @generated
    */
-  Plan createPlan();
+  Roadmap createRoadmap();
 
   /**
    * Returns a new object of class '<em>Option</em>'.
@@ -41,6 +41,15 @@ public interface EEBMFactory extends EFactory
   Option createOption();
 
   /**
+   * Returns a new object of class '<em>Stakeholder</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Stakeholder</em>'.
+   * @generated
+   */
+  Stakeholder createStakeholder();
+
+  /**
    * Returns a new object of class '<em>Participant</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -48,6 +57,24 @@ public interface EEBMFactory extends EFactory
    * @generated
    */
   Participant createParticipant();
+
+  /**
+   * Returns a new object of class '<em>Consultant</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Consultant</em>'.
+   * @generated
+   */
+  Consultant createConsultant();
+
+  /**
+   * Returns a new object of class '<em>Preference</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Preference</em>'.
+   * @generated
+   */
+  Preference createPreference();
 
   /**
    * Returns a new object of class '<em>Goal</em>'.

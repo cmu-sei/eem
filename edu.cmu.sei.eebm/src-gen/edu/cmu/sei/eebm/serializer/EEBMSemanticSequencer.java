@@ -5,14 +5,16 @@ package edu.cmu.sei.eebm.serializer;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
+import edu.cmu.sei.eebm.eEBM.Consultant;
 import edu.cmu.sei.eebm.eEBM.Description;
 import edu.cmu.sei.eebm.eEBM.DescriptionElement;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.Goal;
 import edu.cmu.sei.eebm.eEBM.Option;
 import edu.cmu.sei.eebm.eEBM.Participant;
-import edu.cmu.sei.eebm.eEBM.Plan;
+import edu.cmu.sei.eebm.eEBM.Preference;
 import edu.cmu.sei.eebm.eEBM.Rationale;
+import edu.cmu.sei.eebm.eEBM.Roadmap;
 import edu.cmu.sei.eebm.services.EEBMGrammarAccess;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.common.types.JvmFormalParameter;
@@ -80,6 +82,9 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	@Override
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == EEBMPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
+			case EEBMPackage.CONSULTANT:
+				sequence_Consultant(context, (Consultant) semanticObject); 
+				return; 
 			case EEBMPackage.DESCRIPTION:
 				sequence_Description(context, (Description) semanticObject); 
 				return; 
@@ -95,11 +100,14 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 			case EEBMPackage.PARTICIPANT:
 				sequence_Participant(context, (Participant) semanticObject); 
 				return; 
-			case EEBMPackage.PLAN:
-				sequence_Plan(context, (Plan) semanticObject); 
+			case EEBMPackage.PREFERENCE:
+				sequence_Preference(context, (Preference) semanticObject); 
 				return; 
 			case EEBMPackage.RATIONALE:
 				sequence_Rationale(context, (Rationale) semanticObject); 
+				return; 
+			case EEBMPackage.ROADMAP:
+				sequence_Roadmap(context, (Roadmap) semanticObject); 
 				return; 
 			}
 		else if(semanticObject.eClass().getEPackage() == TypesPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
@@ -333,6 +341,22 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
+	 *     name=ID
+	 */
+	protected void sequence_Consultant(EObject context, Consultant semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, EEBMPackage.Literals.STAKEHOLDER__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, EEBMPackage.Literals.STAKEHOLDER__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getConsultantAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
 	 *     text=STRING
 	 */
 	protected void sequence_DescriptionElement(EObject context, DescriptionElement semanticObject) {
@@ -375,7 +399,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=QualifiedName title=STRING? description=Description?)
+	 *     (name=QualifiedName title=STRING? description=Description? priority=PriorityEnum?)
 	 */
 	protected void sequence_Option(EObject context, Option semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -384,26 +408,29 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     name=STRING
+	 *     (preferences+=Preference? name=ID)
 	 */
 	protected void sequence_Participant(EObject context, Participant semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, EEBMPackage.Literals.PARTICIPANT__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, EEBMPackage.Literals.PARTICIPANT__NAME));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getParticipantAccess().getNameSTRINGTerminalRuleCall_0(), semanticObject.getName());
-		feeder.finish();
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (name='Plan'? (parts+=Goal | parts+=Participant | parts+=Option)+)
+	 *     (first=Option last=Option)
 	 */
-	protected void sequence_Plan(EObject context, Plan semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+	protected void sequence_Preference(EObject context, Preference semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, EEBMPackage.Literals.PREFERENCE__FIRST) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, EEBMPackage.Literals.PREFERENCE__FIRST));
+			if(transientValues.isValueTransient(semanticObject, EEBMPackage.Literals.PREFERENCE__LAST) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, EEBMPackage.Literals.PREFERENCE__LAST));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getPreferenceAccess().getFirstOptionParserRuleCall_1_0(), semanticObject.getFirst());
+		feeder.accept(grammarAccess.getPreferenceAccess().getLastOptionParserRuleCall_3_0(), semanticObject.getLast());
+		feeder.finish();
 	}
 	
 	
@@ -420,5 +447,14 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getRationaleAccess().getTextSTRINGTerminalRuleCall_1_0(), semanticObject.getText());
 		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name='Roadmap'? (parts+=Goal | parts+=Stakeholder | parts+=Option)+)
+	 */
+	protected void sequence_Roadmap(EObject context, Roadmap semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 }

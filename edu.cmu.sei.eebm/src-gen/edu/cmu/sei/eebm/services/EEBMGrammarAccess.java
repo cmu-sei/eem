@@ -19,49 +19,49 @@ import org.eclipse.xtext.xbase.services.XtypeGrammarAccess;
 public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
-	public class PlanElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Plan");
+	public class RoadmapElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Roadmap");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);
-		private final Keyword cNamePlanKeyword_0_0_0 = (Keyword)cNameAssignment_0_0.eContents().get(0);
+		private final Keyword cNameRoadmapKeyword_0_0_0 = (Keyword)cNameAssignment_0_0.eContents().get(0);
 		private final RuleCall cSTRINGTerminalRuleCall_0_1 = (RuleCall)cGroup_0.eContents().get(1);
 		private final Assignment cPartsAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final Alternatives cPartsAlternatives_1_0 = (Alternatives)cPartsAssignment_1.eContents().get(0);
 		private final RuleCall cPartsGoalParserRuleCall_1_0_0 = (RuleCall)cPartsAlternatives_1_0.eContents().get(0);
-		private final RuleCall cPartsParticipantParserRuleCall_1_0_1 = (RuleCall)cPartsAlternatives_1_0.eContents().get(1);
+		private final RuleCall cPartsStakeholderParserRuleCall_1_0_1 = (RuleCall)cPartsAlternatives_1_0.eContents().get(1);
 		private final RuleCall cPartsOptionParserRuleCall_1_0_2 = (RuleCall)cPartsAlternatives_1_0.eContents().get(2);
 		
-		//Plan:
-		//	(name="Plan" STRING)? parts+=(Goal | Participant | Option)+;
+		//Roadmap:
+		//	(name="Roadmap" STRING)? parts+=(Goal | Stakeholder | Option)+;
 		@Override public ParserRule getRule() { return rule; }
 
-		//(name="Plan" STRING)? parts+=(Goal | Participant | Option)+
+		//(name="Roadmap" STRING)? parts+=(Goal | Stakeholder | Option)+
 		public Group getGroup() { return cGroup; }
 
-		//(name="Plan" STRING)?
+		//(name="Roadmap" STRING)?
 		public Group getGroup_0() { return cGroup_0; }
 
-		//name="Plan"
+		//name="Roadmap"
 		public Assignment getNameAssignment_0_0() { return cNameAssignment_0_0; }
 
-		//"Plan"
-		public Keyword getNamePlanKeyword_0_0_0() { return cNamePlanKeyword_0_0_0; }
+		//"Roadmap"
+		public Keyword getNameRoadmapKeyword_0_0_0() { return cNameRoadmapKeyword_0_0_0; }
 
 		//STRING
 		public RuleCall getSTRINGTerminalRuleCall_0_1() { return cSTRINGTerminalRuleCall_0_1; }
 
-		//parts+=(Goal | Participant | Option)+
+		//parts+=(Goal | Stakeholder | Option)+
 		public Assignment getPartsAssignment_1() { return cPartsAssignment_1; }
 
-		//Goal | Participant | Option
+		//Goal | Stakeholder | Option
 		public Alternatives getPartsAlternatives_1_0() { return cPartsAlternatives_1_0; }
 
 		//Goal
 		public RuleCall getPartsGoalParserRuleCall_1_0_0() { return cPartsGoalParserRuleCall_1_0_0; }
 
-		//Participant
-		public RuleCall getPartsParticipantParserRuleCall_1_0_1() { return cPartsParticipantParserRuleCall_1_0_1; }
+		//Stakeholder
+		public RuleCall getPartsStakeholderParserRuleCall_1_0_1() { return cPartsStakeholderParserRuleCall_1_0_1; }
 
 		//Option
 		public RuleCall getPartsOptionParserRuleCall_1_0_2() { return cPartsOptionParserRuleCall_1_0_2; }
@@ -78,15 +78,19 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cTitleAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cTitleSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cTitleAssignment_2_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cDescriptionAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cDescriptionDescriptionParserRuleCall_4_0 = (RuleCall)cDescriptionAssignment_4.eContents().get(0);
+		private final UnorderedGroup cUnorderedGroup_4 = (UnorderedGroup)cGroup.eContents().get(4);
+		private final Assignment cDescriptionAssignment_4_0 = (Assignment)cUnorderedGroup_4.eContents().get(0);
+		private final RuleCall cDescriptionDescriptionParserRuleCall_4_0_0 = (RuleCall)cDescriptionAssignment_4_0.eContents().get(0);
+		private final Assignment cPriorityAssignment_4_1 = (Assignment)cUnorderedGroup_4.eContents().get(1);
+		private final RuleCall cPriorityPriorityEnumEnumRuleCall_4_1_0 = (RuleCall)cPriorityAssignment_4_1.eContents().get(0);
 		private final Keyword cRightSquareBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
+		//// Options, Decisions, 
 		//Option:
-		//	"Option" name=QualifiedName (":" title=STRING)? "[" description=Description? "]";
+		//	"Option" name=QualifiedName (":" title=STRING)? "[" (description=Description? & priority=PriorityEnum?) "]";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Option" name=QualifiedName (":" title=STRING)? "[" description=Description? "]"
+		//"Option" name=QualifiedName (":" title=STRING)? "[" (description=Description? & priority=PriorityEnum?) "]"
 		public Group getGroup() { return cGroup; }
 
 		//"Option"
@@ -113,30 +117,145 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_3() { return cLeftSquareBracketKeyword_3; }
 
+		//description=Description? & priority=PriorityEnum?
+		public UnorderedGroup getUnorderedGroup_4() { return cUnorderedGroup_4; }
+
 		//description=Description?
-		public Assignment getDescriptionAssignment_4() { return cDescriptionAssignment_4; }
+		public Assignment getDescriptionAssignment_4_0() { return cDescriptionAssignment_4_0; }
 
 		//Description
-		public RuleCall getDescriptionDescriptionParserRuleCall_4_0() { return cDescriptionDescriptionParserRuleCall_4_0; }
+		public RuleCall getDescriptionDescriptionParserRuleCall_4_0_0() { return cDescriptionDescriptionParserRuleCall_4_0_0; }
+
+		//priority=PriorityEnum?
+		public Assignment getPriorityAssignment_4_1() { return cPriorityAssignment_4_1; }
+
+		//PriorityEnum
+		public RuleCall getPriorityPriorityEnumEnumRuleCall_4_1_0() { return cPriorityPriorityEnumEnumRuleCall_4_1_0; }
 
 		//"]"
 		public Keyword getRightSquareBracketKeyword_5() { return cRightSquareBracketKeyword_5; }
 	}
 
-	public class ParticipantElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Participant");
-		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cNameSTRINGTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
+	public class StakeholderElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Stakeholder");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cConsultantParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cParticipantParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
-		//Participant:
-		//	name=STRING;
+		//// People
+		//Stakeholder:
+		//	Consultant | Participant;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=STRING
-		public Assignment getNameAssignment() { return cNameAssignment; }
+		//Consultant | Participant
+		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//STRING
-		public RuleCall getNameSTRINGTerminalRuleCall_0() { return cNameSTRINGTerminalRuleCall_0; }
+		//Consultant
+		public RuleCall getConsultantParserRuleCall_0() { return cConsultantParserRuleCall_0; }
+
+		//Participant
+		public RuleCall getParticipantParserRuleCall_1() { return cParticipantParserRuleCall_1; }
+	}
+
+	public class ParticipantElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Participant");
+		private final UnorderedGroup cUnorderedGroup = (UnorderedGroup)rule.eContents().get(1);
+		private final Assignment cPreferencesAssignment_0 = (Assignment)cUnorderedGroup.eContents().get(0);
+		private final RuleCall cPreferencesPreferenceParserRuleCall_0_0 = (RuleCall)cPreferencesAssignment_0.eContents().get(0);
+		private final Group cGroup_1 = (Group)cUnorderedGroup.eContents().get(1);
+		private final Keyword cParticipantKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Assignment cNameAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_1_0 = (RuleCall)cNameAssignment_1_1.eContents().get(0);
+		
+		//Participant:
+		//	preferences+=Preference? & "Participant" name=ID;
+		@Override public ParserRule getRule() { return rule; }
+
+		//preferences+=Preference? & "Participant" name=ID
+		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
+
+		//preferences+=Preference?
+		public Assignment getPreferencesAssignment_0() { return cPreferencesAssignment_0; }
+
+		//Preference
+		public RuleCall getPreferencesPreferenceParserRuleCall_0_0() { return cPreferencesPreferenceParserRuleCall_0_0; }
+
+		//"Participant" name=ID
+		public Group getGroup_1() { return cGroup_1; }
+
+		//"Participant"
+		public Keyword getParticipantKeyword_1_0() { return cParticipantKeyword_1_0; }
+
+		//name=ID
+		public Assignment getNameAssignment_1_1() { return cNameAssignment_1_1; }
+
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_1_0() { return cNameIDTerminalRuleCall_1_1_0; }
+	}
+
+	public class ConsultantElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Consultant");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cConsultantKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		
+		//Consultant:
+		//	"Consultant" name=ID;
+		@Override public ParserRule getRule() { return rule; }
+
+		//"Consultant" name=ID
+		public Group getGroup() { return cGroup; }
+
+		//"Consultant"
+		public Keyword getConsultantKeyword_0() { return cConsultantKeyword_0; }
+
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+	}
+
+	public class PreferenceElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Preference");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cPrefersKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cFirstAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cFirstOptionParserRuleCall_1_0 = (RuleCall)cFirstAssignment_1.eContents().get(0);
+		private final Keyword cCommaKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cLastAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cLastOptionParserRuleCall_3_0 = (RuleCall)cLastAssignment_3.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		
+		////Goals and requirements
+		//Preference:
+		//	"prefers(" first=Option "," last=Option ")";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"prefers(" first=Option "," last=Option ")"
+		public Group getGroup() { return cGroup; }
+
+		//"prefers("
+		public Keyword getPrefersKeyword_0() { return cPrefersKeyword_0; }
+
+		//first=Option
+		public Assignment getFirstAssignment_1() { return cFirstAssignment_1; }
+
+		//Option
+		public RuleCall getFirstOptionParserRuleCall_1_0() { return cFirstOptionParserRuleCall_1_0; }
+
+		//","
+		public Keyword getCommaKeyword_2() { return cCommaKeyword_2; }
+
+		//last=Option
+		public Assignment getLastAssignment_3() { return cLastAssignment_3; }
+
+		//Option
+		public RuleCall getLastOptionParserRuleCall_3_0() { return cLastOptionParserRuleCall_3_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
 	}
 
 	public class GoalElements extends AbstractParserRuleElementFinder {
@@ -172,15 +291,6 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cIssuesSTRINGTerminalRuleCall_3_0_1_0 = (RuleCall)cIssuesAssignment_3_0_1.eContents().get(0);
 		private final Keyword cRightSquareBracketKeyword_3_1 = (Keyword)cGroup_3.eContents().get(1);
 		
-		////Goal: 'Goal' name=QualifiedName (':' title=STRING)?
-		////	'[' 
-		////	(	description=Description? 
-		////		&content+=Goal* 
-		////	    ('see' 'document'  docReference+=STRING)? 
-		////		('issues' issues+=STRING+ )?
-		////				)
-		////	']'
-		////;
 		////NE: we could just import this from ALISA
 		//Goal:
 		//	"Goal" name=QualifiedName (":" title=STRING)? ("refines" superType=[Goal])? // short string for title
@@ -353,9 +463,49 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	
-	private final PlanElements pPlan;
+	public class PriorityEnumElements extends AbstractEnumRuleElementFinder {
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "PriorityEnum");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final EnumLiteralDeclaration cHIGHEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cHIGHHIGHKeyword_0_0 = (Keyword)cHIGHEnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cMEDEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cMEDMEDKeyword_1_0 = (Keyword)cMEDEnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cLOWEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cLOWLOWKeyword_2_0 = (Keyword)cLOWEnumLiteralDeclaration_2.eContents().get(0);
+		
+		//enum PriorityEnum:
+		//	HIGH | MED | LOW;
+		public EnumRule getRule() { return rule; }
+
+		//HIGH | MED | LOW
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//HIGH
+		public EnumLiteralDeclaration getHIGHEnumLiteralDeclaration_0() { return cHIGHEnumLiteralDeclaration_0; }
+
+		//"HIGH"
+		public Keyword getHIGHHIGHKeyword_0_0() { return cHIGHHIGHKeyword_0_0; }
+
+		//MED
+		public EnumLiteralDeclaration getMEDEnumLiteralDeclaration_1() { return cMEDEnumLiteralDeclaration_1; }
+
+		//"MED"
+		public Keyword getMEDMEDKeyword_1_0() { return cMEDMEDKeyword_1_0; }
+
+		//LOW
+		public EnumLiteralDeclaration getLOWEnumLiteralDeclaration_2() { return cLOWEnumLiteralDeclaration_2; }
+
+		//"LOW"
+		public Keyword getLOWLOWKeyword_2_0() { return cLOWLOWKeyword_2_0; }
+	}
+	
+	private final RoadmapElements pRoadmap;
 	private final OptionElements pOption;
+	private final PriorityEnumElements unknownRulePriorityEnum;
+	private final StakeholderElements pStakeholder;
 	private final ParticipantElements pParticipant;
+	private final ConsultantElements pConsultant;
+	private final PreferenceElements pPreference;
 	private final GoalElements pGoal;
 	private final DescriptionElements pDescription;
 	private final DescriptionElementElements pDescriptionElement;
@@ -370,9 +520,13 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		XbaseGrammarAccess gaXbase) {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaXbase = gaXbase;
-		this.pPlan = new PlanElements();
+		this.pRoadmap = new RoadmapElements();
 		this.pOption = new OptionElements();
+		this.unknownRulePriorityEnum = new PriorityEnumElements();
+		this.pStakeholder = new StakeholderElements();
 		this.pParticipant = new ParticipantElements();
+		this.pConsultant = new ConsultantElements();
+		this.pPreference = new PreferenceElements();
 		this.pGoal = new GoalElements();
 		this.pDescription = new DescriptionElements();
 		this.pDescriptionElement = new DescriptionElementElements();
@@ -406,18 +560,19 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	//Plan:
-	//	(name="Plan" STRING)? parts+=(Goal | Participant | Option)+;
-	public PlanElements getPlanAccess() {
-		return pPlan;
+	//Roadmap:
+	//	(name="Roadmap" STRING)? parts+=(Goal | Stakeholder | Option)+;
+	public RoadmapElements getRoadmapAccess() {
+		return pRoadmap;
 	}
 	
-	public ParserRule getPlanRule() {
-		return getPlanAccess().getRule();
+	public ParserRule getRoadmapRule() {
+		return getRoadmapAccess().getRule();
 	}
 
+	//// Options, Decisions, 
 	//Option:
-	//	"Option" name=QualifiedName (":" title=STRING)? "[" description=Description? "]";
+	//	"Option" name=QualifiedName (":" title=STRING)? "[" (description=Description? & priority=PriorityEnum?) "]";
 	public OptionElements getOptionAccess() {
 		return pOption;
 	}
@@ -426,8 +581,29 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		return getOptionAccess().getRule();
 	}
 
+	//enum PriorityEnum:
+	//	HIGH | MED | LOW;
+	public PriorityEnumElements getPriorityEnumAccess() {
+		return unknownRulePriorityEnum;
+	}
+	
+	public EnumRule getPriorityEnumRule() {
+		return getPriorityEnumAccess().getRule();
+	}
+
+	//// People
+	//Stakeholder:
+	//	Consultant | Participant;
+	public StakeholderElements getStakeholderAccess() {
+		return pStakeholder;
+	}
+	
+	public ParserRule getStakeholderRule() {
+		return getStakeholderAccess().getRule();
+	}
+
 	//Participant:
-	//	name=STRING;
+	//	preferences+=Preference? & "Participant" name=ID;
 	public ParticipantElements getParticipantAccess() {
 		return pParticipant;
 	}
@@ -436,15 +612,27 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		return getParticipantAccess().getRule();
 	}
 
-	////Goal: 'Goal' name=QualifiedName (':' title=STRING)?
-	////	'[' 
-	////	(	description=Description? 
-	////		&content+=Goal* 
-	////	    ('see' 'document'  docReference+=STRING)? 
-	////		('issues' issues+=STRING+ )?
-	////				)
-	////	']'
-	////;
+	//Consultant:
+	//	"Consultant" name=ID;
+	public ConsultantElements getConsultantAccess() {
+		return pConsultant;
+	}
+	
+	public ParserRule getConsultantRule() {
+		return getConsultantAccess().getRule();
+	}
+
+	////Goals and requirements
+	//Preference:
+	//	"prefers(" first=Option "," last=Option ")";
+	public PreferenceElements getPreferenceAccess() {
+		return pPreference;
+	}
+	
+	public ParserRule getPreferenceRule() {
+		return getPreferenceAccess().getRule();
+	}
+
 	////NE: we could just import this from ALISA
 	//Goal:
 	//	"Goal" name=QualifiedName (":" title=STRING)? ("refines" superType=[Goal])? // short string for title
