@@ -27,10 +27,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Consultant" eSuperTypes="#//Stakeholder"/>
   <eClassifiers xsi:type="ecore:EClass" name="Preference">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="first" eType="#//Option"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="last" eType="#//Option"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="first" eType="#//Option"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="last" eType="#//Option"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Goal">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

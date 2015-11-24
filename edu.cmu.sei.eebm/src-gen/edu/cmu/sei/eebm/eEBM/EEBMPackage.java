@@ -253,7 +253,7 @@ public interface EEBMPackage extends EPackage
   int PREFERENCE = 5;
 
   /**
-   * The feature id for the '<em><b>First</b></em>' containment reference.
+   * The feature id for the '<em><b>First</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -262,7 +262,7 @@ public interface EEBMPackage extends EPackage
   int PREFERENCE__FIRST = 0;
 
   /**
-   * The feature id for the '<em><b>Last</b></em>' containment reference.
+   * The feature id for the '<em><b>Last</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -605,10 +605,10 @@ public interface EEBMPackage extends EPackage
   EClass getPreference();
 
   /**
-   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Preference#getFirst <em>First</em>}'.
+   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.Preference#getFirst <em>First</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>First</em>'.
+   * @return the meta object for the reference '<em>First</em>'.
    * @see edu.cmu.sei.eebm.eEBM.Preference#getFirst()
    * @see #getPreference()
    * @generated
@@ -616,10 +616,10 @@ public interface EEBMPackage extends EPackage
   EReference getPreference_First();
 
   /**
-   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Preference#getLast <em>Last</em>}'.
+   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.Preference#getLast <em>Last</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Last</em>'.
+   * @return the meta object for the reference '<em>Last</em>'.
    * @see edu.cmu.sei.eebm.eEBM.Preference#getLast()
    * @see #getPreference()
    * @generated
@@ -934,7 +934,7 @@ public interface EEBMPackage extends EPackage
     EClass PREFERENCE = eINSTANCE.getPreference();
 
     /**
-     * The meta object literal for the '<em><b>First</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>First</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -942,7 +942,7 @@ public interface EEBMPackage extends EPackage
     EReference PREFERENCE__FIRST = eINSTANCE.getPreference_First();
 
     /**
-     * The meta object literal for the '<em><b>Last</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Last</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

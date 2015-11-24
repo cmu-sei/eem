@@ -30,8 +30,8 @@
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//Consultant"/>
     <genClasses ecoreClass="EEBM.ecore#//Preference">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/first"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/last"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/first"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/last"/>
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//Goal">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/name"/>

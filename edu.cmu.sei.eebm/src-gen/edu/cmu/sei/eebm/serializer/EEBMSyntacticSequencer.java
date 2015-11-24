@@ -24,6 +24,8 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_3_1_a;
 	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_3_1_p;
 	protected AbstractElementAlias match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q;
+	protected AbstractElementAlias match_Option_PriorityKeyword_4_0_1_a;
+	protected AbstractElementAlias match_Option_PriorityKeyword_4_0_1_p;
 	protected AbstractElementAlias match_XBlockExpression_SemicolonKeyword_2_1_q;
 	protected AbstractElementAlias match_XExpressionInClosure_SemicolonKeyword_1_1_q;
 	protected AbstractElementAlias match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q;
@@ -37,6 +39,8 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Goal_RightSquareBracketKeyword_3_1_a = new TokenAlias(true, true, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1());
 		match_Goal_RightSquareBracketKeyword_3_1_p = new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1());
 		match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q = new GroupAlias(false, true, new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1()), new TokenAlias(false, false, grammarAccess.getGoalAccess().getIssuesKeyword_3_0_0()));
+		match_Option_PriorityKeyword_4_0_1_a = new TokenAlias(true, true, grammarAccess.getOptionAccess().getPriorityKeyword_4_0_1());
+		match_Option_PriorityKeyword_4_0_1_p = new TokenAlias(true, false, grammarAccess.getOptionAccess().getPriorityKeyword_4_0_1());
 		match_XBlockExpression_SemicolonKeyword_2_1_q = new TokenAlias(false, true, grammarAccess.getXBlockExpressionAccess().getSemicolonKeyword_2_1());
 		match_XExpressionInClosure_SemicolonKeyword_1_1_q = new TokenAlias(false, true, grammarAccess.getXExpressionInClosureAccess().getSemicolonKeyword_1_1());
 		match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getXFunctionTypeRefAccess().getLeftParenthesisKeyword_0_0()), new TokenAlias(false, false, grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()));
@@ -101,6 +105,10 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Goal_RightSquareBracketKeyword_3_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q.equals(syntax))
 				emit_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Option_PriorityKeyword_4_0_1_a.equals(syntax))
+				emit_Option_PriorityKeyword_4_0_1_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Option_PriorityKeyword_4_0_1_p.equals(syntax))
+				emit_Option_PriorityKeyword_4_0_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_XBlockExpression_SemicolonKeyword_2_1_q.equals(syntax))
 				emit_XBlockExpression_SemicolonKeyword_2_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_XExpressionInClosure_SemicolonKeyword_1_1_q.equals(syntax))
@@ -184,6 +192,38 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     issues+=STRING (ambiguity) issues+=STRING
 	 */
 	protected void emit_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     'priority'*
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     name=QualifiedName '[' (ambiguity) ']' (rule end)
+	 *     name=QualifiedName '[' (ambiguity) description=Description
+	 *     name=QualifiedName '[' (ambiguity) priority=PriorityEnum
+	 *     priority=PriorityEnum (ambiguity) ']' (rule end)
+	 *     priority=PriorityEnum (ambiguity) description=Description
+	 *     priority=PriorityEnum (ambiguity) priority=PriorityEnum
+	 *     title=STRING '[' (ambiguity) ']' (rule end)
+	 *     title=STRING '[' (ambiguity) description=Description
+	 *     title=STRING '[' (ambiguity) priority=PriorityEnum
+	 */
+	protected void emit_Option_PriorityKeyword_4_0_1_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     'priority'+
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     description=Description (ambiguity) ']' (rule end)
+	 *     description=Description (ambiguity) description=Description
+	 *     description=Description (ambiguity) priority=PriorityEnum
+	 */
+	protected void emit_Option_PriorityKeyword_4_0_1_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

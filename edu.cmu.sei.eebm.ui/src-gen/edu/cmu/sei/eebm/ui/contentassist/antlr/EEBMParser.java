@@ -83,7 +83,8 @@ public class EEBMParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRoadmapAccess().getGroup_0(), "rule__Roadmap__Group_0__0");
 					put(grammarAccess.getOptionAccess().getGroup(), "rule__Option__Group__0");
 					put(grammarAccess.getOptionAccess().getGroup_2(), "rule__Option__Group_2__0");
-					put(grammarAccess.getParticipantAccess().getGroup_1(), "rule__Participant__Group_1__0");
+					put(grammarAccess.getOptionAccess().getGroup_4_0(), "rule__Option__Group_4_0__0");
+					put(grammarAccess.getParticipantAccess().getGroup_0(), "rule__Participant__Group_0__0");
 					put(grammarAccess.getConsultantAccess().getGroup(), "rule__Consultant__Group__0");
 					put(grammarAccess.getPreferenceAccess().getGroup(), "rule__Preference__Group__0");
 					put(grammarAccess.getGoalAccess().getGroup_0(), "rule__Goal__Group_0__0");
@@ -277,10 +278,10 @@ public class EEBMParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRoadmapAccess().getPartsAssignment_1(), "rule__Roadmap__PartsAssignment_1");
 					put(grammarAccess.getOptionAccess().getNameAssignment_1(), "rule__Option__NameAssignment_1");
 					put(grammarAccess.getOptionAccess().getTitleAssignment_2_1(), "rule__Option__TitleAssignment_2_1");
-					put(grammarAccess.getOptionAccess().getDescriptionAssignment_4_0(), "rule__Option__DescriptionAssignment_4_0");
+					put(grammarAccess.getOptionAccess().getDescriptionAssignment_4_0_0(), "rule__Option__DescriptionAssignment_4_0_0");
 					put(grammarAccess.getOptionAccess().getPriorityAssignment_4_1(), "rule__Option__PriorityAssignment_4_1");
-					put(grammarAccess.getParticipantAccess().getPreferencesAssignment_0(), "rule__Participant__PreferencesAssignment_0");
-					put(grammarAccess.getParticipantAccess().getNameAssignment_1_1(), "rule__Participant__NameAssignment_1_1");
+					put(grammarAccess.getParticipantAccess().getNameAssignment_0_1(), "rule__Participant__NameAssignment_0_1");
+					put(grammarAccess.getParticipantAccess().getPreferencesAssignment_1(), "rule__Participant__PreferencesAssignment_1");
 					put(grammarAccess.getConsultantAccess().getNameAssignment_1(), "rule__Consultant__NameAssignment_1");
 					put(grammarAccess.getPreferenceAccess().getFirstAssignment_1(), "rule__Preference__FirstAssignment_1");
 					put(grammarAccess.getPreferenceAccess().getLastAssignment_3(), "rule__Preference__LastAssignment_3");

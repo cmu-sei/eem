@@ -231,10 +231,10 @@ ruleOption returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getOptionAccess().getUnorderedGroup_4(), 0);
 	 				}
-					({true}?=>(
+					({true}?=>((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getOptionAccess().getDescriptionDescriptionParserRuleCall_4_0_0()); 
+	        newCompositeNode(grammarAccess.getOptionAccess().getDescriptionDescriptionParserRuleCall_4_0_0_0()); 
 	    }
 		lv_description_6_0=ruleDescription		{
 	        if ($current==null) {
@@ -249,6 +249,10 @@ ruleOption returns [EObject current=null]
 	    }
 
 )
+)?	otherlv_7='priority' 
+    {
+    	newLeafNode(otherlv_7, grammarAccess.getOptionAccess().getPriorityKeyword_4_0_1());
+    }
 ))
 					{ 
 	 				  getUnorderedGroupHelper().returnFromSelection(grammarAccess.getOptionAccess().getUnorderedGroup_4());
@@ -266,14 +270,14 @@ ruleOption returns [EObject current=null]
 		{ 
 	        newCompositeNode(grammarAccess.getOptionAccess().getPriorityPriorityEnumEnumRuleCall_4_1_0()); 
 	    }
-		lv_priority_7_0=rulePriorityEnum		{
+		lv_priority_8_0=rulePriorityEnum		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getOptionRule());
 	        }
        		set(
        			$current, 
        			"priority",
-        		lv_priority_7_0, 
+        		lv_priority_8_0, 
         		"PriorityEnum");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -286,16 +290,17 @@ ruleOption returns [EObject current=null]
  				)
 			)  
 
-		)*	
+		)+
+	  	{getUnorderedGroupHelper().canLeave(grammarAccess.getOptionAccess().getUnorderedGroup_4())}?	
 	)
 )
 	{ 
 	  getUnorderedGroupHelper().leave(grammarAccess.getOptionAccess().getUnorderedGroup_4());
 	}
 
-)	otherlv_8=']' 
+)	otherlv_9=']' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getOptionAccess().getRightSquareBracketKeyword_5());
+    	newLeafNode(otherlv_9, grammarAccess.getOptionAccess().getRightSquareBracketKeyword_5());
     }
 )
 ;
@@ -372,25 +377,29 @@ ruleParticipant returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getParticipantAccess().getUnorderedGroup(), 0);
 	 				}
-					({true}?=>(
+					({true}?=>(	otherlv_1='Participant' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getParticipantAccess().getParticipantKeyword_0_0());
+    }
 (
-		{ 
-	        newCompositeNode(grammarAccess.getParticipantAccess().getPreferencesPreferenceParserRuleCall_0_0()); 
-	    }
-		lv_preferences_1_0=rulePreference		{
+(
+		lv_name_2_0=RULE_ID
+		{
+			newLeafNode(lv_name_2_0, grammarAccess.getParticipantAccess().getNameIDTerminalRuleCall_0_1_0()); 
+		}
+		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getParticipantRule());
+	            $current = createModelElement(grammarAccess.getParticipantRule());
 	        }
-       		add(
+       		setWithLastConsumed(
        			$current, 
-       			"preferences",
-        		lv_preferences_1_0, 
-        		"Preference");
-	        afterParserOrEnumRuleCall();
+       			"name",
+        		lv_name_2_0, 
+        		"ID");
 	    }
 
 )
-))
+)))
 					{ 
 	 				  getUnorderedGroupHelper().returnFromSelection(grammarAccess.getParticipantAccess().getUnorderedGroup());
 	 				}
@@ -402,29 +411,25 @@ ruleParticipant returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getParticipantAccess().getUnorderedGroup(), 1);
 	 				}
-					({true}?=>(	otherlv_2='Participant' 
-    {
-    	newLeafNode(otherlv_2, grammarAccess.getParticipantAccess().getParticipantKeyword_1_0());
-    }
+					({true}?=>(
 (
-(
-		lv_name_3_0=RULE_ID
-		{
-			newLeafNode(lv_name_3_0, grammarAccess.getParticipantAccess().getNameIDTerminalRuleCall_1_1_0()); 
-		}
-		{
+		{ 
+	        newCompositeNode(grammarAccess.getParticipantAccess().getPreferencesPreferenceParserRuleCall_1_0()); 
+	    }
+		lv_preferences_3_0=rulePreference		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getParticipantRule());
+	            $current = createModelElementForParent(grammarAccess.getParticipantRule());
 	        }
-       		setWithLastConsumed(
+       		add(
        			$current, 
-       			"name",
-        		lv_name_3_0, 
-        		"ID");
+       			"preferences",
+        		lv_preferences_3_0, 
+        		"Preference");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)))
+))
 					{ 
 	 				  getUnorderedGroupHelper().returnFromSelection(grammarAccess.getParticipantAccess().getUnorderedGroup());
 	 				}
@@ -509,20 +514,15 @@ rulePreference returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getPreferenceAccess().getFirstOptionParserRuleCall_1_0()); 
-	    }
-		lv_first_1_0=ruleOption		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getPreferenceRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getPreferenceRule());
 	        }
-       		set(
-       			$current, 
-       			"first",
-        		lv_first_1_0, 
-        		"Option");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_1=RULE_ID
+	{
+		newLeafNode(otherlv_1, grammarAccess.getPreferenceAccess().getFirstOptionCrossReference_1_0()); 
+	}
 
 )
 )	otherlv_2=',' 
@@ -531,20 +531,15 @@ rulePreference returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getPreferenceAccess().getLastOptionParserRuleCall_3_0()); 
-	    }
-		lv_last_3_0=ruleOption		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getPreferenceRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getPreferenceRule());
 	        }
-       		set(
-       			$current, 
-       			"last",
-        		lv_last_3_0, 
-        		"Option");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_3=RULE_ID
+	{
+		newLeafNode(otherlv_3, grammarAccess.getPreferenceAccess().getLastOptionCrossReference_3_0()); 
+	}
 
 )
 )	otherlv_4=')' 

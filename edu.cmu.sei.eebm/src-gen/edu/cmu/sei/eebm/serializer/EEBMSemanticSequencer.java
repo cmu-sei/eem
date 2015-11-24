@@ -408,7 +408,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (preferences+=Preference? name=ID)
+	 *     (name=ID preferences+=Preference?)
 	 */
 	protected void sequence_Participant(EObject context, Participant semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -417,7 +417,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (first=Option last=Option)
+	 *     (first=[Option|ID] last=[Option|ID])
 	 */
 	protected void sequence_Preference(EObject context, Preference semanticObject) {
 		if(errorAcceptor != null) {
@@ -428,8 +428,8 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getPreferenceAccess().getFirstOptionParserRuleCall_1_0(), semanticObject.getFirst());
-		feeder.accept(grammarAccess.getPreferenceAccess().getLastOptionParserRuleCall_3_0(), semanticObject.getLast());
+		feeder.accept(grammarAccess.getPreferenceAccess().getFirstOptionIDTerminalRuleCall_1_0_1(), semanticObject.getFirst());
+		feeder.accept(grammarAccess.getPreferenceAccess().getLastOptionIDTerminalRuleCall_3_0_1(), semanticObject.getLast());
 		feeder.finish();
 	}
 	

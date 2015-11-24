@@ -7,7 +7,6 @@ import edu.cmu.sei.eebm.eEBM.Option;
 import edu.cmu.sei.eebm.eEBM.Preference;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 public class PreferenceImpl extends MinimalEObjectImpl.Container implements Preference
 {
   /**
-   * The cached value of the '{@link #getFirst() <em>First</em>}' containment reference.
+   * The cached value of the '{@link #getFirst() <em>First</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getFirst()
@@ -42,7 +41,7 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
   protected Option first;
 
   /**
-   * The cached value of the '{@link #getLast() <em>Last</em>}' containment reference.
+   * The cached value of the '{@link #getLast() <em>Last</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getLast()
@@ -79,6 +78,16 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    */
   public Option getFirst()
   {
+    if (first != null && first.eIsProxy())
+    {
+      InternalEObject oldFirst = (InternalEObject)first;
+      first = (Option)eResolveProxy(oldFirst);
+      if (first != oldFirst)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, EEBMPackage.PREFERENCE__FIRST, oldFirst, first));
+      }
+    }
     return first;
   }
 
@@ -87,16 +96,9 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetFirst(Option newFirst, NotificationChain msgs)
+  public Option basicGetFirst()
   {
-    Option oldFirst = first;
-    first = newFirst;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__FIRST, oldFirst, newFirst);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
+    return first;
   }
 
   /**
@@ -106,18 +108,10 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    */
   public void setFirst(Option newFirst)
   {
-    if (newFirst != first)
-    {
-      NotificationChain msgs = null;
-      if (first != null)
-        msgs = ((InternalEObject)first).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.PREFERENCE__FIRST, null, msgs);
-      if (newFirst != null)
-        msgs = ((InternalEObject)newFirst).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.PREFERENCE__FIRST, null, msgs);
-      msgs = basicSetFirst(newFirst, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__FIRST, newFirst, newFirst));
+    Option oldFirst = first;
+    first = newFirst;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__FIRST, oldFirst, first));
   }
 
   /**
@@ -127,6 +121,16 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    */
   public Option getLast()
   {
+    if (last != null && last.eIsProxy())
+    {
+      InternalEObject oldLast = (InternalEObject)last;
+      last = (Option)eResolveProxy(oldLast);
+      if (last != oldLast)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, EEBMPackage.PREFERENCE__LAST, oldLast, last));
+      }
+    }
     return last;
   }
 
@@ -135,16 +139,9 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetLast(Option newLast, NotificationChain msgs)
+  public Option basicGetLast()
   {
-    Option oldLast = last;
-    last = newLast;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__LAST, oldLast, newLast);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
+    return last;
   }
 
   /**
@@ -154,36 +151,10 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    */
   public void setLast(Option newLast)
   {
-    if (newLast != last)
-    {
-      NotificationChain msgs = null;
-      if (last != null)
-        msgs = ((InternalEObject)last).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.PREFERENCE__LAST, null, msgs);
-      if (newLast != null)
-        msgs = ((InternalEObject)newLast).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.PREFERENCE__LAST, null, msgs);
-      msgs = basicSetLast(newLast, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__LAST, newLast, newLast));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-  {
-    switch (featureID)
-    {
-      case EEBMPackage.PREFERENCE__FIRST:
-        return basicSetFirst(null, msgs);
-      case EEBMPackage.PREFERENCE__LAST:
-        return basicSetLast(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
+    Option oldLast = last;
+    last = newLast;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__LAST, oldLast, last));
   }
 
   /**
@@ -197,9 +168,11 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
     switch (featureID)
     {
       case EEBMPackage.PREFERENCE__FIRST:
-        return getFirst();
+        if (resolve) return getFirst();
+        return basicGetFirst();
       case EEBMPackage.PREFERENCE__LAST:
-        return getLast();
+        if (resolve) return getLast();
+        return basicGetLast();
     }
     return super.eGet(featureID, resolve, coreType);
   }
