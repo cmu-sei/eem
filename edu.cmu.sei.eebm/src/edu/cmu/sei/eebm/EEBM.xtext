@@ -14,7 +14,7 @@ Roadmap:
 Option: 'Option' name=QualifiedName (':' title=STRING)? 
 	'[' 
 	( description=Description?
-	  &priority=PriorityEnum?	
+	  'priority' &priority=PriorityEnum?	
 	)
 	']'
 ;
@@ -29,8 +29,8 @@ Stakeholder:
 
 Participant:
 	(
-		(preferences += Preference)?
-		&('Participant' name=ID)
+		('Participant' name=ID)
+		& (preferences += Preference)?
 	)
 ;
 
@@ -42,7 +42,7 @@ Consultant:
 //Goals and requirements
 
 Preference: 
-	'prefers(' first=Option ',' last=Option ')'
+	'prefers(' first=[Option] ',' last=[Option] ')' //TODO: verify these exist and are not equal
 ;
 
 //NE: we could just import this from ALISA

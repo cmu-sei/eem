@@ -5,7 +5,10 @@ Goal hp : 'high performance' [
 ]
 
 Option opt : 'use Oracle' [
-		priority=HIGH
+		priority HIGH
+]
+Option opt2 : 'use Oracle' [
+		priority HIGH
 ]
 
-Participant neil prefers(A,B)
+Participant neil prefers(opt,opt2)
