@@ -6,12 +6,14 @@ package edu.cmu.sei.eebm.serializer;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import edu.cmu.sei.eebm.eEBM.Consultant;
+import edu.cmu.sei.eebm.eEBM.Decision;
 import edu.cmu.sei.eebm.eEBM.Description;
 import edu.cmu.sei.eebm.eEBM.DescriptionElement;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.Goal;
 import edu.cmu.sei.eebm.eEBM.Option;
 import edu.cmu.sei.eebm.eEBM.Participant;
+import edu.cmu.sei.eebm.eEBM.Path;
 import edu.cmu.sei.eebm.eEBM.Preference;
 import edu.cmu.sei.eebm.eEBM.Rationale;
 import edu.cmu.sei.eebm.eEBM.Roadmap;
@@ -85,6 +87,9 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 			case EEBMPackage.CONSULTANT:
 				sequence_Consultant(context, (Consultant) semanticObject); 
 				return; 
+			case EEBMPackage.DECISION:
+				sequence_Decision(context, (Decision) semanticObject); 
+				return; 
 			case EEBMPackage.DESCRIPTION:
 				sequence_Description(context, (Description) semanticObject); 
 				return; 
@@ -99,6 +104,9 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 				return; 
 			case EEBMPackage.PARTICIPANT:
 				sequence_Participant(context, (Participant) semanticObject); 
+				return; 
+			case EEBMPackage.PATH:
+				sequence_Path(context, (Path) semanticObject); 
 				return; 
 			case EEBMPackage.PREFERENCE:
 				sequence_Preference(context, (Preference) semanticObject); 
@@ -357,6 +365,22 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
+	 *     (
+	 *         name=ID 
+	 *         rationale=STRING 
+	 *         responsible=[Stakeholder|ID]? 
+	 *         response_measure=STRING? 
+	 *         due=STRING? 
+	 *         (options+=[Option|ID] options+=[Option|ID]*)?
+	 *     )
+	 */
+	protected void sequence_Decision(EObject context, Decision semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
 	 *     text=STRING
 	 */
 	protected void sequence_DescriptionElement(EObject context, DescriptionElement semanticObject) {
@@ -388,8 +412,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	 *         superType=[Goal|ID]? 
 	 *         description=Description? 
 	 *         rationale=Rationale? 
-	 *         docReference+=STRING? 
-	 *         issues+=STRING*
+	 *         docReference+=STRING?
 	 *     )
 	 */
 	protected void sequence_Goal(EObject context, Goal semanticObject) {
@@ -399,7 +422,18 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=QualifiedName title=STRING? description=Description? priority=PriorityEnum?)
+	 *     (
+	 *         name=QualifiedName 
+	 *         title=STRING? 
+	 *         description=Description? 
+	 *         refinesReference+=[IntentionalElement|ID]* 
+	 *         conflictsReference+=[IntentionalElement|ID]* 
+	 *         priority=PriorityEnum? 
+	 *         time=INT? 
+	 *         cost=INT? 
+	 *         date=STRING? 
+	 *         cod=INT?
+	 *     )
 	 */
 	protected void sequence_Option(EObject context, Option semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -411,6 +445,15 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	 *     (name=ID preferences+=Preference?)
 	 */
 	protected void sequence_Participant(EObject context, Participant semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID path+=Option+)
+	 */
+	protected void sequence_Path(EObject context, Path semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -452,7 +495,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name='Roadmap'? (parts+=Goal | parts+=Stakeholder | parts+=Option)+)
+	 *     (name='Roadmap'? components+=IntentionalElement+ people+=Stakeholder+ (trajectories+=Decision | trajectories+=Path)+)
 	 */
 	protected void sequence_Roadmap(EObject context, Roadmap semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

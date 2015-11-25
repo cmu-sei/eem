@@ -2,19 +2,22 @@
  */
 package edu.cmu.sei.eebm.eEBM.impl;
 
-import edu.cmu.sei.eebm.eEBM.Description;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
+import edu.cmu.sei.eebm.eEBM.IntentionalElement;
 import edu.cmu.sei.eebm.eEBM.Option;
 import edu.cmu.sei.eebm.eEBM.PriorityEnum;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,65 +27,38 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getName <em>Name</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getTitle <em>Title</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getRefinesReference <em>Refines Reference</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getConflictsReference <em>Conflicts Reference</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getPriority <em>Priority</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getTime <em>Time</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getCost <em>Cost</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getDate <em>Date</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl#getCod <em>Cod</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class OptionImpl extends MinimalEObjectImpl.Container implements Option
+public class OptionImpl extends IntentionalElementImpl implements Option
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getRefinesReference() <em>Refines Reference</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getRefinesReference()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
+  protected EList<IntentionalElement> refinesReference;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getConflictsReference() <em>Conflicts Reference</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getConflictsReference()
    * @generated
    * @ordered
    */
-  protected String name = NAME_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getTitle() <em>Title</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTitle()
-   * @generated
-   * @ordered
-   */
-  protected static final String TITLE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getTitle() <em>Title</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTitle()
-   * @generated
-   * @ordered
-   */
-  protected String title = TITLE_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDescription()
-   * @generated
-   * @ordered
-   */
-  protected Description description;
+  protected EList<IntentionalElement> conflictsReference;
 
   /**
    * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
@@ -103,6 +79,86 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * @ordered
    */
   protected PriorityEnum priority = PRIORITY_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getTime() <em>Time</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTime()
+   * @generated
+   * @ordered
+   */
+  protected static final int TIME_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getTime() <em>Time</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTime()
+   * @generated
+   * @ordered
+   */
+  protected int time = TIME_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getCost() <em>Cost</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCost()
+   * @generated
+   * @ordered
+   */
+  protected static final int COST_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getCost() <em>Cost</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCost()
+   * @generated
+   * @ordered
+   */
+  protected int cost = COST_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getDate() <em>Date</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDate()
+   * @generated
+   * @ordered
+   */
+  protected static final String DATE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getDate() <em>Date</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDate()
+   * @generated
+   * @ordered
+   */
+  protected String date = DATE_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getCod() <em>Cod</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCod()
+   * @generated
+   * @ordered
+   */
+  protected static final int COD_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getCod() <em>Cod</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCod()
+   * @generated
+   * @ordered
+   */
+  protected int cod = COD_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -130,72 +186,13 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public EList<IntentionalElement> getRefinesReference()
   {
-    return name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setName(String newName)
-  {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__NAME, oldName, name));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getTitle()
-  {
-    return title;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setTitle(String newTitle)
-  {
-    String oldTitle = title;
-    title = newTitle;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__TITLE, oldTitle, title));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Description getDescription()
-  {
-    return description;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NotificationChain basicSetDescription(Description newDescription, NotificationChain msgs)
-  {
-    Description oldDescription = description;
-    description = newDescription;
-    if (eNotificationRequired())
+    if (refinesReference == null)
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__DESCRIPTION, oldDescription, newDescription);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      refinesReference = new EObjectResolvingEList<IntentionalElement>(IntentionalElement.class, this, EEBMPackage.OPTION__REFINES_REFERENCE);
     }
-    return msgs;
+    return refinesReference;
   }
 
   /**
@@ -203,20 +200,13 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setDescription(Description newDescription)
+  public EList<IntentionalElement> getConflictsReference()
   {
-    if (newDescription != description)
+    if (conflictsReference == null)
     {
-      NotificationChain msgs = null;
-      if (description != null)
-        msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.OPTION__DESCRIPTION, null, msgs);
-      if (newDescription != null)
-        msgs = ((InternalEObject)newDescription).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.OPTION__DESCRIPTION, null, msgs);
-      msgs = basicSetDescription(newDescription, msgs);
-      if (msgs != null) msgs.dispatch();
+      conflictsReference = new EObjectResolvingEList<IntentionalElement>(IntentionalElement.class, this, EEBMPackage.OPTION__CONFLICTS_REFERENCE);
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__DESCRIPTION, newDescription, newDescription));
+    return conflictsReference;
   }
 
   /**
@@ -247,15 +237,91 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  public int getTime()
   {
-    switch (featureID)
-    {
-      case EEBMPackage.OPTION__DESCRIPTION:
-        return basicSetDescription(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
+    return time;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setTime(int newTime)
+  {
+    int oldTime = time;
+    time = newTime;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__TIME, oldTime, time));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public int getCost()
+  {
+    return cost;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setCost(int newCost)
+  {
+    int oldCost = cost;
+    cost = newCost;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__COST, oldCost, cost));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getDate()
+  {
+    return date;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setDate(String newDate)
+  {
+    String oldDate = date;
+    date = newDate;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__DATE, oldDate, date));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public int getCod()
+  {
+    return cod;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setCod(int newCod)
+  {
+    int oldCod = cod;
+    cod = newCod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.OPTION__COD, oldCod, cod));
   }
 
   /**
@@ -268,14 +334,20 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
   {
     switch (featureID)
     {
-      case EEBMPackage.OPTION__NAME:
-        return getName();
-      case EEBMPackage.OPTION__TITLE:
-        return getTitle();
-      case EEBMPackage.OPTION__DESCRIPTION:
-        return getDescription();
+      case EEBMPackage.OPTION__REFINES_REFERENCE:
+        return getRefinesReference();
+      case EEBMPackage.OPTION__CONFLICTS_REFERENCE:
+        return getConflictsReference();
       case EEBMPackage.OPTION__PRIORITY:
         return getPriority();
+      case EEBMPackage.OPTION__TIME:
+        return getTime();
+      case EEBMPackage.OPTION__COST:
+        return getCost();
+      case EEBMPackage.OPTION__DATE:
+        return getDate();
+      case EEBMPackage.OPTION__COD:
+        return getCod();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -285,22 +357,34 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case EEBMPackage.OPTION__NAME:
-        setName((String)newValue);
+      case EEBMPackage.OPTION__REFINES_REFERENCE:
+        getRefinesReference().clear();
+        getRefinesReference().addAll((Collection<? extends IntentionalElement>)newValue);
         return;
-      case EEBMPackage.OPTION__TITLE:
-        setTitle((String)newValue);
-        return;
-      case EEBMPackage.OPTION__DESCRIPTION:
-        setDescription((Description)newValue);
+      case EEBMPackage.OPTION__CONFLICTS_REFERENCE:
+        getConflictsReference().clear();
+        getConflictsReference().addAll((Collection<? extends IntentionalElement>)newValue);
         return;
       case EEBMPackage.OPTION__PRIORITY:
         setPriority((PriorityEnum)newValue);
+        return;
+      case EEBMPackage.OPTION__TIME:
+        setTime((Integer)newValue);
+        return;
+      case EEBMPackage.OPTION__COST:
+        setCost((Integer)newValue);
+        return;
+      case EEBMPackage.OPTION__DATE:
+        setDate((String)newValue);
+        return;
+      case EEBMPackage.OPTION__COD:
+        setCod((Integer)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -316,17 +400,26 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
   {
     switch (featureID)
     {
-      case EEBMPackage.OPTION__NAME:
-        setName(NAME_EDEFAULT);
+      case EEBMPackage.OPTION__REFINES_REFERENCE:
+        getRefinesReference().clear();
         return;
-      case EEBMPackage.OPTION__TITLE:
-        setTitle(TITLE_EDEFAULT);
-        return;
-      case EEBMPackage.OPTION__DESCRIPTION:
-        setDescription((Description)null);
+      case EEBMPackage.OPTION__CONFLICTS_REFERENCE:
+        getConflictsReference().clear();
         return;
       case EEBMPackage.OPTION__PRIORITY:
         setPriority(PRIORITY_EDEFAULT);
+        return;
+      case EEBMPackage.OPTION__TIME:
+        setTime(TIME_EDEFAULT);
+        return;
+      case EEBMPackage.OPTION__COST:
+        setCost(COST_EDEFAULT);
+        return;
+      case EEBMPackage.OPTION__DATE:
+        setDate(DATE_EDEFAULT);
+        return;
+      case EEBMPackage.OPTION__COD:
+        setCod(COD_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -342,14 +435,20 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
   {
     switch (featureID)
     {
-      case EEBMPackage.OPTION__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case EEBMPackage.OPTION__TITLE:
-        return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
-      case EEBMPackage.OPTION__DESCRIPTION:
-        return description != null;
+      case EEBMPackage.OPTION__REFINES_REFERENCE:
+        return refinesReference != null && !refinesReference.isEmpty();
+      case EEBMPackage.OPTION__CONFLICTS_REFERENCE:
+        return conflictsReference != null && !conflictsReference.isEmpty();
       case EEBMPackage.OPTION__PRIORITY:
         return priority != PRIORITY_EDEFAULT;
+      case EEBMPackage.OPTION__TIME:
+        return time != TIME_EDEFAULT;
+      case EEBMPackage.OPTION__COST:
+        return cost != COST_EDEFAULT;
+      case EEBMPackage.OPTION__DATE:
+        return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
+      case EEBMPackage.OPTION__COD:
+        return cod != COD_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -365,12 +464,16 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", title: ");
-    result.append(title);
-    result.append(", priority: ");
+    result.append(" (priority: ");
     result.append(priority);
+    result.append(", time: ");
+    result.append(time);
+    result.append(", cost: ");
+    result.append(cost);
+    result.append(", date: ");
+    result.append(date);
+    result.append(", cod: ");
+    result.append(cod);
     result.append(')');
     return result.toString();
   }

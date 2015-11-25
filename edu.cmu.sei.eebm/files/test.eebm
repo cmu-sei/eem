@@ -6,9 +6,21 @@ Goal hp : 'high performance' [
 
 Option opt : 'use Oracle' [
 		priority HIGH
+		refines hp
 ]
-Option opt2 : 'use Oracle' [
+
+Option opt2 : 'use IBM' [
 		priority HIGH
+		cost 14
+		completion '5/11/2015'
+		refines hp
+		conflicts opt
 ]
 
 Participant neil prefers(opt,opt2)
+
+Decision d [
+	rationale "To demonstrate this example file"
+	response measure '5 ms'
+	options: {opt,opt2}
+]

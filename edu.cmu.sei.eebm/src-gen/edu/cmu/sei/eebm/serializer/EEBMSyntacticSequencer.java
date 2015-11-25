@@ -21,11 +21,13 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected EEBMGrammarAccess grammarAccess;
-	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_3_1_a;
-	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_3_1_p;
-	protected AbstractElementAlias match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q;
-	protected AbstractElementAlias match_Option_PriorityKeyword_4_0_1_a;
-	protected AbstractElementAlias match_Option_PriorityKeyword_4_0_1_p;
+	protected AbstractElementAlias match_Decision_OptionsKeyword_3_4_0_a;
+	protected AbstractElementAlias match_Decision_OptionsKeyword_3_4_0_p;
+	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_2_1_a;
+	protected AbstractElementAlias match_Goal_RightSquareBracketKeyword_2_1_p;
+	protected AbstractElementAlias match_Option_PriorityKeyword_4_3_0_a;
+	protected AbstractElementAlias match_Option___PriorityKeyword_4_3_0_a_ConflictsKeyword_4_2_0__q;
+	protected AbstractElementAlias match_Option___PriorityKeyword_4_3_0_a_RefinesKeyword_4_1_0__q;
 	protected AbstractElementAlias match_XBlockExpression_SemicolonKeyword_2_1_q;
 	protected AbstractElementAlias match_XExpressionInClosure_SemicolonKeyword_1_1_q;
 	protected AbstractElementAlias match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q;
@@ -36,11 +38,13 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (EEBMGrammarAccess) access;
-		match_Goal_RightSquareBracketKeyword_3_1_a = new TokenAlias(true, true, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1());
-		match_Goal_RightSquareBracketKeyword_3_1_p = new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1());
-		match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q = new GroupAlias(false, true, new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_3_1()), new TokenAlias(false, false, grammarAccess.getGoalAccess().getIssuesKeyword_3_0_0()));
-		match_Option_PriorityKeyword_4_0_1_a = new TokenAlias(true, true, grammarAccess.getOptionAccess().getPriorityKeyword_4_0_1());
-		match_Option_PriorityKeyword_4_0_1_p = new TokenAlias(true, false, grammarAccess.getOptionAccess().getPriorityKeyword_4_0_1());
+		match_Decision_OptionsKeyword_3_4_0_a = new TokenAlias(true, true, grammarAccess.getDecisionAccess().getOptionsKeyword_3_4_0());
+		match_Decision_OptionsKeyword_3_4_0_p = new TokenAlias(true, false, grammarAccess.getDecisionAccess().getOptionsKeyword_3_4_0());
+		match_Goal_RightSquareBracketKeyword_2_1_a = new TokenAlias(true, true, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_2_1());
+		match_Goal_RightSquareBracketKeyword_2_1_p = new TokenAlias(true, false, grammarAccess.getGoalAccess().getRightSquareBracketKeyword_2_1());
+		match_Option_PriorityKeyword_4_3_0_a = new TokenAlias(true, true, grammarAccess.getOptionAccess().getPriorityKeyword_4_3_0());
+		match_Option___PriorityKeyword_4_3_0_a_ConflictsKeyword_4_2_0__q = new GroupAlias(false, true, new TokenAlias(true, true, grammarAccess.getOptionAccess().getPriorityKeyword_4_3_0()), new TokenAlias(false, false, grammarAccess.getOptionAccess().getConflictsKeyword_4_2_0()));
+		match_Option___PriorityKeyword_4_3_0_a_RefinesKeyword_4_1_0__q = new GroupAlias(false, true, new TokenAlias(true, true, grammarAccess.getOptionAccess().getPriorityKeyword_4_3_0()), new TokenAlias(false, false, grammarAccess.getOptionAccess().getRefinesKeyword_4_1_0()));
 		match_XBlockExpression_SemicolonKeyword_2_1_q = new TokenAlias(false, true, grammarAccess.getXBlockExpressionAccess().getSemicolonKeyword_2_1());
 		match_XExpressionInClosure_SemicolonKeyword_1_1_q = new TokenAlias(false, true, grammarAccess.getXExpressionInClosureAccess().getSemicolonKeyword_1_1());
 		match_XFunctionTypeRef___LeftParenthesisKeyword_0_0_RightParenthesisKeyword_0_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getXFunctionTypeRefAccess().getLeftParenthesisKeyword_0_0()), new TokenAlias(false, false, grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()));
@@ -99,16 +103,20 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if(match_Goal_RightSquareBracketKeyword_3_1_a.equals(syntax))
-				emit_Goal_RightSquareBracketKeyword_3_1_a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Goal_RightSquareBracketKeyword_3_1_p.equals(syntax))
-				emit_Goal_RightSquareBracketKeyword_3_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q.equals(syntax))
-				emit_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Option_PriorityKeyword_4_0_1_a.equals(syntax))
-				emit_Option_PriorityKeyword_4_0_1_a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Option_PriorityKeyword_4_0_1_p.equals(syntax))
-				emit_Option_PriorityKeyword_4_0_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			if(match_Decision_OptionsKeyword_3_4_0_a.equals(syntax))
+				emit_Decision_OptionsKeyword_3_4_0_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Decision_OptionsKeyword_3_4_0_p.equals(syntax))
+				emit_Decision_OptionsKeyword_3_4_0_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Goal_RightSquareBracketKeyword_2_1_a.equals(syntax))
+				emit_Goal_RightSquareBracketKeyword_2_1_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Goal_RightSquareBracketKeyword_2_1_p.equals(syntax))
+				emit_Goal_RightSquareBracketKeyword_2_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Option_PriorityKeyword_4_3_0_a.equals(syntax))
+				emit_Option_PriorityKeyword_4_3_0_a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Option___PriorityKeyword_4_3_0_a_ConflictsKeyword_4_2_0__q.equals(syntax))
+				emit_Option___PriorityKeyword_4_3_0_a_ConflictsKeyword_4_2_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Option___PriorityKeyword_4_3_0_a_RefinesKeyword_4_1_0__q.equals(syntax))
+				emit_Option___PriorityKeyword_4_3_0_a_RefinesKeyword_4_1_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_XBlockExpression_SemicolonKeyword_2_1_q.equals(syntax))
 				emit_XBlockExpression_SemicolonKeyword_2_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_XExpressionInClosure_SemicolonKeyword_1_1_q.equals(syntax))
@@ -127,46 +135,91 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	/**
 	 * Ambiguous syntax:
+	 *     'options:'*
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     due=STRING (ambiguity) ']' (rule end)
+	 *     due=STRING (ambiguity) 'due' due=STRING
+	 *     due=STRING (ambiguity) 'rationale' rationale=STRING
+	 *     due=STRING (ambiguity) 'response measure' response_measure=STRING
+	 *     due=STRING (ambiguity) 'responsible' responsible=[Stakeholder|ID]
+	 *     name=ID '[' (ambiguity) ']' (rule end)
+	 *     name=ID '[' (ambiguity) 'due' due=STRING
+	 *     name=ID '[' (ambiguity) 'rationale' rationale=STRING
+	 *     name=ID '[' (ambiguity) 'response measure' response_measure=STRING
+	 *     name=ID '[' (ambiguity) 'responsible' responsible=[Stakeholder|ID]
+	 *     options+=[Option|ID] '}' (ambiguity) ']' (rule end)
+	 *     options+=[Option|ID] '}' (ambiguity) 'due' due=STRING
+	 *     options+=[Option|ID] '}' (ambiguity) 'rationale' rationale=STRING
+	 *     options+=[Option|ID] '}' (ambiguity) 'response measure' response_measure=STRING
+	 *     options+=[Option|ID] '}' (ambiguity) 'responsible' responsible=[Stakeholder|ID]
+	 *     rationale=STRING (ambiguity) ']' (rule end)
+	 *     rationale=STRING (ambiguity) 'due' due=STRING
+	 *     rationale=STRING (ambiguity) 'rationale' rationale=STRING
+	 *     rationale=STRING (ambiguity) 'response measure' response_measure=STRING
+	 *     rationale=STRING (ambiguity) 'responsible' responsible=[Stakeholder|ID]
+	 *     response_measure=STRING (ambiguity) ']' (rule end)
+	 *     response_measure=STRING (ambiguity) 'due' due=STRING
+	 *     response_measure=STRING (ambiguity) 'rationale' rationale=STRING
+	 *     response_measure=STRING (ambiguity) 'response measure' response_measure=STRING
+	 *     response_measure=STRING (ambiguity) 'responsible' responsible=[Stakeholder|ID]
+	 *     responsible=[Stakeholder|ID] (ambiguity) ']' (rule end)
+	 *     responsible=[Stakeholder|ID] (ambiguity) 'due' due=STRING
+	 *     responsible=[Stakeholder|ID] (ambiguity) 'rationale' rationale=STRING
+	 *     responsible=[Stakeholder|ID] (ambiguity) 'response measure' response_measure=STRING
+	 *     responsible=[Stakeholder|ID] (ambiguity) 'responsible' responsible=[Stakeholder|ID]
+	 */
+	protected void emit_Decision_OptionsKeyword_3_4_0_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     'options:'+
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     due=STRING (ambiguity) '{' options+=[Option|ID]
+	 *     name=ID '[' (ambiguity) '{' options+=[Option|ID]
+	 *     options+=[Option|ID] '}' (ambiguity) '{' options+=[Option|ID]
+	 *     rationale=STRING (ambiguity) '{' options+=[Option|ID]
+	 *     response_measure=STRING (ambiguity) '{' options+=[Option|ID]
+	 *     responsible=[Stakeholder|ID] (ambiguity) '{' options+=[Option|ID]
+	 */
+	protected void emit_Decision_OptionsKeyword_3_4_0_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
 	 *     ']'*
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) (ambiguity) 'Goal' name=QualifiedName
-	 *     (rule start) (ambiguity) 'issues' issues+=STRING
 	 *     (rule start) (ambiguity) 'see' 'document' docReference+=STRING
 	 *     (rule start) (ambiguity) (rule start)
 	 *     (rule start) (ambiguity) rationale=Rationale
 	 *     description=Description (ambiguity) 'Goal' name=QualifiedName
-	 *     description=Description (ambiguity) 'issues' issues+=STRING
 	 *     description=Description (ambiguity) 'see' 'document' docReference+=STRING
 	 *     description=Description (ambiguity) (rule end)
 	 *     description=Description (ambiguity) rationale=Rationale
-	 *     docReference+=STRING (ambiguity) 'Goal' name=QualifiedName
-	 *     docReference+=STRING (ambiguity) 'issues' issues+=STRING
-	 *     docReference+=STRING (ambiguity) 'see' 'document' docReference+=STRING
-	 *     docReference+=STRING (ambiguity) (rule end)
-	 *     docReference+=STRING (ambiguity) rationale=Rationale
 	 *     name=QualifiedName '[' (ambiguity) 'Goal' name=QualifiedName
-	 *     name=QualifiedName '[' (ambiguity) 'issues' issues+=STRING
 	 *     name=QualifiedName '[' (ambiguity) 'see' 'document' docReference+=STRING
 	 *     name=QualifiedName '[' (ambiguity) (rule end)
 	 *     name=QualifiedName '[' (ambiguity) rationale=Rationale
 	 *     rationale=Rationale (ambiguity) 'Goal' name=QualifiedName
-	 *     rationale=Rationale (ambiguity) 'issues' issues+=STRING
 	 *     rationale=Rationale (ambiguity) 'see' 'document' docReference+=STRING
 	 *     rationale=Rationale (ambiguity) (rule end)
 	 *     rationale=Rationale (ambiguity) rationale=Rationale
 	 *     superType=[Goal|ID] '[' (ambiguity) 'Goal' name=QualifiedName
-	 *     superType=[Goal|ID] '[' (ambiguity) 'issues' issues+=STRING
 	 *     superType=[Goal|ID] '[' (ambiguity) 'see' 'document' docReference+=STRING
 	 *     superType=[Goal|ID] '[' (ambiguity) (rule end)
 	 *     superType=[Goal|ID] '[' (ambiguity) rationale=Rationale
 	 *     title=STRING '[' (ambiguity) 'Goal' name=QualifiedName
-	 *     title=STRING '[' (ambiguity) 'issues' issues+=STRING
 	 *     title=STRING '[' (ambiguity) 'see' 'document' docReference+=STRING
 	 *     title=STRING '[' (ambiguity) (rule end)
 	 *     title=STRING '[' (ambiguity) rationale=Rationale
 	 */
-	protected void emit_Goal_RightSquareBracketKeyword_3_1_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Goal_RightSquareBracketKeyword_2_1_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -175,23 +228,13 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ']'+
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     issues+=STRING (ambiguity) 'Goal' name=QualifiedName
-	 *     issues+=STRING (ambiguity) 'see' 'document' docReference+=STRING
-	 *     issues+=STRING (ambiguity) (rule end)
-	 *     issues+=STRING (ambiguity) rationale=Rationale
+	 *     (rule start) (ambiguity) (rule start)
+	 *     docReference+=STRING (ambiguity) 'Goal' name=QualifiedName
+	 *     docReference+=STRING (ambiguity) 'see' 'document' docReference+=STRING
+	 *     docReference+=STRING (ambiguity) (rule end)
+	 *     docReference+=STRING (ambiguity) rationale=Rationale
 	 */
-	protected void emit_Goal_RightSquareBracketKeyword_3_1_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
-	/**
-	 * Ambiguous syntax:
-	 *     (']'+ 'issues')?
-	 *
-	 * This ambiguous syntax occurs at:
-	 *     issues+=STRING (ambiguity) issues+=STRING
-	 */
-	protected void emit_Goal___RightSquareBracketKeyword_3_1_p_IssuesKeyword_3_0_0__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Goal_RightSquareBracketKeyword_2_1_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -200,30 +243,118 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     'priority'*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     cod=INT (ambiguity) ']' (rule end)
+	 *     cod=INT (ambiguity) 'completion' date=STRING
+	 *     cod=INT (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     cod=INT (ambiguity) 'cost' cost=INT
+	 *     cod=INT (ambiguity) 'delay cost' cod=INT
+	 *     cod=INT (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     cod=INT (ambiguity) 'time' time=INT
+	 *     cod=INT (ambiguity) description=Description
+	 *     cod=INT (ambiguity) priority=PriorityEnum
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) ']' (rule end)
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) 'completion' date=STRING
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) 'cost' cost=INT
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) 'delay cost' cod=INT
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) 'time' time=INT
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) description=Description
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) priority=PriorityEnum
+	 *     cost=INT (ambiguity) ']' (rule end)
+	 *     cost=INT (ambiguity) 'completion' date=STRING
+	 *     cost=INT (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     cost=INT (ambiguity) 'cost' cost=INT
+	 *     cost=INT (ambiguity) 'delay cost' cod=INT
+	 *     cost=INT (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     cost=INT (ambiguity) 'time' time=INT
+	 *     cost=INT (ambiguity) description=Description
+	 *     cost=INT (ambiguity) priority=PriorityEnum
+	 *     date=STRING (ambiguity) ']' (rule end)
+	 *     date=STRING (ambiguity) 'completion' date=STRING
+	 *     date=STRING (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     date=STRING (ambiguity) 'cost' cost=INT
+	 *     date=STRING (ambiguity) 'delay cost' cod=INT
+	 *     date=STRING (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     date=STRING (ambiguity) 'time' time=INT
+	 *     date=STRING (ambiguity) description=Description
+	 *     date=STRING (ambiguity) priority=PriorityEnum
+	 *     description=Description (ambiguity) ']' (rule end)
+	 *     description=Description (ambiguity) 'completion' date=STRING
+	 *     description=Description (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     description=Description (ambiguity) 'cost' cost=INT
+	 *     description=Description (ambiguity) 'delay cost' cod=INT
+	 *     description=Description (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     description=Description (ambiguity) 'time' time=INT
+	 *     description=Description (ambiguity) description=Description
+	 *     description=Description (ambiguity) priority=PriorityEnum
 	 *     name=QualifiedName '[' (ambiguity) ']' (rule end)
+	 *     name=QualifiedName '[' (ambiguity) 'completion' date=STRING
+	 *     name=QualifiedName '[' (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     name=QualifiedName '[' (ambiguity) 'cost' cost=INT
+	 *     name=QualifiedName '[' (ambiguity) 'delay cost' cod=INT
+	 *     name=QualifiedName '[' (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     name=QualifiedName '[' (ambiguity) 'time' time=INT
 	 *     name=QualifiedName '[' (ambiguity) description=Description
 	 *     name=QualifiedName '[' (ambiguity) priority=PriorityEnum
 	 *     priority=PriorityEnum (ambiguity) ']' (rule end)
+	 *     priority=PriorityEnum (ambiguity) 'completion' date=STRING
+	 *     priority=PriorityEnum (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     priority=PriorityEnum (ambiguity) 'cost' cost=INT
+	 *     priority=PriorityEnum (ambiguity) 'delay cost' cod=INT
+	 *     priority=PriorityEnum (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     priority=PriorityEnum (ambiguity) 'time' time=INT
 	 *     priority=PriorityEnum (ambiguity) description=Description
 	 *     priority=PriorityEnum (ambiguity) priority=PriorityEnum
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) ']' (rule end)
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) 'completion' date=STRING
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) 'cost' cost=INT
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) 'delay cost' cod=INT
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) 'time' time=INT
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) description=Description
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) priority=PriorityEnum
+	 *     time=INT (ambiguity) ']' (rule end)
+	 *     time=INT (ambiguity) 'completion' date=STRING
+	 *     time=INT (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     time=INT (ambiguity) 'cost' cost=INT
+	 *     time=INT (ambiguity) 'delay cost' cod=INT
+	 *     time=INT (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     time=INT (ambiguity) 'time' time=INT
+	 *     time=INT (ambiguity) description=Description
+	 *     time=INT (ambiguity) priority=PriorityEnum
 	 *     title=STRING '[' (ambiguity) ']' (rule end)
+	 *     title=STRING '[' (ambiguity) 'completion' date=STRING
+	 *     title=STRING '[' (ambiguity) 'conflicts' conflictsReference+=[IntentionalElement|ID]
+	 *     title=STRING '[' (ambiguity) 'cost' cost=INT
+	 *     title=STRING '[' (ambiguity) 'delay cost' cod=INT
+	 *     title=STRING '[' (ambiguity) 'refines' refinesReference+=[IntentionalElement|ID]
+	 *     title=STRING '[' (ambiguity) 'time' time=INT
 	 *     title=STRING '[' (ambiguity) description=Description
 	 *     title=STRING '[' (ambiguity) priority=PriorityEnum
 	 */
-	protected void emit_Option_PriorityKeyword_4_0_1_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Option_PriorityKeyword_4_3_0_a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
 	/**
 	 * Ambiguous syntax:
-	 *     'priority'+
+	 *     ('priority'* 'conflicts')?
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     description=Description (ambiguity) ']' (rule end)
-	 *     description=Description (ambiguity) description=Description
-	 *     description=Description (ambiguity) priority=PriorityEnum
+	 *     conflictsReference+=[IntentionalElement|ID] (ambiguity) conflictsReference+=[IntentionalElement|ID]
 	 */
-	protected void emit_Option_PriorityKeyword_4_0_1_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Option___PriorityKeyword_4_3_0_a_ConflictsKeyword_4_2_0__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ('priority'* 'refines')?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     refinesReference+=[IntentionalElement|ID] (ambiguity) refinesReference+=[IntentionalElement|ID]
+	 */
+	protected void emit_Option___PriorityKeyword_4_3_0_a_RefinesKeyword_4_1_0__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

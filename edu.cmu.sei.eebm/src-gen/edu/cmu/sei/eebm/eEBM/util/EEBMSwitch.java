@@ -79,10 +79,25 @@ public class EEBMSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case EEBMPackage.INTENTIONAL_ELEMENT:
+      {
+        IntentionalElement intentionalElement = (IntentionalElement)theEObject;
+        T result = caseIntentionalElement(intentionalElement);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.PATH:
+      {
+        Path path = (Path)theEObject;
+        T result = casePath(path);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case EEBMPackage.OPTION:
       {
         Option option = (Option)theEObject;
         T result = caseOption(option);
+        if (result == null) result = caseIntentionalElement(option);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -109,6 +124,13 @@ public class EEBMSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case EEBMPackage.DECISION:
+      {
+        Decision decision = (Decision)theEObject;
+        T result = caseDecision(decision);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case EEBMPackage.PREFERENCE:
       {
         Preference preference = (Preference)theEObject;
@@ -120,6 +142,7 @@ public class EEBMSwitch<T> extends Switch<T>
       {
         Goal goal = (Goal)theEObject;
         T result = caseGoal(goal);
+        if (result == null) result = caseIntentionalElement(goal);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -160,6 +183,38 @@ public class EEBMSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseRoadmap(Roadmap object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Intentional Element</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Intentional Element</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseIntentionalElement(IntentionalElement object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Path</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Path</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePath(Path object)
   {
     return null;
   }
@@ -224,6 +279,22 @@ public class EEBMSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseConsultant(Consultant object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Decision</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Decision</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseDecision(Decision object)
   {
     return null;
   }

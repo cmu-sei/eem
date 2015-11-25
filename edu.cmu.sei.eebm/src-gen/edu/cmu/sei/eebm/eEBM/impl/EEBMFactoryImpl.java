@@ -66,10 +66,13 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
     switch (eClass.getClassifierID())
     {
       case EEBMPackage.ROADMAP: return createRoadmap();
+      case EEBMPackage.INTENTIONAL_ELEMENT: return createIntentionalElement();
+      case EEBMPackage.PATH: return createPath();
       case EEBMPackage.OPTION: return createOption();
       case EEBMPackage.STAKEHOLDER: return createStakeholder();
       case EEBMPackage.PARTICIPANT: return createParticipant();
       case EEBMPackage.CONSULTANT: return createConsultant();
+      case EEBMPackage.DECISION: return createDecision();
       case EEBMPackage.PREFERENCE: return createPreference();
       case EEBMPackage.GOAL: return createGoal();
       case EEBMPackage.DESCRIPTION: return createDescription();
@@ -130,6 +133,28 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public IntentionalElement createIntentionalElement()
+  {
+    IntentionalElementImpl intentionalElement = new IntentionalElementImpl();
+    return intentionalElement;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Path createPath()
+  {
+    PathImpl path = new PathImpl();
+    return path;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Option createOption()
   {
     OptionImpl option = new OptionImpl();
@@ -167,6 +192,17 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
   {
     ConsultantImpl consultant = new ConsultantImpl();
     return consultant;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Decision createDecision()
+  {
+    DecisionImpl decision = new DecisionImpl();
+    return decision;
   }
 
   /**

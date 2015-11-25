@@ -32,6 +32,24 @@ public interface EEBMFactory extends EFactory
   Roadmap createRoadmap();
 
   /**
+   * Returns a new object of class '<em>Intentional Element</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Intentional Element</em>'.
+   * @generated
+   */
+  IntentionalElement createIntentionalElement();
+
+  /**
+   * Returns a new object of class '<em>Path</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Path</em>'.
+   * @generated
+   */
+  Path createPath();
+
+  /**
    * Returns a new object of class '<em>Option</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -66,6 +84,15 @@ public interface EEBMFactory extends EFactory
    * @generated
    */
   Consultant createConsultant();
+
+  /**
+   * Returns a new object of class '<em>Decision</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Decision</em>'.
+   * @generated
+   */
+  Decision createDecision();
 
   /**
    * Returns a new object of class '<em>Preference</em>'.

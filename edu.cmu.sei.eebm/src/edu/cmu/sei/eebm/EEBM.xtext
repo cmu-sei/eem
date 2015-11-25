@@ -7,16 +7,33 @@ import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 
 Roadmap: 
 	(name = 'Roadmap' STRING)?
-	parts += (Goal|Stakeholder|Option)+
+	components += (IntentionalElement)+
+	people += (Stakeholder)+
+	trajectories +=(Decision|Path)+
+;
+
+IntentionalElement: // superclass. Implies Goals and Options are semantically equivalent ...
+	Goal | Option
+;
+
+Path:  // should be "roadmap"?
+	name = ID
+	path+=Option+
 ;
 
 // Options, Decisions, 
-Option: 'Option' name=QualifiedName (':' title=STRING)? 
-	'[' 
-	( description=Description?
-	  'priority' &priority=PriorityEnum?	
-	)
-	']'
+Option returns Option: 'Option' name=QualifiedName (':' title=STRING)? 
+    '[' ( 
+    	(description=Description)?
+    	&('refines' refinesReference+=[IntentionalElement]+)?
+    	&('conflicts' conflictsReference+=[IntentionalElement]+)? 
+      	&('priority' &priority=PriorityEnum)?
+      	&('time' time=INT)? //TODO: Validation should implement what an integer time refelects, e.g.seconds, weeks
+      	&('cost' cost=INT)?
+      	&('completion' date=STRING)? //TODO: validate in custom validator
+      	&('delay cost' cod=INT)? 
+    )
+    ']'
 ;
 
 enum PriorityEnum:
@@ -38,6 +55,17 @@ Consultant:
 	'Consultant' name=ID
 ;
 
+Decision: 'Decision' name=ID
+	'[' (
+	('rationale' rationale=STRING)
+	&('responsible' responsible=[Stakeholder])?
+	&('response measure' response_measure = STRING)? //TODO could take this from ALISA Verify
+	&('due' due=STRING)?
+	&('options:' (
+		 '{' options+=[Option] (',' options+=[Option])* '}')?
+		 )
+	) ']'
+;
 
 //Goals and requirements
 
@@ -52,8 +80,7 @@ Goal returns Goal:
 	 	(description=Description)? 
 	 	&(rationale=Rationale)? 
 		//	 &(changeUncertainty=Uncertainty)? 
-	 	&('see' 'document'  docReference+=STRING)? 
-		&('issues' issues+=STRING+ )?
+	 	&('see' 'document'  docReference+=STRING)?  //the document e.g. business strategy
 	
 	 ']';
 	 

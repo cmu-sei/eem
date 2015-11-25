@@ -3,15 +3,34 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="eEBM" nsURI="http://www.cmu.edu/sei/eebm/EEBM" nsPrefix="eEBM">
   <eClassifiers xsi:type="ecore:EClass" name="Roadmap">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parts" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
+        eType="#//IntentionalElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="people" upperBound="-1"
+        eType="#//Stakeholder" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trajectories" upperBound="-1"
         eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Option">
+  <eClassifiers xsi:type="ecore:EClass" name="IntentionalElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="description" eType="#//Description"
         containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Path">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="path" upperBound="-1" eType="#//Option"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Option" eSuperTypes="#//IntentionalElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refinesReference" unique="false"
+        upperBound="-1" eType="#//IntentionalElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conflictsReference" unique="false"
+        upperBound="-1" eType="#//IntentionalElement"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="#//PriorityEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cod" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PriorityEnum">
     <eLiterals name="HIGH" literal="HIGH"/>
@@ -26,21 +45,24 @@
         eType="#//Preference" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Consultant" eSuperTypes="#//Stakeholder"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Decision">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rationale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="responsible" eType="#//Stakeholder"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="response_measure" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="due" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="options" unique="false"
+        upperBound="-1" eType="#//Option"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Preference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="first" eType="#//Option"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="last" eType="#//Option"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Goal">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Goal" eSuperTypes="#//IntentionalElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="superType" eType="#//Goal"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="description" eType="#//Description"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rationale" eType="#//Rationale"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="docReference" unique="false"
-        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issues" unique="false"
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Description">
