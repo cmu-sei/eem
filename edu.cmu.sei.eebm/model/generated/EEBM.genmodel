@@ -15,59 +15,52 @@
     <genClasses ecoreClass="EEBM.ecore#//Roadmap">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Roadmap/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Roadmap/components"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Roadmap/people"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Roadmap/trajectories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Roadmap/relations"/>
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//IntentionalElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/title"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//IntentionalElement/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/priority"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/time"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/cost"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/benefit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//IntentionalElement/cod"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Path">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Path/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Path/path"/>
+    <genClasses ecoreClass="EEBM.ecore#//Refinement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Refinement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Refinement/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Refinement/dest"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Option">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Option/refinesReference"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Option/conflictsReference"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/priority"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/time"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/cost"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/date"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Option/cod"/>
+    <genClasses ecoreClass="EEBM.ecore#//AndRefinement"/>
+    <genClasses ecoreClass="EEBM.ecore#//OrRefinement"/>
+    <genClasses ecoreClass="EEBM.ecore#//Conflict">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Conflict/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Conflict/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Conflict/dest"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Stakeholder">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Stakeholder/name"/>
+    <genClasses ecoreClass="EEBM.ecore#//Goal">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/rationale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/ref"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Participant">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Participant/preferences"/>
+    <genClasses ecoreClass="EEBM.ecore#//Softgoal">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Softgoal/rationale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Softgoal/ref"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Consultant"/>
-    <genClasses ecoreClass="EEBM.ecore#//Decision">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Decision/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Decision/rationale"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Decision/responsible"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Decision/response_measure"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Decision/due"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Decision/options"/>
+    <genClasses ecoreClass="EEBM.ecore#//Task"/>
+    <genClasses ecoreClass="EEBM.ecore#//Description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Description/text"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Rationale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Rationale/text"/>
+    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//Reference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Reference/docReference"/>
     </genClasses>
     <genClasses ecoreClass="EEBM.ecore#//Preference">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/first"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Preference/last"/>
-    </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Goal">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/superType"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Goal/rationale"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Goal/docReference"/>
-    </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Description">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EEBM.ecore#//Description/description"/>
-    </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//DescriptionElement">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//DescriptionElement/text"/>
-    </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//Rationale">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Rationale/text"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

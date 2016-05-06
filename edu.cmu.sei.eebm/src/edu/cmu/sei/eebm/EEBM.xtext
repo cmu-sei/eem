@@ -5,13 +5,22 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
 import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 
+Roadmap: 
+	(name = 'Roadmap' STRING)?
+	components += (IntentionalElement)*
+	relations += (Refinement|Conflict)*
+;
 IntentionalElement: // superclass. Implies Goals and Options are semantically equivalent ...
 	Goal | Task | Softgoal
 ;
 
-Relationship:
-	Refinement | Conflict
-;
+//Relationship:
+//	Refinement | Conflict
+//;
+
+//TODO: validation rule that defines what can be refined/decomposed.
+// E.g. softgoals refine other Sgs, goals refine goals or softgoals, tasks refine either.
+//Notice there is little to no semantic difference between them!
 
 Refinement:
 	AndRefinement | OrRefinement
@@ -19,30 +28,60 @@ Refinement:
 
 AndRefinement returns AndRefinement: 'And' name=QualifiedName
 	'[' (
-		(source+=[IntentionalElement]+)
-		(dest+=[IntentionalElement])
+		('dest' source+=[IntentionalElement])
+		&('source' '[' dest+=IntentionalElement (',' dest+=IntentionalElement)* ']')
 	)
 	']'
 ;
 
 OrRefinement returns OrRefinement: 'Or' name=QualifiedName
 	'[' (
-		(source+=[IntentionalElement]+)
-		(dest+=[IntentionalElement])
+		('dest' source+=[IntentionalElement])
+		&('source' '[' dest+=IntentionalElement (',' dest+=IntentionalElement)* ']')
 	)
 	']'
 ;
 
 Conflict returns Conflict: 'Conflict' name=QualifiedName
 	'[' (
-		(source+=[IntentionalElement])
-		(dest+=[IntentionalElement])
-	)
-	']'
+		('dest' source=IntentionalElement)
+		&('source' dest=IntentionalElement)
+	) ']'
 ;
 
-Task returns Task: 'Task' name=QualifiedName (':' title=STRING)? 
-    '[' ( 
+Goal returns Goal:
+	'Goal' name=QualifiedName (':'  title=STRING )?  // short string for title
+	'['  
+	 	(description=Description)? 
+	 	&('priority' &priority=PriorityEnum)?
+      	&('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+      	&('cost' cost=INT)?
+      	&('benefit' benefit=INT)?
+      	&('completion' date=STRING)? //TODO: validate in custom validator
+      	&('delay cost' cod=INT)? 
+	 	&(rationale=Rationale)? 
+	 	&(ref=Reference)?  
+	']';
+	 
+Softgoal returns Softgoal:
+	'Softgoal' name=QualifiedName (':'  title=STRING )?  // short string for title
+	'['  
+	 	(description=Description)? 
+	 	&('priority' &priority=PriorityEnum)?
+      	//TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+      	&('time' time=INT)? 
+      	&('cost' cost=INT)?
+      	&('benefit' benefit=INT)?
+      	//TODO: validate in custom validator
+      	&('completion' date=STRING)? 
+      	&('delay cost' cod=INT)? 
+	 	&(rationale=Rationale)? 
+	 	&(ref=Reference)?  //the document e.g. business strategy
+	 ']';
+	 
+Task returns Task: 
+	'Task' name=QualifiedName (':' title=STRING)? 
+    '[' 
     	(description=Description)?
       	&('priority' &priority=PriorityEnum)?
       	&('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
@@ -50,48 +89,14 @@ Task returns Task: 'Task' name=QualifiedName (':' title=STRING)?
       	&('benefit' benefit=INT)?
       	&('completion' date=STRING)? //TODO: validate in custom validator
       	&('delay cost' cod=INT)? 
-    )
-    ']'
-;
-
-enum PriorityEnum:
-	HIGH | MED | LOW
-;
-
-//Goals and requirements
-
-Preference: 
-	'prefers(' first=[IntentionalElement] ',' last=[IntentionalElement] ')' //TODO: verify these exist and are not equal
-;
-
-//NE: we could just import this from ALISA
-Goal returns Goal:
-	'Goal' name=QualifiedName (':'  title=STRING )? ("refines" superType=[Goal])? // short string for title
-	'['  
-	 	(description=Description)? 
-	 	&(rationale=Rationale)? 
-		//	 &(changeUncertainty=Uncertainty)? 
-	 	&('see' 'document'  docReference+=STRING)?  //the document e.g. business strategy
-	
-	 ']';
+	']';
 	 
-//NE: we could just import this from ALISA
-Softgoal returns Softgoal:
-	'Softgoal' name=QualifiedName (':'  title=STRING )? ("refines" superType=[Softgoal])? // short string for title
-	'['  
-	 	(description=Description)? 
-	 	&(rationale=Rationale)? 
-		//	 &(changeUncertainty=Uncertainty)? 
-	 	&('see' 'document'  docReference+=STRING)?  //the document e.g. business strategy
-	
-	 ']';
-	 
-Description : 
-	'description' description += DescriptionElement+
-;
-
-DescriptionElement :
- 	text = STRING //| showValue = ShowValue |thisTarget?='this'| image=ImageReference
- ;
-
+Description : 'description' text = STRING ;
 Rationale: 'rationale' text=STRING ;
+Reference: 'see document'  docReference+=STRING;
+
+enum PriorityEnum:	HIGH | MED | LOW;
+
+//TODO: Semantic validation that first/last exist and are not equal
+Preference: 
+	'prefers(' first=[IntentionalElement] ',' last=[IntentionalElement] ')'; 
