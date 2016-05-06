@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Refinement#getName <em>Name</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Refinement#getSource <em>Source</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Refinement#getDest <em>Dest</em>}</li>
  * </ul>
  *
@@ -53,33 +52,17 @@ public interface Refinement extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Source</b></em>' reference list.
+   * Returns the value of the '<em><b>Dest</b></em>' reference list.
    * The list contents are of type {@link edu.cmu.sei.eebm.eEBM.IntentionalElement}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Source</em>' reference list isn't clear,
+   * If the meaning of the '<em>Dest</em>' reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Source</em>' reference list.
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getRefinement_Source()
-   * @model
-   * @generated
-   */
-  EList<IntentionalElement> getSource();
-
-  /**
-   * Returns the value of the '<em><b>Dest</b></em>' containment reference list.
-   * The list contents are of type {@link edu.cmu.sei.eebm.eEBM.IntentionalElement}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Dest</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Dest</em>' containment reference list.
+   * @return the value of the '<em>Dest</em>' reference list.
    * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getRefinement_Dest()
-   * @model containment="true"
+   * @model
    * @generated
    */
   EList<IntentionalElement> getDest();

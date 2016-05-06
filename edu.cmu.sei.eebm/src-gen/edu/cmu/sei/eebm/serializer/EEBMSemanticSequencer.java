@@ -349,7 +349,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=QualifiedName source+=[IntentionalElement|ID] dest+=IntentionalElement dest+=IntentionalElement*)
+	 *     (name=QualifiedName source+=[IntentionalElement|ID] dest+=[IntentionalElement|ID] dest+=[IntentionalElement|ID]*)
 	 */
 	protected void sequence_AndRefinement(EObject context, AndRefinement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -358,7 +358,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=QualifiedName source=IntentionalElement dest=IntentionalElement)
+	 *     (name=QualifiedName source=[IntentionalElement|ID] dest=[IntentionalElement|ID])
 	 */
 	protected void sequence_Conflict(EObject context, Conflict semanticObject) {
 		if(errorAcceptor != null) {
@@ -372,8 +372,8 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getConflictAccess().getNameQualifiedNameParserRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getConflictAccess().getSourceIntentionalElementParserRuleCall_3_0_1_0(), semanticObject.getSource());
-		feeder.accept(grammarAccess.getConflictAccess().getDestIntentionalElementParserRuleCall_3_1_1_0(), semanticObject.getDest());
+		feeder.accept(grammarAccess.getConflictAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1(), semanticObject.getSource());
+		feeder.accept(grammarAccess.getConflictAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1(), semanticObject.getDest());
 		feeder.finish();
 	}
 	
@@ -417,7 +417,7 @@ public class EEBMSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=QualifiedName source+=[IntentionalElement|ID] dest+=IntentionalElement dest+=IntentionalElement*)
+	 *     (name=QualifiedName source=[IntentionalElement|ID] dest+=[IntentionalElement|ID] dest+=[IntentionalElement|ID]*)
 	 */
 	protected void sequence_OrRefinement(EObject context, OrRefinement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

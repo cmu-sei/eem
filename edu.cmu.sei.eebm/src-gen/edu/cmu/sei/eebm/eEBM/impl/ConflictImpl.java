@@ -7,7 +7,6 @@ import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.IntentionalElement;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -53,7 +52,7 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
+   * The cached value of the '{@link #getSource() <em>Source</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getSource()
@@ -63,7 +62,7 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
   protected IntentionalElement source;
 
   /**
-   * The cached value of the '{@link #getDest() <em>Dest</em>}' containment reference.
+   * The cached value of the '{@link #getDest() <em>Dest</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getDest()
@@ -123,6 +122,16 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
    */
   public IntentionalElement getSource()
   {
+    if (source != null && source.eIsProxy())
+    {
+      InternalEObject oldSource = (InternalEObject)source;
+      source = (IntentionalElement)eResolveProxy(oldSource);
+      if (source != oldSource)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, EEBMPackage.CONFLICT__SOURCE, oldSource, source));
+      }
+    }
     return source;
   }
 
@@ -131,16 +140,9 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetSource(IntentionalElement newSource, NotificationChain msgs)
+  public IntentionalElement basicGetSource()
   {
-    IntentionalElement oldSource = source;
-    source = newSource;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.CONFLICT__SOURCE, oldSource, newSource);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
+    return source;
   }
 
   /**
@@ -150,18 +152,10 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
    */
   public void setSource(IntentionalElement newSource)
   {
-    if (newSource != source)
-    {
-      NotificationChain msgs = null;
-      if (source != null)
-        msgs = ((InternalEObject)source).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.CONFLICT__SOURCE, null, msgs);
-      if (newSource != null)
-        msgs = ((InternalEObject)newSource).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.CONFLICT__SOURCE, null, msgs);
-      msgs = basicSetSource(newSource, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.CONFLICT__SOURCE, newSource, newSource));
+    IntentionalElement oldSource = source;
+    source = newSource;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.CONFLICT__SOURCE, oldSource, source));
   }
 
   /**
@@ -171,6 +165,16 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
    */
   public IntentionalElement getDest()
   {
+    if (dest != null && dest.eIsProxy())
+    {
+      InternalEObject oldDest = (InternalEObject)dest;
+      dest = (IntentionalElement)eResolveProxy(oldDest);
+      if (dest != oldDest)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, EEBMPackage.CONFLICT__DEST, oldDest, dest));
+      }
+    }
     return dest;
   }
 
@@ -179,16 +183,9 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetDest(IntentionalElement newDest, NotificationChain msgs)
+  public IntentionalElement basicGetDest()
   {
-    IntentionalElement oldDest = dest;
-    dest = newDest;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.CONFLICT__DEST, oldDest, newDest);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
+    return dest;
   }
 
   /**
@@ -198,36 +195,10 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
    */
   public void setDest(IntentionalElement newDest)
   {
-    if (newDest != dest)
-    {
-      NotificationChain msgs = null;
-      if (dest != null)
-        msgs = ((InternalEObject)dest).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.CONFLICT__DEST, null, msgs);
-      if (newDest != null)
-        msgs = ((InternalEObject)newDest).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.CONFLICT__DEST, null, msgs);
-      msgs = basicSetDest(newDest, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.CONFLICT__DEST, newDest, newDest));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-  {
-    switch (featureID)
-    {
-      case EEBMPackage.CONFLICT__SOURCE:
-        return basicSetSource(null, msgs);
-      case EEBMPackage.CONFLICT__DEST:
-        return basicSetDest(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
+    IntentionalElement oldDest = dest;
+    dest = newDest;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.CONFLICT__DEST, oldDest, dest));
   }
 
   /**
@@ -243,9 +214,11 @@ public class ConflictImpl extends MinimalEObjectImpl.Container implements Confli
       case EEBMPackage.CONFLICT__NAME:
         return getName();
       case EEBMPackage.CONFLICT__SOURCE:
-        return getSource();
+        if (resolve) return getSource();
+        return basicGetSource();
       case EEBMPackage.CONFLICT__DEST:
-        return getDest();
+        if (resolve) return getDest();
+        return basicGetDest();
     }
     return super.eGet(featureID, resolve, coreType);
   }

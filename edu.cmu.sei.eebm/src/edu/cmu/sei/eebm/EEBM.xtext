@@ -29,23 +29,23 @@ Refinement:
 AndRefinement returns AndRefinement: 'And' name=QualifiedName
 	'[' (
 		('dest' source+=[IntentionalElement])
-		&('source' '[' dest+=IntentionalElement (',' dest+=IntentionalElement)* ']')
+		&('source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
 	)
 	']'
 ;
 
 OrRefinement returns OrRefinement: 'Or' name=QualifiedName
 	'[' (
-		('dest' source+=[IntentionalElement])
-		&('source' '[' dest+=IntentionalElement (',' dest+=IntentionalElement)* ']')
+		('dest' source=[IntentionalElement])
+		&('source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
 	)
 	']'
 ;
 
 Conflict returns Conflict: 'Conflict' name=QualifiedName
 	'[' (
-		('dest' source=IntentionalElement)
-		&('source' dest=IntentionalElement)
+		('dest' source=[IntentionalElement])
+		&('source' dest=[IntentionalElement])
 	) ']'
 ;
 

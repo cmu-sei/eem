@@ -361,19 +361,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getRefinement_Source()
-  {
-    return (EReference)refinementEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getRefinement_Dest()
   {
-    return (EReference)refinementEClass.getEStructuralFeatures().get(2);
+    return (EReference)refinementEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -391,9 +381,29 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getAndRefinement_Source()
+  {
+    return (EReference)andRefinementEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getOrRefinement()
   {
     return orRefinementEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getOrRefinement_Source()
+  {
+    return (EReference)orRefinementEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -654,12 +664,13 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
 
     refinementEClass = createEClass(REFINEMENT);
     createEAttribute(refinementEClass, REFINEMENT__NAME);
-    createEReference(refinementEClass, REFINEMENT__SOURCE);
     createEReference(refinementEClass, REFINEMENT__DEST);
 
     andRefinementEClass = createEClass(AND_REFINEMENT);
+    createEReference(andRefinementEClass, AND_REFINEMENT__SOURCE);
 
     orRefinementEClass = createEClass(OR_REFINEMENT);
+    createEReference(orRefinementEClass, OR_REFINEMENT__SOURCE);
 
     conflictEClass = createEClass(CONFLICT);
     createEAttribute(conflictEClass, CONFLICT__NAME);
@@ -747,17 +758,18 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
 
     initEClass(refinementEClass, Refinement.class, "Refinement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRefinement_Name(), ecorePackage.getEString(), "name", null, 0, 1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRefinement_Source(), this.getIntentionalElement(), null, "source", null, 0, -1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRefinement_Dest(), this.getIntentionalElement(), null, "dest", null, 0, -1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRefinement_Dest(), this.getIntentionalElement(), null, "dest", null, 0, -1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(andRefinementEClass, AndRefinement.class, "AndRefinement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getAndRefinement_Source(), this.getIntentionalElement(), null, "source", null, 0, -1, AndRefinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(orRefinementEClass, OrRefinement.class, "OrRefinement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getOrRefinement_Source(), this.getIntentionalElement(), null, "source", null, 0, 1, OrRefinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(conflictEClass, Conflict.class, "Conflict", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getConflict_Name(), ecorePackage.getEString(), "name", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getConflict_Source(), this.getIntentionalElement(), null, "source", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getConflict_Dest(), this.getIntentionalElement(), null, "dest", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConflict_Source(), this.getIntentionalElement(), null, "source", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConflict_Dest(), this.getIntentionalElement(), null, "dest", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(goalEClass, Goal.class, "Goal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getGoal_Rationale(), this.getRationale(), null, "rationale", null, 0, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

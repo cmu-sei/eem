@@ -63205,28 +63205,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndRefinement__DestAssignment_3_1_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22275:1: rule__AndRefinement__DestAssignment_3_1_2 : ( ruleIntentionalElement ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22275:1: rule__AndRefinement__DestAssignment_3_1_2 : ( ( RULE_ID ) ) ;
     public final void rule__AndRefinement__DestAssignment_3_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22279:1: ( ( ruleIntentionalElement ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22280:1: ( ruleIntentionalElement )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22279:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22280:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22280:1: ( ruleIntentionalElement )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22281:1: ruleIntentionalElement
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22280:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22281:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_2_0()); 
+               before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
             }
-            pushFollow(FOLLOW_ruleIntentionalElement_in_rule__AndRefinement__DestAssignment_3_1_246665);
-            ruleIntentionalElement();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22282:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22283:1: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_2_0()); 
+               before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AndRefinement__DestAssignment_3_1_246669); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
             }
 
             }
@@ -63250,28 +63258,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndRefinement__DestAssignment_3_1_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22290:1: rule__AndRefinement__DestAssignment_3_1_3_1 : ( ruleIntentionalElement ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22294:1: rule__AndRefinement__DestAssignment_3_1_3_1 : ( ( RULE_ID ) ) ;
     public final void rule__AndRefinement__DestAssignment_3_1_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22294:1: ( ( ruleIntentionalElement ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22295:1: ( ruleIntentionalElement )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22298:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22299:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22295:1: ( ruleIntentionalElement )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22296:1: ruleIntentionalElement
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22299:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22300:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_3_1_0()); 
+               before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleIntentionalElement_in_rule__AndRefinement__DestAssignment_3_1_3_146696);
-            ruleIntentionalElement();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22301:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22302:1: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_3_1_0()); 
+               before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AndRefinement__DestAssignment_3_1_3_146708); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
             }
 
             }
@@ -63295,22 +63311,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__NameAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22305:1: rule__OrRefinement__NameAssignment_1 : ( ruleQualifiedName ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22313:1: rule__OrRefinement__NameAssignment_1 : ( ruleQualifiedName ) ;
     public final void rule__OrRefinement__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22309:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22310:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22317:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22318:1: ( ruleQualifiedName )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22310:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22311:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22318:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22319:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getOrRefinementAccess().getNameQualifiedNameParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__OrRefinement__NameAssignment_146727);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__OrRefinement__NameAssignment_146743);
             ruleQualifiedName();
 
             state._fsp--;
@@ -63340,28 +63356,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__SourceAssignment_3_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22320:1: rule__OrRefinement__SourceAssignment_3_0_1 : ( ( RULE_ID ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22328:1: rule__OrRefinement__SourceAssignment_3_0_1 : ( ( RULE_ID ) ) ;
     public final void rule__OrRefinement__SourceAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22324:1: ( ( ( RULE_ID ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22325:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22332:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22333:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22325:1: ( ( RULE_ID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22326:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22333:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22334:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22327:1: ( RULE_ID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22328:1: RULE_ID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22335:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22336:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__OrRefinement__SourceAssignment_3_0_146762); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__OrRefinement__SourceAssignment_3_0_146778); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
             }
@@ -63393,28 +63409,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__DestAssignment_3_1_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22339:1: rule__OrRefinement__DestAssignment_3_1_2 : ( ruleIntentionalElement ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22347:1: rule__OrRefinement__DestAssignment_3_1_2 : ( ( RULE_ID ) ) ;
     public final void rule__OrRefinement__DestAssignment_3_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22343:1: ( ( ruleIntentionalElement ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22344:1: ( ruleIntentionalElement )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22351:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22352:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22344:1: ( ruleIntentionalElement )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22345:1: ruleIntentionalElement
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22352:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22353:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_2_0()); 
+               before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
             }
-            pushFollow(FOLLOW_ruleIntentionalElement_in_rule__OrRefinement__DestAssignment_3_1_246797);
-            ruleIntentionalElement();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22354:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22355:1: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_2_0()); 
+               before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__OrRefinement__DestAssignment_3_1_246817); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
             }
 
             }
@@ -63438,28 +63462,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__DestAssignment_3_1_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22354:1: rule__OrRefinement__DestAssignment_3_1_3_1 : ( ruleIntentionalElement ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22366:1: rule__OrRefinement__DestAssignment_3_1_3_1 : ( ( RULE_ID ) ) ;
     public final void rule__OrRefinement__DestAssignment_3_1_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22358:1: ( ( ruleIntentionalElement ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22359:1: ( ruleIntentionalElement )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22370:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22371:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22359:1: ( ruleIntentionalElement )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22360:1: ruleIntentionalElement
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22371:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22372:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_3_1_0()); 
+               before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleIntentionalElement_in_rule__OrRefinement__DestAssignment_3_1_3_146828);
-            ruleIntentionalElement();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22373:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22374:1: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_3_1_0()); 
+               before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__OrRefinement__DestAssignment_3_1_3_146856); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
             }
 
             }
@@ -63483,22 +63515,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conflict__NameAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22369:1: rule__Conflict__NameAssignment_1 : ( ruleQualifiedName ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22385:1: rule__Conflict__NameAssignment_1 : ( ruleQualifiedName ) ;
     public final void rule__Conflict__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22373:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22374:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22389:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22390:1: ( ruleQualifiedName )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22374:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22375:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22390:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22391:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getConflictAccess().getNameQualifiedNameParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Conflict__NameAssignment_146859);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Conflict__NameAssignment_146891);
             ruleQualifiedName();
 
             state._fsp--;
@@ -63528,28 +63560,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conflict__SourceAssignment_3_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22384:1: rule__Conflict__SourceAssignment_3_0_1 : ( ruleIntentionalElement ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22400:1: rule__Conflict__SourceAssignment_3_0_1 : ( ( RULE_ID ) ) ;
     public final void rule__Conflict__SourceAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22388:1: ( ( ruleIntentionalElement ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22389:1: ( ruleIntentionalElement )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22404:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22405:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22389:1: ( ruleIntentionalElement )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22390:1: ruleIntentionalElement
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22405:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22406:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getConflictAccess().getSourceIntentionalElementParserRuleCall_3_0_1_0()); 
+               before(grammarAccess.getConflictAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleIntentionalElement_in_rule__Conflict__SourceAssignment_3_0_146890);
-            ruleIntentionalElement();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22407:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22408:1: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getConflictAccess().getSourceIntentionalElementParserRuleCall_3_0_1_0()); 
+               before(grammarAccess.getConflictAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Conflict__SourceAssignment_3_0_146926); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getConflictAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getConflictAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
             }
 
             }
@@ -63573,28 +63613,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conflict__DestAssignment_3_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22399:1: rule__Conflict__DestAssignment_3_1_1 : ( ruleIntentionalElement ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22419:1: rule__Conflict__DestAssignment_3_1_1 : ( ( RULE_ID ) ) ;
     public final void rule__Conflict__DestAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22403:1: ( ( ruleIntentionalElement ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22404:1: ( ruleIntentionalElement )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22423:1: ( ( ( RULE_ID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22424:1: ( ( RULE_ID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22404:1: ( ruleIntentionalElement )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22405:1: ruleIntentionalElement
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22424:1: ( ( RULE_ID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22425:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getConflictAccess().getDestIntentionalElementParserRuleCall_3_1_1_0()); 
+               before(grammarAccess.getConflictAccess().getDestIntentionalElementCrossReference_3_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleIntentionalElement_in_rule__Conflict__DestAssignment_3_1_146921);
-            ruleIntentionalElement();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22426:1: ( RULE_ID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22427:1: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getConflictAccess().getDestIntentionalElementParserRuleCall_3_1_1_0()); 
+               before(grammarAccess.getConflictAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Conflict__DestAssignment_3_1_146965); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getConflictAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getConflictAccess().getDestIntentionalElementCrossReference_3_1_1_0()); 
             }
 
             }
@@ -63618,22 +63666,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__NameAssignment_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22414:1: rule__Goal__NameAssignment_0_1 : ( ruleQualifiedName ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22438:1: rule__Goal__NameAssignment_0_1 : ( ruleQualifiedName ) ;
     public final void rule__Goal__NameAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22418:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22419:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22442:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22443:1: ( ruleQualifiedName )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22419:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22420:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22443:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22444:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getNameQualifiedNameParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Goal__NameAssignment_0_146952);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Goal__NameAssignment_0_147000);
             ruleQualifiedName();
 
             state._fsp--;
@@ -63663,22 +63711,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__TitleAssignment_0_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22429:1: rule__Goal__TitleAssignment_0_2_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22453:1: rule__Goal__TitleAssignment_0_2_1 : ( RULE_STRING ) ;
     public final void rule__Goal__TitleAssignment_0_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22433:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22434:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22457:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22458:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22434:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22435:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22458:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22459:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getTitleSTRINGTerminalRuleCall_0_2_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Goal__TitleAssignment_0_2_146983); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Goal__TitleAssignment_0_2_147031); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGoalAccess().getTitleSTRINGTerminalRuleCall_0_2_1_0()); 
             }
@@ -63704,22 +63752,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__DescriptionAssignment_0_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22444:1: rule__Goal__DescriptionAssignment_0_4 : ( ruleDescription ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22468:1: rule__Goal__DescriptionAssignment_0_4 : ( ruleDescription ) ;
     public final void rule__Goal__DescriptionAssignment_0_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22448:1: ( ( ruleDescription ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22449:1: ( ruleDescription )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22472:1: ( ( ruleDescription ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22473:1: ( ruleDescription )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22449:1: ( ruleDescription )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22450:1: ruleDescription
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22473:1: ( ruleDescription )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22474:1: ruleDescription
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getDescriptionDescriptionParserRuleCall_0_4_0()); 
             }
-            pushFollow(FOLLOW_ruleDescription_in_rule__Goal__DescriptionAssignment_0_447014);
+            pushFollow(FOLLOW_ruleDescription_in_rule__Goal__DescriptionAssignment_0_447062);
             ruleDescription();
 
             state._fsp--;
@@ -63749,22 +63797,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__PriorityAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22459:1: rule__Goal__PriorityAssignment_1_1 : ( rulePriorityEnum ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22483:1: rule__Goal__PriorityAssignment_1_1 : ( rulePriorityEnum ) ;
     public final void rule__Goal__PriorityAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22463:1: ( ( rulePriorityEnum ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22464:1: ( rulePriorityEnum )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22487:1: ( ( rulePriorityEnum ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22488:1: ( rulePriorityEnum )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22464:1: ( rulePriorityEnum )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22465:1: rulePriorityEnum
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22488:1: ( rulePriorityEnum )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22489:1: rulePriorityEnum
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getPriorityPriorityEnumEnumRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_rulePriorityEnum_in_rule__Goal__PriorityAssignment_1_147045);
+            pushFollow(FOLLOW_rulePriorityEnum_in_rule__Goal__PriorityAssignment_1_147093);
             rulePriorityEnum();
 
             state._fsp--;
@@ -63794,22 +63842,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__TimeAssignment_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22474:1: rule__Goal__TimeAssignment_2_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22498:1: rule__Goal__TimeAssignment_2_1 : ( RULE_INT ) ;
     public final void rule__Goal__TimeAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22478:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22479:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22502:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22503:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22479:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22480:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22503:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22504:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getTimeINTTerminalRuleCall_2_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__TimeAssignment_2_147076); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__TimeAssignment_2_147124); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGoalAccess().getTimeINTTerminalRuleCall_2_1_0()); 
             }
@@ -63835,22 +63883,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__CostAssignment_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22489:1: rule__Goal__CostAssignment_3_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22513:1: rule__Goal__CostAssignment_3_1 : ( RULE_INT ) ;
     public final void rule__Goal__CostAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22493:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22494:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22517:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22518:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22494:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22495:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22518:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22519:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getCostINTTerminalRuleCall_3_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__CostAssignment_3_147107); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__CostAssignment_3_147155); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGoalAccess().getCostINTTerminalRuleCall_3_1_0()); 
             }
@@ -63876,22 +63924,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__BenefitAssignment_4_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22504:1: rule__Goal__BenefitAssignment_4_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22528:1: rule__Goal__BenefitAssignment_4_1 : ( RULE_INT ) ;
     public final void rule__Goal__BenefitAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22508:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22509:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22532:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22533:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22509:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22510:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22533:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22534:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getBenefitINTTerminalRuleCall_4_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__BenefitAssignment_4_147138); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__BenefitAssignment_4_147186); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGoalAccess().getBenefitINTTerminalRuleCall_4_1_0()); 
             }
@@ -63917,22 +63965,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__DateAssignment_5_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22519:1: rule__Goal__DateAssignment_5_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22543:1: rule__Goal__DateAssignment_5_1 : ( RULE_STRING ) ;
     public final void rule__Goal__DateAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22523:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22524:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22547:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22548:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22524:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22525:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22548:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22549:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getDateSTRINGTerminalRuleCall_5_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Goal__DateAssignment_5_147169); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Goal__DateAssignment_5_147217); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGoalAccess().getDateSTRINGTerminalRuleCall_5_1_0()); 
             }
@@ -63958,22 +64006,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__CodAssignment_6_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22534:1: rule__Goal__CodAssignment_6_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22558:1: rule__Goal__CodAssignment_6_1 : ( RULE_INT ) ;
     public final void rule__Goal__CodAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22538:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22539:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22562:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22563:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22539:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22540:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22563:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22564:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getCodINTTerminalRuleCall_6_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__CodAssignment_6_147200); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Goal__CodAssignment_6_147248); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGoalAccess().getCodINTTerminalRuleCall_6_1_0()); 
             }
@@ -63999,22 +64047,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__RationaleAssignment_7"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22549:1: rule__Goal__RationaleAssignment_7 : ( ruleRationale ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22573:1: rule__Goal__RationaleAssignment_7 : ( ruleRationale ) ;
     public final void rule__Goal__RationaleAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22553:1: ( ( ruleRationale ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22554:1: ( ruleRationale )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22577:1: ( ( ruleRationale ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22578:1: ( ruleRationale )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22554:1: ( ruleRationale )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22555:1: ruleRationale
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22578:1: ( ruleRationale )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22579:1: ruleRationale
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getRationaleRationaleParserRuleCall_7_0()); 
             }
-            pushFollow(FOLLOW_ruleRationale_in_rule__Goal__RationaleAssignment_747231);
+            pushFollow(FOLLOW_ruleRationale_in_rule__Goal__RationaleAssignment_747279);
             ruleRationale();
 
             state._fsp--;
@@ -64044,22 +64092,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__RefAssignment_8_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22564:1: rule__Goal__RefAssignment_8_0 : ( ruleReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22588:1: rule__Goal__RefAssignment_8_0 : ( ruleReference ) ;
     public final void rule__Goal__RefAssignment_8_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22568:1: ( ( ruleReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22569:1: ( ruleReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22592:1: ( ( ruleReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22593:1: ( ruleReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22569:1: ( ruleReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22570:1: ruleReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22593:1: ( ruleReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22594:1: ruleReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGoalAccess().getRefReferenceParserRuleCall_8_0_0()); 
             }
-            pushFollow(FOLLOW_ruleReference_in_rule__Goal__RefAssignment_8_047262);
+            pushFollow(FOLLOW_ruleReference_in_rule__Goal__RefAssignment_8_047310);
             ruleReference();
 
             state._fsp--;
@@ -64089,22 +64137,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__NameAssignment_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22579:1: rule__Softgoal__NameAssignment_0_1 : ( ruleQualifiedName ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22603:1: rule__Softgoal__NameAssignment_0_1 : ( ruleQualifiedName ) ;
     public final void rule__Softgoal__NameAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22583:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22584:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22607:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22608:1: ( ruleQualifiedName )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22584:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22585:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22608:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22609:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getNameQualifiedNameParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Softgoal__NameAssignment_0_147293);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Softgoal__NameAssignment_0_147341);
             ruleQualifiedName();
 
             state._fsp--;
@@ -64134,22 +64182,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__TitleAssignment_0_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22594:1: rule__Softgoal__TitleAssignment_0_2_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22618:1: rule__Softgoal__TitleAssignment_0_2_1 : ( RULE_STRING ) ;
     public final void rule__Softgoal__TitleAssignment_0_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22598:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22599:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22622:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22623:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22599:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22600:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22623:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22624:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getTitleSTRINGTerminalRuleCall_0_2_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Softgoal__TitleAssignment_0_2_147324); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Softgoal__TitleAssignment_0_2_147372); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSoftgoalAccess().getTitleSTRINGTerminalRuleCall_0_2_1_0()); 
             }
@@ -64175,22 +64223,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__DescriptionAssignment_0_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22609:1: rule__Softgoal__DescriptionAssignment_0_4 : ( ruleDescription ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22633:1: rule__Softgoal__DescriptionAssignment_0_4 : ( ruleDescription ) ;
     public final void rule__Softgoal__DescriptionAssignment_0_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22613:1: ( ( ruleDescription ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22614:1: ( ruleDescription )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22637:1: ( ( ruleDescription ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22638:1: ( ruleDescription )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22614:1: ( ruleDescription )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22615:1: ruleDescription
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22638:1: ( ruleDescription )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22639:1: ruleDescription
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getDescriptionDescriptionParserRuleCall_0_4_0()); 
             }
-            pushFollow(FOLLOW_ruleDescription_in_rule__Softgoal__DescriptionAssignment_0_447355);
+            pushFollow(FOLLOW_ruleDescription_in_rule__Softgoal__DescriptionAssignment_0_447403);
             ruleDescription();
 
             state._fsp--;
@@ -64220,22 +64268,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__PriorityAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22624:1: rule__Softgoal__PriorityAssignment_1_1 : ( rulePriorityEnum ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22648:1: rule__Softgoal__PriorityAssignment_1_1 : ( rulePriorityEnum ) ;
     public final void rule__Softgoal__PriorityAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22628:1: ( ( rulePriorityEnum ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22629:1: ( rulePriorityEnum )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22652:1: ( ( rulePriorityEnum ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22653:1: ( rulePriorityEnum )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22629:1: ( rulePriorityEnum )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22630:1: rulePriorityEnum
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22653:1: ( rulePriorityEnum )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22654:1: rulePriorityEnum
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getPriorityPriorityEnumEnumRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_rulePriorityEnum_in_rule__Softgoal__PriorityAssignment_1_147386);
+            pushFollow(FOLLOW_rulePriorityEnum_in_rule__Softgoal__PriorityAssignment_1_147434);
             rulePriorityEnum();
 
             state._fsp--;
@@ -64265,22 +64313,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__TimeAssignment_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22639:1: rule__Softgoal__TimeAssignment_2_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22663:1: rule__Softgoal__TimeAssignment_2_1 : ( RULE_INT ) ;
     public final void rule__Softgoal__TimeAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22643:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22644:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22667:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22668:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22644:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22645:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22668:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22669:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getTimeINTTerminalRuleCall_2_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__TimeAssignment_2_147417); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__TimeAssignment_2_147465); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSoftgoalAccess().getTimeINTTerminalRuleCall_2_1_0()); 
             }
@@ -64306,22 +64354,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__CostAssignment_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22654:1: rule__Softgoal__CostAssignment_3_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22678:1: rule__Softgoal__CostAssignment_3_1 : ( RULE_INT ) ;
     public final void rule__Softgoal__CostAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22658:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22659:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22682:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22683:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22659:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22660:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22683:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22684:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getCostINTTerminalRuleCall_3_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__CostAssignment_3_147448); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__CostAssignment_3_147496); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSoftgoalAccess().getCostINTTerminalRuleCall_3_1_0()); 
             }
@@ -64347,22 +64395,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__BenefitAssignment_4_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22669:1: rule__Softgoal__BenefitAssignment_4_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22693:1: rule__Softgoal__BenefitAssignment_4_1 : ( RULE_INT ) ;
     public final void rule__Softgoal__BenefitAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22673:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22674:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22697:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22698:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22674:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22675:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22698:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22699:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getBenefitINTTerminalRuleCall_4_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__BenefitAssignment_4_147479); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__BenefitAssignment_4_147527); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSoftgoalAccess().getBenefitINTTerminalRuleCall_4_1_0()); 
             }
@@ -64388,22 +64436,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__DateAssignment_5_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22684:1: rule__Softgoal__DateAssignment_5_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22708:1: rule__Softgoal__DateAssignment_5_1 : ( RULE_STRING ) ;
     public final void rule__Softgoal__DateAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22688:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22689:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22712:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22713:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22689:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22690:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22713:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22714:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getDateSTRINGTerminalRuleCall_5_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Softgoal__DateAssignment_5_147510); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Softgoal__DateAssignment_5_147558); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSoftgoalAccess().getDateSTRINGTerminalRuleCall_5_1_0()); 
             }
@@ -64429,22 +64477,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__CodAssignment_6_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22699:1: rule__Softgoal__CodAssignment_6_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22723:1: rule__Softgoal__CodAssignment_6_1 : ( RULE_INT ) ;
     public final void rule__Softgoal__CodAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22703:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22704:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22727:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22728:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22704:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22705:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22728:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22729:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getCodINTTerminalRuleCall_6_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__CodAssignment_6_147541); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Softgoal__CodAssignment_6_147589); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSoftgoalAccess().getCodINTTerminalRuleCall_6_1_0()); 
             }
@@ -64470,22 +64518,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__RationaleAssignment_7"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22714:1: rule__Softgoal__RationaleAssignment_7 : ( ruleRationale ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22738:1: rule__Softgoal__RationaleAssignment_7 : ( ruleRationale ) ;
     public final void rule__Softgoal__RationaleAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22718:1: ( ( ruleRationale ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22719:1: ( ruleRationale )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22742:1: ( ( ruleRationale ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22743:1: ( ruleRationale )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22719:1: ( ruleRationale )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22720:1: ruleRationale
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22743:1: ( ruleRationale )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22744:1: ruleRationale
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getRationaleRationaleParserRuleCall_7_0()); 
             }
-            pushFollow(FOLLOW_ruleRationale_in_rule__Softgoal__RationaleAssignment_747572);
+            pushFollow(FOLLOW_ruleRationale_in_rule__Softgoal__RationaleAssignment_747620);
             ruleRationale();
 
             state._fsp--;
@@ -64515,22 +64563,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__RefAssignment_8_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22729:1: rule__Softgoal__RefAssignment_8_0 : ( ruleReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22753:1: rule__Softgoal__RefAssignment_8_0 : ( ruleReference ) ;
     public final void rule__Softgoal__RefAssignment_8_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22733:1: ( ( ruleReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22734:1: ( ruleReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22757:1: ( ( ruleReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22758:1: ( ruleReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22734:1: ( ruleReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22735:1: ruleReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22758:1: ( ruleReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22759:1: ruleReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSoftgoalAccess().getRefReferenceParserRuleCall_8_0_0()); 
             }
-            pushFollow(FOLLOW_ruleReference_in_rule__Softgoal__RefAssignment_8_047603);
+            pushFollow(FOLLOW_ruleReference_in_rule__Softgoal__RefAssignment_8_047651);
             ruleReference();
 
             state._fsp--;
@@ -64560,22 +64608,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__NameAssignment_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22744:1: rule__Task__NameAssignment_0_1 : ( ruleQualifiedName ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22768:1: rule__Task__NameAssignment_0_1 : ( ruleQualifiedName ) ;
     public final void rule__Task__NameAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22748:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22749:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22772:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22773:1: ( ruleQualifiedName )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22749:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22750:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22773:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22774:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getNameQualifiedNameParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Task__NameAssignment_0_147634);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__Task__NameAssignment_0_147682);
             ruleQualifiedName();
 
             state._fsp--;
@@ -64605,22 +64653,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__TitleAssignment_0_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22759:1: rule__Task__TitleAssignment_0_2_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22783:1: rule__Task__TitleAssignment_0_2_1 : ( RULE_STRING ) ;
     public final void rule__Task__TitleAssignment_0_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22763:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22764:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22787:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22788:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22764:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22765:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22788:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22789:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getTitleSTRINGTerminalRuleCall_0_2_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Task__TitleAssignment_0_2_147665); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Task__TitleAssignment_0_2_147713); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getTaskAccess().getTitleSTRINGTerminalRuleCall_0_2_1_0()); 
             }
@@ -64646,22 +64694,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__DescriptionAssignment_0_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22774:1: rule__Task__DescriptionAssignment_0_4 : ( ruleDescription ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22798:1: rule__Task__DescriptionAssignment_0_4 : ( ruleDescription ) ;
     public final void rule__Task__DescriptionAssignment_0_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22778:1: ( ( ruleDescription ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22779:1: ( ruleDescription )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22802:1: ( ( ruleDescription ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22803:1: ( ruleDescription )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22779:1: ( ruleDescription )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22780:1: ruleDescription
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22803:1: ( ruleDescription )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22804:1: ruleDescription
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getDescriptionDescriptionParserRuleCall_0_4_0()); 
             }
-            pushFollow(FOLLOW_ruleDescription_in_rule__Task__DescriptionAssignment_0_447696);
+            pushFollow(FOLLOW_ruleDescription_in_rule__Task__DescriptionAssignment_0_447744);
             ruleDescription();
 
             state._fsp--;
@@ -64691,22 +64739,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__PriorityAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22789:1: rule__Task__PriorityAssignment_1_1 : ( rulePriorityEnum ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22813:1: rule__Task__PriorityAssignment_1_1 : ( rulePriorityEnum ) ;
     public final void rule__Task__PriorityAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22793:1: ( ( rulePriorityEnum ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22794:1: ( rulePriorityEnum )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22817:1: ( ( rulePriorityEnum ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22818:1: ( rulePriorityEnum )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22794:1: ( rulePriorityEnum )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22795:1: rulePriorityEnum
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22818:1: ( rulePriorityEnum )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22819:1: rulePriorityEnum
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getPriorityPriorityEnumEnumRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_rulePriorityEnum_in_rule__Task__PriorityAssignment_1_147727);
+            pushFollow(FOLLOW_rulePriorityEnum_in_rule__Task__PriorityAssignment_1_147775);
             rulePriorityEnum();
 
             state._fsp--;
@@ -64736,22 +64784,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__TimeAssignment_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22804:1: rule__Task__TimeAssignment_2_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22828:1: rule__Task__TimeAssignment_2_1 : ( RULE_INT ) ;
     public final void rule__Task__TimeAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22808:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22809:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22832:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22833:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22809:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22810:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22833:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22834:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getTimeINTTerminalRuleCall_2_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__TimeAssignment_2_147758); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__TimeAssignment_2_147806); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getTaskAccess().getTimeINTTerminalRuleCall_2_1_0()); 
             }
@@ -64777,22 +64825,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__CostAssignment_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22819:1: rule__Task__CostAssignment_3_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22843:1: rule__Task__CostAssignment_3_1 : ( RULE_INT ) ;
     public final void rule__Task__CostAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22823:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22824:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22847:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22848:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22824:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22825:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22848:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22849:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getCostINTTerminalRuleCall_3_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__CostAssignment_3_147789); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__CostAssignment_3_147837); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getTaskAccess().getCostINTTerminalRuleCall_3_1_0()); 
             }
@@ -64818,22 +64866,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__BenefitAssignment_4_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22834:1: rule__Task__BenefitAssignment_4_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22858:1: rule__Task__BenefitAssignment_4_1 : ( RULE_INT ) ;
     public final void rule__Task__BenefitAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22838:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22839:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22862:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22863:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22839:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22840:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22863:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22864:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getBenefitINTTerminalRuleCall_4_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__BenefitAssignment_4_147820); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__BenefitAssignment_4_147868); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getTaskAccess().getBenefitINTTerminalRuleCall_4_1_0()); 
             }
@@ -64859,22 +64907,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__DateAssignment_5_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22849:1: rule__Task__DateAssignment_5_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22873:1: rule__Task__DateAssignment_5_1 : ( RULE_STRING ) ;
     public final void rule__Task__DateAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22853:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22854:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22877:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22878:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22854:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22855:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22878:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22879:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getDateSTRINGTerminalRuleCall_5_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Task__DateAssignment_5_147851); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Task__DateAssignment_5_147899); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getTaskAccess().getDateSTRINGTerminalRuleCall_5_1_0()); 
             }
@@ -64900,22 +64948,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__CodAssignment_6_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22864:1: rule__Task__CodAssignment_6_0_1 : ( RULE_INT ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22888:1: rule__Task__CodAssignment_6_0_1 : ( RULE_INT ) ;
     public final void rule__Task__CodAssignment_6_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22868:1: ( ( RULE_INT ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22869:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22892:1: ( ( RULE_INT ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22893:1: ( RULE_INT )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22869:1: ( RULE_INT )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22870:1: RULE_INT
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22893:1: ( RULE_INT )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22894:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getTaskAccess().getCodINTTerminalRuleCall_6_0_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__CodAssignment_6_0_147882); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Task__CodAssignment_6_0_147930); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getTaskAccess().getCodINTTerminalRuleCall_6_0_1_0()); 
             }
@@ -64941,22 +64989,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Description__TextAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22879:1: rule__Description__TextAssignment_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22903:1: rule__Description__TextAssignment_1 : ( RULE_STRING ) ;
     public final void rule__Description__TextAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22883:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22884:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22907:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22908:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22884:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22885:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22908:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22909:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDescriptionAccess().getTextSTRINGTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Description__TextAssignment_147913); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Description__TextAssignment_147961); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDescriptionAccess().getTextSTRINGTerminalRuleCall_1_0()); 
             }
@@ -64982,22 +65030,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Rationale__TextAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22894:1: rule__Rationale__TextAssignment_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22918:1: rule__Rationale__TextAssignment_1 : ( RULE_STRING ) ;
     public final void rule__Rationale__TextAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22898:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22899:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22922:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22923:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22899:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22900:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22923:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22924:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getRationaleAccess().getTextSTRINGTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Rationale__TextAssignment_147944); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Rationale__TextAssignment_147992); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getRationaleAccess().getTextSTRINGTerminalRuleCall_1_0()); 
             }
@@ -65023,22 +65071,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Reference__DocReferenceAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22909:1: rule__Reference__DocReferenceAssignment_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22933:1: rule__Reference__DocReferenceAssignment_1 : ( RULE_STRING ) ;
     public final void rule__Reference__DocReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22913:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22914:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22937:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22938:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22914:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22915:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22938:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22939:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getReferenceAccess().getDocReferenceSTRINGTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Reference__DocReferenceAssignment_147975); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Reference__DocReferenceAssignment_148023); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getReferenceAccess().getDocReferenceSTRINGTerminalRuleCall_1_0()); 
             }
@@ -65064,28 +65112,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAssignment__FeatureAssignment_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22926:1: rule__XAssignment__FeatureAssignment_0_1 : ( ( ruleFeatureCallID ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22950:1: rule__XAssignment__FeatureAssignment_0_1 : ( ( ruleFeatureCallID ) ) ;
     public final void rule__XAssignment__FeatureAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22930:1: ( ( ( ruleFeatureCallID ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22931:1: ( ( ruleFeatureCallID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22954:1: ( ( ( ruleFeatureCallID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22955:1: ( ( ruleFeatureCallID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22931:1: ( ( ruleFeatureCallID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22932:1: ( ruleFeatureCallID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22955:1: ( ( ruleFeatureCallID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22956:1: ( ruleFeatureCallID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementCrossReference_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22933:1: ( ruleFeatureCallID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22934:1: ruleFeatureCallID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22957:1: ( ruleFeatureCallID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22958:1: ruleFeatureCallID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementFeatureCallIDParserRuleCall_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleFeatureCallID_in_rule__XAssignment__FeatureAssignment_0_148012);
+            pushFollow(FOLLOW_ruleFeatureCallID_in_rule__XAssignment__FeatureAssignment_0_148060);
             ruleFeatureCallID();
 
             state._fsp--;
@@ -65121,22 +65169,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAssignment__ValueAssignment_0_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22945:1: rule__XAssignment__ValueAssignment_0_3 : ( ruleXAssignment ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22969:1: rule__XAssignment__ValueAssignment_0_3 : ( ruleXAssignment ) ;
     public final void rule__XAssignment__ValueAssignment_0_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22949:1: ( ( ruleXAssignment ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22950:1: ( ruleXAssignment )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22973:1: ( ( ruleXAssignment ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22974:1: ( ruleXAssignment )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22950:1: ( ruleXAssignment )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22951:1: ruleXAssignment
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22974:1: ( ruleXAssignment )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22975:1: ruleXAssignment
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getValueXAssignmentParserRuleCall_0_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_348047);
+            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_348095);
             ruleXAssignment();
 
             state._fsp--;
@@ -65166,28 +65214,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAssignment__FeatureAssignment_1_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22960:1: rule__XAssignment__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpMultiAssign ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22984:1: rule__XAssignment__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpMultiAssign ) ) ;
     public final void rule__XAssignment__FeatureAssignment_1_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22964:1: ( ( ( ruleOpMultiAssign ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22965:1: ( ( ruleOpMultiAssign ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22988:1: ( ( ( ruleOpMultiAssign ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22989:1: ( ( ruleOpMultiAssign ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22965:1: ( ( ruleOpMultiAssign ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22966:1: ( ruleOpMultiAssign )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22989:1: ( ( ruleOpMultiAssign ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22990:1: ( ruleOpMultiAssign )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementCrossReference_1_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22967:1: ( ruleOpMultiAssign )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22968:1: ruleOpMultiAssign
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22991:1: ( ruleOpMultiAssign )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22992:1: ruleOpMultiAssign
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementOpMultiAssignParserRuleCall_1_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_148082);
+            pushFollow(FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_148130);
             ruleOpMultiAssign();
 
             state._fsp--;
@@ -65223,22 +65271,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAssignment__RightOperandAssignment_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22979:1: rule__XAssignment__RightOperandAssignment_1_1_1 : ( ruleXAssignment ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23003:1: rule__XAssignment__RightOperandAssignment_1_1_1 : ( ruleXAssignment ) ;
     public final void rule__XAssignment__RightOperandAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22983:1: ( ( ruleXAssignment ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22984:1: ( ruleXAssignment )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23007:1: ( ( ruleXAssignment ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23008:1: ( ruleXAssignment )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22984:1: ( ruleXAssignment )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22985:1: ruleXAssignment
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23008:1: ( ruleXAssignment )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23009:1: ruleXAssignment
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getRightOperandXAssignmentParserRuleCall_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_148117);
+            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_148165);
             ruleXAssignment();
 
             state._fsp--;
@@ -65268,28 +65316,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XOrExpression__FeatureAssignment_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22994:1: rule__XOrExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOr ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23018:1: rule__XOrExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOr ) ) ;
     public final void rule__XOrExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22998:1: ( ( ( ruleOpOr ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22999:1: ( ( ruleOpOr ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23022:1: ( ( ( ruleOpOr ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23023:1: ( ( ruleOpOr ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:22999:1: ( ( ruleOpOr ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23000:1: ( ruleOpOr )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23023:1: ( ( ruleOpOr ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23024:1: ( ruleOpOr )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOrExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23001:1: ( ruleOpOr )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23002:1: ruleOpOr
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23025:1: ( ruleOpOr )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23026:1: ruleOpOr
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOrExpressionAccess().getFeatureJvmIdentifiableElementOpOrParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_148152);
+            pushFollow(FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_148200);
             ruleOpOr();
 
             state._fsp--;
@@ -65325,22 +65373,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XOrExpression__RightOperandAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23013:1: rule__XOrExpression__RightOperandAssignment_1_1 : ( ruleXAndExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23037:1: rule__XOrExpression__RightOperandAssignment_1_1 : ( ruleXAndExpression ) ;
     public final void rule__XOrExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23017:1: ( ( ruleXAndExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23018:1: ( ruleXAndExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23041:1: ( ( ruleXAndExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23042:1: ( ruleXAndExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23018:1: ( ruleXAndExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23019:1: ruleXAndExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23042:1: ( ruleXAndExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23043:1: ruleXAndExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOrExpressionAccess().getRightOperandXAndExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_148187);
+            pushFollow(FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_148235);
             ruleXAndExpression();
 
             state._fsp--;
@@ -65370,28 +65418,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAndExpression__FeatureAssignment_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23028:1: rule__XAndExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAnd ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23052:1: rule__XAndExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAnd ) ) ;
     public final void rule__XAndExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23032:1: ( ( ( ruleOpAnd ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23033:1: ( ( ruleOpAnd ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23056:1: ( ( ( ruleOpAnd ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23057:1: ( ( ruleOpAnd ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23033:1: ( ( ruleOpAnd ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23034:1: ( ruleOpAnd )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23057:1: ( ( ruleOpAnd ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23058:1: ( ruleOpAnd )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAndExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23035:1: ( ruleOpAnd )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23036:1: ruleOpAnd
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23059:1: ( ruleOpAnd )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23060:1: ruleOpAnd
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAndExpressionAccess().getFeatureJvmIdentifiableElementOpAndParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_148222);
+            pushFollow(FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_148270);
             ruleOpAnd();
 
             state._fsp--;
@@ -65427,22 +65475,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAndExpression__RightOperandAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23047:1: rule__XAndExpression__RightOperandAssignment_1_1 : ( ruleXEqualityExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23071:1: rule__XAndExpression__RightOperandAssignment_1_1 : ( ruleXEqualityExpression ) ;
     public final void rule__XAndExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23051:1: ( ( ruleXEqualityExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23052:1: ( ruleXEqualityExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23075:1: ( ( ruleXEqualityExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23076:1: ( ruleXEqualityExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23052:1: ( ruleXEqualityExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23053:1: ruleXEqualityExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23076:1: ( ruleXEqualityExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23077:1: ruleXEqualityExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAndExpressionAccess().getRightOperandXEqualityExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_148257);
+            pushFollow(FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_148305);
             ruleXEqualityExpression();
 
             state._fsp--;
@@ -65472,28 +65520,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XEqualityExpression__FeatureAssignment_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23062:1: rule__XEqualityExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpEquality ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23086:1: rule__XEqualityExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpEquality ) ) ;
     public final void rule__XEqualityExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23066:1: ( ( ( ruleOpEquality ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23067:1: ( ( ruleOpEquality ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23090:1: ( ( ( ruleOpEquality ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23091:1: ( ( ruleOpEquality ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23067:1: ( ( ruleOpEquality ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23068:1: ( ruleOpEquality )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23091:1: ( ( ruleOpEquality ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23092:1: ( ruleOpEquality )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEqualityExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23069:1: ( ruleOpEquality )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23070:1: ruleOpEquality
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23093:1: ( ruleOpEquality )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23094:1: ruleOpEquality
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEqualityExpressionAccess().getFeatureJvmIdentifiableElementOpEqualityParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_148292);
+            pushFollow(FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_148340);
             ruleOpEquality();
 
             state._fsp--;
@@ -65529,22 +65577,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XEqualityExpression__RightOperandAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23081:1: rule__XEqualityExpression__RightOperandAssignment_1_1 : ( ruleXRelationalExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23105:1: rule__XEqualityExpression__RightOperandAssignment_1_1 : ( ruleXRelationalExpression ) ;
     public final void rule__XEqualityExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23085:1: ( ( ruleXRelationalExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23086:1: ( ruleXRelationalExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23109:1: ( ( ruleXRelationalExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23110:1: ( ruleXRelationalExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23086:1: ( ruleXRelationalExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23087:1: ruleXRelationalExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23110:1: ( ruleXRelationalExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23111:1: ruleXRelationalExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEqualityExpressionAccess().getRightOperandXRelationalExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_148327);
+            pushFollow(FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_148375);
             ruleXRelationalExpression();
 
             state._fsp--;
@@ -65574,22 +65622,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XRelationalExpression__TypeAssignment_1_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23096:1: rule__XRelationalExpression__TypeAssignment_1_0_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23120:1: rule__XRelationalExpression__TypeAssignment_1_0_1 : ( ruleJvmTypeReference ) ;
     public final void rule__XRelationalExpression__TypeAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23100:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23101:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23124:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23125:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23101:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23102:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23125:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23126:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getTypeJvmTypeReferenceParserRuleCall_1_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XRelationalExpression__TypeAssignment_1_0_148358);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XRelationalExpression__TypeAssignment_1_0_148406);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -65619,28 +65667,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23111:1: rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpCompare ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23135:1: rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpCompare ) ) ;
     public final void rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23115:1: ( ( ( ruleOpCompare ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23116:1: ( ( ruleOpCompare ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23139:1: ( ( ( ruleOpCompare ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23140:1: ( ( ruleOpCompare ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23116:1: ( ( ruleOpCompare ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23117:1: ( ruleOpCompare )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23140:1: ( ( ruleOpCompare ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23141:1: ( ruleOpCompare )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23118:1: ( ruleOpCompare )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23119:1: ruleOpCompare
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23142:1: ( ruleOpCompare )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23143:1: ruleOpCompare
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getFeatureJvmIdentifiableElementOpCompareParserRuleCall_1_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_148393);
+            pushFollow(FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_148441);
             ruleOpCompare();
 
             state._fsp--;
@@ -65676,22 +65724,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XRelationalExpression__RightOperandAssignment_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23130:1: rule__XRelationalExpression__RightOperandAssignment_1_1_1 : ( ruleXOtherOperatorExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23154:1: rule__XRelationalExpression__RightOperandAssignment_1_1_1 : ( ruleXOtherOperatorExpression ) ;
     public final void rule__XRelationalExpression__RightOperandAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23134:1: ( ( ruleXOtherOperatorExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23135:1: ( ruleXOtherOperatorExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23158:1: ( ( ruleXOtherOperatorExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23159:1: ( ruleXOtherOperatorExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23135:1: ( ruleXOtherOperatorExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23136:1: ruleXOtherOperatorExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23159:1: ( ruleXOtherOperatorExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23160:1: ruleXOtherOperatorExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getRightOperandXOtherOperatorExpressionParserRuleCall_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_148428);
+            pushFollow(FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_148476);
             ruleXOtherOperatorExpression();
 
             state._fsp--;
@@ -65721,28 +65769,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23145:1: rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOther ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23169:1: rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOther ) ) ;
     public final void rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23149:1: ( ( ( ruleOpOther ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23150:1: ( ( ruleOpOther ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23173:1: ( ( ( ruleOpOther ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23174:1: ( ( ruleOpOther ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23150:1: ( ( ruleOpOther ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23151:1: ( ruleOpOther )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23174:1: ( ( ruleOpOther ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23175:1: ( ruleOpOther )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOtherOperatorExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23152:1: ( ruleOpOther )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23153:1: ruleOpOther
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23176:1: ( ruleOpOther )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23177:1: ruleOpOther
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOtherOperatorExpressionAccess().getFeatureJvmIdentifiableElementOpOtherParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_148463);
+            pushFollow(FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_148511);
             ruleOpOther();
 
             state._fsp--;
@@ -65778,22 +65826,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XOtherOperatorExpression__RightOperandAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23164:1: rule__XOtherOperatorExpression__RightOperandAssignment_1_1 : ( ruleXAdditiveExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23188:1: rule__XOtherOperatorExpression__RightOperandAssignment_1_1 : ( ruleXAdditiveExpression ) ;
     public final void rule__XOtherOperatorExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23168:1: ( ( ruleXAdditiveExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23169:1: ( ruleXAdditiveExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23192:1: ( ( ruleXAdditiveExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23193:1: ( ruleXAdditiveExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23169:1: ( ruleXAdditiveExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23170:1: ruleXAdditiveExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23193:1: ( ruleXAdditiveExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23194:1: ruleXAdditiveExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOtherOperatorExpressionAccess().getRightOperandXAdditiveExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_148498);
+            pushFollow(FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_148546);
             ruleXAdditiveExpression();
 
             state._fsp--;
@@ -65823,28 +65871,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAdditiveExpression__FeatureAssignment_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23179:1: rule__XAdditiveExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAdd ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23203:1: rule__XAdditiveExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAdd ) ) ;
     public final void rule__XAdditiveExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23183:1: ( ( ( ruleOpAdd ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23184:1: ( ( ruleOpAdd ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23207:1: ( ( ( ruleOpAdd ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23208:1: ( ( ruleOpAdd ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23184:1: ( ( ruleOpAdd ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23185:1: ( ruleOpAdd )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23208:1: ( ( ruleOpAdd ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23209:1: ( ruleOpAdd )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAdditiveExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23186:1: ( ruleOpAdd )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23187:1: ruleOpAdd
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23210:1: ( ruleOpAdd )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23211:1: ruleOpAdd
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAdditiveExpressionAccess().getFeatureJvmIdentifiableElementOpAddParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_148533);
+            pushFollow(FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_148581);
             ruleOpAdd();
 
             state._fsp--;
@@ -65880,22 +65928,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XAdditiveExpression__RightOperandAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23198:1: rule__XAdditiveExpression__RightOperandAssignment_1_1 : ( ruleXMultiplicativeExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23222:1: rule__XAdditiveExpression__RightOperandAssignment_1_1 : ( ruleXMultiplicativeExpression ) ;
     public final void rule__XAdditiveExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23202:1: ( ( ruleXMultiplicativeExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23203:1: ( ruleXMultiplicativeExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23226:1: ( ( ruleXMultiplicativeExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23227:1: ( ruleXMultiplicativeExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23203:1: ( ruleXMultiplicativeExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23204:1: ruleXMultiplicativeExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23227:1: ( ruleXMultiplicativeExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23228:1: ruleXMultiplicativeExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAdditiveExpressionAccess().getRightOperandXMultiplicativeExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_148568);
+            pushFollow(FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_148616);
             ruleXMultiplicativeExpression();
 
             state._fsp--;
@@ -65925,28 +65973,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23213:1: rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpMulti ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23237:1: rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpMulti ) ) ;
     public final void rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23217:1: ( ( ( ruleOpMulti ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23218:1: ( ( ruleOpMulti ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23241:1: ( ( ( ruleOpMulti ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23242:1: ( ( ruleOpMulti ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23218:1: ( ( ruleOpMulti ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23219:1: ( ruleOpMulti )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23242:1: ( ( ruleOpMulti ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23243:1: ( ruleOpMulti )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMultiplicativeExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23220:1: ( ruleOpMulti )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23221:1: ruleOpMulti
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23244:1: ( ruleOpMulti )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23245:1: ruleOpMulti
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMultiplicativeExpressionAccess().getFeatureJvmIdentifiableElementOpMultiParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_148603);
+            pushFollow(FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_148651);
             ruleOpMulti();
 
             state._fsp--;
@@ -65982,22 +66030,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMultiplicativeExpression__RightOperandAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23232:1: rule__XMultiplicativeExpression__RightOperandAssignment_1_1 : ( ruleXUnaryOperation ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23256:1: rule__XMultiplicativeExpression__RightOperandAssignment_1_1 : ( ruleXUnaryOperation ) ;
     public final void rule__XMultiplicativeExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23236:1: ( ( ruleXUnaryOperation ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23237:1: ( ruleXUnaryOperation )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23260:1: ( ( ruleXUnaryOperation ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23261:1: ( ruleXUnaryOperation )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23237:1: ( ruleXUnaryOperation )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23238:1: ruleXUnaryOperation
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23261:1: ( ruleXUnaryOperation )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23262:1: ruleXUnaryOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMultiplicativeExpressionAccess().getRightOperandXUnaryOperationParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_148638);
+            pushFollow(FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_148686);
             ruleXUnaryOperation();
 
             state._fsp--;
@@ -66027,28 +66075,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XUnaryOperation__FeatureAssignment_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23247:1: rule__XUnaryOperation__FeatureAssignment_0_1 : ( ( ruleOpUnary ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23271:1: rule__XUnaryOperation__FeatureAssignment_0_1 : ( ( ruleOpUnary ) ) ;
     public final void rule__XUnaryOperation__FeatureAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23251:1: ( ( ( ruleOpUnary ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23252:1: ( ( ruleOpUnary ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23275:1: ( ( ( ruleOpUnary ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23276:1: ( ( ruleOpUnary ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23252:1: ( ( ruleOpUnary ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23253:1: ( ruleOpUnary )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23276:1: ( ( ruleOpUnary ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23277:1: ( ruleOpUnary )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXUnaryOperationAccess().getFeatureJvmIdentifiableElementCrossReference_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23254:1: ( ruleOpUnary )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23255:1: ruleOpUnary
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23278:1: ( ruleOpUnary )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23279:1: ruleOpUnary
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXUnaryOperationAccess().getFeatureJvmIdentifiableElementOpUnaryParserRuleCall_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_148673);
+            pushFollow(FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_148721);
             ruleOpUnary();
 
             state._fsp--;
@@ -66084,22 +66132,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XUnaryOperation__OperandAssignment_0_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23266:1: rule__XUnaryOperation__OperandAssignment_0_2 : ( ruleXUnaryOperation ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23290:1: rule__XUnaryOperation__OperandAssignment_0_2 : ( ruleXUnaryOperation ) ;
     public final void rule__XUnaryOperation__OperandAssignment_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23270:1: ( ( ruleXUnaryOperation ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23271:1: ( ruleXUnaryOperation )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23294:1: ( ( ruleXUnaryOperation ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23295:1: ( ruleXUnaryOperation )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23271:1: ( ruleXUnaryOperation )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23272:1: ruleXUnaryOperation
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23295:1: ( ruleXUnaryOperation )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23296:1: ruleXUnaryOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXUnaryOperationAccess().getOperandXUnaryOperationParserRuleCall_0_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXUnaryOperation_in_rule__XUnaryOperation__OperandAssignment_0_248708);
+            pushFollow(FOLLOW_ruleXUnaryOperation_in_rule__XUnaryOperation__OperandAssignment_0_248756);
             ruleXUnaryOperation();
 
             state._fsp--;
@@ -66129,22 +66177,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCastedExpression__TypeAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23281:1: rule__XCastedExpression__TypeAssignment_1_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23305:1: rule__XCastedExpression__TypeAssignment_1_1 : ( ruleJvmTypeReference ) ;
     public final void rule__XCastedExpression__TypeAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23285:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23286:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23309:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23310:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23286:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23287:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23310:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23311:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCastedExpressionAccess().getTypeJvmTypeReferenceParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_148739);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_148787);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -66174,28 +66222,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XPostfixOperation__FeatureAssignment_1_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23296:1: rule__XPostfixOperation__FeatureAssignment_1_0_1 : ( ( ruleOpPostfix ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23320:1: rule__XPostfixOperation__FeatureAssignment_1_0_1 : ( ( ruleOpPostfix ) ) ;
     public final void rule__XPostfixOperation__FeatureAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23300:1: ( ( ( ruleOpPostfix ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23301:1: ( ( ruleOpPostfix ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23324:1: ( ( ( ruleOpPostfix ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23325:1: ( ( ruleOpPostfix ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23301:1: ( ( ruleOpPostfix ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23302:1: ( ruleOpPostfix )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23325:1: ( ( ruleOpPostfix ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23326:1: ( ruleOpPostfix )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXPostfixOperationAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23303:1: ( ruleOpPostfix )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23304:1: ruleOpPostfix
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23327:1: ( ruleOpPostfix )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23328:1: ruleOpPostfix
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXPostfixOperationAccess().getFeatureJvmIdentifiableElementOpPostfixParserRuleCall_1_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpPostfix_in_rule__XPostfixOperation__FeatureAssignment_1_0_148774);
+            pushFollow(FOLLOW_ruleOpPostfix_in_rule__XPostfixOperation__FeatureAssignment_1_0_148822);
             ruleOpPostfix();
 
             state._fsp--;
@@ -66231,28 +66279,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23315:1: rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_1 : ( ( '::' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23339:1: rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_1 : ( ( '::' ) ) ;
     public final void rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23319:1: ( ( ( '::' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23320:1: ( ( '::' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23343:1: ( ( ( '::' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23344:1: ( ( '::' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23320:1: ( ( '::' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23321:1: ( '::' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_0_0_0_1_1_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23322:1: ( '::' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23323:1: '::'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23344:1: ( ( '::' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23345:1: ( '::' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_0_0_0_1_1_0()); 
             }
-            match(input,103,FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_148814); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23346:1: ( '::' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23347:1: '::'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_0_0_0_1_1_0()); 
+            }
+            match(input,103,FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_148862); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_0_0_0_1_1_0()); 
             }
@@ -66284,28 +66332,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23338:1: rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2 : ( ( ruleFeatureCallID ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23362:1: rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2 : ( ( ruleFeatureCallID ) ) ;
     public final void rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23342:1: ( ( ( ruleFeatureCallID ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23343:1: ( ( ruleFeatureCallID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23366:1: ( ( ( ruleFeatureCallID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23367:1: ( ( ruleFeatureCallID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23343:1: ( ( ruleFeatureCallID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23344:1: ( ruleFeatureCallID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23367:1: ( ( ruleFeatureCallID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23368:1: ( ruleFeatureCallID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_0_2_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23345:1: ( ruleFeatureCallID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23346:1: ruleFeatureCallID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23369:1: ( ruleFeatureCallID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23370:1: ruleFeatureCallID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementFeatureCallIDParserRuleCall_1_0_0_0_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleFeatureCallID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_248857);
+            pushFollow(FOLLOW_ruleFeatureCallID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_248905);
             ruleFeatureCallID();
 
             state._fsp--;
@@ -66341,22 +66389,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__ValueAssignment_1_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23357:1: rule__XMemberFeatureCall__ValueAssignment_1_0_1 : ( ruleXAssignment ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23381:1: rule__XMemberFeatureCall__ValueAssignment_1_0_1 : ( ruleXAssignment ) ;
     public final void rule__XMemberFeatureCall__ValueAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23361:1: ( ( ruleXAssignment ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23362:1: ( ruleXAssignment )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23385:1: ( ( ruleXAssignment ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23386:1: ( ruleXAssignment )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23362:1: ( ruleXAssignment )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23363:1: ruleXAssignment
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23386:1: ( ruleXAssignment )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23387:1: ruleXAssignment
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getValueXAssignmentParserRuleCall_1_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_148892);
+            pushFollow(FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_148940);
             ruleXAssignment();
 
             state._fsp--;
@@ -66386,28 +66434,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23372:1: rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1 : ( ( '?.' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23396:1: rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1 : ( ( '?.' ) ) ;
     public final void rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23376:1: ( ( ( '?.' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23377:1: ( ( '?.' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23400:1: ( ( ( '?.' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23401:1: ( ( '?.' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23377:1: ( ( '?.' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23378:1: ( '?.' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23379:1: ( '?.' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23380:1: '?.'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23401:1: ( ( '?.' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23402:1: ( '?.' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
             }
-            match(input,104,FOLLOW_104_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_148928); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23403:1: ( '?.' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23404:1: '?.'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
+            }
+            match(input,104,FOLLOW_104_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_148976); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
             }
@@ -66439,28 +66487,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23395:1: rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_2 : ( ( '::' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23419:1: rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_2 : ( ( '::' ) ) ;
     public final void rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23399:1: ( ( ( '::' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23400:1: ( ( '::' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23423:1: ( ( ( '::' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23424:1: ( ( '::' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23400:1: ( ( '::' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23401:1: ( '::' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_1_0_0_1_2_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23402:1: ( '::' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23403:1: '::'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23424:1: ( ( '::' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23425:1: ( '::' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_1_0_0_1_2_0()); 
             }
-            match(input,103,FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_248972); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23426:1: ( '::' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23427:1: '::'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_1_0_0_1_2_0()); 
+            }
+            match(input,103,FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_249020); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getExplicitStaticColonColonKeyword_1_1_0_0_1_2_0()); 
             }
@@ -66492,22 +66540,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23418:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23442:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23422:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23423:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23446:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23447:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23423:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23424:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23447:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23448:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_149011);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_149059);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -66537,22 +66585,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23433:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23457:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23437:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23438:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23461:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23462:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23438:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23439:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23462:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23463:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_1_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_149042);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_149090);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -66582,28 +66630,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__FeatureAssignment_1_1_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23448:1: rule__XMemberFeatureCall__FeatureAssignment_1_1_2 : ( ( ruleIdOrSuper ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23472:1: rule__XMemberFeatureCall__FeatureAssignment_1_1_2 : ( ( ruleIdOrSuper ) ) ;
     public final void rule__XMemberFeatureCall__FeatureAssignment_1_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23452:1: ( ( ( ruleIdOrSuper ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23453:1: ( ( ruleIdOrSuper ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23476:1: ( ( ( ruleIdOrSuper ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23477:1: ( ( ruleIdOrSuper ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23453:1: ( ( ruleIdOrSuper ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23454:1: ( ruleIdOrSuper )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23477:1: ( ( ruleIdOrSuper ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23478:1: ( ruleIdOrSuper )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementCrossReference_1_1_2_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23455:1: ( ruleIdOrSuper )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23456:1: ruleIdOrSuper
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23479:1: ( ruleIdOrSuper )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23480:1: ruleIdOrSuper
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementIdOrSuperParserRuleCall_1_1_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleIdOrSuper_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_249077);
+            pushFollow(FOLLOW_ruleIdOrSuper_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_249125);
             ruleIdOrSuper();
 
             state._fsp--;
@@ -66639,28 +66687,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23467:1: rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0 : ( ( '(' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23491:1: rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0 : ( ( '(' ) ) ;
     public final void rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23471:1: ( ( ( '(' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23472:1: ( ( '(' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23495:1: ( ( ( '(' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23496:1: ( ( '(' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23472:1: ( ( '(' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23473:1: ( '(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23474:1: ( '(' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23475:1: '('
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23496:1: ( ( '(' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23497:1: ( '(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
             }
-            match(input,81,FOLLOW_81_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_049117); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23498:1: ( '(' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23499:1: '('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
+            }
+            match(input,81,FOLLOW_81_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_049165); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
             }
@@ -66692,22 +66740,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23490:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0 : ( ruleXShortClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23514:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0 : ( ruleXShortClosure ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23494:1: ( ( ruleXShortClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23495:1: ( ruleXShortClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23518:1: ( ( ruleXShortClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23519:1: ( ruleXShortClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23495:1: ( ruleXShortClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23496:1: ruleXShortClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23519:1: ( ruleXShortClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23520:1: ruleXShortClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXShortClosureParserRuleCall_1_1_3_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_049156);
+            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_049204);
             ruleXShortClosure();
 
             state._fsp--;
@@ -66737,22 +66785,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23505:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23529:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0 : ( ruleXExpression ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23509:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23510:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23533:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23534:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23510:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23511:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23534:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23535:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXExpressionParserRuleCall_1_1_3_1_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_049187);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_049235);
             ruleXExpression();
 
             state._fsp--;
@@ -66782,22 +66830,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23520:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23544:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1 : ( ruleXExpression ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23524:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23525:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23548:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23549:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23525:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23526:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23549:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23550:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXExpressionParserRuleCall_1_1_3_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_149218);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_149266);
             ruleXExpression();
 
             state._fsp--;
@@ -66827,22 +66875,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23535:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4 : ( ruleXClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23559:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4 : ( ruleXClosure ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23539:1: ( ( ruleXClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23540:1: ( ruleXClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23563:1: ( ( ruleXClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23564:1: ( ruleXClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23540:1: ( ruleXClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23541:1: ruleXClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23564:1: ( ruleXClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23565:1: ruleXClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXClosureParserRuleCall_1_1_4_0()); 
             }
-            pushFollow(FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_449249);
+            pushFollow(FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_449297);
             ruleXClosure();
 
             state._fsp--;
@@ -66872,22 +66920,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSetLiteral__ElementsAssignment_3_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23550:1: rule__XSetLiteral__ElementsAssignment_3_0 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23574:1: rule__XSetLiteral__ElementsAssignment_3_0 : ( ruleXExpression ) ;
     public final void rule__XSetLiteral__ElementsAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23554:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23555:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23579:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23555:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23556:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23579:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23580:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSetLiteralAccess().getElementsXExpressionParserRuleCall_3_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_049280);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_049328);
             ruleXExpression();
 
             state._fsp--;
@@ -66917,22 +66965,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSetLiteral__ElementsAssignment_3_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23565:1: rule__XSetLiteral__ElementsAssignment_3_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23589:1: rule__XSetLiteral__ElementsAssignment_3_1_1 : ( ruleXExpression ) ;
     public final void rule__XSetLiteral__ElementsAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23569:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23570:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23593:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23594:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23570:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23571:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23594:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23595:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSetLiteralAccess().getElementsXExpressionParserRuleCall_3_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_1_149311);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_1_149359);
             ruleXExpression();
 
             state._fsp--;
@@ -66962,22 +67010,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XListLiteral__ElementsAssignment_3_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23580:1: rule__XListLiteral__ElementsAssignment_3_0 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23604:1: rule__XListLiteral__ElementsAssignment_3_0 : ( ruleXExpression ) ;
     public final void rule__XListLiteral__ElementsAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23584:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23585:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23608:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23609:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23585:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23609:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23610:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXListLiteralAccess().getElementsXExpressionParserRuleCall_3_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_049342);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_049390);
             ruleXExpression();
 
             state._fsp--;
@@ -67007,22 +67055,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XListLiteral__ElementsAssignment_3_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23595:1: rule__XListLiteral__ElementsAssignment_3_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23619:1: rule__XListLiteral__ElementsAssignment_3_1_1 : ( ruleXExpression ) ;
     public final void rule__XListLiteral__ElementsAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23599:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23600:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23623:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23624:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23600:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23601:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23624:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23625:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXListLiteralAccess().getElementsXExpressionParserRuleCall_3_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_1_149373);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_1_149421);
             ruleXExpression();
 
             state._fsp--;
@@ -67052,22 +67100,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23610:1: rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_0 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23634:1: rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_0 : ( ruleJvmFormalParameter ) ;
     public final void rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23614:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23615:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23638:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23639:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23615:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23616:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23639:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23640:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_1_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_049404);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_049452);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -67097,22 +67145,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23625:1: rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_1 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23649:1: rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_1 : ( ruleJvmFormalParameter ) ;
     public final void rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23629:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23630:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23653:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23654:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23630:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23631:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23654:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23655:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_1_0_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_149435);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_149483);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -67142,28 +67190,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XClosure__ExplicitSyntaxAssignment_1_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23640:1: rule__XClosure__ExplicitSyntaxAssignment_1_0_1 : ( ( '|' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23664:1: rule__XClosure__ExplicitSyntaxAssignment_1_0_1 : ( ( '|' ) ) ;
     public final void rule__XClosure__ExplicitSyntaxAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23644:1: ( ( ( '|' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23645:1: ( ( '|' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23668:1: ( ( ( '|' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23669:1: ( ( '|' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23645:1: ( ( '|' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23646:1: ( '|' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_1_0_1_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23647:1: ( '|' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23648:1: '|'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23669:1: ( ( '|' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23670:1: ( '|' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_1_0_1_0()); 
             }
-            match(input,105,FOLLOW_105_in_rule__XClosure__ExplicitSyntaxAssignment_1_0_149471); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23671:1: ( '|' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23672:1: '|'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_1_0_1_0()); 
+            }
+            match(input,105,FOLLOW_105_in_rule__XClosure__ExplicitSyntaxAssignment_1_0_149519); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_1_0_1_0()); 
             }
@@ -67195,22 +67243,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XClosure__ExpressionAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23663:1: rule__XClosure__ExpressionAssignment_2 : ( ruleXExpressionInClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23687:1: rule__XClosure__ExpressionAssignment_2 : ( ruleXExpressionInClosure ) ;
     public final void rule__XClosure__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23667:1: ( ( ruleXExpressionInClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23668:1: ( ruleXExpressionInClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23691:1: ( ( ruleXExpressionInClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23692:1: ( ruleXExpressionInClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23668:1: ( ruleXExpressionInClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23669:1: ruleXExpressionInClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23692:1: ( ruleXExpressionInClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23693:1: ruleXExpressionInClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getExpressionXExpressionInClosureParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_249510);
+            pushFollow(FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_249558);
             ruleXExpressionInClosure();
 
             state._fsp--;
@@ -67240,22 +67288,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XExpressionInClosure__ExpressionsAssignment_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23678:1: rule__XExpressionInClosure__ExpressionsAssignment_1_0 : ( ruleXExpressionOrVarDeclaration ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23702:1: rule__XExpressionInClosure__ExpressionsAssignment_1_0 : ( ruleXExpressionOrVarDeclaration ) ;
     public final void rule__XExpressionInClosure__ExpressionsAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23682:1: ( ( ruleXExpressionOrVarDeclaration ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23683:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23706:1: ( ( ruleXExpressionOrVarDeclaration ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23707:1: ( ruleXExpressionOrVarDeclaration )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23683:1: ( ruleXExpressionOrVarDeclaration )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23684:1: ruleXExpressionOrVarDeclaration
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23707:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23708:1: ruleXExpressionOrVarDeclaration
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXExpressionInClosureAccess().getExpressionsXExpressionOrVarDeclarationParserRuleCall_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XExpressionInClosure__ExpressionsAssignment_1_049541);
+            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XExpressionInClosure__ExpressionsAssignment_1_049589);
             ruleXExpressionOrVarDeclaration();
 
             state._fsp--;
@@ -67285,22 +67333,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23693:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23717:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0 : ( ruleJvmFormalParameter ) ;
     public final void rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23697:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23698:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23721:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23722:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23698:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23699:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23722:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23723:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_0_0_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_049572);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_049620);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -67330,22 +67378,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23708:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23732:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1 : ( ruleJvmFormalParameter ) ;
     public final void rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23712:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23713:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23736:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23737:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23713:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23714:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23737:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23738:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_0_0_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_149603);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_149651);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -67375,28 +67423,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23723:1: rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2 : ( ( '|' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23747:1: rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2 : ( ( '|' ) ) ;
     public final void rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23727:1: ( ( ( '|' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23728:1: ( ( '|' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23751:1: ( ( ( '|' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23752:1: ( ( '|' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23728:1: ( ( '|' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23729:1: ( '|' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23730:1: ( '|' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23731:1: '|'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23752:1: ( ( '|' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23753:1: ( '|' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
             }
-            match(input,105,FOLLOW_105_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_249639); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23754:1: ( '|' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23755:1: '|'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
+            }
+            match(input,105,FOLLOW_105_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_249687); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
             }
@@ -67428,22 +67476,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XShortClosure__ExpressionAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23746:1: rule__XShortClosure__ExpressionAssignment_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23770:1: rule__XShortClosure__ExpressionAssignment_1 : ( ruleXExpression ) ;
     public final void rule__XShortClosure__ExpressionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23750:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23751:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23774:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23775:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23751:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23752:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23775:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23776:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getExpressionXExpressionParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_149678);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_149726);
             ruleXExpression();
 
             state._fsp--;
@@ -67473,22 +67521,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XIfExpression__IfAssignment_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23761:1: rule__XIfExpression__IfAssignment_3 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23785:1: rule__XIfExpression__IfAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XIfExpression__IfAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23765:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23766:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23789:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23790:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23766:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23767:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23790:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23791:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getIfXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_349709);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_349757);
             ruleXExpression();
 
             state._fsp--;
@@ -67518,22 +67566,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XIfExpression__ThenAssignment_5"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23776:1: rule__XIfExpression__ThenAssignment_5 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23800:1: rule__XIfExpression__ThenAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XIfExpression__ThenAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23780:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23781:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23804:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23805:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23781:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23782:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23805:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23806:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getThenXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_549740);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_549788);
             ruleXExpression();
 
             state._fsp--;
@@ -67563,22 +67611,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XIfExpression__ElseAssignment_6_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23791:1: rule__XIfExpression__ElseAssignment_6_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23815:1: rule__XIfExpression__ElseAssignment_6_1 : ( ruleXExpression ) ;
     public final void rule__XIfExpression__ElseAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23795:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23796:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23819:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23820:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23796:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23797:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23820:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23821:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getElseXExpressionParserRuleCall_6_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_149771);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_149819);
             ruleXExpression();
 
             state._fsp--;
@@ -67608,22 +67656,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23806:1: rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_1 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23830:1: rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_1 : ( ruleJvmFormalParameter ) ;
     public final void rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23810:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23811:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23834:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23835:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23811:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23812:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23835:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23836:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getDeclaredParamJvmFormalParameterParserRuleCall_2_0_0_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_149802);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_149850);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -67653,22 +67701,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSwitchExpression__SwitchAssignment_2_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23821:1: rule__XSwitchExpression__SwitchAssignment_2_0_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23845:1: rule__XSwitchExpression__SwitchAssignment_2_0_1 : ( ruleXExpression ) ;
     public final void rule__XSwitchExpression__SwitchAssignment_2_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23825:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23826:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23849:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23850:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23826:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23827:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23850:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23851:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getSwitchXExpressionParserRuleCall_2_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_0_149833);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_0_149881);
             ruleXExpression();
 
             state._fsp--;
@@ -67698,22 +67746,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23836:1: rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_0 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23860:1: rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_0 : ( ruleJvmFormalParameter ) ;
     public final void rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23840:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23841:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23864:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23865:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23841:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23842:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23865:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23866:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getDeclaredParamJvmFormalParameterParserRuleCall_2_1_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_049864);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_049912);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -67743,22 +67791,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSwitchExpression__SwitchAssignment_2_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23851:1: rule__XSwitchExpression__SwitchAssignment_2_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23875:1: rule__XSwitchExpression__SwitchAssignment_2_1_1 : ( ruleXExpression ) ;
     public final void rule__XSwitchExpression__SwitchAssignment_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23855:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23856:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23879:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23880:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23856:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23857:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23880:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23881:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getSwitchXExpressionParserRuleCall_2_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_1_149895);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_1_149943);
             ruleXExpression();
 
             state._fsp--;
@@ -67788,22 +67836,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSwitchExpression__CasesAssignment_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23866:1: rule__XSwitchExpression__CasesAssignment_4 : ( ruleXCasePart ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23890:1: rule__XSwitchExpression__CasesAssignment_4 : ( ruleXCasePart ) ;
     public final void rule__XSwitchExpression__CasesAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23870:1: ( ( ruleXCasePart ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23871:1: ( ruleXCasePart )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23894:1: ( ( ruleXCasePart ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23895:1: ( ruleXCasePart )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23871:1: ( ruleXCasePart )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23872:1: ruleXCasePart
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23895:1: ( ruleXCasePart )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23896:1: ruleXCasePart
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getCasesXCasePartParserRuleCall_4_0()); 
             }
-            pushFollow(FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_449926);
+            pushFollow(FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_449974);
             ruleXCasePart();
 
             state._fsp--;
@@ -67833,22 +67881,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSwitchExpression__DefaultAssignment_5_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23881:1: rule__XSwitchExpression__DefaultAssignment_5_2 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23905:1: rule__XSwitchExpression__DefaultAssignment_5_2 : ( ruleXExpression ) ;
     public final void rule__XSwitchExpression__DefaultAssignment_5_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23885:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23886:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23909:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23910:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23886:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23887:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23910:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23911:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getDefaultXExpressionParserRuleCall_5_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_5_249957);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_5_250005);
             ruleXExpression();
 
             state._fsp--;
@@ -67878,22 +67926,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCasePart__TypeGuardAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23896:1: rule__XCasePart__TypeGuardAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23920:1: rule__XCasePart__TypeGuardAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__XCasePart__TypeGuardAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23900:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23901:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23924:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23925:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23901:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23902:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23925:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23926:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getTypeGuardJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_149988);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_150036);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -67923,22 +67971,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCasePart__CaseAssignment_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23911:1: rule__XCasePart__CaseAssignment_2_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23935:1: rule__XCasePart__CaseAssignment_2_1 : ( ruleXExpression ) ;
     public final void rule__XCasePart__CaseAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23915:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23916:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23939:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23940:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23916:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23917:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23940:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23941:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getCaseXExpressionParserRuleCall_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_2_150019);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_2_150067);
             ruleXExpression();
 
             state._fsp--;
@@ -67968,22 +68016,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCasePart__ThenAssignment_3_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23926:1: rule__XCasePart__ThenAssignment_3_0_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23950:1: rule__XCasePart__ThenAssignment_3_0_1 : ( ruleXExpression ) ;
     public final void rule__XCasePart__ThenAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23930:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23931:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23954:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23955:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23931:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23932:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23955:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23956:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getThenXExpressionParserRuleCall_3_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_3_0_150050);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_3_0_150098);
             ruleXExpression();
 
             state._fsp--;
@@ -68013,28 +68061,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCasePart__FallThroughAssignment_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23941:1: rule__XCasePart__FallThroughAssignment_3_1 : ( ( ',' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23965:1: rule__XCasePart__FallThroughAssignment_3_1 : ( ( ',' ) ) ;
     public final void rule__XCasePart__FallThroughAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23945:1: ( ( ( ',' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23946:1: ( ( ',' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23969:1: ( ( ( ',' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23970:1: ( ( ',' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23946:1: ( ( ',' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23947:1: ( ',' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXCasePartAccess().getFallThroughCommaKeyword_3_1_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23948:1: ( ',' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23949:1: ','
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23970:1: ( ( ',' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23971:1: ( ',' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getFallThroughCommaKeyword_3_1_0()); 
             }
-            match(input,59,FOLLOW_59_in_rule__XCasePart__FallThroughAssignment_3_150086); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23972:1: ( ',' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23973:1: ','
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXCasePartAccess().getFallThroughCommaKeyword_3_1_0()); 
+            }
+            match(input,59,FOLLOW_59_in_rule__XCasePart__FallThroughAssignment_3_150134); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXCasePartAccess().getFallThroughCommaKeyword_3_1_0()); 
             }
@@ -68066,22 +68114,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XForLoopExpression__DeclaredParamAssignment_0_0_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23964:1: rule__XForLoopExpression__DeclaredParamAssignment_0_0_3 : ( ruleJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23988:1: rule__XForLoopExpression__DeclaredParamAssignment_0_0_3 : ( ruleJvmFormalParameter ) ;
     public final void rule__XForLoopExpression__DeclaredParamAssignment_0_0_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23968:1: ( ( ruleJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23969:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23992:1: ( ( ruleJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23993:1: ( ruleJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23969:1: ( ruleJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23970:1: ruleJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23993:1: ( ruleJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23994:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getDeclaredParamJvmFormalParameterParserRuleCall_0_0_3_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_0_0_350125);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_0_0_350173);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -68111,22 +68159,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XForLoopExpression__ForExpressionAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23979:1: rule__XForLoopExpression__ForExpressionAssignment_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24003:1: rule__XForLoopExpression__ForExpressionAssignment_1 : ( ruleXExpression ) ;
     public final void rule__XForLoopExpression__ForExpressionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23983:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23984:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24007:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24008:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23984:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23985:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24008:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24009:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getForExpressionXExpressionParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_150156);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_150204);
             ruleXExpression();
 
             state._fsp--;
@@ -68156,22 +68204,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XForLoopExpression__EachExpressionAssignment_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23994:1: rule__XForLoopExpression__EachExpressionAssignment_3 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24018:1: rule__XForLoopExpression__EachExpressionAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XForLoopExpression__EachExpressionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23998:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23999:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24022:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24023:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23999:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24000:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24023:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24024:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getEachExpressionXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_350187);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_350235);
             ruleXExpression();
 
             state._fsp--;
@@ -68201,22 +68249,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBasicForLoopExpression__InitExpressionsAssignment_3_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24009:1: rule__XBasicForLoopExpression__InitExpressionsAssignment_3_0 : ( ruleXExpressionOrVarDeclaration ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24033:1: rule__XBasicForLoopExpression__InitExpressionsAssignment_3_0 : ( ruleXExpressionOrVarDeclaration ) ;
     public final void rule__XBasicForLoopExpression__InitExpressionsAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24013:1: ( ( ruleXExpressionOrVarDeclaration ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24014:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24037:1: ( ( ruleXExpressionOrVarDeclaration ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24038:1: ( ruleXExpressionOrVarDeclaration )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24014:1: ( ruleXExpressionOrVarDeclaration )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24015:1: ruleXExpressionOrVarDeclaration
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24038:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24039:1: ruleXExpressionOrVarDeclaration
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getInitExpressionsXExpressionOrVarDeclarationParserRuleCall_3_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_050218);
+            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_050266);
             ruleXExpressionOrVarDeclaration();
 
             state._fsp--;
@@ -68246,22 +68294,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24024:1: rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_1 : ( ruleXExpressionOrVarDeclaration ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24048:1: rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_1 : ( ruleXExpressionOrVarDeclaration ) ;
     public final void rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24028:1: ( ( ruleXExpressionOrVarDeclaration ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24029:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24052:1: ( ( ruleXExpressionOrVarDeclaration ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24053:1: ( ruleXExpressionOrVarDeclaration )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24029:1: ( ruleXExpressionOrVarDeclaration )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24030:1: ruleXExpressionOrVarDeclaration
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24053:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24054:1: ruleXExpressionOrVarDeclaration
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getInitExpressionsXExpressionOrVarDeclarationParserRuleCall_3_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_150249);
+            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_150297);
             ruleXExpressionOrVarDeclaration();
 
             state._fsp--;
@@ -68291,22 +68339,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBasicForLoopExpression__ExpressionAssignment_5"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24039:1: rule__XBasicForLoopExpression__ExpressionAssignment_5 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24063:1: rule__XBasicForLoopExpression__ExpressionAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XBasicForLoopExpression__ExpressionAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24043:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24044:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24067:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24068:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24044:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24045:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24068:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24069:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getExpressionXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__ExpressionAssignment_550280);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__ExpressionAssignment_550328);
             ruleXExpression();
 
             state._fsp--;
@@ -68336,22 +68384,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24054:1: rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_0 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24078:1: rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_0 : ( ruleXExpression ) ;
     public final void rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24058:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24059:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24082:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24083:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24059:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24060:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24083:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24084:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getUpdateExpressionsXExpressionParserRuleCall_7_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_050311);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_050359);
             ruleXExpression();
 
             state._fsp--;
@@ -68381,22 +68429,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24069:1: rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24093:1: rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_1 : ( ruleXExpression ) ;
     public final void rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24073:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24074:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24097:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24098:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24074:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24075:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24098:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24099:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getUpdateExpressionsXExpressionParserRuleCall_7_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_150342);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_150390);
             ruleXExpression();
 
             state._fsp--;
@@ -68426,22 +68474,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBasicForLoopExpression__EachExpressionAssignment_9"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24084:1: rule__XBasicForLoopExpression__EachExpressionAssignment_9 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24108:1: rule__XBasicForLoopExpression__EachExpressionAssignment_9 : ( ruleXExpression ) ;
     public final void rule__XBasicForLoopExpression__EachExpressionAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24088:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24089:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24112:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24113:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24089:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24090:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24113:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24114:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBasicForLoopExpressionAccess().getEachExpressionXExpressionParserRuleCall_9_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__EachExpressionAssignment_950373);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__EachExpressionAssignment_950421);
             ruleXExpression();
 
             state._fsp--;
@@ -68471,22 +68519,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XWhileExpression__PredicateAssignment_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24099:1: rule__XWhileExpression__PredicateAssignment_3 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24123:1: rule__XWhileExpression__PredicateAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XWhileExpression__PredicateAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24103:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24104:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24127:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24128:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24104:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24105:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24128:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24129:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWhileExpressionAccess().getPredicateXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_350404);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_350452);
             ruleXExpression();
 
             state._fsp--;
@@ -68516,22 +68564,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XWhileExpression__BodyAssignment_5"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24114:1: rule__XWhileExpression__BodyAssignment_5 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24138:1: rule__XWhileExpression__BodyAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XWhileExpression__BodyAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24118:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24119:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24142:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24143:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24119:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24120:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24143:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24144:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWhileExpressionAccess().getBodyXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_550435);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_550483);
             ruleXExpression();
 
             state._fsp--;
@@ -68561,22 +68609,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XDoWhileExpression__BodyAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24129:1: rule__XDoWhileExpression__BodyAssignment_2 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24153:1: rule__XDoWhileExpression__BodyAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XDoWhileExpression__BodyAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24133:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24134:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24157:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24158:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24134:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24135:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24158:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24159:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXDoWhileExpressionAccess().getBodyXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_250466);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_250514);
             ruleXExpression();
 
             state._fsp--;
@@ -68606,22 +68654,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XDoWhileExpression__PredicateAssignment_5"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24144:1: rule__XDoWhileExpression__PredicateAssignment_5 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24168:1: rule__XDoWhileExpression__PredicateAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XDoWhileExpression__PredicateAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24148:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24149:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24172:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24173:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24149:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24150:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24173:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24174:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXDoWhileExpressionAccess().getPredicateXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_550497);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_550545);
             ruleXExpression();
 
             state._fsp--;
@@ -68651,22 +68699,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBlockExpression__ExpressionsAssignment_2_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24159:1: rule__XBlockExpression__ExpressionsAssignment_2_0 : ( ruleXExpressionOrVarDeclaration ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24183:1: rule__XBlockExpression__ExpressionsAssignment_2_0 : ( ruleXExpressionOrVarDeclaration ) ;
     public final void rule__XBlockExpression__ExpressionsAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24163:1: ( ( ruleXExpressionOrVarDeclaration ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24164:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24187:1: ( ( ruleXExpressionOrVarDeclaration ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24188:1: ( ruleXExpressionOrVarDeclaration )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24164:1: ( ruleXExpressionOrVarDeclaration )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24165:1: ruleXExpressionOrVarDeclaration
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24188:1: ( ruleXExpressionOrVarDeclaration )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24189:1: ruleXExpressionOrVarDeclaration
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBlockExpressionAccess().getExpressionsXExpressionOrVarDeclarationParserRuleCall_2_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBlockExpression__ExpressionsAssignment_2_050528);
+            pushFollow(FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBlockExpression__ExpressionsAssignment_2_050576);
             ruleXExpressionOrVarDeclaration();
 
             state._fsp--;
@@ -68696,28 +68744,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XVariableDeclaration__WriteableAssignment_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24174:1: rule__XVariableDeclaration__WriteableAssignment_1_0 : ( ( 'var' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24198:1: rule__XVariableDeclaration__WriteableAssignment_1_0 : ( ( 'var' ) ) ;
     public final void rule__XVariableDeclaration__WriteableAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24178:1: ( ( ( 'var' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24179:1: ( ( 'var' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24202:1: ( ( ( 'var' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24203:1: ( ( 'var' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24179:1: ( ( 'var' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24180:1: ( 'var' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24181:1: ( 'var' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24182:1: 'var'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24203:1: ( ( 'var' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24204:1: ( 'var' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
             }
-            match(input,106,FOLLOW_106_in_rule__XVariableDeclaration__WriteableAssignment_1_050564); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24205:1: ( 'var' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24206:1: 'var'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
+            }
+            match(input,106,FOLLOW_106_in_rule__XVariableDeclaration__WriteableAssignment_1_050612); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
             }
@@ -68749,22 +68797,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XVariableDeclaration__TypeAssignment_2_0_0_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24197:1: rule__XVariableDeclaration__TypeAssignment_2_0_0_0 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24221:1: rule__XVariableDeclaration__TypeAssignment_2_0_0_0 : ( ruleJvmTypeReference ) ;
     public final void rule__XVariableDeclaration__TypeAssignment_2_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24201:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24202:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24225:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24226:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24202:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24203:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24226:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24227:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getTypeJvmTypeReferenceParserRuleCall_2_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_050603);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_050651);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -68794,22 +68842,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XVariableDeclaration__NameAssignment_2_0_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24212:1: rule__XVariableDeclaration__NameAssignment_2_0_0_1 : ( ruleValidID ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24236:1: rule__XVariableDeclaration__NameAssignment_2_0_0_1 : ( ruleValidID ) ;
     public final void rule__XVariableDeclaration__NameAssignment_2_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24216:1: ( ( ruleValidID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24217:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24240:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24241:1: ( ruleValidID )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24217:1: ( ruleValidID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24218:1: ruleValidID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24241:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24242:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getNameValidIDParserRuleCall_2_0_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_150634);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_150682);
             ruleValidID();
 
             state._fsp--;
@@ -68839,22 +68887,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XVariableDeclaration__NameAssignment_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24227:1: rule__XVariableDeclaration__NameAssignment_2_1 : ( ruleValidID ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24251:1: rule__XVariableDeclaration__NameAssignment_2_1 : ( ruleValidID ) ;
     public final void rule__XVariableDeclaration__NameAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24231:1: ( ( ruleValidID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24232:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24255:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24256:1: ( ruleValidID )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24232:1: ( ruleValidID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24233:1: ruleValidID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24256:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24257:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getNameValidIDParserRuleCall_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_150665);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_150713);
             ruleValidID();
 
             state._fsp--;
@@ -68884,22 +68932,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XVariableDeclaration__RightAssignment_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24242:1: rule__XVariableDeclaration__RightAssignment_3_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24266:1: rule__XVariableDeclaration__RightAssignment_3_1 : ( ruleXExpression ) ;
     public final void rule__XVariableDeclaration__RightAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24246:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24247:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24270:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24271:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24247:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24248:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24271:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24272:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getRightXExpressionParserRuleCall_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_150696);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_150744);
             ruleXExpression();
 
             state._fsp--;
@@ -68929,22 +68977,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmFormalParameter__ParameterTypeAssignment_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24257:1: rule__JvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24281:1: rule__JvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmFormalParameter__ParameterTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24261:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24262:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24285:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24286:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24262:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24263:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24286:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24287:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmFormalParameterAccess().getParameterTypeJvmTypeReferenceParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_050727);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_050775);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -68974,22 +69022,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmFormalParameter__NameAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24272:1: rule__JvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24296:1: rule__JvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
     public final void rule__JvmFormalParameter__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24276:1: ( ( ruleValidID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24277:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24300:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24301:1: ( ruleValidID )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24277:1: ( ruleValidID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24278:1: ruleValidID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24301:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24302:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmFormalParameterAccess().getNameValidIDParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_150758);
+            pushFollow(FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_150806);
             ruleValidID();
 
             state._fsp--;
@@ -69019,22 +69067,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FullJvmFormalParameter__ParameterTypeAssignment_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24287:1: rule__FullJvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24311:1: rule__FullJvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
     public final void rule__FullJvmFormalParameter__ParameterTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24291:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24292:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24315:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24316:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24292:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24293:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24316:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24317:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getFullJvmFormalParameterAccess().getParameterTypeJvmTypeReferenceParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_050789);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_050837);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -69064,22 +69112,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FullJvmFormalParameter__NameAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24302:1: rule__FullJvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24326:1: rule__FullJvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
     public final void rule__FullJvmFormalParameter__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24306:1: ( ( ruleValidID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24307:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24330:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24331:1: ( ruleValidID )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24307:1: ( ruleValidID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24308:1: ruleValidID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24331:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24332:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getFullJvmFormalParameterAccess().getNameValidIDParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_150820);
+            pushFollow(FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_150868);
             ruleValidID();
 
             state._fsp--;
@@ -69109,22 +69157,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__TypeArgumentsAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24317:1: rule__XFeatureCall__TypeArgumentsAssignment_1_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24341:1: rule__XFeatureCall__TypeArgumentsAssignment_1_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XFeatureCall__TypeArgumentsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24321:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24322:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24345:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24346:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24322:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24323:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24346:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24347:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_150851);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_150899);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -69154,22 +69202,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__TypeArgumentsAssignment_1_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24332:1: rule__XFeatureCall__TypeArgumentsAssignment_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24356:1: rule__XFeatureCall__TypeArgumentsAssignment_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XFeatureCall__TypeArgumentsAssignment_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24336:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24337:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24360:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24361:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24337:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24338:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24361:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24362:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_1_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_2_150882);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_2_150930);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -69199,28 +69247,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24347:1: rule__XFeatureCall__FeatureAssignment_2 : ( ( ruleIdOrSuper ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24371:1: rule__XFeatureCall__FeatureAssignment_2 : ( ( ruleIdOrSuper ) ) ;
     public final void rule__XFeatureCall__FeatureAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24351:1: ( ( ( ruleIdOrSuper ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24352:1: ( ( ruleIdOrSuper ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24375:1: ( ( ( ruleIdOrSuper ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24376:1: ( ( ruleIdOrSuper ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24352:1: ( ( ruleIdOrSuper ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24353:1: ( ruleIdOrSuper )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24376:1: ( ( ruleIdOrSuper ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24377:1: ( ruleIdOrSuper )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureJvmIdentifiableElementCrossReference_2_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24354:1: ( ruleIdOrSuper )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24355:1: ruleIdOrSuper
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24378:1: ( ruleIdOrSuper )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24379:1: ruleIdOrSuper
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureJvmIdentifiableElementIdOrSuperParserRuleCall_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_250917);
+            pushFollow(FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_250965);
             ruleIdOrSuper();
 
             state._fsp--;
@@ -69256,28 +69304,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__ExplicitOperationCallAssignment_3_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24366:1: rule__XFeatureCall__ExplicitOperationCallAssignment_3_0 : ( ( '(' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24390:1: rule__XFeatureCall__ExplicitOperationCallAssignment_3_0 : ( ( '(' ) ) ;
     public final void rule__XFeatureCall__ExplicitOperationCallAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24370:1: ( ( ( '(' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24371:1: ( ( '(' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24394:1: ( ( ( '(' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24395:1: ( ( '(' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24371:1: ( ( '(' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24372:1: ( '(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_3_0_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24373:1: ( '(' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24374:1: '('
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24395:1: ( ( '(' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24396:1: ( '(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_3_0_0()); 
             }
-            match(input,81,FOLLOW_81_in_rule__XFeatureCall__ExplicitOperationCallAssignment_3_050957); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24397:1: ( '(' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24398:1: '('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_3_0_0()); 
+            }
+            match(input,81,FOLLOW_81_in_rule__XFeatureCall__ExplicitOperationCallAssignment_3_051005); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_3_0_0()); 
             }
@@ -69309,22 +69357,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24389:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_0 : ( ruleXShortClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24413:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_0 : ( ruleXShortClosure ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24393:1: ( ( ruleXShortClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24394:1: ( ruleXShortClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24417:1: ( ( ruleXShortClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24418:1: ( ruleXShortClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24394:1: ( ruleXShortClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24395:1: ruleXShortClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24418:1: ( ruleXShortClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24419:1: ruleXShortClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXShortClosureParserRuleCall_3_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_050996);
+            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_051044);
             ruleXShortClosure();
 
             state._fsp--;
@@ -69354,22 +69402,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24404:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_0 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24428:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_0 : ( ruleXExpression ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24408:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24409:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24432:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24433:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24409:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24410:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24433:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24434:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXExpressionParserRuleCall_3_1_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_051027);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_051075);
             ruleXExpression();
 
             state._fsp--;
@@ -69399,22 +69447,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24419:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24443:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_1 : ( ruleXExpression ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24423:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24424:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24447:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24448:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24424:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24425:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24448:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24449:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXExpressionParserRuleCall_3_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_151058);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_151106);
             ruleXExpression();
 
             state._fsp--;
@@ -69444,22 +69492,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24434:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4 : ( ruleXClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24458:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4 : ( ruleXClosure ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24438:1: ( ( ruleXClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24439:1: ( ruleXClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24462:1: ( ( ruleXClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24463:1: ( ruleXClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24439:1: ( ruleXClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24440:1: ruleXClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24463:1: ( ruleXClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24464:1: ruleXClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXClosureParserRuleCall_4_0()); 
             }
-            pushFollow(FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_451089);
+            pushFollow(FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_451137);
             ruleXClosure();
 
             state._fsp--;
@@ -69489,28 +69537,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__ConstructorAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24449:1: rule__XConstructorCall__ConstructorAssignment_2 : ( ( ruleQualifiedName ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24473:1: rule__XConstructorCall__ConstructorAssignment_2 : ( ( ruleQualifiedName ) ) ;
     public final void rule__XConstructorCall__ConstructorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24453:1: ( ( ( ruleQualifiedName ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24454:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24477:1: ( ( ( ruleQualifiedName ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24478:1: ( ( ruleQualifiedName ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24454:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24455:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24478:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24479:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getConstructorJvmConstructorCrossReference_2_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24456:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24457:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24480:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24481:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getConstructorJvmConstructorQualifiedNameParserRuleCall_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_251124);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_251172);
             ruleQualifiedName();
 
             state._fsp--;
@@ -69546,22 +69594,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__TypeArgumentsAssignment_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24468:1: rule__XConstructorCall__TypeArgumentsAssignment_3_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24492:1: rule__XConstructorCall__TypeArgumentsAssignment_3_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XConstructorCall__TypeArgumentsAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24472:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24473:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24496:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24497:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24473:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24474:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24497:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24498:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_151159);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_151207);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -69591,22 +69639,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__TypeArgumentsAssignment_3_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24483:1: rule__XConstructorCall__TypeArgumentsAssignment_3_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24507:1: rule__XConstructorCall__TypeArgumentsAssignment_3_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XConstructorCall__TypeArgumentsAssignment_3_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24487:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24488:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24511:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24512:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24488:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24489:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24512:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24513:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_3_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_151190);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_151238);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -69636,28 +69684,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__ExplicitConstructorCallAssignment_4_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24498:1: rule__XConstructorCall__ExplicitConstructorCallAssignment_4_0 : ( ( '(' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24522:1: rule__XConstructorCall__ExplicitConstructorCallAssignment_4_0 : ( ( '(' ) ) ;
     public final void rule__XConstructorCall__ExplicitConstructorCallAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24502:1: ( ( ( '(' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24503:1: ( ( '(' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24526:1: ( ( ( '(' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24527:1: ( ( '(' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24503:1: ( ( '(' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24504:1: ( '(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXConstructorCallAccess().getExplicitConstructorCallLeftParenthesisKeyword_4_0_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24505:1: ( '(' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24506:1: '('
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24527:1: ( ( '(' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24528:1: ( '(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getExplicitConstructorCallLeftParenthesisKeyword_4_0_0()); 
             }
-            match(input,81,FOLLOW_81_in_rule__XConstructorCall__ExplicitConstructorCallAssignment_4_051226); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24529:1: ( '(' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24530:1: '('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXConstructorCallAccess().getExplicitConstructorCallLeftParenthesisKeyword_4_0_0()); 
+            }
+            match(input,81,FOLLOW_81_in_rule__XConstructorCall__ExplicitConstructorCallAssignment_4_051274); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXConstructorCallAccess().getExplicitConstructorCallLeftParenthesisKeyword_4_0_0()); 
             }
@@ -69689,22 +69737,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_4_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24521:1: rule__XConstructorCall__ArgumentsAssignment_4_1_0 : ( ruleXShortClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24545:1: rule__XConstructorCall__ArgumentsAssignment_4_1_0 : ( ruleXShortClosure ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_4_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24525:1: ( ( ruleXShortClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24526:1: ( ruleXShortClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24549:1: ( ( ruleXShortClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24550:1: ( ruleXShortClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24526:1: ( ruleXShortClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24527:1: ruleXShortClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24550:1: ( ruleXShortClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24551:1: ruleXShortClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXShortClosureParserRuleCall_4_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_4_1_051265);
+            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_4_1_051313);
             ruleXShortClosure();
 
             state._fsp--;
@@ -69734,22 +69782,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_4_1_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24536:1: rule__XConstructorCall__ArgumentsAssignment_4_1_1_0 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24560:1: rule__XConstructorCall__ArgumentsAssignment_4_1_1_0 : ( ruleXExpression ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_4_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24540:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24541:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24564:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24565:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24541:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24542:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24565:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24566:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXExpressionParserRuleCall_4_1_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_051296);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_051344);
             ruleXExpression();
 
             state._fsp--;
@@ -69779,22 +69827,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24551:1: rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24575:1: rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_1 : ( ruleXExpression ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24555:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24556:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24579:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24580:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24556:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24557:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24580:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24581:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXExpressionParserRuleCall_4_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_151327);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_151375);
             ruleXExpression();
 
             state._fsp--;
@@ -69824,22 +69872,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_5"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24566:1: rule__XConstructorCall__ArgumentsAssignment_5 : ( ruleXClosure ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24590:1: rule__XConstructorCall__ArgumentsAssignment_5 : ( ruleXClosure ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24570:1: ( ( ruleXClosure ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24571:1: ( ruleXClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24594:1: ( ( ruleXClosure ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24595:1: ( ruleXClosure )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24571:1: ( ruleXClosure )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24572:1: ruleXClosure
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24595:1: ( ruleXClosure )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24596:1: ruleXClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXClosureParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_551358);
+            pushFollow(FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_551406);
             ruleXClosure();
 
             state._fsp--;
@@ -69869,28 +69917,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XBooleanLiteral__IsTrueAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24581:1: rule__XBooleanLiteral__IsTrueAssignment_1_1 : ( ( 'true' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24605:1: rule__XBooleanLiteral__IsTrueAssignment_1_1 : ( ( 'true' ) ) ;
     public final void rule__XBooleanLiteral__IsTrueAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24585:1: ( ( ( 'true' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24586:1: ( ( 'true' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24609:1: ( ( ( 'true' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24610:1: ( ( 'true' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24586:1: ( ( 'true' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24587:1: ( 'true' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24588:1: ( 'true' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24589:1: 'true'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24610:1: ( ( 'true' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24611:1: ( 'true' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
             }
-            match(input,107,FOLLOW_107_in_rule__XBooleanLiteral__IsTrueAssignment_1_151394); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24612:1: ( 'true' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24613:1: 'true'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
+            }
+            match(input,107,FOLLOW_107_in_rule__XBooleanLiteral__IsTrueAssignment_1_151442); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
             }
@@ -69922,22 +69970,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XNumberLiteral__ValueAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24604:1: rule__XNumberLiteral__ValueAssignment_1 : ( ruleNumber ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24628:1: rule__XNumberLiteral__ValueAssignment_1 : ( ruleNumber ) ;
     public final void rule__XNumberLiteral__ValueAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24608:1: ( ( ruleNumber ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24609:1: ( ruleNumber )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24632:1: ( ( ruleNumber ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24633:1: ( ruleNumber )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24609:1: ( ruleNumber )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24610:1: ruleNumber
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24633:1: ( ruleNumber )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24634:1: ruleNumber
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXNumberLiteralAccess().getValueNumberParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleNumber_in_rule__XNumberLiteral__ValueAssignment_151433);
+            pushFollow(FOLLOW_ruleNumber_in_rule__XNumberLiteral__ValueAssignment_151481);
             ruleNumber();
 
             state._fsp--;
@@ -69967,22 +70015,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XStringLiteral__ValueAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24619:1: rule__XStringLiteral__ValueAssignment_1 : ( RULE_STRING ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24643:1: rule__XStringLiteral__ValueAssignment_1 : ( RULE_STRING ) ;
     public final void rule__XStringLiteral__ValueAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24623:1: ( ( RULE_STRING ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24624:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24647:1: ( ( RULE_STRING ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24648:1: ( RULE_STRING )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24624:1: ( RULE_STRING )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24625:1: RULE_STRING
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24648:1: ( RULE_STRING )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24649:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXStringLiteralAccess().getValueSTRINGTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_151464); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_151512); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXStringLiteralAccess().getValueSTRINGTerminalRuleCall_1_0()); 
             }
@@ -70008,28 +70056,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XTypeLiteral__TypeAssignment_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24634:1: rule__XTypeLiteral__TypeAssignment_3 : ( ( ruleQualifiedName ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24658:1: rule__XTypeLiteral__TypeAssignment_3 : ( ( ruleQualifiedName ) ) ;
     public final void rule__XTypeLiteral__TypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24638:1: ( ( ( ruleQualifiedName ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24639:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24662:1: ( ( ( ruleQualifiedName ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24663:1: ( ( ruleQualifiedName ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24639:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24640:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24663:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24664:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getTypeJvmTypeCrossReference_3_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24641:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24642:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24665:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24666:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getTypeJvmTypeQualifiedNameParserRuleCall_3_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_351499);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_351547);
             ruleQualifiedName();
 
             state._fsp--;
@@ -70065,22 +70113,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XTypeLiteral__ArrayDimensionsAssignment_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24653:1: rule__XTypeLiteral__ArrayDimensionsAssignment_4 : ( ruleArrayBrackets ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24677:1: rule__XTypeLiteral__ArrayDimensionsAssignment_4 : ( ruleArrayBrackets ) ;
     public final void rule__XTypeLiteral__ArrayDimensionsAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24657:1: ( ( ruleArrayBrackets ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24658:1: ( ruleArrayBrackets )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24681:1: ( ( ruleArrayBrackets ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24682:1: ( ruleArrayBrackets )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24658:1: ( ruleArrayBrackets )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24659:1: ruleArrayBrackets
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24682:1: ( ruleArrayBrackets )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24683:1: ruleArrayBrackets
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getArrayDimensionsArrayBracketsParserRuleCall_4_0()); 
             }
-            pushFollow(FOLLOW_ruleArrayBrackets_in_rule__XTypeLiteral__ArrayDimensionsAssignment_451534);
+            pushFollow(FOLLOW_ruleArrayBrackets_in_rule__XTypeLiteral__ArrayDimensionsAssignment_451582);
             ruleArrayBrackets();
 
             state._fsp--;
@@ -70110,22 +70158,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XThrowExpression__ExpressionAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24668:1: rule__XThrowExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24692:1: rule__XThrowExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XThrowExpression__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24672:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24673:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24696:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24697:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24673:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24674:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24697:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24698:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXThrowExpressionAccess().getExpressionXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_251565);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_251613);
             ruleXExpression();
 
             state._fsp--;
@@ -70155,22 +70203,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XReturnExpression__ExpressionAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24683:1: rule__XReturnExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24707:1: rule__XReturnExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XReturnExpression__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24687:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24688:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24711:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24712:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24688:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24689:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24712:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24713:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXReturnExpressionAccess().getExpressionXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_251596);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_251644);
             ruleXExpression();
 
             state._fsp--;
@@ -70200,22 +70248,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__ExpressionAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24698:1: rule__XTryCatchFinallyExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24722:1: rule__XTryCatchFinallyExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XTryCatchFinallyExpression__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24702:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24703:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24726:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24727:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24703:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24704:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24727:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24728:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getExpressionXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_251627);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_251675);
             ruleXExpression();
 
             state._fsp--;
@@ -70245,22 +70293,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24713:1: rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0 : ( ruleXCatchClause ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24737:1: rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0 : ( ruleXCatchClause ) ;
     public final void rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24717:1: ( ( ruleXCatchClause ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24718:1: ( ruleXCatchClause )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24741:1: ( ( ruleXCatchClause ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24742:1: ( ruleXCatchClause )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24718:1: ( ruleXCatchClause )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24719:1: ruleXCatchClause
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24742:1: ( ruleXCatchClause )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24743:1: ruleXCatchClause
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getCatchClausesXCatchClauseParserRuleCall_3_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_051658);
+            pushFollow(FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_051706);
             ruleXCatchClause();
 
             state._fsp--;
@@ -70290,22 +70338,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24728:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24752:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1 : ( ruleXExpression ) ;
     public final void rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24732:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24733:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24756:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24757:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24733:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24734:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24757:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24758:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getFinallyExpressionXExpressionParserRuleCall_3_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_151689);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_151737);
             ruleXExpression();
 
             state._fsp--;
@@ -70335,22 +70383,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24743:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24767:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1 : ( ruleXExpression ) ;
     public final void rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24747:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24748:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24771:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24772:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24748:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24749:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24772:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24773:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getFinallyExpressionXExpressionParserRuleCall_3_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_151720);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_151768);
             ruleXExpression();
 
             state._fsp--;
@@ -70380,22 +70428,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSynchronizedExpression__ParamAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24758:1: rule__XSynchronizedExpression__ParamAssignment_1 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24782:1: rule__XSynchronizedExpression__ParamAssignment_1 : ( ruleXExpression ) ;
     public final void rule__XSynchronizedExpression__ParamAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24762:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24763:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24786:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24787:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24763:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24764:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24787:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24788:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSynchronizedExpressionAccess().getParamXExpressionParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ParamAssignment_151751);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ParamAssignment_151799);
             ruleXExpression();
 
             state._fsp--;
@@ -70425,22 +70473,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XSynchronizedExpression__ExpressionAssignment_3"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24773:1: rule__XSynchronizedExpression__ExpressionAssignment_3 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24797:1: rule__XSynchronizedExpression__ExpressionAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XSynchronizedExpression__ExpressionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24777:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24778:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24801:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24802:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24778:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24779:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24802:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24803:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSynchronizedExpressionAccess().getExpressionXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ExpressionAssignment_351782);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ExpressionAssignment_351830);
             ruleXExpression();
 
             state._fsp--;
@@ -70470,22 +70518,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCatchClause__DeclaredParamAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24788:1: rule__XCatchClause__DeclaredParamAssignment_2 : ( ruleFullJvmFormalParameter ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24812:1: rule__XCatchClause__DeclaredParamAssignment_2 : ( ruleFullJvmFormalParameter ) ;
     public final void rule__XCatchClause__DeclaredParamAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24792:1: ( ( ruleFullJvmFormalParameter ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24793:1: ( ruleFullJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24816:1: ( ( ruleFullJvmFormalParameter ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24817:1: ( ruleFullJvmFormalParameter )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24793:1: ( ruleFullJvmFormalParameter )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24794:1: ruleFullJvmFormalParameter
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24817:1: ( ruleFullJvmFormalParameter )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24818:1: ruleFullJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCatchClauseAccess().getDeclaredParamFullJvmFormalParameterParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_251813);
+            pushFollow(FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_251861);
             ruleFullJvmFormalParameter();
 
             state._fsp--;
@@ -70515,22 +70563,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XCatchClause__ExpressionAssignment_4"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24803:1: rule__XCatchClause__ExpressionAssignment_4 : ( ruleXExpression ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24827:1: rule__XCatchClause__ExpressionAssignment_4 : ( ruleXExpression ) ;
     public final void rule__XCatchClause__ExpressionAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24807:1: ( ( ruleXExpression ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24808:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24831:1: ( ( ruleXExpression ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24832:1: ( ruleXExpression )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24808:1: ( ruleXExpression )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24809:1: ruleXExpression
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24832:1: ( ruleXExpression )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24833:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCatchClauseAccess().getExpressionXExpressionParserRuleCall_4_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_451844);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_451892);
             ruleXExpression();
 
             state._fsp--;
@@ -70560,22 +70608,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24818:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24842:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 : ( ruleJvmTypeReference ) ;
     public final void rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24822:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24823:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24846:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24847:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24823:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24824:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24847:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24848:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_051875);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_051923);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -70605,22 +70653,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24833:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24857:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 : ( ruleJvmTypeReference ) ;
     public final void rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24837:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24838:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24861:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24862:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24838:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24839:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24862:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24863:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_151906);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_151954);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -70650,22 +70698,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XFunctionTypeRef__ReturnTypeAssignment_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24848:1: rule__XFunctionTypeRef__ReturnTypeAssignment_2 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24872:1: rule__XFunctionTypeRef__ReturnTypeAssignment_2 : ( ruleJvmTypeReference ) ;
     public final void rule__XFunctionTypeRef__ReturnTypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24852:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24853:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24876:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24877:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24853:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24854:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24877:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24878:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getReturnTypeJvmTypeReferenceParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_251937);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_251985);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -70695,28 +70743,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__TypeAssignment_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24863:1: rule__JvmParameterizedTypeReference__TypeAssignment_0 : ( ( ruleQualifiedName ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24887:1: rule__JvmParameterizedTypeReference__TypeAssignment_0 : ( ( ruleQualifiedName ) ) ;
     public final void rule__JvmParameterizedTypeReference__TypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24867:1: ( ( ( ruleQualifiedName ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24868:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24891:1: ( ( ( ruleQualifiedName ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24892:1: ( ( ruleQualifiedName ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24868:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24869:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24892:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24893:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeCrossReference_0_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24870:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24871:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24894:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24895:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeQualifiedNameParserRuleCall_0_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_051972);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_052020);
             ruleQualifiedName();
 
             state._fsp--;
@@ -70752,22 +70800,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24882:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24906:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24886:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24887:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24910:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24911:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24887:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24888:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24911:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24912:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_152007);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_152055);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -70797,22 +70845,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24897:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24921:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24901:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24902:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24925:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24926:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24902:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24903:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24926:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24927:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_152038);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_152086);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -70842,28 +70890,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__TypeAssignment_1_4_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24912:1: rule__JvmParameterizedTypeReference__TypeAssignment_1_4_1 : ( ( ruleValidID ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24936:1: rule__JvmParameterizedTypeReference__TypeAssignment_1_4_1 : ( ( ruleValidID ) ) ;
     public final void rule__JvmParameterizedTypeReference__TypeAssignment_1_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24916:1: ( ( ( ruleValidID ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24917:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24940:1: ( ( ( ruleValidID ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24941:1: ( ( ruleValidID ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24917:1: ( ( ruleValidID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24918:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24941:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24942:1: ( ruleValidID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeCrossReference_1_4_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24919:1: ( ruleValidID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24920:1: ruleValidID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24943:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24944:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeValidIDParserRuleCall_1_4_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__JvmParameterizedTypeReference__TypeAssignment_1_4_152073);
+            pushFollow(FOLLOW_ruleValidID_in_rule__JvmParameterizedTypeReference__TypeAssignment_1_4_152121);
             ruleValidID();
 
             state._fsp--;
@@ -70899,22 +70947,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24931:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24955:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24935:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24936:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24959:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24960:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24936:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24937:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24960:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24961:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_4_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_152108);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_152156);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -70944,22 +70992,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24946:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24970:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24950:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24951:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24974:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24975:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24951:1: ( ruleJvmArgumentTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24952:1: ruleJvmArgumentTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24975:1: ( ruleJvmArgumentTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24976:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_4_2_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_152139);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_152187);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -70989,22 +71037,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24961:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_0 : ( ruleJvmUpperBound ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24985:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_0 : ( ruleJvmUpperBound ) ;
     public final void rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24965:1: ( ( ruleJvmUpperBound ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24966:1: ( ruleJvmUpperBound )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24989:1: ( ( ruleJvmUpperBound ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24990:1: ( ruleJvmUpperBound )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24966:1: ( ruleJvmUpperBound )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24967:1: ruleJvmUpperBound
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24990:1: ( ruleJvmUpperBound )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24991:1: ruleJvmUpperBound
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmUpperBoundParserRuleCall_2_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_052170);
+            pushFollow(FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_052218);
             ruleJvmUpperBound();
 
             state._fsp--;
@@ -71034,22 +71082,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24976:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_1 : ( ruleJvmUpperBoundAnded ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25000:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_1 : ( ruleJvmUpperBoundAnded ) ;
     public final void rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24980:1: ( ( ruleJvmUpperBoundAnded ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24981:1: ( ruleJvmUpperBoundAnded )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25004:1: ( ( ruleJvmUpperBoundAnded ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25005:1: ( ruleJvmUpperBoundAnded )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24981:1: ( ruleJvmUpperBoundAnded )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24982:1: ruleJvmUpperBoundAnded
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25005:1: ( ruleJvmUpperBoundAnded )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25006:1: ruleJvmUpperBoundAnded
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmUpperBoundAndedParserRuleCall_2_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmUpperBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_152201);
+            pushFollow(FOLLOW_ruleJvmUpperBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_152249);
             ruleJvmUpperBoundAnded();
 
             state._fsp--;
@@ -71079,22 +71127,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24991:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_0 : ( ruleJvmLowerBound ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25015:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_0 : ( ruleJvmLowerBound ) ;
     public final void rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24995:1: ( ( ruleJvmLowerBound ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24996:1: ( ruleJvmLowerBound )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25019:1: ( ( ruleJvmLowerBound ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25020:1: ( ruleJvmLowerBound )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24996:1: ( ruleJvmLowerBound )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:24997:1: ruleJvmLowerBound
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25020:1: ( ruleJvmLowerBound )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25021:1: ruleJvmLowerBound
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmLowerBoundParserRuleCall_2_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_052232);
+            pushFollow(FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_052280);
             ruleJvmLowerBound();
 
             state._fsp--;
@@ -71124,22 +71172,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25006:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_1 : ( ruleJvmLowerBoundAnded ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25030:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_1 : ( ruleJvmLowerBoundAnded ) ;
     public final void rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25010:1: ( ( ruleJvmLowerBoundAnded ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25011:1: ( ruleJvmLowerBoundAnded )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25034:1: ( ( ruleJvmLowerBoundAnded ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25035:1: ( ruleJvmLowerBoundAnded )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25011:1: ( ruleJvmLowerBoundAnded )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25012:1: ruleJvmLowerBoundAnded
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25035:1: ( ruleJvmLowerBoundAnded )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25036:1: ruleJvmLowerBoundAnded
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmLowerBoundAndedParserRuleCall_2_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmLowerBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_152263);
+            pushFollow(FOLLOW_ruleJvmLowerBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_152311);
             ruleJvmLowerBoundAnded();
 
             state._fsp--;
@@ -71169,22 +71217,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmUpperBound__TypeReferenceAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25021:1: rule__JvmUpperBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25045:1: rule__JvmUpperBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmUpperBound__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25025:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25026:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25049:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25050:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25026:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25027:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25050:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25051:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_152294);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_152342);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -71214,22 +71262,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmUpperBoundAnded__TypeReferenceAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25036:1: rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25060:1: rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmUpperBoundAnded__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25040:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25041:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25064:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25065:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25041:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25042:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25065:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25066:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAndedAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_152325);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_152373);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -71259,22 +71307,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmLowerBound__TypeReferenceAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25051:1: rule__JvmLowerBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25075:1: rule__JvmLowerBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmLowerBound__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25055:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25056:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25079:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25080:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25056:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25057:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25080:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25081:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmLowerBoundAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_152356);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_152404);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -71304,22 +71352,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__JvmLowerBoundAnded__TypeReferenceAssignment_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25066:1: rule__JvmLowerBoundAnded__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25090:1: rule__JvmLowerBoundAnded__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmLowerBoundAnded__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25070:1: ( ( ruleJvmTypeReference ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25071:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25094:1: ( ( ruleJvmTypeReference ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25095:1: ( ruleJvmTypeReference )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25071:1: ( ruleJvmTypeReference )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25072:1: ruleJvmTypeReference
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25095:1: ( ruleJvmTypeReference )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25096:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmLowerBoundAndedAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBoundAnded__TypeReferenceAssignment_152387);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBoundAnded__TypeReferenceAssignment_152435);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -71349,28 +71397,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__StaticAssignment_1_0_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25085:1: rule__XImportDeclaration__StaticAssignment_1_0_0 : ( ( 'static' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25109:1: rule__XImportDeclaration__StaticAssignment_1_0_0 : ( ( 'static' ) ) ;
     public final void rule__XImportDeclaration__StaticAssignment_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25089:1: ( ( ( 'static' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25090:1: ( ( 'static' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25113:1: ( ( ( 'static' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25114:1: ( ( 'static' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25090:1: ( ( 'static' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25091:1: ( 'static' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXImportDeclarationAccess().getStaticStaticKeyword_1_0_0_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25092:1: ( 'static' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25093:1: 'static'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25114:1: ( ( 'static' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25115:1: ( 'static' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getStaticStaticKeyword_1_0_0_0()); 
             }
-            match(input,46,FOLLOW_46_in_rule__XImportDeclaration__StaticAssignment_1_0_052427); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25116:1: ( 'static' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25117:1: 'static'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXImportDeclarationAccess().getStaticStaticKeyword_1_0_0_0()); 
+            }
+            match(input,46,FOLLOW_46_in_rule__XImportDeclaration__StaticAssignment_1_0_052475); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXImportDeclarationAccess().getStaticStaticKeyword_1_0_0_0()); 
             }
@@ -71402,28 +71450,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__ExtensionAssignment_1_0_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25108:1: rule__XImportDeclaration__ExtensionAssignment_1_0_1 : ( ( 'extension' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25132:1: rule__XImportDeclaration__ExtensionAssignment_1_0_1 : ( ( 'extension' ) ) ;
     public final void rule__XImportDeclaration__ExtensionAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25112:1: ( ( ( 'extension' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25113:1: ( ( 'extension' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25136:1: ( ( ( 'extension' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25137:1: ( ( 'extension' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25113:1: ( ( 'extension' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25114:1: ( 'extension' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXImportDeclarationAccess().getExtensionExtensionKeyword_1_0_1_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25115:1: ( 'extension' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25116:1: 'extension'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25137:1: ( ( 'extension' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25138:1: ( 'extension' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getExtensionExtensionKeyword_1_0_1_0()); 
             }
-            match(input,48,FOLLOW_48_in_rule__XImportDeclaration__ExtensionAssignment_1_0_152471); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25139:1: ( 'extension' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25140:1: 'extension'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXImportDeclarationAccess().getExtensionExtensionKeyword_1_0_1_0()); 
+            }
+            match(input,48,FOLLOW_48_in_rule__XImportDeclaration__ExtensionAssignment_1_0_152519); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXImportDeclarationAccess().getExtensionExtensionKeyword_1_0_1_0()); 
             }
@@ -71455,28 +71503,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__ImportedTypeAssignment_1_0_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25131:1: rule__XImportDeclaration__ImportedTypeAssignment_1_0_2 : ( ( ruleQualifiedNameInStaticImport ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25155:1: rule__XImportDeclaration__ImportedTypeAssignment_1_0_2 : ( ( ruleQualifiedNameInStaticImport ) ) ;
     public final void rule__XImportDeclaration__ImportedTypeAssignment_1_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25135:1: ( ( ( ruleQualifiedNameInStaticImport ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25136:1: ( ( ruleQualifiedNameInStaticImport ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25159:1: ( ( ( ruleQualifiedNameInStaticImport ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25160:1: ( ( ruleQualifiedNameInStaticImport ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25136:1: ( ( ruleQualifiedNameInStaticImport ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25137:1: ( ruleQualifiedNameInStaticImport )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25160:1: ( ( ruleQualifiedNameInStaticImport ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25161:1: ( ruleQualifiedNameInStaticImport )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getImportedTypeJvmDeclaredTypeCrossReference_1_0_2_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25138:1: ( ruleQualifiedNameInStaticImport )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25139:1: ruleQualifiedNameInStaticImport
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25162:1: ( ruleQualifiedNameInStaticImport )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25163:1: ruleQualifiedNameInStaticImport
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getImportedTypeJvmDeclaredTypeQualifiedNameInStaticImportParserRuleCall_1_0_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedNameInStaticImport_in_rule__XImportDeclaration__ImportedTypeAssignment_1_0_252514);
+            pushFollow(FOLLOW_ruleQualifiedNameInStaticImport_in_rule__XImportDeclaration__ImportedTypeAssignment_1_0_252562);
             ruleQualifiedNameInStaticImport();
 
             state._fsp--;
@@ -71512,28 +71560,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__WildcardAssignment_1_0_3_0"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25150:1: rule__XImportDeclaration__WildcardAssignment_1_0_3_0 : ( ( '*' ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25174:1: rule__XImportDeclaration__WildcardAssignment_1_0_3_0 : ( ( '*' ) ) ;
     public final void rule__XImportDeclaration__WildcardAssignment_1_0_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25154:1: ( ( ( '*' ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25155:1: ( ( '*' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25178:1: ( ( ( '*' ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25179:1: ( ( '*' ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25155:1: ( ( '*' ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25156:1: ( '*' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXImportDeclarationAccess().getWildcardAsteriskKeyword_1_0_3_0_0()); 
-            }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25157:1: ( '*' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25158:1: '*'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25179:1: ( ( '*' ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25180:1: ( '*' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getWildcardAsteriskKeyword_1_0_3_0_0()); 
             }
-            match(input,36,FOLLOW_36_in_rule__XImportDeclaration__WildcardAssignment_1_0_3_052554); if (state.failed) return ;
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25181:1: ( '*' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25182:1: '*'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXImportDeclarationAccess().getWildcardAsteriskKeyword_1_0_3_0_0()); 
+            }
+            match(input,36,FOLLOW_36_in_rule__XImportDeclaration__WildcardAssignment_1_0_3_052602); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXImportDeclarationAccess().getWildcardAsteriskKeyword_1_0_3_0_0()); 
             }
@@ -71565,22 +71613,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__MemberNameAssignment_1_0_3_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25173:1: rule__XImportDeclaration__MemberNameAssignment_1_0_3_1 : ( ruleValidID ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25197:1: rule__XImportDeclaration__MemberNameAssignment_1_0_3_1 : ( ruleValidID ) ;
     public final void rule__XImportDeclaration__MemberNameAssignment_1_0_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25177:1: ( ( ruleValidID ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25178:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25201:1: ( ( ruleValidID ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25202:1: ( ruleValidID )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25178:1: ( ruleValidID )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25179:1: ruleValidID
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25202:1: ( ruleValidID )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25203:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getMemberNameValidIDParserRuleCall_1_0_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XImportDeclaration__MemberNameAssignment_1_0_3_152593);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XImportDeclaration__MemberNameAssignment_1_0_3_152641);
             ruleValidID();
 
             state._fsp--;
@@ -71610,28 +71658,28 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__ImportedTypeAssignment_1_1"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25188:1: rule__XImportDeclaration__ImportedTypeAssignment_1_1 : ( ( ruleQualifiedName ) ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25212:1: rule__XImportDeclaration__ImportedTypeAssignment_1_1 : ( ( ruleQualifiedName ) ) ;
     public final void rule__XImportDeclaration__ImportedTypeAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25192:1: ( ( ( ruleQualifiedName ) ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25193:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25216:1: ( ( ( ruleQualifiedName ) ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25217:1: ( ( ruleQualifiedName ) )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25193:1: ( ( ruleQualifiedName ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25194:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25217:1: ( ( ruleQualifiedName ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25218:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getImportedTypeJvmDeclaredTypeCrossReference_1_1_0()); 
             }
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25195:1: ( ruleQualifiedName )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25196:1: ruleQualifiedName
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25219:1: ( ruleQualifiedName )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25220:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getImportedTypeJvmDeclaredTypeQualifiedNameParserRuleCall_1_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XImportDeclaration__ImportedTypeAssignment_1_152628);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XImportDeclaration__ImportedTypeAssignment_1_152676);
             ruleQualifiedName();
 
             state._fsp--;
@@ -71667,22 +71715,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__XImportDeclaration__ImportedNamespaceAssignment_1_2"
-    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25207:1: rule__XImportDeclaration__ImportedNamespaceAssignment_1_2 : ( ruleQualifiedNameWithWildcard ) ;
+    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:1: rule__XImportDeclaration__ImportedNamespaceAssignment_1_2 : ( ruleQualifiedNameWithWildcard ) ;
     public final void rule__XImportDeclaration__ImportedNamespaceAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25211:1: ( ( ruleQualifiedNameWithWildcard ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25212:1: ( ruleQualifiedNameWithWildcard )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:1: ( ( ruleQualifiedNameWithWildcard ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25236:1: ( ruleQualifiedNameWithWildcard )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25212:1: ( ruleQualifiedNameWithWildcard )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25213:1: ruleQualifiedNameWithWildcard
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25236:1: ( ruleQualifiedNameWithWildcard )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25237:1: ruleQualifiedNameWithWildcard
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXImportDeclarationAccess().getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_2_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedNameWithWildcard_in_rule__XImportDeclaration__ImportedNamespaceAssignment_1_252663);
+            pushFollow(FOLLOW_ruleQualifiedNameWithWildcard_in_rule__XImportDeclaration__ImportedNamespaceAssignment_1_252711);
             ruleQualifiedNameWithWildcard();
 
             state._fsp--;
@@ -75578,7 +75626,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA3_acceptS =
         "\1\uffff\1\1\14\uffff\1\2\1\3\10\uffff";
     static final String DFA3_specialS =
-        "\2\uffff\1\12\1\2\1\6\1\13\7\uffff\1\0\2\uffff\1\10\1\1\1\7\1\11\1\3\1\4\1\uffff\1\5}>";
+        "\2\uffff\1\1\1\2\1\12\1\5\7\uffff\1\7\2\uffff\1\0\1\4\1\11\1\13\1\10\1\3\1\uffff\1\6}>";
     static final String[] DFA3_transitionS = {
             "\1\3\1\4\1\5\2\uffff\1\15\5\uffff\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\1\17\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "",
@@ -75643,10 +75691,10 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA3_13 = input.LA(1);
+                        int LA3_16 = input.LA(1);
 
                          
-                        int index3_13 = input.index();
+                        int index3_16 = input.index();
                         input.rewind();
                         s = -1;
                         if ( (synpred3_InternalEEBM()) ) {s = 1;}
@@ -75656,14 +75704,14 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( (true) ) {s = 15;}
 
                          
-                        input.seek(index3_13);
+                        input.seek(index3_16);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA3_17 = input.LA(1);
+                        int LA3_2 = input.LA(1);
 
                          
-                        int index3_17 = input.index();
+                        int index3_2 = input.index();
                         input.rewind();
                         s = -1;
                         if ( (synpred3_InternalEEBM()) ) {s = 1;}
@@ -75673,7 +75721,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( (true) ) {s = 15;}
 
                          
-                        input.seek(index3_17);
+                        input.seek(index3_2);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
@@ -75694,6 +75742,87 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
+                        int LA3_21 = input.LA(1);
+
+                         
+                        int index3_21 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
+
+                        else if ( (true) ) {s = 15;}
+
+                         
+                        input.seek(index3_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA3_17 = input.LA(1);
+
+                         
+                        int index3_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
+
+                        else if ( (synpred4_InternalEEBM()) ) {s = 14;}
+
+                        else if ( (true) ) {s = 15;}
+
+                         
+                        input.seek(index3_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA3_5 = input.LA(1);
+
+                         
+                        int index3_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
+
+                        else if ( (synpred4_InternalEEBM()) ) {s = 14;}
+
+                        else if ( (true) ) {s = 15;}
+
+                         
+                        input.seek(index3_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA3_23 = input.LA(1);
+
+                         
+                        int index3_23 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
+
+                        else if ( (true) ) {s = 15;}
+
+                         
+                        input.seek(index3_23);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA3_13 = input.LA(1);
+
+                         
+                        int index3_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
+
+                        else if ( (synpred4_InternalEEBM()) ) {s = 14;}
+
+                        else if ( (true) ) {s = 15;}
+
+                         
+                        input.seek(index3_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA3_20 = input.LA(1);
 
                          
@@ -75710,54 +75839,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index3_20);
                         if ( s>=0 ) return s;
                         break;
-                    case 4 : 
-                        int LA3_21 = input.LA(1);
-
-                         
-                        int index3_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
-
-                        else if ( (true) ) {s = 15;}
-
-                         
-                        input.seek(index3_21);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA3_23 = input.LA(1);
-
-                         
-                        int index3_23 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
-
-                        else if ( (true) ) {s = 15;}
-
-                         
-                        input.seek(index3_23);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA3_4 = input.LA(1);
-
-                         
-                        int index3_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
-
-                        else if ( (synpred4_InternalEEBM()) ) {s = 14;}
-
-                        else if ( (true) ) {s = 15;}
-
-                         
-                        input.seek(index3_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
+                    case 9 : 
                         int LA3_18 = input.LA(1);
 
                          
@@ -75774,11 +75856,11 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index3_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
-                        int LA3_16 = input.LA(1);
+                    case 10 : 
+                        int LA3_4 = input.LA(1);
 
                          
-                        int index3_16 = input.index();
+                        int index3_4 = input.index();
                         input.rewind();
                         s = -1;
                         if ( (synpred3_InternalEEBM()) ) {s = 1;}
@@ -75788,10 +75870,10 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( (true) ) {s = 15;}
 
                          
-                        input.seek(index3_16);
+                        input.seek(index3_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
+                    case 11 : 
                         int LA3_19 = input.LA(1);
 
                          
@@ -75806,40 +75888,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index3_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
-                        int LA3_2 = input.LA(1);
-
-                         
-                        int index3_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
-
-                        else if ( (synpred4_InternalEEBM()) ) {s = 14;}
-
-                        else if ( (true) ) {s = 15;}
-
-                         
-                        input.seek(index3_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
-                        int LA3_5 = input.LA(1);
-
-                         
-                        int index3_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred3_InternalEEBM()) ) {s = 1;}
-
-                        else if ( (synpred4_InternalEEBM()) ) {s = 14;}
-
-                        else if ( (true) ) {s = 15;}
-
-                         
-                        input.seek(index3_5);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -76794,7 +76842,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA65_acceptS =
         "\1\uffff\1\2\10\uffff\1\1";
     static final String DFA65_specialS =
-        "\2\uffff\1\4\1\5\1\7\1\1\1\3\1\6\1\0\1\2\1\uffff}>";
+        "\2\uffff\1\5\1\6\1\7\1\1\1\4\1\2\1\0\1\3\1\uffff}>";
     static final String[] DFA65_transitionS = {
             "\5\1\5\uffff\14\1\1\3\1\2\1\4\1\5\1\6\1\7\1\10\1\11\21\1\4\uffff\2\1\2\uffff\1\1\3\uffff\1\1\12\uffff\31\1\4\uffff\2\1\1\uffff\2\1",
             "",
@@ -76876,6 +76924,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
+                        int LA65_7 = input.LA(1);
+
+                         
+                        int index65_7 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred110_InternalEEBM()) ) {s = 10;}
+
+                        else if ( (true) ) {s = 1;}
+
+                         
+                        input.seek(index65_7);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
                         int LA65_9 = input.LA(1);
 
                          
@@ -76890,7 +76953,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index65_9);
                         if ( s>=0 ) return s;
                         break;
-                    case 3 : 
+                    case 4 : 
                         int LA65_6 = input.LA(1);
 
                          
@@ -76905,7 +76968,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index65_6);
                         if ( s>=0 ) return s;
                         break;
-                    case 4 : 
+                    case 5 : 
                         int LA65_2 = input.LA(1);
 
                          
@@ -76920,7 +76983,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index65_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
+                    case 6 : 
                         int LA65_3 = input.LA(1);
 
                          
@@ -76933,21 +76996,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index65_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA65_7 = input.LA(1);
-
-                         
-                        int index65_7 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred110_InternalEEBM()) ) {s = 10;}
-
-                        else if ( (true) ) {s = 1;}
-
-                         
-                        input.seek(index65_7);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
@@ -79328,9 +79376,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA142_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA142_specialS =
-        "\2\uffff\1\3\1\4\1\12\1\13\7\uffff\1\1\3\uffff\1\5\1\7\1\14\1\0\1\2\1\11\3\uffff\1\10\1\6\2\uffff}>";
+        "\2\uffff\1\7\1\11\1\13\1\14\7\uffff\1\4\3\uffff\1\2\1\0\1\6\1\3\1\10\1\12\3\uffff\1\5\1\1\2\uffff}>";
     static final String[] DFA142_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -79399,111 +79447,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA142_20 = input.LA(1);
-
-                         
-                        int index142_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA142_13 = input.LA(1);
-
-                         
-                        int index142_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA142_21 = input.LA(1);
-
-                         
-                        int index142_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_21);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA142_2 = input.LA(1);
-
-                         
-                        int index142_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA142_3 = input.LA(1);
-
-                         
-                        int index142_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA142_17 = input.LA(1);
-
-                         
-                        int index142_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA142_27 = input.LA(1);
-
-                         
-                        int index142_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
                         int LA142_18 = input.LA(1);
 
                          
@@ -79518,7 +79461,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index142_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
+                    case 1 : 
+                        int LA142_27 = input.LA(1);
+
+                         
+                        int index142_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA142_17 = input.LA(1);
+
+                         
+                        int index142_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA142_20 = input.LA(1);
+
+                         
+                        int index142_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA142_13 = input.LA(1);
+
+                         
+                        int index142_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
                         int LA142_26 = input.LA(1);
 
                          
@@ -79533,7 +79536,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index142_26);
                         if ( s>=0 ) return s;
                         break;
+                    case 6 : 
+                        int LA142_19 = input.LA(1);
+
+                         
+                        int index142_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA142_2 = input.LA(1);
+
+                         
+                        int index142_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA142_21 = input.LA(1);
+
+                         
+                        int index142_21 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_21);
+                        if ( s>=0 ) return s;
+                        break;
                     case 9 : 
+                        int LA142_3 = input.LA(1);
+
+                         
+                        int index142_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index142_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
                         int LA142_22 = input.LA(1);
 
                          
@@ -79548,7 +79611,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index142_22);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 11 : 
                         int LA142_4 = input.LA(1);
 
                          
@@ -79563,7 +79626,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index142_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
+                    case 12 : 
                         int LA142_5 = input.LA(1);
 
                          
@@ -79576,21 +79639,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index142_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 12 : 
-                        int LA142_19 = input.LA(1);
-
-                         
-                        int index142_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred194_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index142_19);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -79612,9 +79660,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA143_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA143_specialS =
-        "\2\uffff\1\0\1\3\1\7\1\10\7\uffff\1\13\3\uffff\1\4\1\1\1\11\1\5\1\14\1\2\3\uffff\1\6\1\12\2\uffff}>";
+        "\2\uffff\1\14\1\5\1\12\1\13\7\uffff\1\3\3\uffff\1\4\1\1\1\10\1\7\1\11\1\6\3\uffff\1\0\1\2\2\uffff}>";
     static final String[] DFA143_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -79683,18 +79731,18 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA143_2 = input.LA(1);
+                        int LA143_26 = input.LA(1);
 
                          
-                        int index143_2 = input.index();
+                        int index143_26 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index143_2);
+                        input.seek(index143_26);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
@@ -79713,33 +79761,33 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA143_22 = input.LA(1);
+                        int LA143_27 = input.LA(1);
 
                          
-                        int index143_22 = input.index();
+                        int index143_27 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index143_22);
+                        input.seek(index143_27);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA143_3 = input.LA(1);
+                        int LA143_13 = input.LA(1);
 
                          
-                        int index143_3 = input.index();
+                        int index143_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index143_3);
+                        input.seek(index143_13);
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
@@ -79758,6 +79806,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
+                        int LA143_3 = input.LA(1);
+
+                         
+                        int index143_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index143_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA143_22 = input.LA(1);
+
+                         
+                        int index143_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index143_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
                         int LA143_20 = input.LA(1);
 
                          
@@ -79772,52 +79850,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index143_20);
                         if ( s>=0 ) return s;
                         break;
-                    case 6 : 
-                        int LA143_26 = input.LA(1);
-
-                         
-                        int index143_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index143_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA143_4 = input.LA(1);
-
-                         
-                        int index143_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index143_4);
-                        if ( s>=0 ) return s;
-                        break;
                     case 8 : 
-                        int LA143_5 = input.LA(1);
-
-                         
-                        int index143_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index143_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
                         int LA143_19 = input.LA(1);
 
                          
@@ -79832,37 +79865,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index143_19);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
-                        int LA143_27 = input.LA(1);
-
-                         
-                        int index143_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index143_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
-                        int LA143_13 = input.LA(1);
-
-                         
-                        int index143_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index143_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 12 : 
+                    case 9 : 
                         int LA143_21 = input.LA(1);
 
                          
@@ -79875,6 +79878,51 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index143_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA143_4 = input.LA(1);
+
+                         
+                        int index143_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index143_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA143_5 = input.LA(1);
+
+                         
+                        int index143_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index143_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA143_2 = input.LA(1);
+
+                         
+                        int index143_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred195_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index143_2);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -79896,9 +79944,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA144_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA144_specialS =
-        "\2\uffff\1\1\1\12\1\2\1\3\7\uffff\1\11\3\uffff\1\13\1\6\1\4\1\7\1\14\1\5\3\uffff\1\10\1\0\2\uffff}>";
+        "\2\uffff\1\6\1\2\1\13\1\14\7\uffff\1\1\3\uffff\1\11\1\3\1\0\1\7\1\12\1\5\3\uffff\1\10\1\4\2\uffff}>";
     static final String[] DFA144_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -79967,66 +80015,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA144_27 = input.LA(1);
-
-                         
-                        int index144_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index144_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA144_2 = input.LA(1);
-
-                         
-                        int index144_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index144_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA144_4 = input.LA(1);
-
-                         
-                        int index144_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index144_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA144_5 = input.LA(1);
-
-                         
-                        int index144_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index144_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
                         int LA144_19 = input.LA(1);
 
                          
@@ -80039,6 +80027,66 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index144_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA144_13 = input.LA(1);
+
+                         
+                        int index144_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index144_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA144_3 = input.LA(1);
+
+                         
+                        int index144_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index144_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA144_18 = input.LA(1);
+
+                         
+                        int index144_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index144_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA144_27 = input.LA(1);
+
+                         
+                        int index144_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index144_27);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
@@ -80057,18 +80105,18 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
-                        int LA144_18 = input.LA(1);
+                        int LA144_2 = input.LA(1);
 
                          
-                        int index144_18 = input.index();
+                        int index144_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index144_18);
+                        input.seek(index144_2);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
@@ -80102,36 +80150,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
-                        int LA144_13 = input.LA(1);
-
-                         
-                        int index144_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index144_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
-                        int LA144_3 = input.LA(1);
-
-                         
-                        int index144_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index144_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
                         int LA144_17 = input.LA(1);
 
                          
@@ -80146,7 +80164,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index144_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 10 : 
                         int LA144_21 = input.LA(1);
 
                          
@@ -80159,6 +80177,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index144_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA144_4 = input.LA(1);
+
+                         
+                        int index144_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index144_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA144_5 = input.LA(1);
+
+                         
+                        int index144_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred196_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index144_5);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -80180,9 +80228,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA145_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA145_specialS =
-        "\2\uffff\1\1\1\2\1\6\1\7\7\uffff\1\0\3\uffff\1\3\1\13\1\10\1\14\1\4\1\12\3\uffff\1\5\1\11\2\uffff}>";
+        "\2\uffff\1\6\1\13\1\7\1\10\7\uffff\1\4\3\uffff\1\1\1\5\1\2\1\12\1\11\1\14\3\uffff\1\3\1\0\2\uffff}>";
     static final String[] DFA145_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -80251,141 +80299,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA145_13 = input.LA(1);
-
-                         
-                        int index145_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA145_2 = input.LA(1);
-
-                         
-                        int index145_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA145_3 = input.LA(1);
-
-                         
-                        int index145_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA145_17 = input.LA(1);
-
-                         
-                        int index145_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA145_21 = input.LA(1);
-
-                         
-                        int index145_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_21);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA145_26 = input.LA(1);
-
-                         
-                        int index145_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA145_4 = input.LA(1);
-
-                         
-                        int index145_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA145_5 = input.LA(1);
-
-                         
-                        int index145_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA145_19 = input.LA(1);
-
-                         
-                        int index145_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index145_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
                         int LA145_27 = input.LA(1);
 
                          
@@ -80400,22 +80313,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index145_27);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
-                        int LA145_22 = input.LA(1);
+                    case 1 : 
+                        int LA145_17 = input.LA(1);
 
                          
-                        int index145_22 = input.index();
+                        int index145_17 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index145_22);
+                        input.seek(index145_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
+                    case 2 : 
+                        int LA145_19 = input.LA(1);
+
+                         
+                        int index145_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA145_26 = input.LA(1);
+
+                         
+                        int index145_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA145_13 = input.LA(1);
+
+                         
+                        int index145_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
                         int LA145_18 = input.LA(1);
 
                          
@@ -80430,7 +80388,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index145_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 6 : 
+                        int LA145_2 = input.LA(1);
+
+                         
+                        int index145_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA145_4 = input.LA(1);
+
+                         
+                        int index145_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA145_5 = input.LA(1);
+
+                         
+                        int index145_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA145_21 = input.LA(1);
+
+                         
+                        int index145_21 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
                         int LA145_20 = input.LA(1);
 
                          
@@ -80443,6 +80461,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index145_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA145_3 = input.LA(1);
+
+                         
+                        int index145_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA145_22 = input.LA(1);
+
+                         
+                        int index145_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred197_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index145_22);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -80464,9 +80512,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA146_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA146_specialS =
-        "\2\uffff\1\1\1\2\1\6\1\7\7\uffff\1\0\3\uffff\1\3\1\11\1\10\1\13\1\4\1\12\3\uffff\1\14\1\5\2\uffff}>";
+        "\2\uffff\1\4\1\2\1\12\1\13\7\uffff\1\1\3\uffff\1\11\1\5\1\7\1\0\1\14\1\3\3\uffff\1\10\1\6\2\uffff}>";
     static final String[] DFA146_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -80535,6 +80583,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA146_20 = input.LA(1);
+
+                         
+                        int index146_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
                         int LA146_13 = input.LA(1);
 
                          
@@ -80547,21 +80610,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index146_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA146_2 = input.LA(1);
-
-                         
-                        int index146_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_2);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
@@ -80580,111 +80628,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA146_17 = input.LA(1);
-
-                         
-                        int index146_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA146_21 = input.LA(1);
-
-                         
-                        int index146_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_21);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA146_27 = input.LA(1);
-
-                         
-                        int index146_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA146_4 = input.LA(1);
-
-                         
-                        int index146_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA146_5 = input.LA(1);
-
-                         
-                        int index146_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA146_19 = input.LA(1);
-
-                         
-                        int index146_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
-                        int LA146_18 = input.LA(1);
-
-                         
-                        int index146_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index146_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
                         int LA146_22 = input.LA(1);
 
                          
@@ -80699,22 +80642,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index146_22);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
-                        int LA146_20 = input.LA(1);
+                    case 4 : 
+                        int LA146_2 = input.LA(1);
 
                          
-                        int index146_20 = input.index();
+                        int index146_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index146_20);
+                        input.seek(index146_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 5 : 
+                        int LA146_18 = input.LA(1);
+
+                         
+                        int index146_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA146_27 = input.LA(1);
+
+                         
+                        int index146_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA146_19 = input.LA(1);
+
+                         
+                        int index146_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA146_26 = input.LA(1);
 
                          
@@ -80727,6 +80715,66 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index146_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA146_17 = input.LA(1);
+
+                         
+                        int index146_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA146_4 = input.LA(1);
+
+                         
+                        int index146_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA146_5 = input.LA(1);
+
+                         
+                        int index146_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA146_21 = input.LA(1);
+
+                         
+                        int index146_21 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred198_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index146_21);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -80748,9 +80796,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA147_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA147_specialS =
-        "\2\uffff\1\5\1\13\1\1\1\2\7\uffff\1\11\3\uffff\1\14\1\6\1\3\1\10\1\12\1\7\3\uffff\1\0\1\4\2\uffff}>";
+        "\2\uffff\1\13\1\14\1\6\1\7\7\uffff\1\3\3\uffff\1\5\1\0\1\2\1\11\1\10\1\12\3\uffff\1\4\1\1\2\uffff}>";
     static final String[] DFA147_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -80819,96 +80867,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA147_26 = input.LA(1);
-
-                         
-                        int index147_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA147_4 = input.LA(1);
-
-                         
-                        int index147_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA147_5 = input.LA(1);
-
-                         
-                        int index147_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA147_19 = input.LA(1);
-
-                         
-                        int index147_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA147_27 = input.LA(1);
-
-                         
-                        int index147_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA147_2 = input.LA(1);
-
-                         
-                        int index147_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
                         int LA147_18 = input.LA(1);
 
                          
@@ -80923,37 +80881,37 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index147_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
-                        int LA147_22 = input.LA(1);
+                    case 1 : 
+                        int LA147_27 = input.LA(1);
 
                          
-                        int index147_22 = input.index();
+                        int index147_27 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index147_22);
+                        input.seek(index147_27);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
-                        int LA147_20 = input.LA(1);
+                    case 2 : 
+                        int LA147_19 = input.LA(1);
 
                          
-                        int index147_20 = input.index();
+                        int index147_19 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index147_20);
+                        input.seek(index147_19);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
+                    case 3 : 
                         int LA147_13 = input.LA(1);
 
                          
@@ -80968,7 +80926,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index147_13);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 4 : 
+                        int LA147_26 = input.LA(1);
+
+                         
+                        int index147_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA147_17 = input.LA(1);
+
+                         
+                        int index147_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA147_4 = input.LA(1);
+
+                         
+                        int index147_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA147_5 = input.LA(1);
+
+                         
+                        int index147_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA147_21 = input.LA(1);
 
                          
@@ -80983,7 +81001,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index147_21);
                         if ( s>=0 ) return s;
                         break;
+                    case 9 : 
+                        int LA147_20 = input.LA(1);
+
+                         
+                        int index147_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA147_22 = input.LA(1);
+
+                         
+                        int index147_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_22);
+                        if ( s>=0 ) return s;
+                        break;
                     case 11 : 
+                        int LA147_2 = input.LA(1);
+
+                         
+                        int index147_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index147_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
                         int LA147_3 = input.LA(1);
 
                          
@@ -80996,21 +81059,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index147_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 12 : 
-                        int LA147_17 = input.LA(1);
-
-                         
-                        int index147_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred199_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index147_17);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -81032,9 +81080,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA148_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA148_specialS =
-        "\2\uffff\1\13\1\14\1\1\1\2\7\uffff\1\11\3\uffff\1\12\1\4\1\0\1\6\1\10\1\5\3\uffff\1\7\1\3\2\uffff}>";
+        "\2\uffff\1\1\1\2\1\13\1\14\7\uffff\1\6\3\uffff\1\10\1\4\1\7\1\0\1\12\1\3\3\uffff\1\11\1\5\2\uffff}>";
     static final String[] DFA148_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -81103,25 +81151,25 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA148_19 = input.LA(1);
+                        int LA148_20 = input.LA(1);
 
                          
-                        int index148_19 = input.index();
+                        int index148_20 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_19);
+                        input.seek(index148_20);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA148_4 = input.LA(1);
+                        int LA148_2 = input.LA(1);
 
                          
-                        int index148_4 = input.index();
+                        int index148_2 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -81129,14 +81177,14 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_4);
+                        input.seek(index148_2);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA148_5 = input.LA(1);
+                        int LA148_3 = input.LA(1);
 
                          
-                        int index148_5 = input.index();
+                        int index148_3 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -81144,22 +81192,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_5);
+                        input.seek(index148_3);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA148_27 = input.LA(1);
+                        int LA148_22 = input.LA(1);
 
                          
-                        int index148_27 = input.index();
+                        int index148_22 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_27);
+                        input.seek(index148_22);
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
@@ -81178,66 +81226,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
-                        int LA148_22 = input.LA(1);
+                        int LA148_27 = input.LA(1);
 
                          
-                        int index148_22 = input.index();
+                        int index148_27 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_22);
+                        input.seek(index148_27);
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
-                        int LA148_20 = input.LA(1);
-
-                         
-                        int index148_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index148_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA148_26 = input.LA(1);
-
-                         
-                        int index148_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index148_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA148_21 = input.LA(1);
-
-                         
-                        int index148_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index148_21);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
                         int LA148_13 = input.LA(1);
 
                          
@@ -81252,7 +81255,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index148_13);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 7 : 
+                        int LA148_19 = input.LA(1);
+
+                         
+                        int index148_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index148_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA148_17 = input.LA(1);
 
                          
@@ -81267,11 +81285,41 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index148_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
-                        int LA148_2 = input.LA(1);
+                    case 9 : 
+                        int LA148_26 = input.LA(1);
 
                          
-                        int index148_2 = input.index();
+                        int index148_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index148_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA148_21 = input.LA(1);
+
+                         
+                        int index148_21 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index148_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA148_4 = input.LA(1);
+
+                         
+                        int index148_4 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -81279,14 +81327,14 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_2);
+                        input.seek(index148_4);
                         if ( s>=0 ) return s;
                         break;
                     case 12 : 
-                        int LA148_3 = input.LA(1);
+                        int LA148_5 = input.LA(1);
 
                          
-                        int index148_3 = input.index();
+                        int index148_5 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred200_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -81294,7 +81342,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index148_3);
+                        input.seek(index148_5);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -81316,9 +81364,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA149_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA149_specialS =
-        "\2\uffff\1\13\1\14\1\5\1\6\7\uffff\1\2\3\uffff\1\3\1\12\1\10\1\0\1\11\1\4\3\uffff\1\1\1\7\2\uffff}>";
+        "\2\uffff\1\12\1\13\1\7\1\10\7\uffff\1\0\3\uffff\1\3\1\5\1\1\1\2\1\11\1\14\3\uffff\1\6\1\4\2\uffff}>";
     static final String[] DFA149_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\5\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\2\16\1\1\1\uffff\1\6\1\7\1\10\1\11\1\12\2\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -81387,36 +81435,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA149_20 = input.LA(1);
-
-                         
-                        int index149_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index149_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA149_26 = input.LA(1);
-
-                         
-                        int index149_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index149_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA149_13 = input.LA(1);
 
                          
@@ -81429,6 +81447,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index149_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA149_19 = input.LA(1);
+
+                         
+                        int index149_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index149_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA149_20 = input.LA(1);
+
+                         
+                        int index149_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index149_20);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
@@ -81447,51 +81495,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
-                        int LA149_22 = input.LA(1);
-
-                         
-                        int index149_22 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index149_22);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA149_4 = input.LA(1);
-
-                         
-                        int index149_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index149_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA149_5 = input.LA(1);
-
-                         
-                        int index149_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index149_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
                         int LA149_27 = input.LA(1);
 
                          
@@ -81506,19 +81509,64 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index149_27);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
-                        int LA149_19 = input.LA(1);
+                    case 5 : 
+                        int LA149_18 = input.LA(1);
 
                          
-                        int index149_19 = input.index();
+                        int index149_18 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index149_19);
+                        input.seek(index149_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA149_26 = input.LA(1);
+
+                         
+                        int index149_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index149_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA149_4 = input.LA(1);
+
+                         
+                        int index149_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index149_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA149_5 = input.LA(1);
+
+                         
+                        int index149_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index149_5);
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
@@ -81537,21 +81585,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
-                        int LA149_18 = input.LA(1);
-
-                         
-                        int index149_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index149_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
                         int LA149_2 = input.LA(1);
 
                          
@@ -81566,7 +81599,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index149_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 11 : 
                         int LA149_3 = input.LA(1);
 
                          
@@ -81579,6 +81612,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index149_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA149_22 = input.LA(1);
+
+                         
+                        int index149_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred201_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index149_22);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -81707,9 +81755,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA153_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA153_specialS =
-        "\2\uffff\1\10\1\14\1\1\1\2\7\uffff\1\13\3\uffff\1\4\1\6\1\7\1\12\1\5\1\0\3\uffff\1\11\1\3\2\uffff}>";
+        "\2\uffff\1\14\1\4\1\7\1\10\7\uffff\1\1\3\uffff\1\0\1\6\1\5\1\11\1\12\1\2\3\uffff\1\13\1\3\2\uffff}>";
     static final String[] DFA153_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -81778,6 +81826,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA153_17 = input.LA(1);
+
+                         
+                        int index153_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index153_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA153_13 = input.LA(1);
+
+                         
+                        int index153_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index153_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
                         int LA153_22 = input.LA(1);
 
                          
@@ -81790,36 +81868,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index153_22);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA153_4 = input.LA(1);
-
-                         
-                        int index153_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index153_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA153_5 = input.LA(1);
-
-                         
-                        int index153_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index153_5);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
@@ -81838,33 +81886,33 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
-                        int LA153_17 = input.LA(1);
+                        int LA153_3 = input.LA(1);
 
                          
-                        int index153_17 = input.index();
+                        int index153_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index153_17);
+                        input.seek(index153_3);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
-                        int LA153_21 = input.LA(1);
+                        int LA153_19 = input.LA(1);
 
                          
-                        int index153_21 = input.index();
+                        int index153_19 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index153_21);
+                        input.seek(index153_19);
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
@@ -81883,25 +81931,10 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
-                        int LA153_19 = input.LA(1);
+                        int LA153_4 = input.LA(1);
 
                          
-                        int index153_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index153_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA153_2 = input.LA(1);
-
-                         
-                        int index153_2 = input.index();
+                        int index153_4 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -81909,25 +81942,25 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index153_2);
+                        input.seek(index153_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
-                        int LA153_26 = input.LA(1);
+                    case 8 : 
+                        int LA153_5 = input.LA(1);
 
                          
-                        int index153_26 = input.index();
+                        int index153_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index153_26);
+                        input.seek(index153_5);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 9 : 
                         int LA153_20 = input.LA(1);
 
                          
@@ -81942,26 +81975,41 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index153_20);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
-                        int LA153_13 = input.LA(1);
+                    case 10 : 
+                        int LA153_21 = input.LA(1);
 
                          
-                        int index153_13 = input.index();
+                        int index153_21 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index153_13);
+                        input.seek(index153_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA153_26 = input.LA(1);
+
+                         
+                        int index153_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index153_26);
                         if ( s>=0 ) return s;
                         break;
                     case 12 : 
-                        int LA153_3 = input.LA(1);
+                        int LA153_2 = input.LA(1);
 
                          
-                        int index153_3 = input.index();
+                        int index153_2 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred212_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -81969,7 +82017,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index153_3);
+                        input.seek(index153_2);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -81991,9 +82039,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA154_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA154_specialS =
-        "\2\uffff\1\5\1\6\1\11\1\12\7\uffff\1\7\3\uffff\1\2\1\0\1\10\1\4\1\13\1\14\3\uffff\1\1\1\3\2\uffff}>";
+        "\2\uffff\1\1\1\3\1\12\1\13\7\uffff\1\5\3\uffff\1\7\1\6\1\14\1\10\1\0\1\11\3\uffff\1\2\1\4\2\uffff}>";
     static final String[] DFA154_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -82062,171 +82110,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA154_18 = input.LA(1);
-
-                         
-                        int index154_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA154_26 = input.LA(1);
-
-                         
-                        int index154_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA154_17 = input.LA(1);
-
-                         
-                        int index154_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA154_27 = input.LA(1);
-
-                         
-                        int index154_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA154_20 = input.LA(1);
-
-                         
-                        int index154_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA154_2 = input.LA(1);
-
-                         
-                        int index154_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA154_3 = input.LA(1);
-
-                         
-                        int index154_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA154_13 = input.LA(1);
-
-                         
-                        int index154_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA154_19 = input.LA(1);
-
-                         
-                        int index154_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
-                        int LA154_4 = input.LA(1);
-
-                         
-                        int index154_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
-                        int LA154_5 = input.LA(1);
-
-                         
-                        int index154_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index154_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
                         int LA154_21 = input.LA(1);
 
                          
@@ -82241,7 +82124,127 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index154_21);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 1 : 
+                        int LA154_2 = input.LA(1);
+
+                         
+                        int index154_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA154_26 = input.LA(1);
+
+                         
+                        int index154_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA154_3 = input.LA(1);
+
+                         
+                        int index154_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA154_27 = input.LA(1);
+
+                         
+                        int index154_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA154_13 = input.LA(1);
+
+                         
+                        int index154_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA154_18 = input.LA(1);
+
+                         
+                        int index154_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA154_17 = input.LA(1);
+
+                         
+                        int index154_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA154_20 = input.LA(1);
+
+                         
+                        int index154_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
                         int LA154_22 = input.LA(1);
 
                          
@@ -82254,6 +82257,51 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index154_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA154_4 = input.LA(1);
+
+                         
+                        int index154_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA154_5 = input.LA(1);
+
+                         
+                        int index154_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA154_19 = input.LA(1);
+
+                         
+                        int index154_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred213_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index154_19);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -82275,9 +82323,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA155_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA155_specialS =
-        "\2\uffff\1\4\1\10\1\13\1\14\7\uffff\1\7\3\uffff\1\1\1\6\1\5\1\11\1\3\1\12\3\uffff\1\0\1\2\2\uffff}>";
+        "\2\uffff\1\1\1\0\1\12\1\13\7\uffff\1\4\3\uffff\1\2\1\10\1\7\1\14\1\5\1\11\3\uffff\1\3\1\6\2\uffff}>";
     static final String[] DFA155_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -82346,126 +82394,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA155_26 = input.LA(1);
-
-                         
-                        int index155_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA155_17 = input.LA(1);
-
-                         
-                        int index155_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA155_27 = input.LA(1);
-
-                         
-                        int index155_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA155_21 = input.LA(1);
-
-                         
-                        int index155_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_21);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA155_2 = input.LA(1);
-
-                         
-                        int index155_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA155_19 = input.LA(1);
-
-                         
-                        int index155_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA155_18 = input.LA(1);
-
-                         
-                        int index155_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA155_13 = input.LA(1);
-
-                         
-                        int index155_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index155_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
                         int LA155_3 = input.LA(1);
 
                          
@@ -82480,22 +82408,127 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index155_3);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
-                        int LA155_20 = input.LA(1);
+                    case 1 : 
+                        int LA155_2 = input.LA(1);
 
                          
-                        int index155_20 = input.index();
+                        int index155_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index155_20);
+                        input.seek(index155_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 2 : 
+                        int LA155_17 = input.LA(1);
+
+                         
+                        int index155_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA155_26 = input.LA(1);
+
+                         
+                        int index155_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA155_13 = input.LA(1);
+
+                         
+                        int index155_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA155_21 = input.LA(1);
+
+                         
+                        int index155_21 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA155_27 = input.LA(1);
+
+                         
+                        int index155_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA155_19 = input.LA(1);
+
+                         
+                        int index155_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA155_18 = input.LA(1);
+
+                         
+                        int index155_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
                         int LA155_22 = input.LA(1);
 
                          
@@ -82510,7 +82543,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index155_22);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
+                    case 10 : 
                         int LA155_4 = input.LA(1);
 
                          
@@ -82525,7 +82558,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index155_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 11 : 
                         int LA155_5 = input.LA(1);
 
                          
@@ -82538,6 +82571,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index155_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA155_20 = input.LA(1);
+
+                         
+                        int index155_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred214_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index155_20);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -82559,9 +82607,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA156_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA156_specialS =
-        "\2\uffff\1\3\1\0\1\5\1\6\7\uffff\1\2\3\uffff\1\13\1\12\1\4\1\1\1\7\1\11\3\uffff\1\10\1\14\2\uffff}>";
+        "\2\uffff\1\5\1\14\1\3\1\4\7\uffff\1\13\3\uffff\1\11\1\7\1\1\1\0\1\6\1\2\3\uffff\1\10\1\12\2\uffff}>";
     static final String[] DFA156_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -82630,21 +82678,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA156_3 = input.LA(1);
-
-                         
-                        int index156_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index156_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA156_20 = input.LA(1);
 
                          
@@ -82659,37 +82692,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index156_20);
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
-                        int LA156_13 = input.LA(1);
-
-                         
-                        int index156_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index156_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA156_2 = input.LA(1);
-
-                         
-                        int index156_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index156_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
+                    case 1 : 
                         int LA156_19 = input.LA(1);
 
                          
@@ -82704,7 +82707,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index156_19);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
+                    case 2 : 
+                        int LA156_22 = input.LA(1);
+
+                         
+                        int index156_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index156_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
                         int LA156_4 = input.LA(1);
 
                          
@@ -82719,7 +82737,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index156_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 6 : 
+                    case 4 : 
                         int LA156_5 = input.LA(1);
 
                          
@@ -82734,7 +82752,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index156_5);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
+                    case 5 : 
+                        int LA156_2 = input.LA(1);
+
+                         
+                        int index156_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index156_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
                         int LA156_21 = input.LA(1);
 
                          
@@ -82747,6 +82780,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index156_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA156_18 = input.LA(1);
+
+                         
+                        int index156_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index156_18);
                         if ( s>=0 ) return s;
                         break;
                     case 8 : 
@@ -82765,36 +82813,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
-                        int LA156_22 = input.LA(1);
-
-                         
-                        int index156_22 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 7) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index156_22);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
-                        int LA156_18 = input.LA(1);
-
-                         
-                        int index156_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index156_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
                         int LA156_17 = input.LA(1);
 
                          
@@ -82809,7 +82827,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index156_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 10 : 
                         int LA156_27 = input.LA(1);
 
                          
@@ -82822,6 +82840,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index156_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA156_13 = input.LA(1);
+
+                         
+                        int index156_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index156_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA156_3 = input.LA(1);
+
+                         
+                        int index156_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred215_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index156_3);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -82843,9 +82891,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA157_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA157_specialS =
-        "\2\uffff\1\1\1\5\1\12\1\13\7\uffff\1\10\3\uffff\1\2\1\0\1\7\1\4\1\14\1\11\3\uffff\1\6\1\3\2\uffff}>";
+        "\2\uffff\1\2\1\14\1\7\1\10\7\uffff\1\5\3\uffff\1\4\1\6\1\1\1\3\1\0\1\11\3\uffff\1\12\1\13\2\uffff}>";
     static final String[] DFA157_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -82914,111 +82962,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA157_18 = input.LA(1);
+                        int LA157_21 = input.LA(1);
 
                          
-                        int index157_18 = input.index();
+                        int index157_21 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index157_18);
+                        input.seek(index157_21);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA157_2 = input.LA(1);
-
-                         
-                        int index157_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA157_17 = input.LA(1);
-
-                         
-                        int index157_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA157_27 = input.LA(1);
-
-                         
-                        int index157_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA157_20 = input.LA(1);
-
-                         
-                        int index157_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA157_3 = input.LA(1);
-
-                         
-                        int index157_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA157_26 = input.LA(1);
-
-                         
-                        int index157_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
                         int LA157_19 = input.LA(1);
 
                          
@@ -83033,7 +82991,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index157_19);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
+                    case 2 : 
+                        int LA157_2 = input.LA(1);
+
+                         
+                        int index157_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA157_20 = input.LA(1);
+
+                         
+                        int index157_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA157_17 = input.LA(1);
+
+                         
+                        int index157_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
                         int LA157_13 = input.LA(1);
 
                          
@@ -83046,6 +83049,51 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index157_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA157_18 = input.LA(1);
+
+                         
+                        int index157_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA157_4 = input.LA(1);
+
+                         
+                        int index157_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA157_5 = input.LA(1);
+
+                         
+                        int index157_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_5);
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
@@ -83064,25 +83112,40 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
-                        int LA157_4 = input.LA(1);
+                        int LA157_26 = input.LA(1);
 
                          
-                        int index157_4 = input.index();
+                        int index157_26 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index157_4);
+                        input.seek(index157_26);
                         if ( s>=0 ) return s;
                         break;
                     case 11 : 
-                        int LA157_5 = input.LA(1);
+                        int LA157_27 = input.LA(1);
 
                          
-                        int index157_5 = input.index();
+                        int index157_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index157_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA157_3 = input.LA(1);
+
+                         
+                        int index157_3 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -83090,22 +83153,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index157_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 12 : 
-                        int LA157_21 = input.LA(1);
-
-                         
-                        int index157_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred216_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index157_21);
+                        input.seek(index157_3);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -83127,9 +83175,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA158_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA158_specialS =
-        "\2\uffff\1\11\1\2\1\4\1\5\7\uffff\1\0\3\uffff\1\13\1\10\1\3\1\1\1\12\1\7\3\uffff\1\6\1\14\2\uffff}>";
+        "\2\uffff\1\13\1\6\1\1\1\2\7\uffff\1\3\3\uffff\1\11\1\4\1\5\1\14\1\12\1\0\3\uffff\1\10\1\7\2\uffff}>";
     static final String[] DFA158_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -83198,111 +83246,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA158_13 = input.LA(1);
-
-                         
-                        int index158_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA158_20 = input.LA(1);
-
-                         
-                        int index158_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA158_3 = input.LA(1);
-
-                         
-                        int index158_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA158_19 = input.LA(1);
-
-                         
-                        int index158_19 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_19);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA158_4 = input.LA(1);
-
-                         
-                        int index158_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA158_5 = input.LA(1);
-
-                         
-                        int index158_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA158_26 = input.LA(1);
-
-                         
-                        int index158_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index158_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
                         int LA158_22 = input.LA(1);
 
                          
@@ -83317,7 +83260,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index158_22);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
+                    case 1 : 
+                        int LA158_4 = input.LA(1);
+
+                         
+                        int index158_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA158_5 = input.LA(1);
+
+                         
+                        int index158_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA158_13 = input.LA(1);
+
+                         
+                        int index158_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
                         int LA158_18 = input.LA(1);
 
                          
@@ -83332,11 +83320,26 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index158_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
-                        int LA158_2 = input.LA(1);
+                    case 5 : 
+                        int LA158_19 = input.LA(1);
 
                          
-                        int index158_2 = input.index();
+                        int index158_19 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_19);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA158_3 = input.LA(1);
+
+                         
+                        int index158_3 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
@@ -83344,7 +83347,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index158_2);
+                        input.seek(index158_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA158_27 = input.LA(1);
+
+                         
+                        int index158_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA158_26 = input.LA(1);
+
+                         
+                        int index158_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA158_17 = input.LA(1);
+
+                         
+                        int index158_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index158_17);
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
@@ -83363,33 +83411,33 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 11 : 
-                        int LA158_17 = input.LA(1);
+                        int LA158_2 = input.LA(1);
 
                          
-                        int index158_17 = input.index();
+                        int index158_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index158_17);
+                        input.seek(index158_2);
                         if ( s>=0 ) return s;
                         break;
                     case 12 : 
-                        int LA158_27 = input.LA(1);
+                        int LA158_20 = input.LA(1);
 
                          
-                        int index158_27 = input.index();
+                        int index158_20 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+                        if ( synpred217_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index158_27);
+                        input.seek(index158_20);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -83411,9 +83459,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA159_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA159_specialS =
-        "\2\uffff\1\2\1\0\1\7\1\10\7\uffff\1\4\3\uffff\1\12\1\3\1\1\1\5\1\14\1\13\3\uffff\1\6\1\11\2\uffff}>";
+        "\2\uffff\1\11\1\12\1\4\1\5\7\uffff\1\2\3\uffff\1\6\1\0\1\1\1\14\1\10\1\3\3\uffff\1\7\1\13\2\uffff}>";
     static final String[] DFA159_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -83482,18 +83530,18 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA159_3 = input.LA(1);
+                        int LA159_18 = input.LA(1);
 
                          
-                        int index159_3 = input.index();
+                        int index159_18 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index159_3);
+                        input.seek(index159_18);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
@@ -83512,36 +83560,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA159_2 = input.LA(1);
-
-                         
-                        int index159_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA159_18 = input.LA(1);
-
-                         
-                        int index159_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
                         int LA159_13 = input.LA(1);
 
                          
@@ -83556,97 +83574,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index159_13);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
-                        int LA159_20 = input.LA(1);
-
-                         
-                        int index159_20 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_20);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA159_26 = input.LA(1);
-
-                         
-                        int index159_26 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_26);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA159_4 = input.LA(1);
-
-                         
-                        int index159_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA159_5 = input.LA(1);
-
-                         
-                        int index159_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
-                        int LA159_27 = input.LA(1);
-
-                         
-                        int index159_27 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_27);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
-                        int LA159_17 = input.LA(1);
-
-                         
-                        int index159_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index159_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
+                    case 3 : 
                         int LA159_22 = input.LA(1);
 
                          
@@ -83661,7 +83589,67 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index159_22);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
+                    case 4 : 
+                        int LA159_4 = input.LA(1);
+
+                         
+                        int index159_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA159_5 = input.LA(1);
+
+                         
+                        int index159_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA159_17 = input.LA(1);
+
+                         
+                        int index159_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA159_26 = input.LA(1);
+
+                         
+                        int index159_26 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_26);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA159_21 = input.LA(1);
 
                          
@@ -83674,6 +83662,66 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index159_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA159_2 = input.LA(1);
+
+                         
+                        int index159_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA159_3 = input.LA(1);
+
+                         
+                        int index159_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA159_27 = input.LA(1);
+
+                         
+                        int index159_27 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_27);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA159_20 = input.LA(1);
+
+                         
+                        int index159_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred218_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index159_20);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -83695,9 +83743,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA160_acceptS =
         "\16\uffff\1\2\1\uffff\1\1\15\uffff";
     static final String DFA160_specialS =
-        "\2\uffff\1\11\1\7\1\1\1\2\7\uffff\1\13\3\uffff\1\3\1\12\1\10\1\14\1\6\1\5\3\uffff\1\0\1\4\2\uffff}>";
+        "\2\uffff\1\14\1\7\1\2\1\3\7\uffff\1\12\3\uffff\1\4\1\5\1\0\1\1\1\13\1\6\3\uffff\1\11\1\10\2\uffff}>";
     static final String[] DFA160_transitionS = {
-            "\1\3\1\4\1\5\1\16\1\uffff\1\15\6\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\16\1\uffff\1\15\3\uffff\3\16\1\uffff\1\6\1\7\1\10\1\11\1\12\1\1\1\16\1\uffff\1\13\1\14\33\uffff\1\2",
             "\1\17",
             "\1\uffff",
             "\1\uffff",
@@ -83766,21 +83814,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA160_26 = input.LA(1);
+                        int LA160_19 = input.LA(1);
 
                          
-                        int index160_26 = input.index();
+                        int index160_19 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index160_26);
+                        input.seek(index160_19);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
+                        int LA160_20 = input.LA(1);
+
+                         
+                        int index160_20 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index160_20);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
                         int LA160_4 = input.LA(1);
 
                          
@@ -83795,7 +83858,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index160_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
+                    case 3 : 
                         int LA160_5 = input.LA(1);
 
                          
@@ -83810,7 +83873,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index160_5);
                         if ( s>=0 ) return s;
                         break;
-                    case 3 : 
+                    case 4 : 
                         int LA160_17 = input.LA(1);
 
                          
@@ -83825,22 +83888,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index160_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 4 : 
-                        int LA160_27 = input.LA(1);
+                    case 5 : 
+                        int LA160_18 = input.LA(1);
 
                          
-                        int index160_27 = input.index();
+                        int index160_18 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index160_27);
+                        input.seek(index160_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
+                    case 6 : 
                         int LA160_22 = input.LA(1);
 
                          
@@ -83853,21 +83916,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index160_22);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA160_21 = input.LA(1);
-
-                         
-                        int index160_21 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index160_21);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
@@ -83886,51 +83934,36 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 8 : 
-                        int LA160_19 = input.LA(1);
+                        int LA160_27 = input.LA(1);
 
                          
-                        int index160_19 = input.index();
+                        int index160_27 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 16;}
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index160_19);
+                        input.seek(index160_27);
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
-                        int LA160_2 = input.LA(1);
+                        int LA160_26 = input.LA(1);
 
                          
-                        int index160_2 = input.index();
+                        int index160_26 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index160_2);
+                        input.seek(index160_26);
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
-                        int LA160_18 = input.LA(1);
-
-                         
-                        int index160_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
-
-                         
-                        input.seek(index160_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 11 : 
                         int LA160_13 = input.LA(1);
 
                          
@@ -83945,19 +83978,34 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index160_13);
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
-                        int LA160_20 = input.LA(1);
+                    case 11 : 
+                        int LA160_21 = input.LA(1);
 
                          
-                        int index160_20 = input.index();
+                        int index160_21 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 16;}
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
 
                          
-                        input.seek(index160_20);
+                        input.seek(index160_21);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA160_2 = input.LA(1);
+
+                         
+                        int index160_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred219_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 14;}
+
+                         
+                        input.seek(index160_2);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -84080,9 +84128,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA164_acceptS =
         "\14\uffff\1\2\1\uffff\1\1\13\uffff";
     static final String DFA164_specialS =
-        "\2\uffff\1\0\1\6\1\11\1\12\5\uffff\1\7\3\uffff\1\2\1\3\1\5\1\10\3\uffff\1\4\1\1\2\uffff}>";
+        "\2\uffff\1\10\1\3\1\5\1\6\5\uffff\1\1\3\uffff\1\4\1\7\1\11\1\12\3\uffff\1\0\1\2\2\uffff}>";
     static final String[] DFA164_transitionS = {
-            "\1\3\1\4\1\5\1\14\1\uffff\1\13\6\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\14\1\uffff\1\13\3\uffff\3\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
             "\1\15",
             "\1\uffff",
             "\1\uffff",
@@ -84147,66 +84195,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA164_2 = input.LA(1);
-
-                         
-                        int index164_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index164_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA164_23 = input.LA(1);
-
-                         
-                        int index164_23 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index164_23);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA164_15 = input.LA(1);
-
-                         
-                        int index164_15 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index164_15);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA164_16 = input.LA(1);
-
-                         
-                        int index164_16 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index164_16);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
                         int LA164_22 = input.LA(1);
 
                          
@@ -84221,37 +84209,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index164_22);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
-                        int LA164_17 = input.LA(1);
-
-                         
-                        int index164_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index164_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA164_3 = input.LA(1);
-
-                         
-                        int index164_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index164_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
+                    case 1 : 
                         int LA164_11 = input.LA(1);
 
                          
@@ -84266,22 +84224,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index164_11);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
-                        int LA164_18 = input.LA(1);
+                    case 2 : 
+                        int LA164_23 = input.LA(1);
 
                          
-                        int index164_18 = input.index();
+                        int index164_23 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index164_18);
+                        input.seek(index164_23);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
+                    case 3 : 
+                        int LA164_3 = input.LA(1);
+
+                         
+                        int index164_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index164_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA164_15 = input.LA(1);
+
+                         
+                        int index164_15 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index164_15);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
                         int LA164_4 = input.LA(1);
 
                          
@@ -84296,7 +84284,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index164_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 6 : 
                         int LA164_5 = input.LA(1);
 
                          
@@ -84309,6 +84297,66 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index164_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA164_16 = input.LA(1);
+
+                         
+                        int index164_16 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index164_16);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA164_2 = input.LA(1);
+
+                         
+                        int index164_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index164_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA164_17 = input.LA(1);
+
+                         
+                        int index164_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index164_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA164_18 = input.LA(1);
+
+                         
+                        int index164_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred228_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index164_18);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -84330,9 +84378,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA165_acceptS =
         "\14\uffff\1\2\1\uffff\1\1\13\uffff";
     static final String DFA165_specialS =
-        "\2\uffff\1\7\1\2\1\5\1\6\5\uffff\1\11\3\uffff\1\12\1\1\1\3\1\4\3\uffff\1\0\1\10\2\uffff}>";
+        "\2\uffff\1\2\1\4\1\10\1\11\5\uffff\1\5\3\uffff\1\12\1\1\1\0\1\3\3\uffff\1\7\1\6\2\uffff}>";
     static final String[] DFA165_transitionS = {
-            "\1\3\1\4\1\5\1\14\1\uffff\1\13\6\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\14\1\uffff\1\13\3\uffff\3\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
             "\1\15",
             "\1\uffff",
             "\1\uffff",
@@ -84397,18 +84445,18 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA165_22 = input.LA(1);
+                        int LA165_17 = input.LA(1);
 
                          
-                        int index165_22 = input.index();
+                        int index165_17 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index165_22);
+                        input.seek(index165_17);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
@@ -84427,81 +84475,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA165_3 = input.LA(1);
-
-                         
-                        int index165_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index165_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA165_17 = input.LA(1);
-
-                         
-                        int index165_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index165_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA165_18 = input.LA(1);
-
-                         
-                        int index165_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index165_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA165_4 = input.LA(1);
-
-                         
-                        int index165_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index165_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA165_5 = input.LA(1);
-
-                         
-                        int index165_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index165_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
                         int LA165_2 = input.LA(1);
 
                          
@@ -84516,7 +84489,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index165_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
+                    case 3 : 
+                        int LA165_18 = input.LA(1);
+
+                         
+                        int index165_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index165_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA165_3 = input.LA(1);
+
+                         
+                        int index165_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index165_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA165_11 = input.LA(1);
+
+                         
+                        int index165_11 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index165_11);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
                         int LA165_23 = input.LA(1);
 
                          
@@ -84531,19 +84549,49 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index165_23);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
-                        int LA165_11 = input.LA(1);
+                    case 7 : 
+                        int LA165_22 = input.LA(1);
 
                          
-                        int index165_11 = input.index();
+                        int index165_22 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index165_11);
+                        input.seek(index165_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA165_4 = input.LA(1);
+
+                         
+                        int index165_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index165_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA165_5 = input.LA(1);
+
+                         
+                        int index165_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred229_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index165_5);
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
@@ -84580,9 +84628,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA166_acceptS =
         "\14\uffff\1\2\1\uffff\1\1\13\uffff";
     static final String DFA166_specialS =
-        "\2\uffff\1\12\1\3\1\6\1\7\5\uffff\1\10\3\uffff\1\0\1\1\1\4\1\5\3\uffff\1\2\1\11\2\uffff}>";
+        "\2\uffff\1\1\1\7\1\11\1\12\5\uffff\1\5\3\uffff\1\10\1\2\1\0\1\4\3\uffff\1\6\1\3\2\uffff}>";
     static final String[] DFA166_transitionS = {
-            "\1\3\1\4\1\5\1\14\1\uffff\1\13\6\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\14\1\uffff\1\13\3\uffff\3\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
             "\1\15",
             "\1\uffff",
             "\1\uffff",
@@ -84647,66 +84695,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA166_15 = input.LA(1);
-
-                         
-                        int index166_15 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index166_15);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA166_16 = input.LA(1);
-
-                         
-                        int index166_16 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index166_16);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA166_22 = input.LA(1);
-
-                         
-                        int index166_22 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index166_22);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA166_3 = input.LA(1);
-
-                         
-                        int index166_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index166_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
                         int LA166_17 = input.LA(1);
 
                          
@@ -84721,26 +84709,11 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index166_17);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
-                        int LA166_18 = input.LA(1);
+                    case 1 : 
+                        int LA166_2 = input.LA(1);
 
                          
-                        int index166_18 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index166_18);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA166_4 = input.LA(1);
-
-                         
-                        int index166_4 = input.index();
+                        int index166_2 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
@@ -84748,40 +84721,25 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index166_4);
+                        input.seek(index166_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
-                        int LA166_5 = input.LA(1);
+                    case 2 : 
+                        int LA166_16 = input.LA(1);
 
                          
-                        int index166_5 = input.index();
+                        int index166_16 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index166_5);
+                        input.seek(index166_16);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
-                        int LA166_11 = input.LA(1);
-
-                         
-                        int index166_11 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index166_11);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
+                    case 3 : 
                         int LA166_23 = input.LA(1);
 
                          
@@ -84796,11 +84754,56 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index166_23);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
-                        int LA166_2 = input.LA(1);
+                    case 4 : 
+                        int LA166_18 = input.LA(1);
 
                          
-                        int index166_2 = input.index();
+                        int index166_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index166_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA166_11 = input.LA(1);
+
+                         
+                        int index166_11 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index166_11);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA166_22 = input.LA(1);
+
+                         
+                        int index166_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index166_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA166_3 = input.LA(1);
+
+                         
+                        int index166_3 = input.index();
                         input.rewind();
                         s = -1;
                         if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
@@ -84808,7 +84811,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index166_2);
+                        input.seek(index166_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA166_15 = input.LA(1);
+
+                         
+                        int index166_15 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index166_15);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA166_4 = input.LA(1);
+
+                         
+                        int index166_4 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index166_4);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA166_5 = input.LA(1);
+
+                         
+                        int index166_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred230_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index166_5);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -84830,9 +84878,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA167_acceptS =
         "\14\uffff\1\2\1\uffff\1\1\13\uffff";
     static final String DFA167_specialS =
-        "\2\uffff\1\10\1\0\1\5\1\6\5\uffff\1\1\3\uffff\1\12\1\2\1\4\1\7\3\uffff\1\3\1\11\2\uffff}>";
+        "\2\uffff\1\5\1\0\1\2\1\3\5\uffff\1\12\3\uffff\1\4\1\1\1\7\1\6\3\uffff\1\11\1\10\2\uffff}>";
     static final String[] DFA167_transitionS = {
-            "\1\3\1\4\1\5\1\14\1\uffff\1\13\6\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\14\1\uffff\1\13\3\uffff\3\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
             "\1\15",
             "\1\uffff",
             "\1\uffff",
@@ -84912,21 +84960,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA167_11 = input.LA(1);
-
-                         
-                        int index167_11 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index167_11);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA167_16 = input.LA(1);
 
                          
@@ -84941,37 +84974,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index167_16);
                         if ( s>=0 ) return s;
                         break;
-                    case 3 : 
-                        int LA167_22 = input.LA(1);
-
-                         
-                        int index167_22 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index167_22);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA167_17 = input.LA(1);
-
-                         
-                        int index167_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index167_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
+                    case 2 : 
                         int LA167_4 = input.LA(1);
 
                          
@@ -84986,7 +84989,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index167_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 6 : 
+                    case 3 : 
                         int LA167_5 = input.LA(1);
 
                          
@@ -85001,22 +85004,22 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index167_5);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
-                        int LA167_18 = input.LA(1);
+                    case 4 : 
+                        int LA167_15 = input.LA(1);
 
                          
-                        int index167_18 = input.index();
+                        int index167_15 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
+                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index167_18);
+                        input.seek(index167_15);
                         if ( s>=0 ) return s;
                         break;
-                    case 8 : 
+                    case 5 : 
                         int LA167_2 = input.LA(1);
 
                          
@@ -85031,7 +85034,37 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index167_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
+                    case 6 : 
+                        int LA167_18 = input.LA(1);
+
+                         
+                        int index167_18 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index167_18);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA167_17 = input.LA(1);
+
+                         
+                        int index167_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index167_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA167_23 = input.LA(1);
 
                          
@@ -85046,19 +85079,34 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index167_23);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
-                        int LA167_15 = input.LA(1);
+                    case 9 : 
+                        int LA167_22 = input.LA(1);
 
                          
-                        int index167_15 = input.index();
+                        int index167_22 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
+                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index167_15);
+                        input.seek(index167_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA167_11 = input.LA(1);
+
+                         
+                        int index167_11 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred231_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index167_11);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -85080,9 +85128,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA168_acceptS =
         "\14\uffff\1\2\1\uffff\1\1\13\uffff";
     static final String DFA168_specialS =
-        "\2\uffff\1\11\1\5\1\7\1\10\5\uffff\1\0\3\uffff\1\1\1\2\1\4\1\6\3\uffff\1\3\1\12\2\uffff}>";
+        "\2\uffff\1\5\1\7\1\0\1\1\5\uffff\1\12\3\uffff\1\3\1\2\1\6\1\4\3\uffff\1\10\1\11\2\uffff}>";
     static final String[] DFA168_transitionS = {
-            "\1\3\1\4\1\5\1\14\1\uffff\1\13\6\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\14\1\uffff\1\13\3\uffff\3\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
             "\1\15",
             "\1\uffff",
             "\1\uffff",
@@ -85147,33 +85195,33 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA168_11 = input.LA(1);
+                        int LA168_4 = input.LA(1);
 
                          
-                        int index168_11 = input.index();
+                        int index168_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index168_11);
+                        input.seek(index168_4);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA168_15 = input.LA(1);
+                        int LA168_5 = input.LA(1);
 
                          
-                        int index168_15 = input.index();
+                        int index168_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index168_15);
+                        input.seek(index168_5);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
@@ -85192,51 +85240,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA168_22 = input.LA(1);
+                        int LA168_15 = input.LA(1);
 
                          
-                        int index168_22 = input.index();
+                        int index168_15 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index168_22);
+                        input.seek(index168_15);
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
-                        int LA168_17 = input.LA(1);
-
-                         
-                        int index168_17 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index168_17);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA168_3 = input.LA(1);
-
-                         
-                        int index168_3 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index168_3);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
                         int LA168_18 = input.LA(1);
 
                          
@@ -85251,37 +85269,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index168_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
-                        int LA168_4 = input.LA(1);
-
-                         
-                        int index168_4 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index168_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA168_5 = input.LA(1);
-
-                         
-                        int index168_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index168_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
+                    case 5 : 
                         int LA168_2 = input.LA(1);
 
                          
@@ -85296,7 +85284,52 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index168_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 6 : 
+                        int LA168_17 = input.LA(1);
+
+                         
+                        int index168_17 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index168_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA168_3 = input.LA(1);
+
+                         
+                        int index168_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index168_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA168_22 = input.LA(1);
+
+                         
+                        int index168_22 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index168_22);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
                         int LA168_23 = input.LA(1);
 
                          
@@ -85309,6 +85342,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index168_23);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA168_11 = input.LA(1);
+
+                         
+                        int index168_11 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred232_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index168_11);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -85330,9 +85378,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     static final String DFA169_acceptS =
         "\14\uffff\1\2\1\uffff\1\1\13\uffff";
     static final String DFA169_specialS =
-        "\2\uffff\1\3\1\11\1\0\1\1\5\uffff\1\4\3\uffff\1\7\1\6\1\12\1\10\3\uffff\1\5\1\2\2\uffff}>";
+        "\2\uffff\1\12\1\4\1\0\1\1\5\uffff\1\3\3\uffff\1\2\1\10\1\11\1\6\3\uffff\1\5\1\7\2\uffff}>";
     static final String[] DFA169_transitionS = {
-            "\1\3\1\4\1\5\1\14\1\uffff\1\13\6\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
+            "\1\3\1\4\1\5\1\14\1\uffff\1\13\3\uffff\3\14\1\uffff\1\6\1\7\1\10\1\11\1\12\1\14\1\1\1\uffff\2\14\33\uffff\1\2",
             "\1\15",
             "\1\uffff",
             "\1\uffff",
@@ -85427,36 +85475,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA169_23 = input.LA(1);
+                        int LA169_15 = input.LA(1);
 
                          
-                        int index169_23 = input.index();
+                        int index169_15 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
+                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index169_23);
+                        input.seek(index169_15);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA169_2 = input.LA(1);
-
-                         
-                        int index169_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index169_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
                         int LA169_11 = input.LA(1);
 
                          
@@ -85469,6 +85502,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index169_11);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA169_3 = input.LA(1);
+
+                         
+                        int index169_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index169_3);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
@@ -85487,36 +85535,6 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
-                        int LA169_16 = input.LA(1);
-
-                         
-                        int index169_16 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index169_16);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA169_15 = input.LA(1);
-
-                         
-                        int index169_15 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
-
-                         
-                        input.seek(index169_15);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
                         int LA169_18 = input.LA(1);
 
                          
@@ -85531,22 +85549,37 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
                         input.seek(index169_18);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
-                        int LA169_3 = input.LA(1);
+                    case 7 : 
+                        int LA169_23 = input.LA(1);
 
                          
-                        int index169_3 = input.index();
+                        int index169_23 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
 
                          
-                        input.seek(index169_3);
+                        input.seek(index169_23);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 8 : 
+                        int LA169_16 = input.LA(1);
+
+                         
+                        int index169_16 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index169_16);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
                         int LA169_17 = input.LA(1);
 
                          
@@ -85559,6 +85592,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
                          
                         input.seek(index169_17);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA169_2 = input.LA(1);
+
+                         
+                        int index169_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( synpred233_InternalEEBM() && getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 12;}
+
+                         
+                        input.seek(index169_2);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -86000,7 +86048,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__0__Impl_in_rule__AndRefinement__Group_3_1__09166 = new BitSet(new long[]{0x0080000000000000L});
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__1_in_rule__AndRefinement__Group_3_1__09169 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_58_in_rule__AndRefinement__Group_3_1__0__Impl9197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__1__Impl_in_rule__AndRefinement__Group_3_1__19228 = new BitSet(new long[]{0x4138000000000000L,0x000000200000037FL});
+    public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__1__Impl_in_rule__AndRefinement__Group_3_1__19228 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__2_in_rule__AndRefinement__Group_3_1__19231 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_55_in_rule__AndRefinement__Group_3_1__1__Impl9259 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__2__Impl_in_rule__AndRefinement__Group_3_1__29290 = new BitSet(new long[]{0x0900000000000000L});
@@ -86011,7 +86059,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1_3__0_in_rule__AndRefinement__Group_3_1__3__Impl9380 = new BitSet(new long[]{0x0800000000000002L});
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1__4__Impl_in_rule__AndRefinement__Group_3_1__49411 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_56_in_rule__AndRefinement__Group_3_1__4__Impl9439 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1_3__0__Impl_in_rule__AndRefinement__Group_3_1_3__09480 = new BitSet(new long[]{0x4138000000000000L,0x000000200000037FL});
+    public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1_3__0__Impl_in_rule__AndRefinement__Group_3_1_3__09480 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1_3__1_in_rule__AndRefinement__Group_3_1_3__09483 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_59_in_rule__AndRefinement__Group_3_1_3__0__Impl9511 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__AndRefinement__Group_3_1_3__1__Impl_in_rule__AndRefinement__Group_3_1_3__19542 = new BitSet(new long[]{0x0000000000000002L});
@@ -86038,7 +86086,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__0__Impl_in_rule__OrRefinement__Group_3_1__010039 = new BitSet(new long[]{0x0080000000000000L});
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__1_in_rule__OrRefinement__Group_3_1__010042 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_58_in_rule__OrRefinement__Group_3_1__0__Impl10070 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__1__Impl_in_rule__OrRefinement__Group_3_1__110101 = new BitSet(new long[]{0x4138000000000000L,0x000000200000037FL});
+    public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__1__Impl_in_rule__OrRefinement__Group_3_1__110101 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__2_in_rule__OrRefinement__Group_3_1__110104 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_55_in_rule__OrRefinement__Group_3_1__1__Impl10132 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__2__Impl_in_rule__OrRefinement__Group_3_1__210163 = new BitSet(new long[]{0x0900000000000000L});
@@ -86049,7 +86097,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1_3__0_in_rule__OrRefinement__Group_3_1__3__Impl10253 = new BitSet(new long[]{0x0800000000000002L});
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1__4__Impl_in_rule__OrRefinement__Group_3_1__410284 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_56_in_rule__OrRefinement__Group_3_1__4__Impl10312 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1_3__0__Impl_in_rule__OrRefinement__Group_3_1_3__010353 = new BitSet(new long[]{0x4138000000000000L,0x000000200000037FL});
+    public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1_3__0__Impl_in_rule__OrRefinement__Group_3_1_3__010353 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1_3__1_in_rule__OrRefinement__Group_3_1_3__010356 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_59_in_rule__OrRefinement__Group_3_1_3__0__Impl10384 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__OrRefinement__Group_3_1_3__1__Impl_in_rule__OrRefinement__Group_3_1_3__110415 = new BitSet(new long[]{0x0000000000000002L});
@@ -86068,12 +86116,12 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__Conflict__UnorderedGroup_3_in_rule__Conflict__Group__3__Impl10690 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Conflict__Group__4__Impl_in_rule__Conflict__Group__410720 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_56_in_rule__Conflict__Group__4__Impl10748 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Conflict__Group_3_0__0__Impl_in_rule__Conflict__Group_3_0__010789 = new BitSet(new long[]{0x4138000000000000L,0x000000200000037FL});
+    public static final BitSet FOLLOW_rule__Conflict__Group_3_0__0__Impl_in_rule__Conflict__Group_3_0__010789 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Conflict__Group_3_0__1_in_rule__Conflict__Group_3_0__010792 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_57_in_rule__Conflict__Group_3_0__0__Impl10820 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Conflict__Group_3_0__1__Impl_in_rule__Conflict__Group_3_0__110851 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Conflict__SourceAssignment_3_0_1_in_rule__Conflict__Group_3_0__1__Impl10878 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Conflict__Group_3_1__0__Impl_in_rule__Conflict__Group_3_1__010912 = new BitSet(new long[]{0x4138000000000000L,0x000000200000037FL});
+    public static final BitSet FOLLOW_rule__Conflict__Group_3_1__0__Impl_in_rule__Conflict__Group_3_1__010912 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Conflict__Group_3_1__1_in_rule__Conflict__Group_3_1__010915 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_58_in_rule__Conflict__Group_3_1__0__Impl10943 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Conflict__Group_3_1__1__Impl_in_rule__Conflict__Group_3_1__110974 = new BitSet(new long[]{0x0000000000000002L});
@@ -87431,189 +87479,189 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__Roadmap__RelationsAlternatives_2_0_in_rule__Roadmap__RelationsAssignment_246562 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleQualifiedName_in_rule__AndRefinement__NameAssignment_146595 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__AndRefinement__SourceAssignment_3_0_146630 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_rule__AndRefinement__DestAssignment_3_1_246665 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_rule__AndRefinement__DestAssignment_3_1_3_146696 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__OrRefinement__NameAssignment_146727 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__OrRefinement__SourceAssignment_3_0_146762 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_rule__OrRefinement__DestAssignment_3_1_246797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_rule__OrRefinement__DestAssignment_3_1_3_146828 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Conflict__NameAssignment_146859 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_rule__Conflict__SourceAssignment_3_0_146890 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_rule__Conflict__DestAssignment_3_1_146921 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Goal__NameAssignment_0_146952 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Goal__TitleAssignment_0_2_146983 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDescription_in_rule__Goal__DescriptionAssignment_0_447014 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePriorityEnum_in_rule__Goal__PriorityAssignment_1_147045 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__TimeAssignment_2_147076 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__CostAssignment_3_147107 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__BenefitAssignment_4_147138 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Goal__DateAssignment_5_147169 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__CodAssignment_6_147200 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRationale_in_rule__Goal__RationaleAssignment_747231 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_rule__Goal__RefAssignment_8_047262 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Softgoal__NameAssignment_0_147293 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Softgoal__TitleAssignment_0_2_147324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDescription_in_rule__Softgoal__DescriptionAssignment_0_447355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePriorityEnum_in_rule__Softgoal__PriorityAssignment_1_147386 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__TimeAssignment_2_147417 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__CostAssignment_3_147448 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__BenefitAssignment_4_147479 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Softgoal__DateAssignment_5_147510 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__CodAssignment_6_147541 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRationale_in_rule__Softgoal__RationaleAssignment_747572 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_rule__Softgoal__RefAssignment_8_047603 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Task__NameAssignment_0_147634 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Task__TitleAssignment_0_2_147665 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDescription_in_rule__Task__DescriptionAssignment_0_447696 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePriorityEnum_in_rule__Task__PriorityAssignment_1_147727 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__TimeAssignment_2_147758 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__CostAssignment_3_147789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__BenefitAssignment_4_147820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Task__DateAssignment_5_147851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__CodAssignment_6_0_147882 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Description__TextAssignment_147913 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Rationale__TextAssignment_147944 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Reference__DocReferenceAssignment_147975 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFeatureCallID_in_rule__XAssignment__FeatureAssignment_0_148012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_348047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_148082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_148117 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_148152 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_148187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_148222 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_148257 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_148292 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_148327 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XRelationalExpression__TypeAssignment_1_0_148358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_148393 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_148428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_148463 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_148498 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_148533 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_148568 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_148603 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_148638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_148673 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXUnaryOperation_in_rule__XUnaryOperation__OperandAssignment_0_248708 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_148739 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpPostfix_in_rule__XPostfixOperation__FeatureAssignment_1_0_148774 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_148814 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFeatureCallID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_248857 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_148892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_104_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_148928 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_248972 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_149011 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_149042 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIdOrSuper_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_249077 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_81_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_049117 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_049156 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_049187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_149218 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_449249 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_049280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_1_149311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_049342 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_1_149373 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_049404 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_149435 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_105_in_rule__XClosure__ExplicitSyntaxAssignment_1_0_149471 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_249510 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XExpressionInClosure__ExpressionsAssignment_1_049541 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_049572 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_149603 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_105_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_249639 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_149678 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_349709 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_549740 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_149771 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_149802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_0_149833 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_049864 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_1_149895 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_449926 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_5_249957 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_149988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_2_150019 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_3_0_150050 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_59_in_rule__XCasePart__FallThroughAssignment_3_150086 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_0_0_350125 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_150156 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_350187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_050218 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_150249 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__ExpressionAssignment_550280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_050311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_150342 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__EachExpressionAssignment_950373 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_350404 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_550435 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_250466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_550497 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBlockExpression__ExpressionsAssignment_2_050528 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_106_in_rule__XVariableDeclaration__WriteableAssignment_1_050564 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_050603 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_150634 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_150665 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_150696 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_050727 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_150758 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_050789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_150820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_150851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_2_150882 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_250917 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_81_in_rule__XFeatureCall__ExplicitOperationCallAssignment_3_050957 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_050996 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_051027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_151058 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_451089 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_251124 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_151159 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_151190 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_81_in_rule__XConstructorCall__ExplicitConstructorCallAssignment_4_051226 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_4_1_051265 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_051296 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_151327 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_551358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_107_in_rule__XBooleanLiteral__IsTrueAssignment_1_151394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNumber_in_rule__XNumberLiteral__ValueAssignment_151433 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_151464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_351499 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayBrackets_in_rule__XTypeLiteral__ArrayDimensionsAssignment_451534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_251565 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_251596 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_251627 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_051658 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_151689 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_151720 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ParamAssignment_151751 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ExpressionAssignment_351782 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_251813 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_451844 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_051875 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_151906 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_251937 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_051972 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_152007 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_152038 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__JvmParameterizedTypeReference__TypeAssignment_1_4_152073 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_152108 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_152139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_052170 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmUpperBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_152201 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_052232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmLowerBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_152263 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_152294 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_152325 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_152356 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBoundAnded__TypeReferenceAssignment_152387 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_rule__XImportDeclaration__StaticAssignment_1_0_052427 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_48_in_rule__XImportDeclaration__ExtensionAssignment_1_0_152471 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedNameInStaticImport_in_rule__XImportDeclaration__ImportedTypeAssignment_1_0_252514 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__XImportDeclaration__WildcardAssignment_1_0_3_052554 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XImportDeclaration__MemberNameAssignment_1_0_3_152593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XImportDeclaration__ImportedTypeAssignment_1_152628 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_rule__XImportDeclaration__ImportedNamespaceAssignment_1_252663 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AndRefinement__DestAssignment_3_1_246669 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AndRefinement__DestAssignment_3_1_3_146708 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__OrRefinement__NameAssignment_146743 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__OrRefinement__SourceAssignment_3_0_146778 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__OrRefinement__DestAssignment_3_1_246817 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__OrRefinement__DestAssignment_3_1_3_146856 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Conflict__NameAssignment_146891 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Conflict__SourceAssignment_3_0_146926 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Conflict__DestAssignment_3_1_146965 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Goal__NameAssignment_0_147000 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Goal__TitleAssignment_0_2_147031 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDescription_in_rule__Goal__DescriptionAssignment_0_447062 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePriorityEnum_in_rule__Goal__PriorityAssignment_1_147093 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__TimeAssignment_2_147124 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__CostAssignment_3_147155 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__BenefitAssignment_4_147186 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Goal__DateAssignment_5_147217 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Goal__CodAssignment_6_147248 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRationale_in_rule__Goal__RationaleAssignment_747279 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_rule__Goal__RefAssignment_8_047310 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Softgoal__NameAssignment_0_147341 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Softgoal__TitleAssignment_0_2_147372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDescription_in_rule__Softgoal__DescriptionAssignment_0_447403 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePriorityEnum_in_rule__Softgoal__PriorityAssignment_1_147434 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__TimeAssignment_2_147465 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__CostAssignment_3_147496 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__BenefitAssignment_4_147527 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Softgoal__DateAssignment_5_147558 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Softgoal__CodAssignment_6_147589 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRationale_in_rule__Softgoal__RationaleAssignment_747620 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_rule__Softgoal__RefAssignment_8_047651 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Task__NameAssignment_0_147682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Task__TitleAssignment_0_2_147713 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDescription_in_rule__Task__DescriptionAssignment_0_447744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePriorityEnum_in_rule__Task__PriorityAssignment_1_147775 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__TimeAssignment_2_147806 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__CostAssignment_3_147837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__BenefitAssignment_4_147868 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Task__DateAssignment_5_147899 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Task__CodAssignment_6_0_147930 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Description__TextAssignment_147961 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Rationale__TextAssignment_147992 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Reference__DocReferenceAssignment_148023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFeatureCallID_in_rule__XAssignment__FeatureAssignment_0_148060 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_348095 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_148130 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_148165 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_148200 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_148235 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_148270 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_148305 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_148340 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_148375 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XRelationalExpression__TypeAssignment_1_0_148406 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_148441 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_148476 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_148511 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_148546 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_148581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_148616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_148651 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_148686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_148721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXUnaryOperation_in_rule__XUnaryOperation__OperandAssignment_0_248756 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_148787 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpPostfix_in_rule__XPostfixOperation__FeatureAssignment_1_0_148822 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_0_0_0_1_148862 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFeatureCallID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_248905 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_148940 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_104_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_148976 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_103_in_rule__XMemberFeatureCall__ExplicitStaticAssignment_1_1_0_0_1_249020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_149059 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_149090 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIdOrSuper_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_249125 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_81_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_049165 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_049204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_049235 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_149266 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_449297 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_049328 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSetLiteral__ElementsAssignment_3_1_149359 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_049390 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XListLiteral__ElementsAssignment_3_1_149421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_049452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_149483 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_105_in_rule__XClosure__ExplicitSyntaxAssignment_1_0_149519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_249558 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XExpressionInClosure__ExpressionsAssignment_1_049589 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_049620 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_149651 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_105_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_249687 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_149726 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_349757 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_549788 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_149819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_0_0_0_149850 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_0_149881 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XSwitchExpression__DeclaredParamAssignment_2_1_0_0_049912 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_2_1_149943 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_449974 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_5_250005 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_150036 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_2_150067 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_3_0_150098 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_59_in_rule__XCasePart__FallThroughAssignment_3_150134 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_0_0_350173 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_150204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_350235 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_050266 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBasicForLoopExpression__InitExpressionsAssignment_3_1_150297 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__ExpressionAssignment_550328 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_050359 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__UpdateExpressionsAssignment_7_1_150390 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XBasicForLoopExpression__EachExpressionAssignment_950421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_350452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_550483 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_250514 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_550545 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionOrVarDeclaration_in_rule__XBlockExpression__ExpressionsAssignment_2_050576 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_106_in_rule__XVariableDeclaration__WriteableAssignment_1_050612 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_050651 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_150682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_150713 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_150744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_050775 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_150806 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_050837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_150868 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_150899 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_1_2_150930 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_250965 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_81_in_rule__XFeatureCall__ExplicitOperationCallAssignment_3_051005 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_051044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_051075 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_3_1_1_1_151106 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_451137 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_251172 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_151207 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_151238 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_81_in_rule__XConstructorCall__ExplicitConstructorCallAssignment_4_051274 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_4_1_051313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_051344 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_4_1_1_1_151375 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_551406 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_107_in_rule__XBooleanLiteral__IsTrueAssignment_1_151442 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNumber_in_rule__XNumberLiteral__ValueAssignment_151481 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_151512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_351547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayBrackets_in_rule__XTypeLiteral__ArrayDimensionsAssignment_451582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_251613 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_251644 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_251675 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_051706 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_151737 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_151768 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ParamAssignment_151799 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSynchronizedExpression__ExpressionAssignment_351830 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_251861 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_451892 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_051923 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_151954 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_251985 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_052020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_152055 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_152086 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__JvmParameterizedTypeReference__TypeAssignment_1_4_152121 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_152156 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_4_2_2_152187 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_052218 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmUpperBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0_152249 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_052280 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmLowerBoundAnded_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1_152311 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_152342 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_152373 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_152404 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBoundAnded__TypeReferenceAssignment_152435 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_46_in_rule__XImportDeclaration__StaticAssignment_1_0_052475 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_48_in_rule__XImportDeclaration__ExtensionAssignment_1_0_152519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedNameInStaticImport_in_rule__XImportDeclaration__ImportedTypeAssignment_1_0_252562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__XImportDeclaration__WildcardAssignment_1_0_3_052602 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XImportDeclaration__MemberNameAssignment_1_0_3_152641 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XImportDeclaration__ImportedTypeAssignment_1_152676 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_rule__XImportDeclaration__ImportedNamespaceAssignment_1_252711 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleGoal_in_synpred3_InternalEEBM5419 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleTask_in_synpred4_InternalEEBM5436 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__OpOther__Group_6_1_0__0_in_synpred29_InternalEEBM6217 = new BitSet(new long[]{0x0000000000000002L});

@@ -51,52 +51,52 @@ public interface Conflict extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Source</b></em>' containment reference.
+   * Returns the value of the '<em><b>Source</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Source</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Source</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Source</em>' containment reference.
+   * @return the value of the '<em>Source</em>' reference.
    * @see #setSource(IntentionalElement)
    * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getConflict_Source()
-   * @model containment="true"
+   * @model
    * @generated
    */
   IntentionalElement getSource();
 
   /**
-   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Conflict#getSource <em>Source</em>}' containment reference.
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Conflict#getSource <em>Source</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Source</em>' containment reference.
+   * @param value the new value of the '<em>Source</em>' reference.
    * @see #getSource()
    * @generated
    */
   void setSource(IntentionalElement value);
 
   /**
-   * Returns the value of the '<em><b>Dest</b></em>' containment reference.
+   * Returns the value of the '<em><b>Dest</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Dest</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Dest</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Dest</em>' containment reference.
+   * @return the value of the '<em>Dest</em>' reference.
    * @see #setDest(IntentionalElement)
    * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getConflict_Dest()
-   * @model containment="true"
+   * @model
    * @generated
    */
   IntentionalElement getDest();
 
   /**
-   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Conflict#getDest <em>Dest</em>}' containment reference.
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Conflict#getDest <em>Dest</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Dest</em>' containment reference.
+   * @param value the new value of the '<em>Dest</em>' reference.
    * @see #getDest()
    * @generated
    */

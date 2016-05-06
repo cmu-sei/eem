@@ -223,22 +223,13 @@ public interface EEBMPackage extends EPackage
   int REFINEMENT__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Source</b></em>' reference list.
+   * The feature id for the '<em><b>Dest</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int REFINEMENT__SOURCE = 1;
-
-  /**
-   * The feature id for the '<em><b>Dest</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int REFINEMENT__DEST = 2;
+  int REFINEMENT__DEST = 1;
 
   /**
    * The number of structural features of the '<em>Refinement</em>' class.
@@ -247,7 +238,7 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int REFINEMENT_FEATURE_COUNT = 3;
+  int REFINEMENT_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.AndRefinementImpl <em>And Refinement</em>}' class.
@@ -269,16 +260,7 @@ public interface EEBMPackage extends EPackage
   int AND_REFINEMENT__NAME = REFINEMENT__NAME;
 
   /**
-   * The feature id for the '<em><b>Source</b></em>' reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int AND_REFINEMENT__SOURCE = REFINEMENT__SOURCE;
-
-  /**
-   * The feature id for the '<em><b>Dest</b></em>' containment reference list.
+   * The feature id for the '<em><b>Dest</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -287,13 +269,22 @@ public interface EEBMPackage extends EPackage
   int AND_REFINEMENT__DEST = REFINEMENT__DEST;
 
   /**
+   * The feature id for the '<em><b>Source</b></em>' reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int AND_REFINEMENT__SOURCE = REFINEMENT_FEATURE_COUNT + 0;
+
+  /**
    * The number of structural features of the '<em>And Refinement</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int AND_REFINEMENT_FEATURE_COUNT = REFINEMENT_FEATURE_COUNT + 0;
+  int AND_REFINEMENT_FEATURE_COUNT = REFINEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.OrRefinementImpl <em>Or Refinement</em>}' class.
@@ -315,16 +306,7 @@ public interface EEBMPackage extends EPackage
   int OR_REFINEMENT__NAME = REFINEMENT__NAME;
 
   /**
-   * The feature id for the '<em><b>Source</b></em>' reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int OR_REFINEMENT__SOURCE = REFINEMENT__SOURCE;
-
-  /**
-   * The feature id for the '<em><b>Dest</b></em>' containment reference list.
+   * The feature id for the '<em><b>Dest</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -333,13 +315,22 @@ public interface EEBMPackage extends EPackage
   int OR_REFINEMENT__DEST = REFINEMENT__DEST;
 
   /**
+   * The feature id for the '<em><b>Source</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OR_REFINEMENT__SOURCE = REFINEMENT_FEATURE_COUNT + 0;
+
+  /**
    * The number of structural features of the '<em>Or Refinement</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int OR_REFINEMENT_FEATURE_COUNT = REFINEMENT_FEATURE_COUNT + 0;
+  int OR_REFINEMENT_FEATURE_COUNT = REFINEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConflictImpl <em>Conflict</em>}' class.
@@ -361,7 +352,7 @@ public interface EEBMPackage extends EPackage
   int CONFLICT__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Source</b></em>' containment reference.
+   * The feature id for the '<em><b>Source</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -370,7 +361,7 @@ public interface EEBMPackage extends EPackage
   int CONFLICT__SOURCE = 1;
 
   /**
-   * The feature id for the '<em><b>Dest</b></em>' containment reference.
+   * The feature id for the '<em><b>Dest</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -1029,21 +1020,10 @@ public interface EEBMPackage extends EPackage
   EAttribute getRefinement_Name();
 
   /**
-   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.Refinement#getSource <em>Source</em>}'.
+   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.Refinement#getDest <em>Dest</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference list '<em>Source</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Refinement#getSource()
-   * @see #getRefinement()
-   * @generated
-   */
-  EReference getRefinement_Source();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Refinement#getDest <em>Dest</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Dest</em>'.
+   * @return the meta object for the reference list '<em>Dest</em>'.
    * @see edu.cmu.sei.eebm.eEBM.Refinement#getDest()
    * @see #getRefinement()
    * @generated
@@ -1061,6 +1041,17 @@ public interface EEBMPackage extends EPackage
   EClass getAndRefinement();
 
   /**
+   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.AndRefinement#getSource <em>Source</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference list '<em>Source</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.AndRefinement#getSource()
+   * @see #getAndRefinement()
+   * @generated
+   */
+  EReference getAndRefinement_Source();
+
+  /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.OrRefinement <em>Or Refinement</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1069,6 +1060,17 @@ public interface EEBMPackage extends EPackage
    * @generated
    */
   EClass getOrRefinement();
+
+  /**
+   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.OrRefinement#getSource <em>Source</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Source</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.OrRefinement#getSource()
+   * @see #getOrRefinement()
+   * @generated
+   */
+  EReference getOrRefinement_Source();
 
   /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Conflict <em>Conflict</em>}'.
@@ -1092,10 +1094,10 @@ public interface EEBMPackage extends EPackage
   EAttribute getConflict_Name();
 
   /**
-   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Conflict#getSource <em>Source</em>}'.
+   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.Conflict#getSource <em>Source</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Source</em>'.
+   * @return the meta object for the reference '<em>Source</em>'.
    * @see edu.cmu.sei.eebm.eEBM.Conflict#getSource()
    * @see #getConflict()
    * @generated
@@ -1103,10 +1105,10 @@ public interface EEBMPackage extends EPackage
   EReference getConflict_Source();
 
   /**
-   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Conflict#getDest <em>Dest</em>}'.
+   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.Conflict#getDest <em>Dest</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Dest</em>'.
+   * @return the meta object for the reference '<em>Dest</em>'.
    * @see edu.cmu.sei.eebm.eEBM.Conflict#getDest()
    * @see #getConflict()
    * @generated
@@ -1450,15 +1452,7 @@ public interface EEBMPackage extends EPackage
     EAttribute REFINEMENT__NAME = eINSTANCE.getRefinement_Name();
 
     /**
-     * The meta object literal for the '<em><b>Source</b></em>' reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference REFINEMENT__SOURCE = eINSTANCE.getRefinement_Source();
-
-    /**
-     * The meta object literal for the '<em><b>Dest</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Dest</b></em>' reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -1476,6 +1470,14 @@ public interface EEBMPackage extends EPackage
     EClass AND_REFINEMENT = eINSTANCE.getAndRefinement();
 
     /**
+     * The meta object literal for the '<em><b>Source</b></em>' reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference AND_REFINEMENT__SOURCE = eINSTANCE.getAndRefinement_Source();
+
+    /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.OrRefinementImpl <em>Or Refinement</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1484,6 +1486,14 @@ public interface EEBMPackage extends EPackage
      * @generated
      */
     EClass OR_REFINEMENT = eINSTANCE.getOrRefinement();
+
+    /**
+     * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference OR_REFINEMENT__SOURCE = eINSTANCE.getOrRefinement_Source();
 
     /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConflictImpl <em>Conflict</em>}' class.
@@ -1504,7 +1514,7 @@ public interface EEBMPackage extends EPackage
     EAttribute CONFLICT__NAME = eINSTANCE.getConflict_Name();
 
     /**
-     * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Source</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -1512,7 +1522,7 @@ public interface EEBMPackage extends EPackage
     EReference CONFLICT__SOURCE = eINSTANCE.getConflict_Source();
 
     /**
-     * The meta object literal for the '<em><b>Dest</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Dest</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

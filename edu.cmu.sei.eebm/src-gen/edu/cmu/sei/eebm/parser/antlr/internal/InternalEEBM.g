@@ -341,20 +341,15 @@ ruleAndRefinement returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getAndRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_2_0()); 
-	    }
-		lv_dest_8_0=ruleIntentionalElement		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getAndRefinementRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getAndRefinementRule());
 	        }
-       		add(
-       			$current, 
-       			"dest",
-        		lv_dest_8_0, 
-        		"IntentionalElement");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_8=RULE_ID
+	{
+		newLeafNode(otherlv_8, grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+	}
 
 )
 )(	otherlv_9=',' 
@@ -363,20 +358,15 @@ ruleAndRefinement returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getAndRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_3_1_0()); 
-	    }
-		lv_dest_10_0=ruleIntentionalElement		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getAndRefinementRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getAndRefinementRule());
 	        }
-       		add(
-       			$current, 
-       			"dest",
-        		lv_dest_10_0, 
-        		"IntentionalElement");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_10=RULE_ID
+	{
+		newLeafNode(otherlv_10, grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+	}
 
 )
 ))*	otherlv_11=']' 
@@ -502,20 +492,15 @@ ruleOrRefinement returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getOrRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_2_0()); 
-	    }
-		lv_dest_8_0=ruleIntentionalElement		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getOrRefinementRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getOrRefinementRule());
 	        }
-       		add(
-       			$current, 
-       			"dest",
-        		lv_dest_8_0, 
-        		"IntentionalElement");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_8=RULE_ID
+	{
+		newLeafNode(otherlv_8, grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+	}
 
 )
 )(	otherlv_9=',' 
@@ -524,20 +509,15 @@ ruleOrRefinement returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getOrRefinementAccess().getDestIntentionalElementParserRuleCall_3_1_3_1_0()); 
-	    }
-		lv_dest_10_0=ruleIntentionalElement		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getOrRefinementRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getOrRefinementRule());
 	        }
-       		add(
-       			$current, 
-       			"dest",
-        		lv_dest_10_0, 
-        		"IntentionalElement");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_10=RULE_ID
+	{
+		newLeafNode(otherlv_10, grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+	}
 
 )
 ))*	otherlv_11=']' 
@@ -630,20 +610,15 @@ ruleConflict returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getConflictAccess().getSourceIntentionalElementParserRuleCall_3_0_1_0()); 
-	    }
-		lv_source_5_0=ruleIntentionalElement		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getConflictRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getConflictRule());
 	        }
-       		set(
-       			$current, 
-       			"source",
-        		lv_source_5_0, 
-        		"IntentionalElement");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_5=RULE_ID
+	{
+		newLeafNode(otherlv_5, grammarAccess.getConflictAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+	}
 
 )
 )))
@@ -664,20 +639,15 @@ ruleConflict returns [EObject current=null]
     }
 (
 (
-		{ 
-	        newCompositeNode(grammarAccess.getConflictAccess().getDestIntentionalElementParserRuleCall_3_1_1_0()); 
-	    }
-		lv_dest_7_0=ruleIntentionalElement		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getConflictRule());
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getConflictRule());
 	        }
-       		set(
-       			$current, 
-       			"dest",
-        		lv_dest_7_0, 
-        		"IntentionalElement");
-	        afterParserOrEnumRuleCall();
-	    }
+        }
+	otherlv_7=RULE_ID
+	{
+		newLeafNode(otherlv_7, grammarAccess.getConflictAccess().getDestIntentionalElementCrossReference_3_1_1_0()); 
+	}
 
 )
 )))

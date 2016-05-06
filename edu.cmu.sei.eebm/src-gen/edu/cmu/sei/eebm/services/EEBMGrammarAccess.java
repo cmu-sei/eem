@@ -139,21 +139,23 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSourceKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		private final Assignment cDestAssignment_3_1_2 = (Assignment)cGroup_3_1.eContents().get(2);
-		private final RuleCall cDestIntentionalElementParserRuleCall_3_1_2_0 = (RuleCall)cDestAssignment_3_1_2.eContents().get(0);
+		private final CrossReference cDestIntentionalElementCrossReference_3_1_2_0 = (CrossReference)cDestAssignment_3_1_2.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_2_0.eContents().get(1);
 		private final Group cGroup_3_1_3 = (Group)cGroup_3_1.eContents().get(3);
 		private final Keyword cCommaKeyword_3_1_3_0 = (Keyword)cGroup_3_1_3.eContents().get(0);
 		private final Assignment cDestAssignment_3_1_3_1 = (Assignment)cGroup_3_1_3.eContents().get(1);
-		private final RuleCall cDestIntentionalElementParserRuleCall_3_1_3_1_0 = (RuleCall)cDestAssignment_3_1_3_1.eContents().get(0);
+		private final CrossReference cDestIntentionalElementCrossReference_3_1_3_1_0 = (CrossReference)cDestAssignment_3_1_3_1.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_3_1_0.eContents().get(1);
 		private final Keyword cRightSquareBracketKeyword_3_1_4 = (Keyword)cGroup_3_1.eContents().get(4);
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//AndRefinement:
-		//	"And" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement (","
-		//	dest+=IntentionalElement)* "]") "]";
+		//	"And" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
+		//	dest+=[IntentionalElement])* "]") "]";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"And" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement (","
-		//dest+=IntentionalElement)* "]") "]"
+		//"And" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
+		//dest+=[IntentionalElement])* "]") "]"
 		public Group getGroup() { return cGroup; }
 
 		//"And"
@@ -168,7 +170,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//"dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement ("," dest+=IntentionalElement)* "]"
+		//"dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
 		//"dest" source+=[IntentionalElement]
@@ -186,7 +188,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//"source" "[" dest+=IntentionalElement ("," dest+=IntentionalElement)* "]"
+		//"source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
 		//"source"
@@ -195,23 +197,29 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_3_1_1() { return cLeftSquareBracketKeyword_3_1_1; }
 
-		//dest+=IntentionalElement
+		//dest+=[IntentionalElement]
 		public Assignment getDestAssignment_3_1_2() { return cDestAssignment_3_1_2; }
 
-		//IntentionalElement
-		public RuleCall getDestIntentionalElementParserRuleCall_3_1_2_0() { return cDestIntentionalElementParserRuleCall_3_1_2_0; }
+		//[IntentionalElement]
+		public CrossReference getDestIntentionalElementCrossReference_3_1_2_0() { return cDestIntentionalElementCrossReference_3_1_2_0; }
 
-		//("," dest+=IntentionalElement)*
+		//ID
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
+
+		//("," dest+=[IntentionalElement])*
 		public Group getGroup_3_1_3() { return cGroup_3_1_3; }
 
 		//","
 		public Keyword getCommaKeyword_3_1_3_0() { return cCommaKeyword_3_1_3_0; }
 
-		//dest+=IntentionalElement
+		//dest+=[IntentionalElement]
 		public Assignment getDestAssignment_3_1_3_1() { return cDestAssignment_3_1_3_1; }
 
-		//IntentionalElement
-		public RuleCall getDestIntentionalElementParserRuleCall_3_1_3_1_0() { return cDestIntentionalElementParserRuleCall_3_1_3_1_0; }
+		//[IntentionalElement]
+		public CrossReference getDestIntentionalElementCrossReference_3_1_3_1_0() { return cDestIntentionalElementCrossReference_3_1_3_1_0; }
+
+		//ID
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
 
 		//"]"
 		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
@@ -237,21 +245,23 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSourceKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
 		private final Assignment cDestAssignment_3_1_2 = (Assignment)cGroup_3_1.eContents().get(2);
-		private final RuleCall cDestIntentionalElementParserRuleCall_3_1_2_0 = (RuleCall)cDestAssignment_3_1_2.eContents().get(0);
+		private final CrossReference cDestIntentionalElementCrossReference_3_1_2_0 = (CrossReference)cDestAssignment_3_1_2.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_2_0.eContents().get(1);
 		private final Group cGroup_3_1_3 = (Group)cGroup_3_1.eContents().get(3);
 		private final Keyword cCommaKeyword_3_1_3_0 = (Keyword)cGroup_3_1_3.eContents().get(0);
 		private final Assignment cDestAssignment_3_1_3_1 = (Assignment)cGroup_3_1_3.eContents().get(1);
-		private final RuleCall cDestIntentionalElementParserRuleCall_3_1_3_1_0 = (RuleCall)cDestAssignment_3_1_3_1.eContents().get(0);
+		private final CrossReference cDestIntentionalElementCrossReference_3_1_3_1_0 = (CrossReference)cDestAssignment_3_1_3_1.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_3_1_0.eContents().get(1);
 		private final Keyword cRightSquareBracketKeyword_3_1_4 = (Keyword)cGroup_3_1.eContents().get(4);
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//OrRefinement:
-		//	"Or" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement (","
-		//	dest+=IntentionalElement)* "]") "]";
+		//	"Or" name=QualifiedName "[" ("dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
+		//	dest+=[IntentionalElement])* "]") "]";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Or" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement (","
-		//dest+=IntentionalElement)* "]") "]"
+		//"Or" name=QualifiedName "[" ("dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
+		//dest+=[IntentionalElement])* "]") "]"
 		public Group getGroup() { return cGroup; }
 
 		//"Or"
@@ -266,16 +276,16 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//"dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement ("," dest+=IntentionalElement)* "]"
+		//"dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//"dest" source+=[IntentionalElement]
+		//"dest" source=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
 		//"dest"
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
-		//source+=[IntentionalElement]
+		//source=[IntentionalElement]
 		public Assignment getSourceAssignment_3_0_1() { return cSourceAssignment_3_0_1; }
 
 		//[IntentionalElement]
@@ -284,7 +294,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//"source" "[" dest+=IntentionalElement ("," dest+=IntentionalElement)* "]"
+		//"source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
 		//"source"
@@ -293,23 +303,29 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_3_1_1() { return cLeftSquareBracketKeyword_3_1_1; }
 
-		//dest+=IntentionalElement
+		//dest+=[IntentionalElement]
 		public Assignment getDestAssignment_3_1_2() { return cDestAssignment_3_1_2; }
 
-		//IntentionalElement
-		public RuleCall getDestIntentionalElementParserRuleCall_3_1_2_0() { return cDestIntentionalElementParserRuleCall_3_1_2_0; }
+		//[IntentionalElement]
+		public CrossReference getDestIntentionalElementCrossReference_3_1_2_0() { return cDestIntentionalElementCrossReference_3_1_2_0; }
 
-		//("," dest+=IntentionalElement)*
+		//ID
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
+
+		//("," dest+=[IntentionalElement])*
 		public Group getGroup_3_1_3() { return cGroup_3_1_3; }
 
 		//","
 		public Keyword getCommaKeyword_3_1_3_0() { return cCommaKeyword_3_1_3_0; }
 
-		//dest+=IntentionalElement
+		//dest+=[IntentionalElement]
 		public Assignment getDestAssignment_3_1_3_1() { return cDestAssignment_3_1_3_1; }
 
-		//IntentionalElement
-		public RuleCall getDestIntentionalElementParserRuleCall_3_1_3_1_0() { return cDestIntentionalElementParserRuleCall_3_1_3_1_0; }
+		//[IntentionalElement]
+		public CrossReference getDestIntentionalElementCrossReference_3_1_3_1_0() { return cDestIntentionalElementCrossReference_3_1_3_1_0; }
+
+		//ID
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
 
 		//"]"
 		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
@@ -329,18 +345,20 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup_3_0 = (Group)cUnorderedGroup_3.eContents().get(0);
 		private final Keyword cDestKeyword_3_0_0 = (Keyword)cGroup_3_0.eContents().get(0);
 		private final Assignment cSourceAssignment_3_0_1 = (Assignment)cGroup_3_0.eContents().get(1);
-		private final RuleCall cSourceIntentionalElementParserRuleCall_3_0_1_0 = (RuleCall)cSourceAssignment_3_0_1.eContents().get(0);
+		private final CrossReference cSourceIntentionalElementCrossReference_3_0_1_0 = (CrossReference)cSourceAssignment_3_0_1.eContents().get(0);
+		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_0_1_0.eContents().get(1);
 		private final Group cGroup_3_1 = (Group)cUnorderedGroup_3.eContents().get(1);
 		private final Keyword cSourceKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
 		private final Assignment cDestAssignment_3_1_1 = (Assignment)cGroup_3_1.eContents().get(1);
-		private final RuleCall cDestIntentionalElementParserRuleCall_3_1_1_0 = (RuleCall)cDestAssignment_3_1_1.eContents().get(0);
+		private final CrossReference cDestIntentionalElementCrossReference_3_1_1_0 = (CrossReference)cDestAssignment_3_1_1.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_1_0.eContents().get(1);
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//Conflict:
-		//	"Conflict" name=QualifiedName "[" ("dest" source=IntentionalElement & "source" dest=IntentionalElement) "]";
+		//	"Conflict" name=QualifiedName "[" ("dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]) "]";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Conflict" name=QualifiedName "[" ("dest" source=IntentionalElement & "source" dest=IntentionalElement) "]"
+		//"Conflict" name=QualifiedName "[" ("dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]) "]"
 		public Group getGroup() { return cGroup; }
 
 		//"Conflict"
@@ -355,32 +373,38 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//"dest" source=IntentionalElement & "source" dest=IntentionalElement
+		//"dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//"dest" source=IntentionalElement
+		//"dest" source=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
 		//"dest"
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
-		//source=IntentionalElement
+		//source=[IntentionalElement]
 		public Assignment getSourceAssignment_3_0_1() { return cSourceAssignment_3_0_1; }
 
-		//IntentionalElement
-		public RuleCall getSourceIntentionalElementParserRuleCall_3_0_1_0() { return cSourceIntentionalElementParserRuleCall_3_0_1_0; }
+		//[IntentionalElement]
+		public CrossReference getSourceIntentionalElementCrossReference_3_0_1_0() { return cSourceIntentionalElementCrossReference_3_0_1_0; }
 
-		//"source" dest=IntentionalElement
+		//ID
+		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
+
+		//"source" dest=[IntentionalElement]
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
 		//"source"
 		public Keyword getSourceKeyword_3_1_0() { return cSourceKeyword_3_1_0; }
 
-		//dest=IntentionalElement
+		//dest=[IntentionalElement]
 		public Assignment getDestAssignment_3_1_1() { return cDestAssignment_3_1_1; }
 
-		//IntentionalElement
-		public RuleCall getDestIntentionalElementParserRuleCall_3_1_1_0() { return cDestIntentionalElementParserRuleCall_3_1_1_0; }
+		//[IntentionalElement]
+		public CrossReference getDestIntentionalElementCrossReference_3_1_1_0() { return cDestIntentionalElementCrossReference_3_1_1_0; }
+
+		//ID
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1; }
 
 		//"]"
 		public Keyword getRightSquareBracketKeyword_4() { return cRightSquareBracketKeyword_4; }
@@ -1188,8 +1212,8 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//AndRefinement:
-	//	"And" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement (","
-	//	dest+=IntentionalElement)* "]") "]";
+	//	"And" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
+	//	dest+=[IntentionalElement])* "]") "]";
 	public AndRefinementElements getAndRefinementAccess() {
 		return pAndRefinement;
 	}
@@ -1199,8 +1223,8 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//OrRefinement:
-	//	"Or" name=QualifiedName "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=IntentionalElement (","
-	//	dest+=IntentionalElement)* "]") "]";
+	//	"Or" name=QualifiedName "[" ("dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
+	//	dest+=[IntentionalElement])* "]") "]";
 	public OrRefinementElements getOrRefinementAccess() {
 		return pOrRefinement;
 	}
@@ -1210,7 +1234,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Conflict:
-	//	"Conflict" name=QualifiedName "[" ("dest" source=IntentionalElement & "source" dest=IntentionalElement) "]";
+	//	"Conflict" name=QualifiedName "[" ("dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]) "]";
 	public ConflictElements getConflictAccess() {
 		return pConflict;
 	}

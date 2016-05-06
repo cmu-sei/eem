@@ -22,19 +22,20 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Refinement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dest" unique="false" upperBound="-1"
+        eType="#//IntentionalElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AndRefinement" eSuperTypes="#//Refinement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" unique="false"
         upperBound="-1" eType="#//IntentionalElement"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dest" upperBound="-1" eType="#//IntentionalElement"
-        containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AndRefinement" eSuperTypes="#//Refinement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="OrRefinement" eSuperTypes="#//Refinement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OrRefinement" eSuperTypes="#//Refinement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//IntentionalElement"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Conflict">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//IntentionalElement"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dest" eType="#//IntentionalElement"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//IntentionalElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dest" eType="#//IntentionalElement"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Goal" eSuperTypes="#//IntentionalElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="rationale" eType="#//Rationale"
