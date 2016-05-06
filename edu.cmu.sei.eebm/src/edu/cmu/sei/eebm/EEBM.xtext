@@ -5,31 +5,49 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
 import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 
-Roadmap: 
-	(name = 'Roadmap' STRING)?
-	components += (IntentionalElement)+
-	people += (Stakeholder)+
-	trajectories +=(Decision|Path)+
-;
-
 IntentionalElement: // superclass. Implies Goals and Options are semantically equivalent ...
-	Goal | Option
+	Goal | Task | Softgoal
 ;
 
-Path:  // should be "roadmap"?
-	name = ID
-	path+=Option+
+Relationship:
+	Refinement | Conflict
 ;
 
-// Options, Decisions, 
-Option returns Option: 'Option' name=QualifiedName (':' title=STRING)? 
+Refinement:
+	AndRefinement | OrRefinement
+;
+
+AndRefinement returns AndRefinement: 'And' name=QualifiedName
+	'[' (
+		(source+=[IntentionalElement]+)
+		(dest+=[IntentionalElement])
+	)
+	']'
+;
+
+OrRefinement returns OrRefinement: 'Or' name=QualifiedName
+	'[' (
+		(source+=[IntentionalElement]+)
+		(dest+=[IntentionalElement])
+	)
+	']'
+;
+
+Conflict returns Conflict: 'Conflict' name=QualifiedName
+	'[' (
+		(source+=[IntentionalElement])
+		(dest+=[IntentionalElement])
+	)
+	']'
+;
+
+Task returns Task: 'Task' name=QualifiedName (':' title=STRING)? 
     '[' ( 
     	(description=Description)?
-    	&('refines' refinesReference+=[IntentionalElement]+)?
-    	&('conflicts' conflictsReference+=[IntentionalElement]+)? 
       	&('priority' &priority=PriorityEnum)?
-      	&('time' time=INT)? //TODO: Validation should implement what an integer time refelects, e.g.seconds, weeks
+      	&('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
       	&('cost' cost=INT)?
+      	&('benefit' benefit=INT)?
       	&('completion' date=STRING)? //TODO: validate in custom validator
       	&('delay cost' cod=INT)? 
     )
@@ -39,38 +57,11 @@ Option returns Option: 'Option' name=QualifiedName (':' title=STRING)?
 enum PriorityEnum:
 	HIGH | MED | LOW
 ;
-// People
-Stakeholder: 
-	Consultant | Participant
-;
-
-Participant:
-	(
-		('Participant' name=ID)
-		& (preferences += Preference)?
-	)
-;
-
-Consultant:
-	'Consultant' name=ID
-;
-
-Decision: 'Decision' name=ID
-	'[' (
-	('rationale' rationale=STRING)
-	&('responsible' responsible=[Stakeholder])?
-	&('response measure' response_measure = STRING)? //TODO could take this from ALISA Verify
-	&('due' due=STRING)?
-	&('options:' (
-		 '{' options+=[Option] (',' options+=[Option])* '}')?
-		 )
-	) ']'
-;
 
 //Goals and requirements
 
 Preference: 
-	'prefers(' first=[Option] ',' last=[Option] ')' //TODO: verify these exist and are not equal
+	'prefers(' first=[IntentionalElement] ',' last=[IntentionalElement] ')' //TODO: verify these exist and are not equal
 ;
 
 //NE: we could just import this from ALISA
@@ -84,9 +75,17 @@ Goal returns Goal:
 	
 	 ']';
 	 
-// This comes from ALISA/AADL, and would probably be better taken from there, 
-// e.g. the AADL properties and unit types. Xbase may have these too. 
-// @TODO determine what unit types are necessary and where to define them.
+//NE: we could just import this from ALISA
+Softgoal returns Softgoal:
+	'Softgoal' name=QualifiedName (':'  title=STRING )? ("refines" superType=[Softgoal])? // short string for title
+	'['  
+	 	(description=Description)? 
+	 	&(rationale=Rationale)? 
+		//	 &(changeUncertainty=Uncertainty)? 
+	 	&('see' 'document'  docReference+=STRING)?  //the document e.g. business strategy
+	
+	 ']';
+	 
 Description : 
 	'description' description += DescriptionElement+
 ;
