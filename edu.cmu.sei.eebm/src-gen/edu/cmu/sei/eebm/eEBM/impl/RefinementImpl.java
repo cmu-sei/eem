@@ -3,8 +3,8 @@
 package edu.cmu.sei.eebm.eEBM.impl;
 
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
-import edu.cmu.sei.eebm.eEBM.Option;
-import edu.cmu.sei.eebm.eEBM.Path;
+import edu.cmu.sei.eebm.eEBM.IntentionalElement;
+import edu.cmu.sei.eebm.eEBM.Refinement;
 
 import java.util.Collection;
 
@@ -20,23 +20,25 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Path</b></em>'.
+ * An implementation of the model object '<em><b>Refinement</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.PathImpl#getName <em>Name</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.PathImpl#getPath <em>Path</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl#getSource <em>Source</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl#getDest <em>Dest</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class PathImpl extends MinimalEObjectImpl.Container implements Path
+public class RefinementImpl extends MinimalEObjectImpl.Container implements Refinement
 {
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -59,21 +61,31 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getPath() <em>Path</em>}' containment reference list.
+   * The cached value of the '{@link #getSource() <em>Source</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPath()
+   * @see #getSource()
    * @generated
    * @ordered
    */
-  protected EList<Option> path;
+  protected EList<IntentionalElement> source;
+
+  /**
+   * The cached value of the '{@link #getDest() <em>Dest</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDest()
+   * @generated
+   * @ordered
+   */
+  protected EList<IntentionalElement> dest;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected PathImpl()
+  protected RefinementImpl()
   {
     super();
   }
@@ -86,7 +98,7 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   @Override
   protected EClass eStaticClass()
   {
-    return EEBMPackage.Literals.PATH;
+    return EEBMPackage.Literals.REFINEMENT;
   }
 
   /**
@@ -109,7 +121,7 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PATH__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.REFINEMENT__NAME, oldName, name));
   }
 
   /**
@@ -117,13 +129,27 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Option> getPath()
+  public EList<IntentionalElement> getSource()
   {
-    if (path == null)
+    if (source == null)
     {
-      path = new EObjectContainmentEList<Option>(Option.class, this, EEBMPackage.PATH__PATH);
+      source = new EObjectResolvingEList<IntentionalElement>(IntentionalElement.class, this, EEBMPackage.REFINEMENT__SOURCE);
     }
-    return path;
+    return source;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<IntentionalElement> getDest()
+  {
+    if (dest == null)
+    {
+      dest = new EObjectContainmentEList<IntentionalElement>(IntentionalElement.class, this, EEBMPackage.REFINEMENT__DEST);
+    }
+    return dest;
   }
 
   /**
@@ -136,8 +162,8 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   {
     switch (featureID)
     {
-      case EEBMPackage.PATH__PATH:
-        return ((InternalEList<?>)getPath()).basicRemove(otherEnd, msgs);
+      case EEBMPackage.REFINEMENT__DEST:
+        return ((InternalEList<?>)getDest()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -152,10 +178,12 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   {
     switch (featureID)
     {
-      case EEBMPackage.PATH__NAME:
+      case EEBMPackage.REFINEMENT__NAME:
         return getName();
-      case EEBMPackage.PATH__PATH:
-        return getPath();
+      case EEBMPackage.REFINEMENT__SOURCE:
+        return getSource();
+      case EEBMPackage.REFINEMENT__DEST:
+        return getDest();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -171,12 +199,16 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   {
     switch (featureID)
     {
-      case EEBMPackage.PATH__NAME:
+      case EEBMPackage.REFINEMENT__NAME:
         setName((String)newValue);
         return;
-      case EEBMPackage.PATH__PATH:
-        getPath().clear();
-        getPath().addAll((Collection<? extends Option>)newValue);
+      case EEBMPackage.REFINEMENT__SOURCE:
+        getSource().clear();
+        getSource().addAll((Collection<? extends IntentionalElement>)newValue);
+        return;
+      case EEBMPackage.REFINEMENT__DEST:
+        getDest().clear();
+        getDest().addAll((Collection<? extends IntentionalElement>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -192,11 +224,14 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   {
     switch (featureID)
     {
-      case EEBMPackage.PATH__NAME:
+      case EEBMPackage.REFINEMENT__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case EEBMPackage.PATH__PATH:
-        getPath().clear();
+      case EEBMPackage.REFINEMENT__SOURCE:
+        getSource().clear();
+        return;
+      case EEBMPackage.REFINEMENT__DEST:
+        getDest().clear();
         return;
     }
     super.eUnset(featureID);
@@ -212,10 +247,12 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
   {
     switch (featureID)
     {
-      case EEBMPackage.PATH__NAME:
+      case EEBMPackage.REFINEMENT__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case EEBMPackage.PATH__PATH:
-        return path != null && !path.isEmpty();
+      case EEBMPackage.REFINEMENT__SOURCE:
+        return source != null && !source.isEmpty();
+      case EEBMPackage.REFINEMENT__DEST:
+        return dest != null && !dest.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -237,4 +274,4 @@ public class PathImpl extends MinimalEObjectImpl.Container implements Path
     return result.toString();
   }
 
-} //PathImpl
+} //RefinementImpl

@@ -17,8 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Roadmap#getName <em>Name</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.Roadmap#getComponents <em>Components</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Roadmap#getPeople <em>People</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Roadmap#getTrajectories <em>Trajectories</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.Roadmap#getRelations <em>Relations</em>}</li>
  * </ul>
  *
  * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getRoadmap()
@@ -70,35 +69,19 @@ public interface Roadmap extends EObject
   EList<IntentionalElement> getComponents();
 
   /**
-   * Returns the value of the '<em><b>People</b></em>' containment reference list.
-   * The list contents are of type {@link edu.cmu.sei.eebm.eEBM.Stakeholder}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>People</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>People</em>' containment reference list.
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getRoadmap_People()
-   * @model containment="true"
-   * @generated
-   */
-  EList<Stakeholder> getPeople();
-
-  /**
-   * Returns the value of the '<em><b>Trajectories</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Relations</b></em>' containment reference list.
    * The list contents are of type {@link org.eclipse.emf.ecore.EObject}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Trajectories</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Relations</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Trajectories</em>' containment reference list.
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getRoadmap_Trajectories()
+   * @return the value of the '<em>Relations</em>' containment reference list.
+   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getRoadmap_Relations()
    * @model containment="true"
    * @generated
    */
-  EList<EObject> getTrajectories();
+  EList<EObject> getRelations();
 
 } // Roadmap

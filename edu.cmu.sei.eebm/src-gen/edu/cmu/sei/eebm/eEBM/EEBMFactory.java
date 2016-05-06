@@ -41,67 +41,40 @@ public interface EEBMFactory extends EFactory
   IntentionalElement createIntentionalElement();
 
   /**
-   * Returns a new object of class '<em>Path</em>'.
+   * Returns a new object of class '<em>Refinement</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Path</em>'.
+   * @return a new object of class '<em>Refinement</em>'.
    * @generated
    */
-  Path createPath();
+  Refinement createRefinement();
 
   /**
-   * Returns a new object of class '<em>Option</em>'.
+   * Returns a new object of class '<em>And Refinement</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Option</em>'.
+   * @return a new object of class '<em>And Refinement</em>'.
    * @generated
    */
-  Option createOption();
+  AndRefinement createAndRefinement();
 
   /**
-   * Returns a new object of class '<em>Stakeholder</em>'.
+   * Returns a new object of class '<em>Or Refinement</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Stakeholder</em>'.
+   * @return a new object of class '<em>Or Refinement</em>'.
    * @generated
    */
-  Stakeholder createStakeholder();
+  OrRefinement createOrRefinement();
 
   /**
-   * Returns a new object of class '<em>Participant</em>'.
+   * Returns a new object of class '<em>Conflict</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Participant</em>'.
+   * @return a new object of class '<em>Conflict</em>'.
    * @generated
    */
-  Participant createParticipant();
-
-  /**
-   * Returns a new object of class '<em>Consultant</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Consultant</em>'.
-   * @generated
-   */
-  Consultant createConsultant();
-
-  /**
-   * Returns a new object of class '<em>Decision</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Decision</em>'.
-   * @generated
-   */
-  Decision createDecision();
-
-  /**
-   * Returns a new object of class '<em>Preference</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Preference</em>'.
-   * @generated
-   */
-  Preference createPreference();
+  Conflict createConflict();
 
   /**
    * Returns a new object of class '<em>Goal</em>'.
@@ -113,6 +86,24 @@ public interface EEBMFactory extends EFactory
   Goal createGoal();
 
   /**
+   * Returns a new object of class '<em>Softgoal</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Softgoal</em>'.
+   * @generated
+   */
+  Softgoal createSoftgoal();
+
+  /**
+   * Returns a new object of class '<em>Task</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Task</em>'.
+   * @generated
+   */
+  Task createTask();
+
+  /**
    * Returns a new object of class '<em>Description</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -122,15 +113,6 @@ public interface EEBMFactory extends EFactory
   Description createDescription();
 
   /**
-   * Returns a new object of class '<em>Description Element</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Description Element</em>'.
-   * @generated
-   */
-  DescriptionElement createDescriptionElement();
-
-  /**
    * Returns a new object of class '<em>Rationale</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -138,6 +120,24 @@ public interface EEBMFactory extends EFactory
    * @generated
    */
   Rationale createRationale();
+
+  /**
+   * Returns a new object of class '<em>Reference</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Reference</em>'.
+   * @generated
+   */
+  Reference createReference();
+
+  /**
+   * Returns a new object of class '<em>Preference</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Preference</em>'.
+   * @generated
+   */
+  Preference createPreference();
 
   /**
    * Returns the package supported by this factory.

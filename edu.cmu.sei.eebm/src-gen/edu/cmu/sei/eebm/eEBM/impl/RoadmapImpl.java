@@ -5,7 +5,6 @@ package edu.cmu.sei.eebm.eEBM.impl;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.IntentionalElement;
 import edu.cmu.sei.eebm.eEBM.Roadmap;
-import edu.cmu.sei.eebm.eEBM.Stakeholder;
 
 import java.util.Collection;
 
@@ -34,8 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl#getName <em>Name</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl#getComponents <em>Components</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl#getPeople <em>People</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl#getTrajectories <em>Trajectories</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RoadmapImpl#getRelations <em>Relations</em>}</li>
  * </ul>
  *
  * @generated
@@ -73,24 +71,14 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
   protected EList<IntentionalElement> components;
 
   /**
-   * The cached value of the '{@link #getPeople() <em>People</em>}' containment reference list.
+   * The cached value of the '{@link #getRelations() <em>Relations</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPeople()
+   * @see #getRelations()
    * @generated
    * @ordered
    */
-  protected EList<Stakeholder> people;
-
-  /**
-   * The cached value of the '{@link #getTrajectories() <em>Trajectories</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTrajectories()
-   * @generated
-   * @ordered
-   */
-  protected EList<EObject> trajectories;
+  protected EList<EObject> relations;
 
   /**
    * <!-- begin-user-doc -->
@@ -155,27 +143,13 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Stakeholder> getPeople()
+  public EList<EObject> getRelations()
   {
-    if (people == null)
+    if (relations == null)
     {
-      people = new EObjectContainmentEList<Stakeholder>(Stakeholder.class, this, EEBMPackage.ROADMAP__PEOPLE);
+      relations = new EObjectContainmentEList<EObject>(EObject.class, this, EEBMPackage.ROADMAP__RELATIONS);
     }
-    return people;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<EObject> getTrajectories()
-  {
-    if (trajectories == null)
-    {
-      trajectories = new EObjectContainmentEList<EObject>(EObject.class, this, EEBMPackage.ROADMAP__TRAJECTORIES);
-    }
-    return trajectories;
+    return relations;
   }
 
   /**
@@ -190,10 +164,8 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
     {
       case EEBMPackage.ROADMAP__COMPONENTS:
         return ((InternalEList<?>)getComponents()).basicRemove(otherEnd, msgs);
-      case EEBMPackage.ROADMAP__PEOPLE:
-        return ((InternalEList<?>)getPeople()).basicRemove(otherEnd, msgs);
-      case EEBMPackage.ROADMAP__TRAJECTORIES:
-        return ((InternalEList<?>)getTrajectories()).basicRemove(otherEnd, msgs);
+      case EEBMPackage.ROADMAP__RELATIONS:
+        return ((InternalEList<?>)getRelations()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -212,10 +184,8 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
         return getName();
       case EEBMPackage.ROADMAP__COMPONENTS:
         return getComponents();
-      case EEBMPackage.ROADMAP__PEOPLE:
-        return getPeople();
-      case EEBMPackage.ROADMAP__TRAJECTORIES:
-        return getTrajectories();
+      case EEBMPackage.ROADMAP__RELATIONS:
+        return getRelations();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -238,13 +208,9 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
         getComponents().clear();
         getComponents().addAll((Collection<? extends IntentionalElement>)newValue);
         return;
-      case EEBMPackage.ROADMAP__PEOPLE:
-        getPeople().clear();
-        getPeople().addAll((Collection<? extends Stakeholder>)newValue);
-        return;
-      case EEBMPackage.ROADMAP__TRAJECTORIES:
-        getTrajectories().clear();
-        getTrajectories().addAll((Collection<? extends EObject>)newValue);
+      case EEBMPackage.ROADMAP__RELATIONS:
+        getRelations().clear();
+        getRelations().addAll((Collection<? extends EObject>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -266,11 +232,8 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
       case EEBMPackage.ROADMAP__COMPONENTS:
         getComponents().clear();
         return;
-      case EEBMPackage.ROADMAP__PEOPLE:
-        getPeople().clear();
-        return;
-      case EEBMPackage.ROADMAP__TRAJECTORIES:
-        getTrajectories().clear();
+      case EEBMPackage.ROADMAP__RELATIONS:
+        getRelations().clear();
         return;
     }
     super.eUnset(featureID);
@@ -290,10 +253,8 @@ public class RoadmapImpl extends MinimalEObjectImpl.Container implements Roadmap
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case EEBMPackage.ROADMAP__COMPONENTS:
         return components != null && !components.isEmpty();
-      case EEBMPackage.ROADMAP__PEOPLE:
-        return people != null && !people.isEmpty();
-      case EEBMPackage.ROADMAP__TRAJECTORIES:
-        return trajectories != null && !trajectories.isEmpty();
+      case EEBMPackage.ROADMAP__RELATIONS:
+        return relations != null && !relations.isEmpty();
     }
     return super.eIsSet(featureID);
   }

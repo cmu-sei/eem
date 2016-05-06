@@ -67,17 +67,17 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
     {
       case EEBMPackage.ROADMAP: return createRoadmap();
       case EEBMPackage.INTENTIONAL_ELEMENT: return createIntentionalElement();
-      case EEBMPackage.PATH: return createPath();
-      case EEBMPackage.OPTION: return createOption();
-      case EEBMPackage.STAKEHOLDER: return createStakeholder();
-      case EEBMPackage.PARTICIPANT: return createParticipant();
-      case EEBMPackage.CONSULTANT: return createConsultant();
-      case EEBMPackage.DECISION: return createDecision();
-      case EEBMPackage.PREFERENCE: return createPreference();
+      case EEBMPackage.REFINEMENT: return createRefinement();
+      case EEBMPackage.AND_REFINEMENT: return createAndRefinement();
+      case EEBMPackage.OR_REFINEMENT: return createOrRefinement();
+      case EEBMPackage.CONFLICT: return createConflict();
       case EEBMPackage.GOAL: return createGoal();
+      case EEBMPackage.SOFTGOAL: return createSoftgoal();
+      case EEBMPackage.TASK: return createTask();
       case EEBMPackage.DESCRIPTION: return createDescription();
-      case EEBMPackage.DESCRIPTION_ELEMENT: return createDescriptionElement();
       case EEBMPackage.RATIONALE: return createRationale();
+      case EEBMPackage.REFERENCE: return createReference();
+      case EEBMPackage.PREFERENCE: return createPreference();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -144,10 +144,10 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Path createPath()
+  public Refinement createRefinement()
   {
-    PathImpl path = new PathImpl();
-    return path;
+    RefinementImpl refinement = new RefinementImpl();
+    return refinement;
   }
 
   /**
@@ -155,10 +155,10 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Option createOption()
+  public AndRefinement createAndRefinement()
   {
-    OptionImpl option = new OptionImpl();
-    return option;
+    AndRefinementImpl andRefinement = new AndRefinementImpl();
+    return andRefinement;
   }
 
   /**
@@ -166,10 +166,10 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Stakeholder createStakeholder()
+  public OrRefinement createOrRefinement()
   {
-    StakeholderImpl stakeholder = new StakeholderImpl();
-    return stakeholder;
+    OrRefinementImpl orRefinement = new OrRefinementImpl();
+    return orRefinement;
   }
 
   /**
@@ -177,43 +177,10 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Participant createParticipant()
+  public Conflict createConflict()
   {
-    ParticipantImpl participant = new ParticipantImpl();
-    return participant;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Consultant createConsultant()
-  {
-    ConsultantImpl consultant = new ConsultantImpl();
-    return consultant;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Decision createDecision()
-  {
-    DecisionImpl decision = new DecisionImpl();
-    return decision;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Preference createPreference()
-  {
-    PreferenceImpl preference = new PreferenceImpl();
-    return preference;
+    ConflictImpl conflict = new ConflictImpl();
+    return conflict;
   }
 
   /**
@@ -232,6 +199,28 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public Softgoal createSoftgoal()
+  {
+    SoftgoalImpl softgoal = new SoftgoalImpl();
+    return softgoal;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Task createTask()
+  {
+    TaskImpl task = new TaskImpl();
+    return task;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Description createDescription()
   {
     DescriptionImpl description = new DescriptionImpl();
@@ -243,10 +232,10 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public DescriptionElement createDescriptionElement()
+  public Rationale createRationale()
   {
-    DescriptionElementImpl descriptionElement = new DescriptionElementImpl();
-    return descriptionElement;
+    RationaleImpl rationale = new RationaleImpl();
+    return rationale;
   }
 
   /**
@@ -254,10 +243,21 @@ public class EEBMFactoryImpl extends EFactoryImpl implements EEBMFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Rationale createRationale()
+  public Reference createReference()
   {
-    RationaleImpl rationale = new RationaleImpl();
-    return rationale;
+    ReferenceImpl reference = new ReferenceImpl();
+    return reference;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Preference createPreference()
+  {
+    PreferenceImpl preference = new PreferenceImpl();
+    return preference;
   }
 
   /**

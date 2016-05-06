@@ -2,22 +2,22 @@
  */
 package edu.cmu.sei.eebm.eEBM.impl;
 
-import edu.cmu.sei.eebm.eEBM.Consultant;
-import edu.cmu.sei.eebm.eEBM.Decision;
+import edu.cmu.sei.eebm.eEBM.AndRefinement;
+import edu.cmu.sei.eebm.eEBM.Conflict;
 import edu.cmu.sei.eebm.eEBM.Description;
-import edu.cmu.sei.eebm.eEBM.DescriptionElement;
 import edu.cmu.sei.eebm.eEBM.EEBMFactory;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.Goal;
 import edu.cmu.sei.eebm.eEBM.IntentionalElement;
-import edu.cmu.sei.eebm.eEBM.Option;
-import edu.cmu.sei.eebm.eEBM.Participant;
-import edu.cmu.sei.eebm.eEBM.Path;
+import edu.cmu.sei.eebm.eEBM.OrRefinement;
 import edu.cmu.sei.eebm.eEBM.Preference;
 import edu.cmu.sei.eebm.eEBM.PriorityEnum;
 import edu.cmu.sei.eebm.eEBM.Rationale;
+import edu.cmu.sei.eebm.eEBM.Reference;
+import edu.cmu.sei.eebm.eEBM.Refinement;
 import edu.cmu.sei.eebm.eEBM.Roadmap;
-import edu.cmu.sei.eebm.eEBM.Stakeholder;
+import edu.cmu.sei.eebm.eEBM.Softgoal;
+import edu.cmu.sei.eebm.eEBM.Task;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -54,49 +54,28 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass pathEClass = null;
+  private EClass refinementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass optionEClass = null;
+  private EClass andRefinementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass stakeholderEClass = null;
+  private EClass orRefinementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass participantEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass consultantEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass decisionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass preferenceEClass = null;
+  private EClass conflictEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -110,6 +89,20 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass softgoalEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass taskEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass descriptionEClass = null;
 
   /**
@@ -117,14 +110,21 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass descriptionElementEClass = null;
+  private EClass rationaleEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass rationaleEClass = null;
+  private EClass referenceEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass preferenceEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -231,19 +231,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getRoadmap_People()
+  public EReference getRoadmap_Relations()
   {
     return (EReference)roadmapEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getRoadmap_Trajectories()
-  {
-    return (EReference)roadmapEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -291,9 +281,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getPath()
+  public EAttribute getIntentionalElement_Priority()
   {
-    return pathEClass;
+    return (EAttribute)intentionalElementEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -301,9 +291,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPath_Name()
+  public EAttribute getIntentionalElement_Time()
   {
-    return (EAttribute)pathEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)intentionalElementEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -311,9 +301,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getPath_Path()
+  public EAttribute getIntentionalElement_Cost()
   {
-    return (EReference)pathEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)intentionalElementEClass.getEStructuralFeatures().get(5);
   }
 
   /**
@@ -321,9 +311,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getOption()
+  public EAttribute getIntentionalElement_Benefit()
   {
-    return optionEClass;
+    return (EAttribute)intentionalElementEClass.getEStructuralFeatures().get(6);
   }
 
   /**
@@ -331,9 +321,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getOption_RefinesReference()
+  public EAttribute getIntentionalElement_Date()
   {
-    return (EReference)optionEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)intentionalElementEClass.getEStructuralFeatures().get(7);
   }
 
   /**
@@ -341,9 +331,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getOption_ConflictsReference()
+  public EAttribute getIntentionalElement_Cod()
   {
-    return (EReference)optionEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)intentionalElementEClass.getEStructuralFeatures().get(8);
   }
 
   /**
@@ -351,9 +341,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getOption_Priority()
+  public EClass getRefinement()
   {
-    return (EAttribute)optionEClass.getEStructuralFeatures().get(2);
+    return refinementEClass;
   }
 
   /**
@@ -361,9 +351,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getOption_Time()
+  public EAttribute getRefinement_Name()
   {
-    return (EAttribute)optionEClass.getEStructuralFeatures().get(3);
+    return (EAttribute)refinementEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -371,9 +361,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getOption_Cost()
+  public EReference getRefinement_Source()
   {
-    return (EAttribute)optionEClass.getEStructuralFeatures().get(4);
+    return (EReference)refinementEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -381,9 +371,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getOption_Date()
+  public EReference getRefinement_Dest()
   {
-    return (EAttribute)optionEClass.getEStructuralFeatures().get(5);
+    return (EReference)refinementEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -391,9 +381,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getOption_Cod()
+  public EClass getAndRefinement()
   {
-    return (EAttribute)optionEClass.getEStructuralFeatures().get(6);
+    return andRefinementEClass;
   }
 
   /**
@@ -401,9 +391,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getStakeholder()
+  public EClass getOrRefinement()
   {
-    return stakeholderEClass;
+    return orRefinementEClass;
   }
 
   /**
@@ -411,9 +401,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getStakeholder_Name()
+  public EClass getConflict()
   {
-    return (EAttribute)stakeholderEClass.getEStructuralFeatures().get(0);
+    return conflictEClass;
   }
 
   /**
@@ -421,9 +411,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getParticipant()
+  public EAttribute getConflict_Name()
   {
-    return participantEClass;
+    return (EAttribute)conflictEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -431,9 +421,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getParticipant_Preferences()
+  public EReference getConflict_Source()
   {
-    return (EReference)participantEClass.getEStructuralFeatures().get(0);
+    return (EReference)conflictEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -441,9 +431,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getConsultant()
+  public EReference getConflict_Dest()
   {
-    return consultantEClass;
+    return (EReference)conflictEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -451,9 +441,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getDecision()
+  public EClass getGoal()
   {
-    return decisionEClass;
+    return goalEClass;
   }
 
   /**
@@ -461,9 +451,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getDecision_Name()
+  public EReference getGoal_Rationale()
   {
-    return (EAttribute)decisionEClass.getEStructuralFeatures().get(0);
+    return (EReference)goalEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -471,9 +461,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getDecision_Rationale()
+  public EReference getGoal_Ref()
   {
-    return (EAttribute)decisionEClass.getEStructuralFeatures().get(1);
+    return (EReference)goalEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -481,9 +471,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getDecision_Responsible()
+  public EClass getSoftgoal()
   {
-    return (EReference)decisionEClass.getEStructuralFeatures().get(2);
+    return softgoalEClass;
   }
 
   /**
@@ -491,9 +481,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getDecision_Response_measure()
+  public EReference getSoftgoal_Rationale()
   {
-    return (EAttribute)decisionEClass.getEStructuralFeatures().get(3);
+    return (EReference)softgoalEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -501,9 +491,9 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getDecision_Due()
+  public EReference getSoftgoal_Ref()
   {
-    return (EAttribute)decisionEClass.getEStructuralFeatures().get(4);
+    return (EReference)softgoalEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -511,9 +501,69 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getDecision_Options()
+  public EClass getTask()
   {
-    return (EReference)decisionEClass.getEStructuralFeatures().get(5);
+    return taskEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getDescription()
+  {
+    return descriptionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getDescription_Text()
+  {
+    return (EAttribute)descriptionEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRationale()
+  {
+    return rationaleEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRationale_Text()
+  {
+    return (EAttribute)rationaleEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getReference()
+  {
+    return referenceEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getReference_DocReference()
+  {
+    return (EAttribute)referenceEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -544,106 +594,6 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
   public EReference getPreference_Last()
   {
     return (EReference)preferenceEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getGoal()
-  {
-    return goalEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getGoal_SuperType()
-  {
-    return (EReference)goalEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getGoal_Rationale()
-  {
-    return (EReference)goalEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getGoal_DocReference()
-  {
-    return (EAttribute)goalEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getDescription()
-  {
-    return descriptionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getDescription_Description()
-  {
-    return (EReference)descriptionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getDescriptionElement()
-  {
-    return descriptionElementEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getDescriptionElement_Text()
-  {
-    return (EAttribute)descriptionElementEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getRationale()
-  {
-    return rationaleEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getRationale_Text()
-  {
-    return (EAttribute)rationaleEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -689,60 +639,55 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
     roadmapEClass = createEClass(ROADMAP);
     createEAttribute(roadmapEClass, ROADMAP__NAME);
     createEReference(roadmapEClass, ROADMAP__COMPONENTS);
-    createEReference(roadmapEClass, ROADMAP__PEOPLE);
-    createEReference(roadmapEClass, ROADMAP__TRAJECTORIES);
+    createEReference(roadmapEClass, ROADMAP__RELATIONS);
 
     intentionalElementEClass = createEClass(INTENTIONAL_ELEMENT);
     createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__NAME);
     createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__TITLE);
     createEReference(intentionalElementEClass, INTENTIONAL_ELEMENT__DESCRIPTION);
+    createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__PRIORITY);
+    createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__TIME);
+    createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__COST);
+    createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__BENEFIT);
+    createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__DATE);
+    createEAttribute(intentionalElementEClass, INTENTIONAL_ELEMENT__COD);
 
-    pathEClass = createEClass(PATH);
-    createEAttribute(pathEClass, PATH__NAME);
-    createEReference(pathEClass, PATH__PATH);
+    refinementEClass = createEClass(REFINEMENT);
+    createEAttribute(refinementEClass, REFINEMENT__NAME);
+    createEReference(refinementEClass, REFINEMENT__SOURCE);
+    createEReference(refinementEClass, REFINEMENT__DEST);
 
-    optionEClass = createEClass(OPTION);
-    createEReference(optionEClass, OPTION__REFINES_REFERENCE);
-    createEReference(optionEClass, OPTION__CONFLICTS_REFERENCE);
-    createEAttribute(optionEClass, OPTION__PRIORITY);
-    createEAttribute(optionEClass, OPTION__TIME);
-    createEAttribute(optionEClass, OPTION__COST);
-    createEAttribute(optionEClass, OPTION__DATE);
-    createEAttribute(optionEClass, OPTION__COD);
+    andRefinementEClass = createEClass(AND_REFINEMENT);
 
-    stakeholderEClass = createEClass(STAKEHOLDER);
-    createEAttribute(stakeholderEClass, STAKEHOLDER__NAME);
+    orRefinementEClass = createEClass(OR_REFINEMENT);
 
-    participantEClass = createEClass(PARTICIPANT);
-    createEReference(participantEClass, PARTICIPANT__PREFERENCES);
+    conflictEClass = createEClass(CONFLICT);
+    createEAttribute(conflictEClass, CONFLICT__NAME);
+    createEReference(conflictEClass, CONFLICT__SOURCE);
+    createEReference(conflictEClass, CONFLICT__DEST);
 
-    consultantEClass = createEClass(CONSULTANT);
+    goalEClass = createEClass(GOAL);
+    createEReference(goalEClass, GOAL__RATIONALE);
+    createEReference(goalEClass, GOAL__REF);
 
-    decisionEClass = createEClass(DECISION);
-    createEAttribute(decisionEClass, DECISION__NAME);
-    createEAttribute(decisionEClass, DECISION__RATIONALE);
-    createEReference(decisionEClass, DECISION__RESPONSIBLE);
-    createEAttribute(decisionEClass, DECISION__RESPONSE_MEASURE);
-    createEAttribute(decisionEClass, DECISION__DUE);
-    createEReference(decisionEClass, DECISION__OPTIONS);
+    softgoalEClass = createEClass(SOFTGOAL);
+    createEReference(softgoalEClass, SOFTGOAL__RATIONALE);
+    createEReference(softgoalEClass, SOFTGOAL__REF);
+
+    taskEClass = createEClass(TASK);
+
+    descriptionEClass = createEClass(DESCRIPTION);
+    createEAttribute(descriptionEClass, DESCRIPTION__TEXT);
+
+    rationaleEClass = createEClass(RATIONALE);
+    createEAttribute(rationaleEClass, RATIONALE__TEXT);
+
+    referenceEClass = createEClass(REFERENCE);
+    createEAttribute(referenceEClass, REFERENCE__DOC_REFERENCE);
 
     preferenceEClass = createEClass(PREFERENCE);
     createEReference(preferenceEClass, PREFERENCE__FIRST);
     createEReference(preferenceEClass, PREFERENCE__LAST);
-
-    goalEClass = createEClass(GOAL);
-    createEReference(goalEClass, GOAL__SUPER_TYPE);
-    createEReference(goalEClass, GOAL__RATIONALE);
-    createEAttribute(goalEClass, GOAL__DOC_REFERENCE);
-
-    descriptionEClass = createEClass(DESCRIPTION);
-    createEReference(descriptionEClass, DESCRIPTION__DESCRIPTION);
-
-    descriptionElementEClass = createEClass(DESCRIPTION_ELEMENT);
-    createEAttribute(descriptionElementEClass, DESCRIPTION_ELEMENT__TEXT);
-
-    rationaleEClass = createEClass(RATIONALE);
-    createEAttribute(rationaleEClass, RATIONALE__TEXT);
 
     // Create enums
     priorityEnumEEnum = createEEnum(PRIORITY_ENUM);
@@ -777,69 +722,65 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    optionEClass.getESuperTypes().add(this.getIntentionalElement());
-    participantEClass.getESuperTypes().add(this.getStakeholder());
-    consultantEClass.getESuperTypes().add(this.getStakeholder());
+    andRefinementEClass.getESuperTypes().add(this.getRefinement());
+    orRefinementEClass.getESuperTypes().add(this.getRefinement());
     goalEClass.getESuperTypes().add(this.getIntentionalElement());
+    softgoalEClass.getESuperTypes().add(this.getIntentionalElement());
+    taskEClass.getESuperTypes().add(this.getIntentionalElement());
 
     // Initialize classes and features; add operations and parameters
     initEClass(roadmapEClass, Roadmap.class, "Roadmap", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRoadmap_Name(), ecorePackage.getEString(), "name", null, 0, 1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRoadmap_Components(), this.getIntentionalElement(), null, "components", null, 0, -1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRoadmap_People(), this.getStakeholder(), null, "people", null, 0, -1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRoadmap_Trajectories(), ecorePackage.getEObject(), null, "trajectories", null, 0, -1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRoadmap_Relations(), ecorePackage.getEObject(), null, "relations", null, 0, -1, Roadmap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(intentionalElementEClass, IntentionalElement.class, "IntentionalElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getIntentionalElement_Name(), ecorePackage.getEString(), "name", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getIntentionalElement_Title(), ecorePackage.getEString(), "title", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getIntentionalElement_Description(), this.getDescription(), null, "description", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIntentionalElement_Priority(), this.getPriorityEnum(), "priority", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIntentionalElement_Time(), ecorePackage.getEInt(), "time", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIntentionalElement_Cost(), ecorePackage.getEInt(), "cost", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIntentionalElement_Benefit(), ecorePackage.getEInt(), "benefit", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIntentionalElement_Date(), ecorePackage.getEString(), "date", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIntentionalElement_Cod(), ecorePackage.getEInt(), "cod", null, 0, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(pathEClass, Path.class, "Path", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getPath_Name(), ecorePackage.getEString(), "name", null, 0, 1, Path.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPath_Path(), this.getOption(), null, "path", null, 0, -1, Path.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(refinementEClass, Refinement.class, "Refinement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRefinement_Name(), ecorePackage.getEString(), "name", null, 0, 1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRefinement_Source(), this.getIntentionalElement(), null, "source", null, 0, -1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRefinement_Dest(), this.getIntentionalElement(), null, "dest", null, 0, -1, Refinement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(optionEClass, Option.class, "Option", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getOption_RefinesReference(), this.getIntentionalElement(), null, "refinesReference", null, 0, -1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getOption_ConflictsReference(), this.getIntentionalElement(), null, "conflictsReference", null, 0, -1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getOption_Priority(), this.getPriorityEnum(), "priority", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getOption_Time(), ecorePackage.getEInt(), "time", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getOption_Cost(), ecorePackage.getEInt(), "cost", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getOption_Date(), ecorePackage.getEString(), "date", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getOption_Cod(), ecorePackage.getEInt(), "cod", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(andRefinementEClass, AndRefinement.class, "AndRefinement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(stakeholderEClass, Stakeholder.class, "Stakeholder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getStakeholder_Name(), ecorePackage.getEString(), "name", null, 0, 1, Stakeholder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(orRefinementEClass, OrRefinement.class, "OrRefinement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(participantEClass, Participant.class, "Participant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getParticipant_Preferences(), this.getPreference(), null, "preferences", null, 0, -1, Participant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(consultantEClass, Consultant.class, "Consultant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    initEClass(decisionEClass, Decision.class, "Decision", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getDecision_Name(), ecorePackage.getEString(), "name", null, 0, 1, Decision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getDecision_Rationale(), ecorePackage.getEString(), "rationale", null, 0, 1, Decision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getDecision_Responsible(), this.getStakeholder(), null, "responsible", null, 0, 1, Decision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getDecision_Response_measure(), ecorePackage.getEString(), "response_measure", null, 0, 1, Decision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getDecision_Due(), ecorePackage.getEString(), "due", null, 0, 1, Decision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getDecision_Options(), this.getOption(), null, "options", null, 0, -1, Decision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(preferenceEClass, Preference.class, "Preference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getPreference_First(), this.getOption(), null, "first", null, 0, 1, Preference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPreference_Last(), this.getOption(), null, "last", null, 0, 1, Preference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(conflictEClass, Conflict.class, "Conflict", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getConflict_Name(), ecorePackage.getEString(), "name", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConflict_Source(), this.getIntentionalElement(), null, "source", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConflict_Dest(), this.getIntentionalElement(), null, "dest", null, 0, 1, Conflict.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(goalEClass, Goal.class, "Goal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getGoal_SuperType(), this.getGoal(), null, "superType", null, 0, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getGoal_Rationale(), this.getRationale(), null, "rationale", null, 0, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getGoal_DocReference(), ecorePackage.getEString(), "docReference", null, 0, -1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getGoal_Ref(), this.getReference(), null, "ref", null, 0, 1, Goal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(softgoalEClass, Softgoal.class, "Softgoal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getSoftgoal_Rationale(), this.getRationale(), null, "rationale", null, 0, 1, Softgoal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getSoftgoal_Ref(), this.getReference(), null, "ref", null, 0, 1, Softgoal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(taskEClass, Task.class, "Task", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(descriptionEClass, Description.class, "Description", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getDescription_Description(), this.getDescriptionElement(), null, "description", null, 0, -1, Description.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(descriptionElementEClass, DescriptionElement.class, "DescriptionElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getDescriptionElement_Text(), ecorePackage.getEString(), "text", null, 0, 1, DescriptionElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getDescription_Text(), ecorePackage.getEString(), "text", null, 0, 1, Description.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(rationaleEClass, Rationale.class, "Rationale", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRationale_Text(), ecorePackage.getEString(), "text", null, 0, 1, Rationale.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(referenceEClass, Reference.class, "Reference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getReference_DocReference(), ecorePackage.getEString(), "docReference", null, 0, -1, Reference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(preferenceEClass, Preference.class, "Preference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getPreference_First(), this.getIntentionalElement(), null, "first", null, 0, 1, Preference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPreference_Last(), this.getIntentionalElement(), null, "last", null, 0, 1, Preference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize enums and add enum literals
     initEEnum(priorityEnumEEnum, PriorityEnum.class, "PriorityEnum");

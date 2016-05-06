@@ -32,12 +32,12 @@ public interface Preference extends EObject
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>First</em>' reference.
-   * @see #setFirst(Option)
+   * @see #setFirst(IntentionalElement)
    * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getPreference_First()
    * @model
    * @generated
    */
-  Option getFirst();
+  IntentionalElement getFirst();
 
   /**
    * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Preference#getFirst <em>First</em>}' reference.
@@ -47,7 +47,7 @@ public interface Preference extends EObject
    * @see #getFirst()
    * @generated
    */
-  void setFirst(Option value);
+  void setFirst(IntentionalElement value);
 
   /**
    * Returns the value of the '<em><b>Last</b></em>' reference.
@@ -58,12 +58,12 @@ public interface Preference extends EObject
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Last</em>' reference.
-   * @see #setLast(Option)
+   * @see #setLast(IntentionalElement)
    * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getPreference_Last()
    * @model
    * @generated
    */
-  Option getLast();
+  IntentionalElement getLast();
 
   /**
    * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Preference#getLast <em>Last</em>}' reference.
@@ -73,6 +73,6 @@ public interface Preference extends EObject
    * @see #getLast()
    * @generated
    */
-  void setLast(Option value);
+  void setLast(IntentionalElement value);
 
 } // Preference

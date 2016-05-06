@@ -3,7 +3,7 @@
 package edu.cmu.sei.eebm.eEBM.impl;
 
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
-import edu.cmu.sei.eebm.eEBM.Option;
+import edu.cmu.sei.eebm.eEBM.IntentionalElement;
 import edu.cmu.sei.eebm.eEBM.Preference;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -38,7 +38,7 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * @generated
    * @ordered
    */
-  protected Option first;
+  protected IntentionalElement first;
 
   /**
    * The cached value of the '{@link #getLast() <em>Last</em>}' reference.
@@ -48,7 +48,7 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * @generated
    * @ordered
    */
-  protected Option last;
+  protected IntentionalElement last;
 
   /**
    * <!-- begin-user-doc -->
@@ -76,12 +76,12 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public Option getFirst()
+  public IntentionalElement getFirst()
   {
     if (first != null && first.eIsProxy())
     {
       InternalEObject oldFirst = (InternalEObject)first;
-      first = (Option)eResolveProxy(oldFirst);
+      first = (IntentionalElement)eResolveProxy(oldFirst);
       if (first != oldFirst)
       {
         if (eNotificationRequired())
@@ -96,7 +96,7 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public Option basicGetFirst()
+  public IntentionalElement basicGetFirst()
   {
     return first;
   }
@@ -106,9 +106,9 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setFirst(Option newFirst)
+  public void setFirst(IntentionalElement newFirst)
   {
-    Option oldFirst = first;
+    IntentionalElement oldFirst = first;
     first = newFirst;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__FIRST, oldFirst, first));
@@ -119,12 +119,12 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public Option getLast()
+  public IntentionalElement getLast()
   {
     if (last != null && last.eIsProxy())
     {
       InternalEObject oldLast = (InternalEObject)last;
-      last = (Option)eResolveProxy(oldLast);
+      last = (IntentionalElement)eResolveProxy(oldLast);
       if (last != oldLast)
       {
         if (eNotificationRequired())
@@ -139,7 +139,7 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public Option basicGetLast()
+  public IntentionalElement basicGetLast()
   {
     return last;
   }
@@ -149,9 +149,9 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setLast(Option newLast)
+  public void setLast(IntentionalElement newLast)
   {
-    Option oldLast = last;
+    IntentionalElement oldLast = last;
     last = newLast;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.PREFERENCE__LAST, oldLast, last));
@@ -188,10 +188,10 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
     switch (featureID)
     {
       case EEBMPackage.PREFERENCE__FIRST:
-        setFirst((Option)newValue);
+        setFirst((IntentionalElement)newValue);
         return;
       case EEBMPackage.PREFERENCE__LAST:
-        setLast((Option)newValue);
+        setLast((IntentionalElement)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -208,10 +208,10 @@ public class PreferenceImpl extends MinimalEObjectImpl.Container implements Pref
     switch (featureID)
     {
       case EEBMPackage.PREFERENCE__FIRST:
-        setFirst((Option)null);
+        setFirst((IntentionalElement)null);
         return;
       case EEBMPackage.PREFERENCE__LAST:
-        setLast((Option)null);
+        setLast((IntentionalElement)null);
         return;
     }
     super.eUnset(featureID);

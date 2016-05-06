@@ -2,8 +2,6 @@
  */
 package edu.cmu.sei.eebm.eEBM;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Description#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.Description#getText <em>Text</em>}</li>
  * </ul>
  *
  * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getDescription()
@@ -25,19 +23,29 @@ import org.eclipse.emf.ecore.EObject;
 public interface Description extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Description</b></em>' containment reference list.
-   * The list contents are of type {@link edu.cmu.sei.eebm.eEBM.DescriptionElement}.
+   * Returns the value of the '<em><b>Text</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Description</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Text</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Description</em>' containment reference list.
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getDescription_Description()
-   * @model containment="true"
+   * @return the value of the '<em>Text</em>' attribute.
+   * @see #setText(String)
+   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getDescription_Text()
+   * @model
    * @generated
    */
-  EList<DescriptionElement> getDescription();
+  String getText();
+
+  /**
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Description#getText <em>Text</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Text</em>' attribute.
+   * @see #getText()
+   * @generated
+   */
+  void setText(String value);
 
 } // Description

@@ -5,22 +5,22 @@ package edu.cmu.sei.eebm.eEBM;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Goal</b></em>'.
+ * A representation of the model object '<em><b>Softgoal</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Goal#getRationale <em>Rationale</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.Goal#getRef <em>Ref</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.Softgoal#getRationale <em>Rationale</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.Softgoal#getRef <em>Ref</em>}</li>
  * </ul>
  *
- * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getGoal()
+ * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getSoftgoal()
  * @model
  * @generated
  */
-public interface Goal extends IntentionalElement
+public interface Softgoal extends IntentionalElement
 {
   /**
    * Returns the value of the '<em><b>Rationale</b></em>' containment reference.
@@ -32,14 +32,14 @@ public interface Goal extends IntentionalElement
    * <!-- end-user-doc -->
    * @return the value of the '<em>Rationale</em>' containment reference.
    * @see #setRationale(Rationale)
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getGoal_Rationale()
+   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getSoftgoal_Rationale()
    * @model containment="true"
    * @generated
    */
   Rationale getRationale();
 
   /**
-   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Goal#getRationale <em>Rationale</em>}' containment reference.
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Softgoal#getRationale <em>Rationale</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Rationale</em>' containment reference.
@@ -58,14 +58,14 @@ public interface Goal extends IntentionalElement
    * <!-- end-user-doc -->
    * @return the value of the '<em>Ref</em>' containment reference.
    * @see #setRef(Reference)
-   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getGoal_Ref()
+   * @see edu.cmu.sei.eebm.eEBM.EEBMPackage#getSoftgoal_Ref()
    * @model containment="true"
    * @generated
    */
   Reference getRef();
 
   /**
-   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Goal#getRef <em>Ref</em>}' containment reference.
+   * Sets the value of the '{@link edu.cmu.sei.eebm.eEBM.Softgoal#getRef <em>Ref</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Ref</em>' containment reference.
@@ -74,4 +74,4 @@ public interface Goal extends IntentionalElement
    */
   void setRef(Reference value);
 
-} // Goal
+} // Softgoal

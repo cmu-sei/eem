@@ -85,39 +85,24 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
         return createIntentionalElementAdapter();
       }
       @Override
-      public Adapter casePath(Path object)
+      public Adapter caseRefinement(Refinement object)
       {
-        return createPathAdapter();
+        return createRefinementAdapter();
       }
       @Override
-      public Adapter caseOption(Option object)
+      public Adapter caseAndRefinement(AndRefinement object)
       {
-        return createOptionAdapter();
+        return createAndRefinementAdapter();
       }
       @Override
-      public Adapter caseStakeholder(Stakeholder object)
+      public Adapter caseOrRefinement(OrRefinement object)
       {
-        return createStakeholderAdapter();
+        return createOrRefinementAdapter();
       }
       @Override
-      public Adapter caseParticipant(Participant object)
+      public Adapter caseConflict(Conflict object)
       {
-        return createParticipantAdapter();
-      }
-      @Override
-      public Adapter caseConsultant(Consultant object)
-      {
-        return createConsultantAdapter();
-      }
-      @Override
-      public Adapter caseDecision(Decision object)
-      {
-        return createDecisionAdapter();
-      }
-      @Override
-      public Adapter casePreference(Preference object)
-      {
-        return createPreferenceAdapter();
+        return createConflictAdapter();
       }
       @Override
       public Adapter caseGoal(Goal object)
@@ -125,19 +110,34 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
         return createGoalAdapter();
       }
       @Override
+      public Adapter caseSoftgoal(Softgoal object)
+      {
+        return createSoftgoalAdapter();
+      }
+      @Override
+      public Adapter caseTask(Task object)
+      {
+        return createTaskAdapter();
+      }
+      @Override
       public Adapter caseDescription(Description object)
       {
         return createDescriptionAdapter();
       }
       @Override
-      public Adapter caseDescriptionElement(DescriptionElement object)
-      {
-        return createDescriptionElementAdapter();
-      }
-      @Override
       public Adapter caseRationale(Rationale object)
       {
         return createRationaleAdapter();
+      }
+      @Override
+      public Adapter caseReference(Reference object)
+      {
+        return createReferenceAdapter();
+      }
+      @Override
+      public Adapter casePreference(Preference object)
+      {
+        return createPreferenceAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -192,106 +192,61 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Path <em>Path</em>}'.
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Refinement <em>Refinement</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Path
+   * @see edu.cmu.sei.eebm.eEBM.Refinement
    * @generated
    */
-  public Adapter createPathAdapter()
+  public Adapter createRefinementAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Option <em>Option</em>}'.
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.AndRefinement <em>And Refinement</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Option
+   * @see edu.cmu.sei.eebm.eEBM.AndRefinement
    * @generated
    */
-  public Adapter createOptionAdapter()
+  public Adapter createAndRefinementAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Stakeholder <em>Stakeholder</em>}'.
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.OrRefinement <em>Or Refinement</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Stakeholder
+   * @see edu.cmu.sei.eebm.eEBM.OrRefinement
    * @generated
    */
-  public Adapter createStakeholderAdapter()
+  public Adapter createOrRefinementAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Participant <em>Participant</em>}'.
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Conflict <em>Conflict</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Participant
+   * @see edu.cmu.sei.eebm.eEBM.Conflict
    * @generated
    */
-  public Adapter createParticipantAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Consultant <em>Consultant</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Consultant
-   * @generated
-   */
-  public Adapter createConsultantAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Decision <em>Decision</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Decision
-   * @generated
-   */
-  public Adapter createDecisionAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Preference <em>Preference</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.Preference
-   * @generated
-   */
-  public Adapter createPreferenceAdapter()
+  public Adapter createConflictAdapter()
   {
     return null;
   }
@@ -312,6 +267,36 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Softgoal <em>Softgoal</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Softgoal
+   * @generated
+   */
+  public Adapter createSoftgoalAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Task <em>Task</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Task
+   * @generated
+   */
+  public Adapter createTaskAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Description <em>Description</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -327,21 +312,6 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.DescriptionElement <em>Description Element</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see edu.cmu.sei.eebm.eEBM.DescriptionElement
-   * @generated
-   */
-  public Adapter createDescriptionElementAdapter()
-  {
-    return null;
-  }
-
-  /**
    * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Rationale <em>Rationale</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -352,6 +322,36 @@ public class EEBMAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createRationaleAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Reference <em>Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Reference
+   * @generated
+   */
+  public Adapter createReferenceAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link edu.cmu.sei.eebm.eEBM.Preference <em>Preference</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see edu.cmu.sei.eebm.eEBM.Preference
+   * @generated
+   */
+  public Adapter createPreferenceAdapter()
   {
     return null;
   }

@@ -2,26 +2,26 @@
  */
 package edu.cmu.sei.eebm.eEBM.impl;
 
-import edu.cmu.sei.eebm.eEBM.Consultant;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
+import edu.cmu.sei.eebm.eEBM.Task;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Consultant</b></em>'.
+ * An implementation of the model object '<em><b>Task</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class ConsultantImpl extends StakeholderImpl implements Consultant
+public class TaskImpl extends IntentionalElementImpl implements Task
 {
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected ConsultantImpl()
+  protected TaskImpl()
   {
     super();
   }
@@ -34,7 +34,7 @@ public class ConsultantImpl extends StakeholderImpl implements Consultant
   @Override
   protected EClass eStaticClass()
   {
-    return EEBMPackage.Literals.CONSULTANT;
+    return EEBMPackage.Literals.TASK;
   }
 
-} //ConsultantImpl
+} //TaskImpl

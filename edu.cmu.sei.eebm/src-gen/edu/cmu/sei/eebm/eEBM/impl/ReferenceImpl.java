@@ -3,56 +3,49 @@
 package edu.cmu.sei.eebm.eEBM.impl;
 
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
-import edu.cmu.sei.eebm.eEBM.Stakeholder;
+import edu.cmu.sei.eebm.eEBM.Reference;
 
-import org.eclipse.emf.common.notify.Notification;
+import java.util.Collection;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Stakeholder</b></em>'.
+ * An implementation of the model object '<em><b>Reference</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.ReferenceImpl#getDocReference <em>Doc Reference</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class StakeholderImpl extends MinimalEObjectImpl.Container implements Stakeholder
+public class ReferenceImpl extends MinimalEObjectImpl.Container implements Reference
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getDocReference() <em>Doc Reference</em>}' attribute list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getDocReference()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
+  protected EList<String> docReference;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected StakeholderImpl()
+  protected ReferenceImpl()
   {
     super();
   }
@@ -65,7 +58,7 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
   @Override
   protected EClass eStaticClass()
   {
-    return EEBMPackage.Literals.STAKEHOLDER;
+    return EEBMPackage.Literals.REFERENCE;
   }
 
   /**
@@ -73,22 +66,13 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public EList<String> getDocReference()
   {
-    return name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setName(String newName)
-  {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.STAKEHOLDER__NAME, oldName, name));
+    if (docReference == null)
+    {
+      docReference = new EDataTypeEList<String>(String.class, this, EEBMPackage.REFERENCE__DOC_REFERENCE);
+    }
+    return docReference;
   }
 
   /**
@@ -101,8 +85,8 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
   {
     switch (featureID)
     {
-      case EEBMPackage.STAKEHOLDER__NAME:
-        return getName();
+      case EEBMPackage.REFERENCE__DOC_REFERENCE:
+        return getDocReference();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -112,13 +96,15 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case EEBMPackage.STAKEHOLDER__NAME:
-        setName((String)newValue);
+      case EEBMPackage.REFERENCE__DOC_REFERENCE:
+        getDocReference().clear();
+        getDocReference().addAll((Collection<? extends String>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -134,8 +120,8 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
   {
     switch (featureID)
     {
-      case EEBMPackage.STAKEHOLDER__NAME:
-        setName(NAME_EDEFAULT);
+      case EEBMPackage.REFERENCE__DOC_REFERENCE:
+        getDocReference().clear();
         return;
     }
     super.eUnset(featureID);
@@ -151,8 +137,8 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
   {
     switch (featureID)
     {
-      case EEBMPackage.STAKEHOLDER__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case EEBMPackage.REFERENCE__DOC_REFERENCE:
+        return docReference != null && !docReference.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -168,10 +154,10 @@ public class StakeholderImpl extends MinimalEObjectImpl.Container implements Sta
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
+    result.append(" (docReference: ");
+    result.append(docReference);
     result.append(')');
     return result.toString();
   }
 
-} //StakeholderImpl
+} //ReferenceImpl

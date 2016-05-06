@@ -101,18 +101,14 @@ public class InternalEEBMLexer extends Lexer {
     public static final int T__75=75;
     public static final int T__76=76;
     public static final int T__80=80;
-    public static final int T__111=111;
     public static final int T__81=81;
-    public static final int T__110=110;
     public static final int T__82=82;
     public static final int T__83=83;
     public static final int RULE_WS=11;
     public static final int RULE_ANY_OTHER=12;
     public static final int T__88=88;
-    public static final int T__108=108;
     public static final int T__89=89;
     public static final int T__107=107;
-    public static final int T__109=109;
     public static final int T__84=84;
     public static final int T__104=104;
     public static final int T__85=85;
@@ -991,10 +987,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:52:7: ( 'Option' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:52:9: 'Option'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:52:7: ( 'And' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:52:9: 'And'
             {
-            match("Option"); 
+            match("And"); 
 
 
             }
@@ -1052,10 +1048,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:55:7: ( ':' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:55:9: ':'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:55:7: ( 'dest' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:55:9: 'dest'
             {
-            match(':'); 
+            match("dest"); 
+
 
             }
 
@@ -1072,10 +1069,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:56:7: ( 'refines' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:56:9: 'refines'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:56:7: ( 'source' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:56:9: 'source'
             {
-            match("refines"); 
+            match("source"); 
 
 
             }
@@ -1093,11 +1090,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:57:7: ( 'conflicts' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:57:9: 'conflicts'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:57:7: ( ',' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:57:9: ','
             {
-            match("conflicts"); 
-
+            match(','); 
 
             }
 
@@ -1114,10 +1110,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:58:7: ( 'time' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:58:9: 'time'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:58:7: ( 'Or' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:58:9: 'Or'
             {
-            match("time"); 
+            match("Or"); 
 
 
             }
@@ -1135,10 +1131,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:59:7: ( 'cost' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:59:9: 'cost'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:59:7: ( 'Conflict' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:59:9: 'Conflict'
             {
-            match("cost"); 
+            match("Conflict"); 
 
 
             }
@@ -1156,10 +1152,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:60:7: ( 'completion' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:60:9: 'completion'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:60:7: ( 'Goal' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:60:9: 'Goal'
             {
-            match("completion"); 
+            match("Goal"); 
 
 
             }
@@ -1177,11 +1173,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:61:7: ( 'delay cost' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:61:9: 'delay cost'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:61:7: ( ':' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:61:9: ':'
             {
-            match("delay cost"); 
-
+            match(':'); 
 
             }
 
@@ -1198,10 +1193,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:62:7: ( 'Participant' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:62:9: 'Participant'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:62:7: ( 'time' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:62:9: 'time'
             {
-            match("Participant"); 
+            match("time"); 
 
 
             }
@@ -1219,10 +1214,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:63:7: ( 'Consultant' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:63:9: 'Consultant'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:63:7: ( 'cost' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:63:9: 'cost'
             {
-            match("Consultant"); 
+            match("cost"); 
 
 
             }
@@ -1240,10 +1235,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:64:7: ( 'Decision' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:64:9: 'Decision'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:64:7: ( 'benefit' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:64:9: 'benefit'
             {
-            match("Decision"); 
+            match("benefit"); 
 
 
             }
@@ -1261,10 +1256,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:65:7: ( 'rationale' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:65:9: 'rationale'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:65:7: ( 'completion' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:65:9: 'completion'
             {
-            match("rationale"); 
+            match("completion"); 
 
 
             }
@@ -1282,10 +1277,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:66:7: ( 'responsible' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:66:9: 'responsible'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:66:7: ( 'delay cost' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:66:9: 'delay cost'
             {
-            match("responsible"); 
+            match("delay cost"); 
 
 
             }
@@ -1303,10 +1298,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:67:7: ( 'response measure' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:67:9: 'response measure'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:67:7: ( 'Softgoal' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:67:9: 'Softgoal'
             {
-            match("response measure"); 
+            match("Softgoal"); 
 
 
             }
@@ -1324,10 +1319,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:68:7: ( 'due' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:68:9: 'due'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:68:7: ( 'Task' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:68:9: 'Task'
             {
-            match("due"); 
+            match("Task"); 
 
 
             }
@@ -1345,10 +1340,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:69:7: ( 'options:' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:69:9: 'options:'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:69:7: ( 'description' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:69:9: 'description'
             {
-            match("options:"); 
+            match("description"); 
 
 
             }
@@ -1366,10 +1361,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:70:7: ( '{' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:70:9: '{'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:70:7: ( 'rationale' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:70:9: 'rationale'
             {
-            match('{'); 
+            match("rationale"); 
+
 
             }
 
@@ -1386,10 +1382,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:71:7: ( '}' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:71:9: '}'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:71:7: ( 'see document' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:71:9: 'see document'
             {
-            match('}'); 
+            match("see document"); 
+
 
             }
 
@@ -1406,10 +1403,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__74;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:72:7: ( ',' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:72:9: ','
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:72:7: ( 'instanceof' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:72:9: 'instanceof'
             {
-            match(','); 
+            match("instanceof"); 
+
 
             }
 
@@ -1426,10 +1424,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__75;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:73:7: ( 'prefers(' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:73:9: 'prefers('
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:73:7: ( 'as' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:73:9: 'as'
             {
-            match("prefers("); 
+            match("as"); 
 
 
             }
@@ -1467,11 +1465,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__77;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:75:7: ( 'Goal' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:75:9: 'Goal'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:75:7: ( '#' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:75:9: '#'
             {
-            match("Goal"); 
-
+            match('#'); 
 
             }
 
@@ -1488,11 +1485,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__78;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:76:7: ( 'see' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:76:9: 'see'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:76:7: ( '{' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:76:9: '{'
             {
-            match("see"); 
-
+            match('{'); 
 
             }
 
@@ -1509,11 +1505,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__79;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:77:7: ( 'document' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:77:9: 'document'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:77:7: ( '}' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:77:9: '}'
             {
-            match("document"); 
-
+            match('}'); 
 
             }
 
@@ -1530,11 +1525,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__80;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:78:7: ( 'description' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:78:9: 'description'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:78:7: ( ';' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:78:9: ';'
             {
-            match("description"); 
-
+            match(';'); 
 
             }
 
@@ -1551,11 +1545,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__81;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:79:7: ( 'instanceof' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:79:9: 'instanceof'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:79:7: ( '(' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:79:9: '('
             {
-            match("instanceof"); 
-
+            match('('); 
 
             }
 
@@ -1572,10 +1565,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__82;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:80:7: ( 'as' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:80:9: 'as'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:80:7: ( 'if' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:80:9: 'if'
             {
-            match("as"); 
+            match("if"); 
 
 
             }
@@ -1593,10 +1586,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__83;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:81:7: ( '#' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:81:9: '#'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:81:7: ( 'else' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:81:9: 'else'
             {
-            match('#'); 
+            match("else"); 
+
 
             }
 
@@ -1613,10 +1607,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__84;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:82:7: ( ';' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:82:9: ';'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:82:7: ( 'switch' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:82:9: 'switch'
             {
-            match(';'); 
+            match("switch"); 
+
 
             }
 
@@ -1633,10 +1628,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__85;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:83:7: ( '(' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:83:9: '('
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:83:7: ( 'default' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:83:9: 'default'
             {
-            match('('); 
+            match("default"); 
+
 
             }
 
@@ -1653,10 +1649,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__86;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:84:7: ( 'if' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:84:9: 'if'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:84:7: ( 'case' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:84:9: 'case'
             {
-            match("if"); 
+            match("case"); 
 
 
             }
@@ -1674,10 +1670,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__87;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:85:7: ( 'else' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:85:9: 'else'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:85:7: ( 'for' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:85:9: 'for'
             {
-            match("else"); 
+            match("for"); 
 
 
             }
@@ -1695,10 +1691,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__88;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:86:7: ( 'switch' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:86:9: 'switch'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:86:7: ( 'while' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:86:9: 'while'
             {
-            match("switch"); 
+            match("while"); 
 
 
             }
@@ -1716,10 +1712,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:87:7: ( 'default' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:87:9: 'default'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:87:7: ( 'do' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:87:9: 'do'
             {
-            match("default"); 
+            match("do"); 
 
 
             }
@@ -1737,10 +1733,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__90;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:88:7: ( 'case' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:88:9: 'case'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:88:7: ( 'new' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:88:9: 'new'
             {
-            match("case"); 
+            match("new"); 
 
 
             }
@@ -1758,10 +1754,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__91;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:89:7: ( 'for' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:89:9: 'for'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:89:7: ( 'null' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:89:9: 'null'
             {
-            match("for"); 
+            match("null"); 
 
 
             }
@@ -1779,10 +1775,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__92;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:90:7: ( 'while' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:90:9: 'while'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:90:7: ( 'typeof' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:90:9: 'typeof'
             {
-            match("while"); 
+            match("typeof"); 
 
 
             }
@@ -1800,10 +1796,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__93;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:91:7: ( 'do' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:91:9: 'do'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:91:7: ( 'throw' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:91:9: 'throw'
             {
-            match("do"); 
+            match("throw"); 
 
 
             }
@@ -1821,10 +1817,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__94;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:92:7: ( 'new' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:92:9: 'new'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:92:7: ( 'return' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:92:9: 'return'
             {
-            match("new"); 
+            match("return"); 
 
 
             }
@@ -1842,10 +1838,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__95;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:93:7: ( 'null' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:93:9: 'null'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:93:7: ( 'try' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:93:9: 'try'
             {
-            match("null"); 
+            match("try"); 
 
 
             }
@@ -1863,10 +1859,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__96;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:94:7: ( 'typeof' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:94:9: 'typeof'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:94:7: ( 'finally' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:94:9: 'finally'
             {
-            match("typeof"); 
+            match("finally"); 
 
 
             }
@@ -1884,10 +1880,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__97;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:95:7: ( 'throw' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:95:9: 'throw'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:95:7: ( 'synchronized' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:95:9: 'synchronized'
             {
-            match("throw"); 
+            match("synchronized"); 
 
 
             }
@@ -1905,10 +1901,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__98;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:96:7: ( 'return' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:96:9: 'return'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:96:7: ( 'catch' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:96:9: 'catch'
             {
-            match("return"); 
+            match("catch"); 
 
 
             }
@@ -1926,11 +1922,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__99;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:97:7: ( 'try' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:97:9: 'try'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:97:7: ( '?' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:97:9: '?'
             {
-            match("try"); 
-
+            match('?'); 
 
             }
 
@@ -1947,11 +1942,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__100;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:98:8: ( 'finally' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:98:10: 'finally'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:98:8: ( '&' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:98:10: '&'
             {
-            match("finally"); 
-
+            match('&'); 
 
             }
 
@@ -1968,10 +1962,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__101;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:99:8: ( 'synchronized' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:99:10: 'synchronized'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:99:8: ( 'priority' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:99:10: 'priority'
             {
-            match("synchronized"); 
+            match("priority"); 
 
 
             }
@@ -1989,10 +1983,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__102;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:100:8: ( 'catch' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:100:10: 'catch'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:100:8: ( 'Roadmap' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:100:10: 'Roadmap'
             {
-            match("catch"); 
+            match("Roadmap"); 
 
 
             }
@@ -2010,10 +2004,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__103;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:101:8: ( '?' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:101:10: '?'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:101:8: ( '::' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:101:10: '::'
             {
-            match('?'); 
+            match("::"); 
+
 
             }
 
@@ -2030,10 +2025,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__104;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:102:8: ( '&' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:102:10: '&'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:102:8: ( '?.' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:102:10: '?.'
             {
-            match('&'); 
+            match("?."); 
+
 
             }
 
@@ -2050,11 +2046,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__105;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:103:8: ( 'priority' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:103:10: 'priority'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:103:8: ( '|' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:103:10: '|'
             {
-            match("priority"); 
-
+            match('|'); 
 
             }
 
@@ -2071,10 +2066,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__106;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:104:8: ( 'Roadmap' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:104:10: 'Roadmap'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:104:8: ( 'var' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:104:10: 'var'
             {
-            match("Roadmap"); 
+            match("var"); 
 
 
             }
@@ -2092,91 +2087,8 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = T__107;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:105:8: ( '::' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:105:10: '::'
-            {
-            match("::"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__107"
-
-    // $ANTLR start "T__108"
-    public final void mT__108() throws RecognitionException {
-        try {
-            int _type = T__108;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:106:8: ( '?.' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:106:10: '?.'
-            {
-            match("?."); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__108"
-
-    // $ANTLR start "T__109"
-    public final void mT__109() throws RecognitionException {
-        try {
-            int _type = T__109;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:107:8: ( '|' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:107:10: '|'
-            {
-            match('|'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__109"
-
-    // $ANTLR start "T__110"
-    public final void mT__110() throws RecognitionException {
-        try {
-            int _type = T__110;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:108:8: ( 'var' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:108:10: 'var'
-            {
-            match("var"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "T__110"
-
-    // $ANTLR start "T__111"
-    public final void mT__111() throws RecognitionException {
-        try {
-            int _type = T__111;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:109:8: ( 'true' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:109:10: 'true'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:105:8: ( 'true' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:105:10: 'true'
             {
             match("true"); 
 
@@ -2189,17 +2101,17 @@ public class InternalEEBMLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "T__111"
+    // $ANTLR end "T__107"
 
     // $ANTLR start "RULE_HEX"
     public final void mRULE_HEX() throws RecognitionException {
         try {
             int _type = RULE_HEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:12: ( '0x' | '0X' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:12: ( '0x' | '0X' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -2227,7 +2139,7 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:13: '0x'
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:13: '0x'
                     {
                     match("0x"); 
 
@@ -2235,7 +2147,7 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:18: '0X'
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:18: '0X'
                     {
                     match("0X"); 
 
@@ -2245,7 +2157,7 @@ public class InternalEEBMLexer extends Lexer {
 
             }
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
             int cnt2=0;
             loop2:
             do {
@@ -2283,7 +2195,7 @@ public class InternalEEBMLexer extends Lexer {
                 cnt2++;
             } while (true);
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -2292,10 +2204,10 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     {
                     match('#'); 
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -2313,7 +2225,7 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:64: ( 'b' | 'B' ) ( 'i' | 'I' )
+                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:64: ( 'b' | 'B' ) ( 'i' | 'I' )
                             {
                             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                                 input.consume();
@@ -2337,7 +2249,7 @@ public class InternalEEBMLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23578:84: ( 'l' | 'L' )
+                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25223:84: ( 'l' | 'L' )
                             {
                             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                                 input.consume();
@@ -2376,11 +2288,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23580:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23580:12: '0' .. '9' ( '0' .. '9' | '_' )*
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25225:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25225:12: '0' .. '9' ( '0' .. '9' | '_' )*
             {
             matchRange('0','9'); 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23580:21: ( '0' .. '9' | '_' )*
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25225:21: ( '0' .. '9' | '_' )*
             loop5:
             do {
                 int alt5=2;
@@ -2429,11 +2341,11 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             {
             mRULE_INT(); 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2442,7 +2354,7 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
                     {
                     if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                         input.consume();
@@ -2453,7 +2365,7 @@ public class InternalEEBMLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:36: ( '+' | '-' )?
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:36: ( '+' | '-' )?
                     int alt6=2;
                     int LA6_0 = input.LA(1);
 
@@ -2486,7 +2398,7 @@ public class InternalEEBMLexer extends Lexer {
 
             }
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             int alt8=3;
             int LA8_0 = input.LA(1);
 
@@ -2498,7 +2410,7 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
                     {
                     if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                         input.consume();
@@ -2522,7 +2434,7 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23582:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25227:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
                     {
                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='L'||input.LA(1)=='d'||input.LA(1)=='f'||input.LA(1)=='l' ) {
                         input.consume();
@@ -2555,10 +2467,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23584:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23584:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25229:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25229:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23584:11: ( '^' )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25229:11: ( '^' )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -2567,7 +2479,7 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23584:11: '^'
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25229:11: '^'
                     {
                     match('^'); 
 
@@ -2585,7 +2497,7 @@ public class InternalEEBMLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23584:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25229:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop10:
             do {
                 int alt10=2;
@@ -2634,10 +2546,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2655,10 +2567,10 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt15) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
                     {
                     match('\"'); 
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop11:
                     do {
                         int alt11=3;
@@ -2674,7 +2586,7 @@ public class InternalEEBMLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:21: '\\\\' .
+                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -2682,7 +2594,7 @@ public class InternalEEBMLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2702,7 +2614,7 @@ public class InternalEEBMLexer extends Lexer {
                         }
                     } while (true);
 
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:44: ( '\"' )?
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:44: ( '\"' )?
                     int alt12=2;
                     int LA12_0 = input.LA(1);
 
@@ -2711,7 +2623,7 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     switch (alt12) {
                         case 1 :
-                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:44: '\"'
+                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:44: '\"'
                             {
                             match('\"'); 
 
@@ -2724,10 +2636,10 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
                     {
                     match('\''); 
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop13:
                     do {
                         int alt13=3;
@@ -2743,7 +2655,7 @@ public class InternalEEBMLexer extends Lexer {
 
                         switch (alt13) {
                     	case 1 :
-                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:55: '\\\\' .
+                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:55: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -2751,7 +2663,7 @@ public class InternalEEBMLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:62: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:62: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2771,7 +2683,7 @@ public class InternalEEBMLexer extends Lexer {
                         }
                     } while (true);
 
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:79: ( '\\'' )?
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:79: ( '\\'' )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -2780,7 +2692,7 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     switch (alt14) {
                         case 1 :
-                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23586:79: '\\''
+                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25231:79: '\\''
                             {
                             match('\''); 
 
@@ -2811,12 +2723,12 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23588:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23588:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25233:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25233:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23588:24: ( options {greedy=false; } : . )*
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25233:24: ( options {greedy=false; } : . )*
             loop16:
             do {
                 int alt16=2;
@@ -2841,7 +2753,7 @@ public class InternalEEBMLexer extends Lexer {
 
                 switch (alt16) {
             	case 1 :
-            	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23588:52: .
+            	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25233:52: .
             	    {
             	    matchAny(); 
 
@@ -2871,12 +2783,12 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop17:
             do {
                 int alt17=2;
@@ -2889,7 +2801,7 @@ public class InternalEEBMLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2909,7 +2821,7 @@ public class InternalEEBMLexer extends Lexer {
                 }
             } while (true);
 
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:40: ( ( '\\r' )? '\\n' )?
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:40: ( ( '\\r' )? '\\n' )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -2918,9 +2830,9 @@ public class InternalEEBMLexer extends Lexer {
             }
             switch (alt19) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:41: ( '\\r' )? '\\n'
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:41: ( '\\r' )? '\\n'
                     {
-                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:41: ( '\\r' )?
+                    // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:41: ( '\\r' )?
                     int alt18=2;
                     int LA18_0 = input.LA(1);
 
@@ -2929,7 +2841,7 @@ public class InternalEEBMLexer extends Lexer {
                     }
                     switch (alt18) {
                         case 1 :
-                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23590:41: '\\r'
+                            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25235:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2961,10 +2873,10 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23592:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23592:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25237:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25237:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23592:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25237:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt20=0;
             loop20:
             do {
@@ -3018,8 +2930,8 @@ public class InternalEEBMLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23594:16: ( . )
-            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:23594:18: .
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25239:16: ( . )
+            // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:25239:18: .
             {
             matchAny(); 
 
@@ -3034,8 +2946,8 @@ public class InternalEEBMLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:8: ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt21=108;
+        // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:8: ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt21=104;
         alt21 = dfa21.predict(input);
         switch (alt21) {
             case 1 :
@@ -3704,91 +3616,63 @@ public class InternalEEBMLexer extends Lexer {
                 }
                 break;
             case 96 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:588: T__108
-                {
-                mT__108(); 
-
-                }
-                break;
-            case 97 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:595: T__109
-                {
-                mT__109(); 
-
-                }
-                break;
-            case 98 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:602: T__110
-                {
-                mT__110(); 
-
-                }
-                break;
-            case 99 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:609: T__111
-                {
-                mT__111(); 
-
-                }
-                break;
-            case 100 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:616: RULE_HEX
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:588: RULE_HEX
                 {
                 mRULE_HEX(); 
 
                 }
                 break;
-            case 101 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:625: RULE_INT
+            case 97 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:597: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 102 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:634: RULE_DECIMAL
+            case 98 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:606: RULE_DECIMAL
                 {
                 mRULE_DECIMAL(); 
 
                 }
                 break;
-            case 103 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:647: RULE_ID
+            case 99 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:619: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 104 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:655: RULE_STRING
+            case 100 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:627: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 105 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:667: RULE_ML_COMMENT
+            case 101 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:639: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 106 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:683: RULE_SL_COMMENT
+            case 102 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:655: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 107 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:699: RULE_WS
+            case 103 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:671: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 108 :
-                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:707: RULE_ANY_OTHER
+            case 104 :
+                // ../edu.cmu.sei.eebm.ui/src-gen/edu/cmu/sei/eebm/ui/contentassist/antlr/internal/InternalEEBM.g:1:679: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -3802,91 +3686,69 @@ public class InternalEEBMLexer extends Lexer {
 
     protected DFA21 dfa21 = new DFA21(this);
     static final String DFA21_eotS =
-        "\1\uffff\1\71\1\73\1\75\1\100\1\104\1\107\1\113\1\115\1\117\1\121\1\123\1\125\1\130\11\132\2\uffff\1\157\10\132\3\uffff\1\132\1\uffff\2\132\3\uffff\3\132\2\u008f\1\66\5\uffff\1\u0094\26\uffff\1\u0096\5\uffff\1\u0098\4\uffff\1\132\1\uffff\11\132\1\u00a4\7\132\4\uffff\12\132\1\u00bf\4\132\3\uffff\1\132\1\uffff\1\132\1\u00c7\3\uffff\4\132\1\uffff\1\u008f\12\uffff\1\u00cc\1\u00cd\4\132\1\u00d2\4\132\1\uffff\1\132\1\u00d8\2\132\1\u00db\1\u00dc\15\132\1\u00ea\4\132\1\u00ef\1\132\1\uffff\7\132\1\uffff\1\132\1\u00f9\2\132\2\uffff\1\132\1\u00fd\2\132\1\uffff\5\132\1\uffff\1\132\1\u0106\2\uffff\6\132\1\u010d\1\132\1\u010f\1\132\1\u0111\2\132\1\uffff\1\u0114\3\132\1\uffff\7\132\1\u011f\1\132\1\uffff\1\u0121\2\132\1\uffff\1\132\1\u0126\4\132\1\u012b\1\132\1\uffff\6\132\1\uffff\1\132\1\uffff\1\u0134\1\uffff\1\132\1\u0136\1\uffff\12\132\1\uffff\1\u0141\1\uffff\3\132\1\u0145\1\uffff\1\u0146\1\132\1\u0148\1\132\1\uffff\1\132\1\u014b\2\132\1\u014e\3\132\1\uffff\1\u0152\2\uffff\11\132\1\uffff\1\132\1\u015d\1\132\2\uffff\1\132\1\uffff\1\132\1\u0161\1\uffff\1\u0162\1\132\1\uffff\3\132\1\uffff\1\132\1\u0169\7\132\1\u0171\1\uffff\3\132\2\uffff\6\132\1\uffff\1\u017b\2\132\1\u017e\2\uffff\1\u017f\1\uffff\1\u0180\3\132\1\uffff\1\u0184\1\u0185\2\132\1\uffff\2\132\3\uffff\1\132\1\u018b\1\132\2\uffff\1\u018d\2\132\1\u0190\1\132\1\uffff\1\u0192\1\uffff\1\u0193\1\u0194\1\uffff\1\u0195\4\uffff";
+        "\1\uffff\1\72\1\74\1\76\1\101\1\105\1\110\1\114\1\116\1\120\1\122\1\124\1\126\1\131\11\133\2\uffff\1\133\1\uffff\3\133\1\167\7\133\6\uffff\4\133\2\u0091\1\67\5\uffff\1\u0096\26\uffff\1\u0098\5\uffff\1\u009a\4\uffff\1\133\1\uffff\12\133\1\u00a7\7\133\2\uffff\1\133\1\u00b2\1\uffff\1\u00b3\2\133\2\uffff\13\133\1\u00c4\6\uffff\5\133\1\uffff\1\u0091\12\uffff\1\u00ca\1\u00cb\12\133\1\uffff\1\133\1\u00d7\2\133\1\u00da\1\u00db\1\u00dc\3\133\2\uffff\5\133\1\u00e6\12\133\1\uffff\1\133\1\u00f2\3\133\2\uffff\1\133\1\u00f7\3\133\1\uffff\5\133\1\uffff\1\133\1\u0101\3\uffff\1\u0102\4\133\1\u0107\1\u0108\2\133\1\uffff\1\u010b\1\u010c\1\133\1\u010e\3\133\1\u0112\3\133\1\uffff\1\u0116\3\133\1\uffff\1\133\1\u011c\5\133\1\u0122\1\133\2\uffff\4\133\2\uffff\1\133\1\u0129\2\uffff\1\133\1\uffff\1\u012b\2\133\1\uffff\2\133\1\u0130\1\uffff\4\133\1\u0135\1\uffff\1\u0136\1\u0137\1\133\1\u0139\1\133\1\uffff\2\133\1\uffff\2\133\1\u013f\1\uffff\1\133\1\uffff\3\133\1\u0144\1\uffff\2\133\1\u0147\1\133\3\uffff\1\133\1\uffff\1\133\1\u014b\1\133\1\u014d\1\133\1\uffff\1\133\1\u0150\2\133\1\uffff\1\133\1\u0154\1\uffff\3\133\1\uffff\1\133\1\uffff\1\u0159\1\133\1\uffff\1\u015b\1\133\1\u015d\1\uffff\1\u015e\3\133\1\uffff\1\133\1\uffff\1\u0163\2\uffff\1\133\1\u0165\1\133\1\u0167\1\uffff\1\133\1\uffff\1\u0169\1\uffff\1\u016a\2\uffff";
     static final String DFA21_eofS =
-        "\u0196\uffff";
+        "\u016b\uffff";
     static final String DFA21_minS =
-        "\1\0\1\75\1\174\1\46\1\53\1\55\2\52\3\75\1\76\2\56\1\141\1\154\1\145\1\146\1\141\1\111\1\105\1\117\1\160\2\uffff\1\72\2\141\1\150\1\145\1\141\1\157\1\145\1\160\3\uffff\1\162\1\uffff\1\157\1\163\3\uffff\1\150\1\145\1\157\2\60\1\44\5\uffff\1\75\26\uffff\1\75\5\uffff\1\74\4\uffff\1\154\1\uffff\1\164\1\163\1\141\1\160\1\145\1\151\1\156\1\160\1\163\1\44\1\154\1\162\1\156\1\107\1\104\1\127\1\164\4\uffff\1\146\1\164\1\155\1\163\1\155\1\160\1\162\1\165\1\146\1\145\1\44\1\162\1\156\1\143\1\164\3\uffff\1\145\1\uffff\1\141\1\44\3\uffff\1\151\1\167\1\154\1\141\1\uffff\1\60\12\uffff\2\44\2\145\1\164\1\145\1\44\1\164\1\143\1\157\1\164\1\uffff\1\163\1\44\1\141\1\110\2\44\2\151\1\160\1\165\1\151\1\146\1\164\1\160\1\145\1\143\2\145\1\157\1\44\1\145\1\141\1\143\1\141\1\44\1\165\1\uffff\1\164\1\163\2\151\1\146\1\157\1\154\1\uffff\1\154\1\44\1\154\1\144\2\uffff\1\156\1\44\1\151\1\162\1\uffff\1\143\1\150\1\162\1\141\1\145\1\uffff\1\154\1\44\2\uffff\1\157\1\156\1\157\1\162\1\157\1\154\1\44\1\154\1\44\1\150\1\44\1\157\1\167\1\uffff\1\44\1\171\1\162\1\165\1\uffff\1\155\1\151\1\165\1\163\1\157\1\145\1\162\1\44\1\145\1\uffff\1\44\1\155\1\144\1\uffff\1\143\1\44\1\150\1\162\1\164\1\156\1\44\1\154\1\uffff\1\156\1\145\3\156\1\151\1\uffff\1\145\1\uffff\1\44\1\uffff\1\146\1\44\1\uffff\1\40\1\151\1\154\1\145\1\143\1\154\1\151\1\156\1\162\1\151\1\uffff\1\44\1\uffff\1\141\1\163\1\151\1\44\1\uffff\1\44\1\157\1\44\1\143\1\uffff\1\171\1\44\2\163\1\44\1\141\1\143\1\164\1\uffff\1\44\2\uffff\1\160\1\164\1\156\1\151\1\164\1\157\2\163\1\164\1\uffff\1\160\1\44\1\157\2\uffff\1\156\1\uffff\1\145\1\44\1\uffff\1\44\1\145\1\uffff\1\154\1\164\1\151\1\uffff\1\164\1\44\1\164\1\160\1\141\1\156\1\72\1\50\1\171\1\44\1\uffff\1\156\1\151\1\157\2\uffff\1\142\1\40\1\145\1\163\1\157\1\151\1\uffff\1\44\1\141\1\156\1\44\2\uffff\1\44\1\uffff\1\44\1\172\1\146\1\154\1\uffff\2\44\1\156\1\157\1\uffff\1\156\1\164\3\uffff\1\145\1\44\1\145\2\uffff\1\44\1\156\1\164\1\44\1\144\1\uffff\1\44\1\uffff\2\44\1\uffff\1\44\4\uffff";
+        "\1\0\1\75\1\174\1\46\1\53\1\55\2\52\3\75\1\76\2\56\1\141\1\154\1\145\1\146\1\141\1\111\1\105\1\117\1\156\2\uffff\1\145\1\uffff\1\162\2\157\1\72\1\150\1\141\1\145\1\157\2\141\1\163\6\uffff\1\150\1\145\1\162\1\157\2\60\1\44\5\uffff\1\75\26\uffff\1\75\5\uffff\1\74\4\uffff\1\154\1\uffff\1\164\1\163\1\141\1\160\1\165\1\145\1\151\1\156\1\160\1\163\1\44\1\154\1\162\1\156\1\107\1\104\1\127\1\144\2\uffff\1\146\1\44\1\uffff\1\44\1\156\1\141\2\uffff\1\155\1\160\1\162\1\165\1\155\1\163\1\156\1\146\1\163\2\164\1\44\6\uffff\1\151\1\167\1\154\1\151\1\141\1\uffff\1\60\12\uffff\2\44\2\145\1\164\1\145\1\162\1\40\1\164\1\143\1\157\1\164\1\uffff\1\163\1\44\1\141\1\110\3\44\1\143\2\141\2\uffff\1\146\1\154\2\145\1\157\1\44\1\145\1\164\1\160\1\145\1\143\1\145\1\164\1\153\1\151\1\165\1\uffff\1\154\1\44\1\154\1\157\1\144\2\uffff\1\156\1\44\1\151\1\162\1\143\1\uffff\1\143\1\150\1\162\1\141\1\145\1\uffff\1\154\1\44\3\uffff\1\44\1\162\1\171\1\165\1\154\2\44\1\157\1\167\1\uffff\2\44\1\154\1\44\1\150\1\146\1\147\1\44\1\157\1\162\1\145\1\uffff\1\44\1\162\1\155\1\144\1\uffff\1\143\1\44\1\145\1\150\1\162\1\164\1\156\1\44\1\154\2\uffff\1\151\1\40\1\154\1\151\2\uffff\1\146\1\44\2\uffff\1\145\1\uffff\1\44\1\151\1\157\1\uffff\2\156\1\44\1\uffff\1\151\1\141\1\163\1\151\1\44\1\uffff\2\44\1\157\1\44\1\143\1\uffff\1\171\1\160\1\uffff\1\164\1\143\1\44\1\uffff\1\164\1\uffff\1\164\2\141\1\44\1\uffff\1\164\1\160\1\44\1\157\3\uffff\1\156\1\uffff\1\145\1\44\1\164\1\44\1\164\1\uffff\1\151\1\44\2\154\1\uffff\1\171\1\44\1\uffff\1\156\1\151\1\157\1\uffff\1\151\1\uffff\1\44\1\157\1\uffff\1\44\1\145\1\44\1\uffff\1\44\1\172\1\146\1\157\1\uffff\1\156\1\uffff\1\44\2\uffff\1\145\1\44\1\156\1\44\1\uffff\1\144\1\uffff\1\44\1\uffff\1\44\2\uffff";
     static final String DFA21_maxS =
-        "\1\uffff\1\76\1\174\1\46\1\75\1\76\5\75\1\76\1\56\1\72\1\141\1\170\1\171\1\156\1\157\1\111\1\105\1\117\1\160\2\uffff\1\72\1\145\1\157\1\171\1\165\1\141\1\157\1\145\1\160\3\uffff\1\162\1\uffff\1\157\1\163\3\uffff\1\150\1\165\1\157\1\170\1\154\1\172\5\uffff\1\75\26\uffff\1\75\5\uffff\1\74\4\uffff\1\162\1\uffff\1\164\1\163\1\141\1\160\1\145\1\151\1\156\1\160\1\163\1\172\1\154\1\162\1\156\1\107\1\104\1\127\1\164\4\uffff\2\164\1\163\1\164\1\155\1\160\1\162\1\171\1\163\1\145\1\172\1\162\1\156\1\143\1\164\3\uffff\1\151\1\uffff\1\141\1\172\3\uffff\1\151\1\167\1\154\1\141\1\uffff\1\154\12\uffff\2\172\2\145\1\164\1\145\1\172\1\164\1\143\1\157\1\164\1\uffff\1\163\1\172\1\141\1\110\2\172\2\151\1\160\1\165\1\151\1\146\1\164\1\160\1\145\1\143\2\145\1\157\1\172\1\145\1\141\1\143\1\141\1\172\1\165\1\uffff\1\164\1\163\2\151\1\146\1\157\1\154\1\uffff\1\154\1\172\1\154\1\144\2\uffff\1\156\1\172\1\151\1\162\1\uffff\1\143\1\150\1\162\1\141\1\145\1\uffff\1\154\1\172\2\uffff\1\157\1\156\1\157\1\162\1\157\1\154\1\172\1\154\1\172\1\150\1\172\1\157\1\167\1\uffff\1\172\1\171\1\162\1\165\1\uffff\1\155\1\151\1\165\1\163\1\157\1\145\1\162\1\172\1\145\1\uffff\1\172\1\155\1\163\1\uffff\1\143\1\172\1\150\1\162\1\164\1\156\1\172\1\154\1\uffff\1\156\1\145\3\156\1\151\1\uffff\1\145\1\uffff\1\172\1\uffff\1\146\1\172\1\uffff\1\40\1\151\1\154\1\145\1\143\1\154\1\151\1\156\1\162\1\151\1\uffff\1\172\1\uffff\1\141\1\163\1\151\1\172\1\uffff\1\172\1\157\1\172\1\143\1\uffff\1\171\1\172\2\163\1\172\1\141\1\143\1\164\1\uffff\1\172\2\uffff\1\160\1\164\1\156\1\151\1\164\1\157\2\163\1\164\1\uffff\1\160\1\172\1\157\2\uffff\1\156\1\uffff\1\145\1\172\1\uffff\1\172\1\151\1\uffff\1\154\1\164\1\151\1\uffff\1\164\1\172\1\164\1\160\1\141\1\156\1\72\1\50\1\171\1\172\1\uffff\1\156\1\151\1\157\2\uffff\1\142\1\40\1\145\1\163\1\157\1\151\1\uffff\1\172\1\141\1\156\1\172\2\uffff\1\172\1\uffff\2\172\1\146\1\154\1\uffff\2\172\1\156\1\157\1\uffff\1\156\1\164\3\uffff\1\145\1\172\1\145\2\uffff\1\172\1\156\1\164\1\172\1\144\1\uffff\1\172\1\uffff\2\172\1\uffff\1\172\4\uffff";
+        "\1\uffff\1\76\1\174\1\46\1\75\1\76\5\75\1\76\1\56\1\72\1\141\1\170\1\171\1\156\1\157\1\111\1\105\1\117\1\156\2\uffff\1\157\1\uffff\1\162\2\157\1\72\1\171\1\157\1\145\1\157\1\141\1\145\1\163\6\uffff\1\150\1\165\1\162\1\157\1\170\1\154\1\172\5\uffff\1\75\26\uffff\1\75\5\uffff\1\74\4\uffff\1\162\1\uffff\1\164\1\163\1\141\1\160\1\165\1\145\1\151\1\156\1\160\1\163\1\172\1\154\1\162\1\156\1\107\1\104\1\127\1\144\2\uffff\1\163\1\172\1\uffff\1\172\1\156\1\141\2\uffff\1\155\1\160\1\162\1\171\1\163\1\164\1\156\1\146\1\163\2\164\1\172\6\uffff\1\151\1\167\1\154\1\151\1\141\1\uffff\1\154\12\uffff\2\172\2\145\1\164\1\145\1\162\1\40\1\164\1\143\1\157\1\164\1\uffff\1\163\1\172\1\141\1\110\3\172\1\164\2\141\2\uffff\1\146\1\154\2\145\1\157\1\172\1\145\1\164\1\160\1\145\1\143\1\145\1\164\1\153\1\151\1\165\1\uffff\1\154\1\172\1\154\1\157\1\144\2\uffff\1\156\1\172\1\151\1\162\1\143\1\uffff\1\143\1\150\1\162\1\141\1\145\1\uffff\1\154\1\172\3\uffff\1\172\1\162\1\171\1\165\1\154\2\172\1\157\1\167\1\uffff\2\172\1\154\1\172\1\150\1\146\1\147\1\172\1\157\1\162\1\145\1\uffff\1\172\1\162\1\155\1\163\1\uffff\1\143\1\172\1\145\1\150\1\162\1\164\1\156\1\172\1\154\2\uffff\1\151\1\40\1\154\1\151\2\uffff\1\146\1\172\2\uffff\1\145\1\uffff\1\172\1\151\1\157\1\uffff\2\156\1\172\1\uffff\1\151\1\141\1\163\1\151\1\172\1\uffff\2\172\1\157\1\172\1\143\1\uffff\1\171\1\160\1\uffff\1\164\1\143\1\172\1\uffff\1\164\1\uffff\1\164\2\141\1\172\1\uffff\1\164\1\160\1\172\1\157\3\uffff\1\156\1\uffff\1\145\1\172\1\164\1\172\1\164\1\uffff\1\151\1\172\2\154\1\uffff\1\171\1\172\1\uffff\1\156\1\151\1\157\1\uffff\1\151\1\uffff\1\172\1\157\1\uffff\1\172\1\145\1\172\1\uffff\2\172\1\146\1\157\1\uffff\1\156\1\uffff\1\172\2\uffff\1\145\1\172\1\156\1\172\1\uffff\1\144\1\uffff\1\172\1\uffff\1\172\2\uffff";
     static final String DFA21_acceptS =
-        "\27\uffff\1\53\1\54\11\uffff\1\74\1\75\1\76\1\uffff\1\100\2\uffff\1\107\1\110\1\111\6\uffff\1\147\2\150\1\153\1\154\1\uffff\1\23\1\1\1\2\1\141\1\3\1\134\1\4\1\35\1\26\1\5\1\20\1\36\1\27\1\6\1\31\1\30\1\7\1\151\1\152\1\32\1\10\1\33\1\uffff\1\34\1\15\1\16\1\24\1\17\1\uffff\1\37\1\25\1\140\1\133\1\uffff\1\147\21\uffff\1\53\1\54\1\137\1\55\17\uffff\1\74\1\75\1\76\1\uffff\1\100\2\uffff\1\107\1\110\1\111\4\uffff\1\144\1\uffff\1\145\1\146\1\150\1\153\1\13\1\11\1\14\1\12\1\21\1\22\13\uffff\1\112\32\uffff\1\121\7\uffff\1\106\4\uffff\1\40\1\142\4\uffff\1\102\5\uffff\1\117\2\uffff\1\50\1\51\15\uffff\1\127\4\uffff\1\72\11\uffff\1\122\3\uffff\1\113\10\uffff\1\47\6\uffff\1\61\1\uffff\1\116\1\uffff\1\60\2\uffff\1\143\12\uffff\1\101\1\uffff\1\123\4\uffff\1\45\4\uffff\1\46\10\uffff\1\132\1\uffff\1\125\1\63\11\uffff\1\120\3\uffff\1\42\1\114\1\uffff\1\43\2\uffff\1\52\2\uffff\1\126\3\uffff\1\124\12\uffff\1\41\3\uffff\1\130\1\56\6\uffff\1\115\4\uffff\1\73\1\77\1\uffff\1\136\4\uffff\1\71\4\uffff\1\103\2\uffff\1\66\1\135\1\44\3\uffff\1\67\1\57\5\uffff\1\105\1\uffff\1\62\2\uffff\1\65\1\uffff\1\70\1\104\1\64\1\131";
+        "\27\uffff\1\53\1\54\1\uffff\1\57\13\uffff\1\100\1\101\1\102\1\103\1\104\1\105\7\uffff\1\143\2\144\1\147\1\150\1\uffff\1\23\1\1\1\2\1\135\1\3\1\130\1\4\1\35\1\26\1\5\1\20\1\36\1\27\1\6\1\31\1\30\1\7\1\145\1\146\1\32\1\10\1\33\1\uffff\1\34\1\15\1\16\1\24\1\17\1\uffff\1\37\1\25\1\134\1\127\1\uffff\1\143\22\uffff\1\53\1\54\2\uffff\1\57\3\uffff\1\133\1\63\14\uffff\1\100\1\101\1\102\1\103\1\104\1\105\5\uffff\1\140\1\uffff\1\141\1\142\1\144\1\147\1\13\1\11\1\14\1\12\1\21\1\22\14\uffff\1\106\12\uffff\1\115\1\60\20\uffff\1\77\5\uffff\1\40\1\136\5\uffff\1\75\5\uffff\1\113\2\uffff\1\50\1\51\1\52\11\uffff\1\123\13\uffff\1\116\4\uffff\1\107\11\uffff\1\47\1\55\4\uffff\1\62\1\64\2\uffff\1\137\1\65\1\uffff\1\112\3\uffff\1\72\3\uffff\1\117\5\uffff\1\45\5\uffff\1\46\2\uffff\1\70\3\uffff\1\121\1\uffff\1\126\4\uffff\1\114\4\uffff\1\42\1\56\1\110\1\uffff\1\43\5\uffff\1\120\4\uffff\1\122\2\uffff\1\41\3\uffff\1\124\1\uffff\1\111\2\uffff\1\66\3\uffff\1\132\4\uffff\1\61\1\uffff\1\71\1\uffff\1\131\1\44\4\uffff\1\74\1\uffff\1\76\1\uffff\1\67\1\uffff\1\73\1\125";
     static final String DFA21_specialS =
-        "\1\0\u0195\uffff}>";
+        "\1\0\u016a\uffff}>";
     static final String[] DFA21_transitionS = {
-            "\11\66\2\65\2\66\1\65\22\66\1\65\1\11\1\63\1\51\1\62\1\10\1\3\1\64\1\53\1\46\1\6\1\4\1\44\1\5\1\14\1\7\1\57\11\60\1\31\1\52\1\13\1\1\1\12\1\15\1\66\2\62\1\37\1\40\2\62\1\47\1\23\3\62\1\25\1\24\1\62\1\26\1\36\1\62\1\56\10\62\1\27\1\66\1\30\1\61\1\62\1\66\1\50\1\62\1\33\1\35\1\17\1\22\2\62\1\21\4\62\1\55\1\41\1\45\1\62\1\32\1\20\1\34\1\62\1\16\1\54\3\62\1\42\1\2\1\43\uff82\66",
-            "\1\67\1\70",
-            "\1\72",
-            "\1\74",
-            "\1\77\21\uffff\1\76",
-            "\1\103\17\uffff\1\101\1\102",
-            "\1\106\22\uffff\1\105",
-            "\1\111\4\uffff\1\112\15\uffff\1\110",
-            "\1\114",
-            "\1\116",
-            "\1\120",
-            "\1\122",
-            "\1\124",
-            "\1\127\13\uffff\1\126",
-            "\1\131",
-            "\1\134\13\uffff\1\133",
-            "\1\137\16\uffff\1\135\1\136\1\uffff\1\140\1\uffff\1\141",
-            "\1\144\6\uffff\1\142\1\143",
-            "\1\145\7\uffff\1\147\5\uffff\1\146",
-            "\1\150",
-            "\1\151",
+            "\11\67\2\66\2\67\1\66\22\67\1\66\1\11\1\64\1\47\1\63\1\10\1\3\1\65\1\53\1\46\1\6\1\4\1\32\1\5\1\14\1\7\1\60\11\61\1\36\1\52\1\13\1\1\1\12\1\15\1\67\1\26\1\63\1\34\3\63\1\35\1\23\3\63\1\25\1\24\1\63\1\33\2\63\1\57\1\42\1\43\6\63\1\27\1\67\1\30\1\62\1\63\1\67\1\45\1\41\1\40\1\31\1\17\1\22\2\63\1\21\4\63\1\55\1\63\1\56\1\63\1\44\1\20\1\37\1\63\1\16\1\54\3\63\1\50\1\2\1\51\uff82\67",
+            "\1\70\1\71",
+            "\1\73",
+            "\1\75",
+            "\1\100\21\uffff\1\77",
+            "\1\104\17\uffff\1\102\1\103",
+            "\1\107\22\uffff\1\106",
+            "\1\112\4\uffff\1\113\15\uffff\1\111",
+            "\1\115",
+            "\1\117",
+            "\1\121",
+            "\1\123",
+            "\1\125",
+            "\1\130\13\uffff\1\127",
+            "\1\132",
+            "\1\135\13\uffff\1\134",
+            "\1\141\11\uffff\1\140\4\uffff\1\136\1\137\1\uffff\1\142\1\uffff\1\143",
+            "\1\146\6\uffff\1\144\1\145",
+            "\1\147\7\uffff\1\151\5\uffff\1\150",
             "\1\152",
             "\1\153",
+            "\1\154",
+            "\1\155",
             "",
             "",
-            "\1\156",
-            "\1\161\3\uffff\1\160",
-            "\1\163\15\uffff\1\162",
-            "\1\166\1\164\10\uffff\1\167\6\uffff\1\165",
-            "\1\170\11\uffff\1\172\5\uffff\1\171",
-            "\1\173",
-            "\1\174",
-            "\1\175",
+            "\1\160\11\uffff\1\161",
+            "",
+            "\1\163",
+            "\1\164",
+            "\1\165",
+            "\1\166",
+            "\1\172\1\170\10\uffff\1\173\6\uffff\1\171",
+            "\1\175\15\uffff\1\174",
             "\1\176",
-            "",
-            "",
-            "",
-            "\1\u0082",
-            "",
-            "\1\u0084",
-            "\1\u0085",
-            "",
-            "",
-            "",
-            "\1\u0089",
-            "\1\u008a\17\uffff\1\u008b",
-            "\1\u008c",
-            "\12\u008e\10\uffff\1\u0090\1\uffff\3\u0090\5\uffff\1\u0090\13\uffff\1\u008d\6\uffff\1\u008e\2\uffff\1\u0090\1\uffff\3\u0090\5\uffff\1\u0090\13\uffff\1\u008d",
-            "\12\u008e\10\uffff\1\u0090\1\uffff\3\u0090\5\uffff\1\u0090\22\uffff\1\u008e\2\uffff\1\u0090\1\uffff\3\u0090\5\uffff\1\u0090",
-            "\1\132\34\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "\1\u0093",
+            "\1\177",
+            "\1\u0080",
+            "\1\u0081\3\uffff\1\u0082",
+            "\1\u0083",
             "",
             "",
             "",
             "",
             "",
             "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\u008a",
+            "\1\u008b\17\uffff\1\u008c",
+            "\1\u008d",
+            "\1\u008e",
+            "\12\u0090\10\uffff\1\u0092\1\uffff\3\u0092\5\uffff\1\u0092\13\uffff\1\u008f\6\uffff\1\u0090\2\uffff\1\u0092\1\uffff\3\u0092\5\uffff\1\u0092\13\uffff\1\u008f",
+            "\12\u0090\10\uffff\1\u0092\1\uffff\3\u0092\5\uffff\1\u0092\22\uffff\1\u0090\2\uffff\1\u0092\1\uffff\3\u0092\5\uffff\1\u0092",
+            "\1\133\34\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
             "",
             "",
@@ -3898,15 +3760,36 @@ public class InternalEEBMLexer extends Lexer {
             "",
             "",
             "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u0097",
             "",
             "",
             "",
             "",
-            "\1\u0099\5\uffff\1\u009a",
             "",
-            "\1\u009b",
-            "\1\u009c",
+            "\1\u0099",
+            "",
+            "",
+            "",
+            "",
+            "\1\u009b\5\uffff\1\u009c",
+            "",
             "\1\u009d",
             "\1\u009e",
             "\1\u009f",
@@ -3914,49 +3797,52 @@ public class InternalEEBMLexer extends Lexer {
             "\1\u00a1",
             "\1\u00a2",
             "\1\u00a3",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00a4",
             "\1\u00a5",
             "\1\u00a6",
-            "\1\u00a7",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u00a8",
             "\1\u00a9",
             "\1\u00aa",
             "\1\u00ab",
+            "\1\u00ac",
+            "\1\u00ad",
+            "\1\u00ae",
             "",
             "",
+            "\1\u00b1\5\uffff\1\u00b0\6\uffff\1\u00af",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
-            "",
-            "\1\u00ac\14\uffff\1\u00ad\1\u00ae",
-            "\1\u00af",
-            "\1\u00b2\1\u00b0\4\uffff\1\u00b1",
-            "\1\u00b3\1\u00b4",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u00b4",
             "\1\u00b5",
+            "",
+            "",
             "\1\u00b6",
             "\1\u00b7",
-            "\1\u00b9\3\uffff\1\u00b8",
-            "\1\u00bc\5\uffff\1\u00ba\6\uffff\1\u00bb",
-            "\1\u00bd",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\2\132\1\u00be\27\132",
+            "\1\u00b8",
+            "\1\u00ba\3\uffff\1\u00b9",
+            "\1\u00bc\5\uffff\1\u00bb",
+            "\1\u00bd\1\u00be",
+            "\1\u00bf",
             "\1\u00c0",
             "\1\u00c1",
             "\1\u00c2",
             "\1\u00c3",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
             "",
             "",
-            "\1\u00c4\3\uffff\1\u00c5",
             "",
+            "",
+            "",
+            "\1\u00c5",
             "\1\u00c6",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "",
-            "",
+            "\1\u00c7",
             "\1\u00c8",
             "\1\u00c9",
-            "\1\u00ca",
-            "\1\u00cb",
             "",
-            "\12\u008e\10\uffff\1\u0090\1\uffff\3\u0090\5\uffff\1\u0090\22\uffff\1\u008e\2\uffff\1\u0090\1\uffff\3\u0090\5\uffff\1\u0090",
+            "\12\u0090\10\uffff\1\u0092\1\uffff\3\u0092\5\uffff\1\u0092\22\uffff\1\u0090\2\uffff\1\u0092\1\uffff\3\u0092\5\uffff\1\u0092",
             "",
             "",
             "",
@@ -3967,257 +3853,212 @@ public class InternalEEBMLexer extends Lexer {
             "",
             "",
             "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u00cc",
+            "\1\u00cd",
             "\1\u00ce",
             "\1\u00cf",
             "\1\u00d0",
             "\1\u00d1",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00d2",
             "\1\u00d3",
             "\1\u00d4",
             "\1\u00d5",
-            "\1\u00d6",
             "",
-            "\1\u00d7",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00d6",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u00d8",
             "\1\u00d9",
-            "\1\u00da",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u00dd",
-            "\1\u00de",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u00de\20\uffff\1\u00dd",
             "\1\u00df",
             "\1\u00e0",
+            "",
+            "",
             "\1\u00e1",
             "\1\u00e2",
             "\1\u00e3",
             "\1\u00e4",
             "\1\u00e5",
-            "\1\u00e6",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u00e7",
             "\1\u00e8",
             "\1\u00e9",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00ea",
             "\1\u00eb",
             "\1\u00ec",
             "\1\u00ed",
             "\1\u00ee",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00ef",
             "\1\u00f0",
             "",
             "\1\u00f1",
-            "\1\u00f2",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u00f3",
             "\1\u00f4",
             "\1\u00f5",
+            "",
+            "",
             "\1\u00f6",
-            "\1\u00f7",
-            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u00f8",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00f9",
             "\1\u00fa",
+            "",
             "\1\u00fb",
-            "",
-            "",
             "\1\u00fc",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u00fd",
             "\1\u00fe",
             "\1\u00ff",
             "",
             "\1\u0100",
-            "\1\u0101",
-            "\1\u0102",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "",
+            "",
+            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u0103",
             "\1\u0104",
-            "",
             "\1\u0105",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "",
-            "\1\u0107",
-            "\1\u0108",
+            "\1\u0106",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u0109",
             "\1\u010a",
-            "\1\u010b",
-            "\1\u010c",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u010e",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u010d",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u010f",
             "\1\u0110",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0112",
+            "\1\u0111",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u0113",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u0114",
             "\1\u0115",
-            "\1\u0116",
-            "\1\u0117",
             "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u0117",
             "\1\u0118",
-            "\1\u0119",
-            "\1\u011a",
+            "\1\u0119\16\uffff\1\u011a",
+            "",
             "\1\u011b",
-            "\1\u011c",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u011d",
             "\1\u011e",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u011f",
             "\1\u0120",
+            "\1\u0121",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u0123",
             "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0122",
-            "\1\u0123\16\uffff\1\u0124",
             "",
+            "\1\u0124",
             "\1\u0125",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u0126",
             "\1\u0127",
-            "\1\u0128",
-            "\1\u0129",
-            "\1\u012a",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u012c",
             "",
+            "",
+            "\1\u0128",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "",
+            "",
+            "\1\u012a",
+            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u012c",
             "\1\u012d",
+            "",
             "\1\u012e",
             "\1\u012f",
-            "\1\u0130",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "",
             "\1\u0131",
             "\1\u0132",
-            "",
             "\1\u0133",
+            "\1\u0134",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "\1\u0135",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "\1\u0137",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u0138",
-            "\1\u0139",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u013a",
+            "",
             "\1\u013b",
             "\1\u013c",
+            "",
             "\1\u013d",
             "\1\u013e",
-            "\1\u013f",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "",
             "\1\u0140",
             "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
+            "\1\u0141",
             "\1\u0142",
             "\1\u0143",
-            "\1\u0144",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0147",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u0145",
+            "\1\u0146",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u0148",
+            "",
+            "",
+            "",
             "\1\u0149",
             "",
             "\1\u014a",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u014c",
-            "\1\u014d",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "\1\u014e",
+            "",
             "\1\u014f",
-            "\1\u0150",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u0151",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
+            "\1\u0152",
             "",
             "\1\u0153",
-            "\1\u0154",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "",
             "\1\u0155",
             "\1\u0156",
             "\1\u0157",
+            "",
             "\1\u0158",
-            "\1\u0159",
+            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u015a",
-            "\1\u015b",
             "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u015c",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u015e",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
-            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u015f",
-            "",
             "\1\u0160",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
+            "\1\u0161",
             "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0164\3\uffff\1\u0163",
+            "\1\u0162",
             "",
-            "\1\u0165",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
+            "",
+            "",
+            "\1\u0164",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "\1\u0166",
-            "\1\u0167",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
             "\1\u0168",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u016a",
-            "\1\u016b",
-            "\1\u016c",
-            "\1\u016d",
-            "\1\u016e",
-            "\1\u016f",
-            "\1\u0170",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
             "",
-            "\1\u0172",
-            "\1\u0173",
-            "\1\u0174",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
-            "",
-            "\1\u0175",
-            "\1\u0176",
-            "\1\u0177",
-            "\1\u0178",
-            "\1\u0179",
-            "\1\u017a",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u017c",
-            "\1\u017d",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0181",
-            "\1\u0182",
-            "\1\u0183",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0186",
-            "\1\u0187",
-            "",
-            "\1\u0188",
-            "\1\u0189",
-            "",
-            "",
-            "",
-            "\1\u018a",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u018c",
-            "",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u018e",
-            "\1\u018f",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\u0191",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "\1\132\13\uffff\12\132\7\uffff\32\132\4\uffff\1\132\1\uffff\32\132",
-            "",
-            "",
+            "\1\133\13\uffff\12\133\7\uffff\32\133\4\uffff\1\133\1\uffff\32\133",
             "",
             ""
     };
@@ -4252,7 +4093,7 @@ public class InternalEEBMLexer extends Lexer {
             this.transition = DFA21_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_ID | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
@@ -4304,45 +4145,45 @@ public class InternalEEBMLexer extends Lexer {
 
                         else if ( (LA21_0=='L') ) {s = 21;}
 
-                        else if ( (LA21_0=='O') ) {s = 22;}
+                        else if ( (LA21_0=='A') ) {s = 22;}
 
                         else if ( (LA21_0=='[') ) {s = 23;}
 
                         else if ( (LA21_0==']') ) {s = 24;}
 
-                        else if ( (LA21_0==':') ) {s = 25;}
+                        else if ( (LA21_0=='d') ) {s = 25;}
 
-                        else if ( (LA21_0=='r') ) {s = 26;}
+                        else if ( (LA21_0==',') ) {s = 26;}
 
-                        else if ( (LA21_0=='c') ) {s = 27;}
+                        else if ( (LA21_0=='O') ) {s = 27;}
 
-                        else if ( (LA21_0=='t') ) {s = 28;}
+                        else if ( (LA21_0=='C') ) {s = 28;}
 
-                        else if ( (LA21_0=='d') ) {s = 29;}
+                        else if ( (LA21_0=='G') ) {s = 29;}
 
-                        else if ( (LA21_0=='P') ) {s = 30;}
+                        else if ( (LA21_0==':') ) {s = 30;}
 
-                        else if ( (LA21_0=='C') ) {s = 31;}
+                        else if ( (LA21_0=='t') ) {s = 31;}
 
-                        else if ( (LA21_0=='D') ) {s = 32;}
+                        else if ( (LA21_0=='c') ) {s = 32;}
 
-                        else if ( (LA21_0=='o') ) {s = 33;}
+                        else if ( (LA21_0=='b') ) {s = 33;}
 
-                        else if ( (LA21_0=='{') ) {s = 34;}
+                        else if ( (LA21_0=='S') ) {s = 34;}
 
-                        else if ( (LA21_0=='}') ) {s = 35;}
+                        else if ( (LA21_0=='T') ) {s = 35;}
 
-                        else if ( (LA21_0==',') ) {s = 36;}
+                        else if ( (LA21_0=='r') ) {s = 36;}
 
-                        else if ( (LA21_0=='p') ) {s = 37;}
+                        else if ( (LA21_0=='a') ) {s = 37;}
 
                         else if ( (LA21_0==')') ) {s = 38;}
 
-                        else if ( (LA21_0=='G') ) {s = 39;}
+                        else if ( (LA21_0=='#') ) {s = 39;}
 
-                        else if ( (LA21_0=='a') ) {s = 40;}
+                        else if ( (LA21_0=='{') ) {s = 40;}
 
-                        else if ( (LA21_0=='#') ) {s = 41;}
+                        else if ( (LA21_0=='}') ) {s = 41;}
 
                         else if ( (LA21_0==';') ) {s = 42;}
 
@@ -4352,23 +4193,25 @@ public class InternalEEBMLexer extends Lexer {
 
                         else if ( (LA21_0=='n') ) {s = 45;}
 
-                        else if ( (LA21_0=='R') ) {s = 46;}
+                        else if ( (LA21_0=='p') ) {s = 46;}
 
-                        else if ( (LA21_0=='0') ) {s = 47;}
+                        else if ( (LA21_0=='R') ) {s = 47;}
 
-                        else if ( ((LA21_0>='1' && LA21_0<='9')) ) {s = 48;}
+                        else if ( (LA21_0=='0') ) {s = 48;}
 
-                        else if ( (LA21_0=='^') ) {s = 49;}
+                        else if ( ((LA21_0>='1' && LA21_0<='9')) ) {s = 49;}
 
-                        else if ( (LA21_0=='$'||(LA21_0>='A' && LA21_0<='B')||(LA21_0>='E' && LA21_0<='F')||(LA21_0>='I' && LA21_0<='K')||LA21_0=='N'||LA21_0=='Q'||(LA21_0>='S' && LA21_0<='Z')||LA21_0=='_'||LA21_0=='b'||(LA21_0>='g' && LA21_0<='h')||(LA21_0>='j' && LA21_0<='m')||LA21_0=='q'||LA21_0=='u'||(LA21_0>='x' && LA21_0<='z')) ) {s = 50;}
+                        else if ( (LA21_0=='^') ) {s = 50;}
 
-                        else if ( (LA21_0=='\"') ) {s = 51;}
+                        else if ( (LA21_0=='$'||LA21_0=='B'||(LA21_0>='D' && LA21_0<='F')||(LA21_0>='I' && LA21_0<='K')||LA21_0=='N'||(LA21_0>='P' && LA21_0<='Q')||(LA21_0>='U' && LA21_0<='Z')||LA21_0=='_'||(LA21_0>='g' && LA21_0<='h')||(LA21_0>='j' && LA21_0<='m')||LA21_0=='o'||LA21_0=='q'||LA21_0=='u'||(LA21_0>='x' && LA21_0<='z')) ) {s = 51;}
 
-                        else if ( (LA21_0=='\'') ) {s = 52;}
+                        else if ( (LA21_0=='\"') ) {s = 52;}
 
-                        else if ( ((LA21_0>='\t' && LA21_0<='\n')||LA21_0=='\r'||LA21_0==' ') ) {s = 53;}
+                        else if ( (LA21_0=='\'') ) {s = 53;}
 
-                        else if ( ((LA21_0>='\u0000' && LA21_0<='\b')||(LA21_0>='\u000B' && LA21_0<='\f')||(LA21_0>='\u000E' && LA21_0<='\u001F')||LA21_0=='@'||LA21_0=='\\'||LA21_0=='`'||(LA21_0>='~' && LA21_0<='\uFFFF')) ) {s = 54;}
+                        else if ( ((LA21_0>='\t' && LA21_0<='\n')||LA21_0=='\r'||LA21_0==' ') ) {s = 54;}
+
+                        else if ( ((LA21_0>='\u0000' && LA21_0<='\b')||(LA21_0>='\u000B' && LA21_0<='\f')||(LA21_0>='\u000E' && LA21_0<='\u001F')||LA21_0=='@'||LA21_0=='\\'||LA21_0=='`'||(LA21_0>='~' && LA21_0<='\uFFFF')) ) {s = 55;}
 
                         if ( s>=0 ) return s;
                         break;

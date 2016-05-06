@@ -86,22 +86,13 @@ public interface EEBMPackage extends EPackage
   int ROADMAP__COMPONENTS = 1;
 
   /**
-   * The feature id for the '<em><b>People</b></em>' containment reference list.
+   * The feature id for the '<em><b>Relations</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ROADMAP__PEOPLE = 2;
-
-  /**
-   * The feature id for the '<em><b>Trajectories</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ROADMAP__TRAJECTORIES = 3;
+  int ROADMAP__RELATIONS = 2;
 
   /**
    * The number of structural features of the '<em>Roadmap</em>' class.
@@ -110,7 +101,7 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ROADMAP_FEATURE_COUNT = 4;
+  int ROADMAP_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl <em>Intentional Element</em>}' class.
@@ -150,114 +141,13 @@ public interface EEBMPackage extends EPackage
   int INTENTIONAL_ELEMENT__DESCRIPTION = 2;
 
   /**
-   * The number of structural features of the '<em>Intentional Element</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INTENTIONAL_ELEMENT_FEATURE_COUNT = 3;
-
-  /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.PathImpl <em>Path</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.PathImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPath()
-   * @generated
-   */
-  int PATH = 2;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PATH__NAME = 0;
-
-  /**
-   * The feature id for the '<em><b>Path</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PATH__PATH = 1;
-
-  /**
-   * The number of structural features of the '<em>Path</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PATH_FEATURE_COUNT = 2;
-
-  /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl <em>Option</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.OptionImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getOption()
-   * @generated
-   */
-  int OPTION = 3;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int OPTION__NAME = INTENTIONAL_ELEMENT__NAME;
-
-  /**
-   * The feature id for the '<em><b>Title</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int OPTION__TITLE = INTENTIONAL_ELEMENT__TITLE;
-
-  /**
-   * The feature id for the '<em><b>Description</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int OPTION__DESCRIPTION = INTENTIONAL_ELEMENT__DESCRIPTION;
-
-  /**
-   * The feature id for the '<em><b>Refines Reference</b></em>' reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int OPTION__REFINES_REFERENCE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 0;
-
-  /**
-   * The feature id for the '<em><b>Conflicts Reference</b></em>' reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int OPTION__CONFLICTS_REFERENCE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 1;
-
-  /**
    * The feature id for the '<em><b>Priority</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int OPTION__PRIORITY = INTENTIONAL_ELEMENT_FEATURE_COUNT + 2;
+  int INTENTIONAL_ELEMENT__PRIORITY = 3;
 
   /**
    * The feature id for the '<em><b>Time</b></em>' attribute.
@@ -266,7 +156,7 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OPTION__TIME = INTENTIONAL_ELEMENT_FEATURE_COUNT + 3;
+  int INTENTIONAL_ELEMENT__TIME = 4;
 
   /**
    * The feature id for the '<em><b>Cost</b></em>' attribute.
@@ -275,7 +165,16 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OPTION__COST = INTENTIONAL_ELEMENT_FEATURE_COUNT + 4;
+  int INTENTIONAL_ELEMENT__COST = 5;
+
+  /**
+   * The feature id for the '<em><b>Benefit</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INTENTIONAL_ELEMENT__BENEFIT = 6;
 
   /**
    * The feature id for the '<em><b>Date</b></em>' attribute.
@@ -284,7 +183,7 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OPTION__DATE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 5;
+  int INTENTIONAL_ELEMENT__DATE = 7;
 
   /**
    * The feature id for the '<em><b>Cod</b></em>' attribute.
@@ -293,26 +192,26 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OPTION__COD = INTENTIONAL_ELEMENT_FEATURE_COUNT + 6;
+  int INTENTIONAL_ELEMENT__COD = 8;
 
   /**
-   * The number of structural features of the '<em>Option</em>' class.
+   * The number of structural features of the '<em>Intentional Element</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int OPTION_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 7;
+  int INTENTIONAL_ELEMENT_FEATURE_COUNT = 9;
 
   /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl <em>Stakeholder</em>}' class.
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl <em>Refinement</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getStakeholder()
+   * @see edu.cmu.sei.eebm.eEBM.impl.RefinementImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRefinement()
    * @generated
    */
-  int STAKEHOLDER = 4;
+  int REFINEMENT = 2;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -321,26 +220,44 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int STAKEHOLDER__NAME = 0;
+  int REFINEMENT__NAME = 0;
 
   /**
-   * The number of structural features of the '<em>Stakeholder</em>' class.
+   * The feature id for the '<em><b>Source</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int STAKEHOLDER_FEATURE_COUNT = 1;
+  int REFINEMENT__SOURCE = 1;
 
   /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl <em>Participant</em>}' class.
+   * The feature id for the '<em><b>Dest</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getParticipant()
+   * @generated
+   * @ordered
+   */
+  int REFINEMENT__DEST = 2;
+
+  /**
+   * The number of structural features of the '<em>Refinement</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int REFINEMENT_FEATURE_COUNT = 3;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.AndRefinementImpl <em>And Refinement</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.AndRefinementImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getAndRefinement()
    * @generated
    */
-  int PARTICIPANT = 5;
+  int AND_REFINEMENT = 3;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -349,35 +266,44 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARTICIPANT__NAME = STAKEHOLDER__NAME;
+  int AND_REFINEMENT__NAME = REFINEMENT__NAME;
 
   /**
-   * The feature id for the '<em><b>Preferences</b></em>' containment reference list.
+   * The feature id for the '<em><b>Source</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARTICIPANT__PREFERENCES = STAKEHOLDER_FEATURE_COUNT + 0;
+  int AND_REFINEMENT__SOURCE = REFINEMENT__SOURCE;
 
   /**
-   * The number of structural features of the '<em>Participant</em>' class.
+   * The feature id for the '<em><b>Dest</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARTICIPANT_FEATURE_COUNT = STAKEHOLDER_FEATURE_COUNT + 1;
+  int AND_REFINEMENT__DEST = REFINEMENT__DEST;
 
   /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl <em>Consultant</em>}' class.
+   * The number of structural features of the '<em>And Refinement</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getConsultant()
+   * @generated
+   * @ordered
+   */
+  int AND_REFINEMENT_FEATURE_COUNT = REFINEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.OrRefinementImpl <em>Or Refinement</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.OrRefinementImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getOrRefinement()
    * @generated
    */
-  int CONSULTANT = 6;
+  int OR_REFINEMENT = 4;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -386,26 +312,44 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONSULTANT__NAME = STAKEHOLDER__NAME;
+  int OR_REFINEMENT__NAME = REFINEMENT__NAME;
 
   /**
-   * The number of structural features of the '<em>Consultant</em>' class.
+   * The feature id for the '<em><b>Source</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONSULTANT_FEATURE_COUNT = STAKEHOLDER_FEATURE_COUNT + 0;
+  int OR_REFINEMENT__SOURCE = REFINEMENT__SOURCE;
 
   /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.DecisionImpl <em>Decision</em>}' class.
+   * The feature id for the '<em><b>Dest</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.DecisionImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDecision()
+   * @generated
+   * @ordered
+   */
+  int OR_REFINEMENT__DEST = REFINEMENT__DEST;
+
+  /**
+   * The number of structural features of the '<em>Or Refinement</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OR_REFINEMENT_FEATURE_COUNT = REFINEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConflictImpl <em>Conflict</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.ConflictImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getConflict()
    * @generated
    */
-  int DECISION = 7;
+  int CONFLICT = 5;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -414,98 +358,34 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DECISION__NAME = 0;
+  int CONFLICT__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Rationale</b></em>' attribute.
+   * The feature id for the '<em><b>Source</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DECISION__RATIONALE = 1;
+  int CONFLICT__SOURCE = 1;
 
   /**
-   * The feature id for the '<em><b>Responsible</b></em>' reference.
+   * The feature id for the '<em><b>Dest</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DECISION__RESPONSIBLE = 2;
+  int CONFLICT__DEST = 2;
 
   /**
-   * The feature id for the '<em><b>Response measure</b></em>' attribute.
+   * The number of structural features of the '<em>Conflict</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DECISION__RESPONSE_MEASURE = 3;
-
-  /**
-   * The feature id for the '<em><b>Due</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DECISION__DUE = 4;
-
-  /**
-   * The feature id for the '<em><b>Options</b></em>' reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DECISION__OPTIONS = 5;
-
-  /**
-   * The number of structural features of the '<em>Decision</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DECISION_FEATURE_COUNT = 6;
-
-  /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl <em>Preference</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPreference()
-   * @generated
-   */
-  int PREFERENCE = 8;
-
-  /**
-   * The feature id for the '<em><b>First</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PREFERENCE__FIRST = 0;
-
-  /**
-   * The feature id for the '<em><b>Last</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PREFERENCE__LAST = 1;
-
-  /**
-   * The number of structural features of the '<em>Preference</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PREFERENCE_FEATURE_COUNT = 2;
+  int CONFLICT_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl <em>Goal</em>}' class.
@@ -515,7 +395,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getGoal()
    * @generated
    */
-  int GOAL = 9;
+  int GOAL = 6;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -545,13 +425,58 @@ public interface EEBMPackage extends EPackage
   int GOAL__DESCRIPTION = INTENTIONAL_ELEMENT__DESCRIPTION;
 
   /**
-   * The feature id for the '<em><b>Super Type</b></em>' reference.
+   * The feature id for the '<em><b>Priority</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GOAL__SUPER_TYPE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 0;
+  int GOAL__PRIORITY = INTENTIONAL_ELEMENT__PRIORITY;
+
+  /**
+   * The feature id for the '<em><b>Time</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GOAL__TIME = INTENTIONAL_ELEMENT__TIME;
+
+  /**
+   * The feature id for the '<em><b>Cost</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GOAL__COST = INTENTIONAL_ELEMENT__COST;
+
+  /**
+   * The feature id for the '<em><b>Benefit</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GOAL__BENEFIT = INTENTIONAL_ELEMENT__BENEFIT;
+
+  /**
+   * The feature id for the '<em><b>Date</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GOAL__DATE = INTENTIONAL_ELEMENT__DATE;
+
+  /**
+   * The feature id for the '<em><b>Cod</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GOAL__COD = INTENTIONAL_ELEMENT__COD;
 
   /**
    * The feature id for the '<em><b>Rationale</b></em>' containment reference.
@@ -560,16 +485,16 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GOAL__RATIONALE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 1;
+  int GOAL__RATIONALE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Doc Reference</b></em>' attribute list.
+   * The feature id for the '<em><b>Ref</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GOAL__DOC_REFERENCE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 2;
+  int GOAL__REF = INTENTIONAL_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Goal</em>' class.
@@ -578,7 +503,225 @@ public interface EEBMPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GOAL_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 3;
+  int GOAL_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 2;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.SoftgoalImpl <em>Softgoal</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.SoftgoalImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getSoftgoal()
+   * @generated
+   */
+  int SOFTGOAL = 7;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__NAME = INTENTIONAL_ELEMENT__NAME;
+
+  /**
+   * The feature id for the '<em><b>Title</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__TITLE = INTENTIONAL_ELEMENT__TITLE;
+
+  /**
+   * The feature id for the '<em><b>Description</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__DESCRIPTION = INTENTIONAL_ELEMENT__DESCRIPTION;
+
+  /**
+   * The feature id for the '<em><b>Priority</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__PRIORITY = INTENTIONAL_ELEMENT__PRIORITY;
+
+  /**
+   * The feature id for the '<em><b>Time</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__TIME = INTENTIONAL_ELEMENT__TIME;
+
+  /**
+   * The feature id for the '<em><b>Cost</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__COST = INTENTIONAL_ELEMENT__COST;
+
+  /**
+   * The feature id for the '<em><b>Benefit</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__BENEFIT = INTENTIONAL_ELEMENT__BENEFIT;
+
+  /**
+   * The feature id for the '<em><b>Date</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__DATE = INTENTIONAL_ELEMENT__DATE;
+
+  /**
+   * The feature id for the '<em><b>Cod</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__COD = INTENTIONAL_ELEMENT__COD;
+
+  /**
+   * The feature id for the '<em><b>Rationale</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__RATIONALE = INTENTIONAL_ELEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Ref</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL__REF = INTENTIONAL_ELEMENT_FEATURE_COUNT + 1;
+
+  /**
+   * The number of structural features of the '<em>Softgoal</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SOFTGOAL_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 2;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.TaskImpl <em>Task</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.TaskImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getTask()
+   * @generated
+   */
+  int TASK = 8;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__NAME = INTENTIONAL_ELEMENT__NAME;
+
+  /**
+   * The feature id for the '<em><b>Title</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__TITLE = INTENTIONAL_ELEMENT__TITLE;
+
+  /**
+   * The feature id for the '<em><b>Description</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__DESCRIPTION = INTENTIONAL_ELEMENT__DESCRIPTION;
+
+  /**
+   * The feature id for the '<em><b>Priority</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__PRIORITY = INTENTIONAL_ELEMENT__PRIORITY;
+
+  /**
+   * The feature id for the '<em><b>Time</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__TIME = INTENTIONAL_ELEMENT__TIME;
+
+  /**
+   * The feature id for the '<em><b>Cost</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__COST = INTENTIONAL_ELEMENT__COST;
+
+  /**
+   * The feature id for the '<em><b>Benefit</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__BENEFIT = INTENTIONAL_ELEMENT__BENEFIT;
+
+  /**
+   * The feature id for the '<em><b>Date</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__DATE = INTENTIONAL_ELEMENT__DATE;
+
+  /**
+   * The feature id for the '<em><b>Cod</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK__COD = INTENTIONAL_ELEMENT__COD;
+
+  /**
+   * The number of structural features of the '<em>Task</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TASK_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl <em>Description</em>}' class.
@@ -588,16 +731,16 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescription()
    * @generated
    */
-  int DESCRIPTION = 10;
+  int DESCRIPTION = 9;
 
   /**
-   * The feature id for the '<em><b>Description</b></em>' containment reference list.
+   * The feature id for the '<em><b>Text</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DESCRIPTION__DESCRIPTION = 0;
+  int DESCRIPTION__TEXT = 0;
 
   /**
    * The number of structural features of the '<em>Description</em>' class.
@@ -609,34 +752,6 @@ public interface EEBMPackage extends EPackage
   int DESCRIPTION_FEATURE_COUNT = 1;
 
   /**
-   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionElementImpl <em>Description Element</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see edu.cmu.sei.eebm.eEBM.impl.DescriptionElementImpl
-   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescriptionElement()
-   * @generated
-   */
-  int DESCRIPTION_ELEMENT = 11;
-
-  /**
-   * The feature id for the '<em><b>Text</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DESCRIPTION_ELEMENT__TEXT = 0;
-
-  /**
-   * The number of structural features of the '<em>Description Element</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DESCRIPTION_ELEMENT_FEATURE_COUNT = 1;
-
-  /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.RationaleImpl <em>Rationale</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -644,7 +759,7 @@ public interface EEBMPackage extends EPackage
    * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRationale()
    * @generated
    */
-  int RATIONALE = 12;
+  int RATIONALE = 10;
 
   /**
    * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -663,6 +778,71 @@ public interface EEBMPackage extends EPackage
    * @ordered
    */
   int RATIONALE_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.ReferenceImpl <em>Reference</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.ReferenceImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getReference()
+   * @generated
+   */
+  int REFERENCE = 11;
+
+  /**
+   * The feature id for the '<em><b>Doc Reference</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int REFERENCE__DOC_REFERENCE = 0;
+
+  /**
+   * The number of structural features of the '<em>Reference</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int REFERENCE_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl <em>Preference</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl
+   * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPreference()
+   * @generated
+   */
+  int PREFERENCE = 12;
+
+  /**
+   * The feature id for the '<em><b>First</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PREFERENCE__FIRST = 0;
+
+  /**
+   * The feature id for the '<em><b>Last</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PREFERENCE__LAST = 1;
+
+  /**
+   * The number of structural features of the '<em>Preference</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PREFERENCE_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link edu.cmu.sei.eebm.eEBM.PriorityEnum <em>Priority Enum</em>}' enum.
@@ -708,26 +888,15 @@ public interface EEBMPackage extends EPackage
   EReference getRoadmap_Components();
 
   /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Roadmap#getPeople <em>People</em>}'.
+   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Roadmap#getRelations <em>Relations</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>People</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Roadmap#getPeople()
+   * @return the meta object for the containment reference list '<em>Relations</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Roadmap#getRelations()
    * @see #getRoadmap()
    * @generated
    */
-  EReference getRoadmap_People();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Roadmap#getTrajectories <em>Trajectories</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Trajectories</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Roadmap#getTrajectories()
-   * @see #getRoadmap()
-   * @generated
-   */
-  EReference getRoadmap_Trajectories();
+  EReference getRoadmap_Relations();
 
   /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement <em>Intentional Element</em>}'.
@@ -773,251 +942,313 @@ public interface EEBMPackage extends EPackage
   EReference getIntentionalElement_Description();
 
   /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Path <em>Path</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Path</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Path
-   * @generated
-   */
-  EClass getPath();
-
-  /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Path#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Path#getName()
-   * @see #getPath()
-   * @generated
-   */
-  EAttribute getPath_Name();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Path#getPath <em>Path</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Path</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Path#getPath()
-   * @see #getPath()
-   * @generated
-   */
-  EReference getPath_Path();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Option <em>Option</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Option</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option
-   * @generated
-   */
-  EClass getOption();
-
-  /**
-   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.Option#getRefinesReference <em>Refines Reference</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the reference list '<em>Refines Reference</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getRefinesReference()
-   * @see #getOption()
-   * @generated
-   */
-  EReference getOption_RefinesReference();
-
-  /**
-   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.Option#getConflictsReference <em>Conflicts Reference</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the reference list '<em>Conflicts Reference</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getConflictsReference()
-   * @see #getOption()
-   * @generated
-   */
-  EReference getOption_ConflictsReference();
-
-  /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Option#getPriority <em>Priority</em>}'.
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement#getPriority <em>Priority</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Priority</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getPriority()
-   * @see #getOption()
+   * @see edu.cmu.sei.eebm.eEBM.IntentionalElement#getPriority()
+   * @see #getIntentionalElement()
    * @generated
    */
-  EAttribute getOption_Priority();
+  EAttribute getIntentionalElement_Priority();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Option#getTime <em>Time</em>}'.
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement#getTime <em>Time</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Time</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getTime()
-   * @see #getOption()
+   * @see edu.cmu.sei.eebm.eEBM.IntentionalElement#getTime()
+   * @see #getIntentionalElement()
    * @generated
    */
-  EAttribute getOption_Time();
+  EAttribute getIntentionalElement_Time();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Option#getCost <em>Cost</em>}'.
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement#getCost <em>Cost</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Cost</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getCost()
-   * @see #getOption()
+   * @see edu.cmu.sei.eebm.eEBM.IntentionalElement#getCost()
+   * @see #getIntentionalElement()
    * @generated
    */
-  EAttribute getOption_Cost();
+  EAttribute getIntentionalElement_Cost();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Option#getDate <em>Date</em>}'.
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement#getBenefit <em>Benefit</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Benefit</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.IntentionalElement#getBenefit()
+   * @see #getIntentionalElement()
+   * @generated
+   */
+  EAttribute getIntentionalElement_Benefit();
+
+  /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement#getDate <em>Date</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Date</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getDate()
-   * @see #getOption()
+   * @see edu.cmu.sei.eebm.eEBM.IntentionalElement#getDate()
+   * @see #getIntentionalElement()
    * @generated
    */
-  EAttribute getOption_Date();
+  EAttribute getIntentionalElement_Date();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Option#getCod <em>Cod</em>}'.
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.IntentionalElement#getCod <em>Cod</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Cod</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Option#getCod()
-   * @see #getOption()
+   * @see edu.cmu.sei.eebm.eEBM.IntentionalElement#getCod()
+   * @see #getIntentionalElement()
    * @generated
    */
-  EAttribute getOption_Cod();
+  EAttribute getIntentionalElement_Cod();
 
   /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Stakeholder <em>Stakeholder</em>}'.
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Refinement <em>Refinement</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Stakeholder</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Stakeholder
+   * @return the meta object for class '<em>Refinement</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Refinement
    * @generated
    */
-  EClass getStakeholder();
+  EClass getRefinement();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Stakeholder#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Stakeholder#getName()
-   * @see #getStakeholder()
-   * @generated
-   */
-  EAttribute getStakeholder_Name();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Participant <em>Participant</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Participant</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Participant
-   * @generated
-   */
-  EClass getParticipant();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Participant#getPreferences <em>Preferences</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Preferences</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Participant#getPreferences()
-   * @see #getParticipant()
-   * @generated
-   */
-  EReference getParticipant_Preferences();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Consultant <em>Consultant</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Consultant</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Consultant
-   * @generated
-   */
-  EClass getConsultant();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Decision <em>Decision</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Decision</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision
-   * @generated
-   */
-  EClass getDecision();
-
-  /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Decision#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Refinement#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision#getName()
-   * @see #getDecision()
+   * @see edu.cmu.sei.eebm.eEBM.Refinement#getName()
+   * @see #getRefinement()
    * @generated
    */
-  EAttribute getDecision_Name();
+  EAttribute getRefinement_Name();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Decision#getRationale <em>Rationale</em>}'.
+   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.Refinement#getSource <em>Source</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Rationale</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision#getRationale()
-   * @see #getDecision()
+   * @return the meta object for the reference list '<em>Source</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Refinement#getSource()
+   * @see #getRefinement()
    * @generated
    */
-  EAttribute getDecision_Rationale();
+  EReference getRefinement_Source();
 
   /**
-   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.Decision#getResponsible <em>Responsible</em>}'.
+   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Refinement#getDest <em>Dest</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Responsible</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision#getResponsible()
-   * @see #getDecision()
+   * @return the meta object for the containment reference list '<em>Dest</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Refinement#getDest()
+   * @see #getRefinement()
    * @generated
    */
-  EReference getDecision_Responsible();
+  EReference getRefinement_Dest();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Decision#getResponse_measure <em>Response measure</em>}'.
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.AndRefinement <em>And Refinement</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Response measure</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision#getResponse_measure()
-   * @see #getDecision()
+   * @return the meta object for class '<em>And Refinement</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.AndRefinement
    * @generated
    */
-  EAttribute getDecision_Response_measure();
+  EClass getAndRefinement();
 
   /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Decision#getDue <em>Due</em>}'.
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.OrRefinement <em>Or Refinement</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Due</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision#getDue()
-   * @see #getDecision()
+   * @return the meta object for class '<em>Or Refinement</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.OrRefinement
    * @generated
    */
-  EAttribute getDecision_Due();
+  EClass getOrRefinement();
 
   /**
-   * Returns the meta object for the reference list '{@link edu.cmu.sei.eebm.eEBM.Decision#getOptions <em>Options</em>}'.
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Conflict <em>Conflict</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference list '<em>Options</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Decision#getOptions()
-   * @see #getDecision()
+   * @return the meta object for class '<em>Conflict</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Conflict
    * @generated
    */
-  EReference getDecision_Options();
+  EClass getConflict();
+
+  /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Conflict#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Conflict#getName()
+   * @see #getConflict()
+   * @generated
+   */
+  EAttribute getConflict_Name();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Conflict#getSource <em>Source</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Source</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Conflict#getSource()
+   * @see #getConflict()
+   * @generated
+   */
+  EReference getConflict_Source();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Conflict#getDest <em>Dest</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Dest</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Conflict#getDest()
+   * @see #getConflict()
+   * @generated
+   */
+  EReference getConflict_Dest();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Goal <em>Goal</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Goal</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Goal
+   * @generated
+   */
+  EClass getGoal();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Goal#getRationale <em>Rationale</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Rationale</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Goal#getRationale()
+   * @see #getGoal()
+   * @generated
+   */
+  EReference getGoal_Rationale();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Goal#getRef <em>Ref</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Ref</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Goal#getRef()
+   * @see #getGoal()
+   * @generated
+   */
+  EReference getGoal_Ref();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Softgoal <em>Softgoal</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Softgoal</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Softgoal
+   * @generated
+   */
+  EClass getSoftgoal();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Softgoal#getRationale <em>Rationale</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Rationale</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Softgoal#getRationale()
+   * @see #getSoftgoal()
+   * @generated
+   */
+  EReference getSoftgoal_Rationale();
+
+  /**
+   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Softgoal#getRef <em>Ref</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Ref</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Softgoal#getRef()
+   * @see #getSoftgoal()
+   * @generated
+   */
+  EReference getSoftgoal_Ref();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Task <em>Task</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Task</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Task
+   * @generated
+   */
+  EClass getTask();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Description <em>Description</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Description</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Description
+   * @generated
+   */
+  EClass getDescription();
+
+  /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Description#getText <em>Text</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Text</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Description#getText()
+   * @see #getDescription()
+   * @generated
+   */
+  EAttribute getDescription_Text();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Rationale <em>Rationale</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Rationale</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Rationale
+   * @generated
+   */
+  EClass getRationale();
+
+  /**
+   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Rationale#getText <em>Text</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Text</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Rationale#getText()
+   * @see #getRationale()
+   * @generated
+   */
+  EAttribute getRationale_Text();
+
+  /**
+   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Reference <em>Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Reference</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Reference
+   * @generated
+   */
+  EClass getReference();
+
+  /**
+   * Returns the meta object for the attribute list '{@link edu.cmu.sei.eebm.eEBM.Reference#getDocReference <em>Doc Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Doc Reference</em>'.
+   * @see edu.cmu.sei.eebm.eEBM.Reference#getDocReference()
+   * @see #getReference()
+   * @generated
+   */
+  EAttribute getReference_DocReference();
 
   /**
    * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Preference <em>Preference</em>}'.
@@ -1050,112 +1281,6 @@ public interface EEBMPackage extends EPackage
    * @generated
    */
   EReference getPreference_Last();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Goal <em>Goal</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Goal</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Goal
-   * @generated
-   */
-  EClass getGoal();
-
-  /**
-   * Returns the meta object for the reference '{@link edu.cmu.sei.eebm.eEBM.Goal#getSuperType <em>Super Type</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Super Type</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Goal#getSuperType()
-   * @see #getGoal()
-   * @generated
-   */
-  EReference getGoal_SuperType();
-
-  /**
-   * Returns the meta object for the containment reference '{@link edu.cmu.sei.eebm.eEBM.Goal#getRationale <em>Rationale</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Rationale</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Goal#getRationale()
-   * @see #getGoal()
-   * @generated
-   */
-  EReference getGoal_Rationale();
-
-  /**
-   * Returns the meta object for the attribute list '{@link edu.cmu.sei.eebm.eEBM.Goal#getDocReference <em>Doc Reference</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Doc Reference</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Goal#getDocReference()
-   * @see #getGoal()
-   * @generated
-   */
-  EAttribute getGoal_DocReference();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Description <em>Description</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Description</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Description
-   * @generated
-   */
-  EClass getDescription();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link edu.cmu.sei.eebm.eEBM.Description#getDescription <em>Description</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Description</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Description#getDescription()
-   * @see #getDescription()
-   * @generated
-   */
-  EReference getDescription_Description();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.DescriptionElement <em>Description Element</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Description Element</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.DescriptionElement
-   * @generated
-   */
-  EClass getDescriptionElement();
-
-  /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.DescriptionElement#getText <em>Text</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Text</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.DescriptionElement#getText()
-   * @see #getDescriptionElement()
-   * @generated
-   */
-  EAttribute getDescriptionElement_Text();
-
-  /**
-   * Returns the meta object for class '{@link edu.cmu.sei.eebm.eEBM.Rationale <em>Rationale</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Rationale</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Rationale
-   * @generated
-   */
-  EClass getRationale();
-
-  /**
-   * Returns the meta object for the attribute '{@link edu.cmu.sei.eebm.eEBM.Rationale#getText <em>Text</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Text</em>'.
-   * @see edu.cmu.sei.eebm.eEBM.Rationale#getText()
-   * @see #getRationale()
-   * @generated
-   */
-  EAttribute getRationale_Text();
 
   /**
    * Returns the meta object for enum '{@link edu.cmu.sei.eebm.eEBM.PriorityEnum <em>Priority Enum</em>}'.
@@ -1217,20 +1342,12 @@ public interface EEBMPackage extends EPackage
     EReference ROADMAP__COMPONENTS = eINSTANCE.getRoadmap_Components();
 
     /**
-     * The meta object literal for the '<em><b>People</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Relations</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference ROADMAP__PEOPLE = eINSTANCE.getRoadmap_People();
-
-    /**
-     * The meta object literal for the '<em><b>Trajectories</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference ROADMAP__TRAJECTORIES = eINSTANCE.getRoadmap_Trajectories();
+    EReference ROADMAP__RELATIONS = eINSTANCE.getRoadmap_Relations();
 
     /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl <em>Intentional Element</em>}' class.
@@ -1267,64 +1384,12 @@ public interface EEBMPackage extends EPackage
     EReference INTENTIONAL_ELEMENT__DESCRIPTION = eINSTANCE.getIntentionalElement_Description();
 
     /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.PathImpl <em>Path</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.PathImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getPath()
-     * @generated
-     */
-    EClass PATH = eINSTANCE.getPath();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PATH__NAME = eINSTANCE.getPath_Name();
-
-    /**
-     * The meta object literal for the '<em><b>Path</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PATH__PATH = eINSTANCE.getPath_Path();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.OptionImpl <em>Option</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.OptionImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getOption()
-     * @generated
-     */
-    EClass OPTION = eINSTANCE.getOption();
-
-    /**
-     * The meta object literal for the '<em><b>Refines Reference</b></em>' reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference OPTION__REFINES_REFERENCE = eINSTANCE.getOption_RefinesReference();
-
-    /**
-     * The meta object literal for the '<em><b>Conflicts Reference</b></em>' reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference OPTION__CONFLICTS_REFERENCE = eINSTANCE.getOption_ConflictsReference();
-
-    /**
      * The meta object literal for the '<em><b>Priority</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute OPTION__PRIORITY = eINSTANCE.getOption_Priority();
+    EAttribute INTENTIONAL_ELEMENT__PRIORITY = eINSTANCE.getIntentionalElement_Priority();
 
     /**
      * The meta object literal for the '<em><b>Time</b></em>' attribute feature.
@@ -1332,7 +1397,7 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute OPTION__TIME = eINSTANCE.getOption_Time();
+    EAttribute INTENTIONAL_ELEMENT__TIME = eINSTANCE.getIntentionalElement_Time();
 
     /**
      * The meta object literal for the '<em><b>Cost</b></em>' attribute feature.
@@ -1340,7 +1405,15 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute OPTION__COST = eINSTANCE.getOption_Cost();
+    EAttribute INTENTIONAL_ELEMENT__COST = eINSTANCE.getIntentionalElement_Cost();
+
+    /**
+     * The meta object literal for the '<em><b>Benefit</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute INTENTIONAL_ELEMENT__BENEFIT = eINSTANCE.getIntentionalElement_Benefit();
 
     /**
      * The meta object literal for the '<em><b>Date</b></em>' attribute feature.
@@ -1348,7 +1421,7 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute OPTION__DATE = eINSTANCE.getOption_Date();
+    EAttribute INTENTIONAL_ELEMENT__DATE = eINSTANCE.getIntentionalElement_Date();
 
     /**
      * The meta object literal for the '<em><b>Cod</b></em>' attribute feature.
@@ -1356,63 +1429,17 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute OPTION__COD = eINSTANCE.getOption_Cod();
+    EAttribute INTENTIONAL_ELEMENT__COD = eINSTANCE.getIntentionalElement_Cod();
 
     /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl <em>Stakeholder</em>}' class.
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl <em>Refinement</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.StakeholderImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getStakeholder()
+     * @see edu.cmu.sei.eebm.eEBM.impl.RefinementImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRefinement()
      * @generated
      */
-    EClass STAKEHOLDER = eINSTANCE.getStakeholder();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute STAKEHOLDER__NAME = eINSTANCE.getStakeholder_Name();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl <em>Participant</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.ParticipantImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getParticipant()
-     * @generated
-     */
-    EClass PARTICIPANT = eINSTANCE.getParticipant();
-
-    /**
-     * The meta object literal for the '<em><b>Preferences</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PARTICIPANT__PREFERENCES = eINSTANCE.getParticipant_Preferences();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl <em>Consultant</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.ConsultantImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getConsultant()
-     * @generated
-     */
-    EClass CONSULTANT = eINSTANCE.getConsultant();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.DecisionImpl <em>Decision</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.DecisionImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDecision()
-     * @generated
-     */
-    EClass DECISION = eINSTANCE.getDecision();
+    EClass REFINEMENT = eINSTANCE.getRefinement();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -1420,47 +1447,193 @@ public interface EEBMPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute DECISION__NAME = eINSTANCE.getDecision_Name();
+    EAttribute REFINEMENT__NAME = eINSTANCE.getRefinement_Name();
 
     /**
-     * The meta object literal for the '<em><b>Rationale</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Source</b></em>' reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute DECISION__RATIONALE = eINSTANCE.getDecision_Rationale();
+    EReference REFINEMENT__SOURCE = eINSTANCE.getRefinement_Source();
 
     /**
-     * The meta object literal for the '<em><b>Responsible</b></em>' reference feature.
+     * The meta object literal for the '<em><b>Dest</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference DECISION__RESPONSIBLE = eINSTANCE.getDecision_Responsible();
+    EReference REFINEMENT__DEST = eINSTANCE.getRefinement_Dest();
 
     /**
-     * The meta object literal for the '<em><b>Response measure</b></em>' attribute feature.
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.AndRefinementImpl <em>And Refinement</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.AndRefinementImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getAndRefinement()
+     * @generated
+     */
+    EClass AND_REFINEMENT = eINSTANCE.getAndRefinement();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.OrRefinementImpl <em>Or Refinement</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.OrRefinementImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getOrRefinement()
+     * @generated
+     */
+    EClass OR_REFINEMENT = eINSTANCE.getOrRefinement();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ConflictImpl <em>Conflict</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.ConflictImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getConflict()
+     * @generated
+     */
+    EClass CONFLICT = eINSTANCE.getConflict();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute DECISION__RESPONSE_MEASURE = eINSTANCE.getDecision_Response_measure();
+    EAttribute CONFLICT__NAME = eINSTANCE.getConflict_Name();
 
     /**
-     * The meta object literal for the '<em><b>Due</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute DECISION__DUE = eINSTANCE.getDecision_Due();
+    EReference CONFLICT__SOURCE = eINSTANCE.getConflict_Source();
 
     /**
-     * The meta object literal for the '<em><b>Options</b></em>' reference list feature.
+     * The meta object literal for the '<em><b>Dest</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference DECISION__OPTIONS = eINSTANCE.getDecision_Options();
+    EReference CONFLICT__DEST = eINSTANCE.getConflict_Dest();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl <em>Goal</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.GoalImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getGoal()
+     * @generated
+     */
+    EClass GOAL = eINSTANCE.getGoal();
+
+    /**
+     * The meta object literal for the '<em><b>Rationale</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference GOAL__RATIONALE = eINSTANCE.getGoal_Rationale();
+
+    /**
+     * The meta object literal for the '<em><b>Ref</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference GOAL__REF = eINSTANCE.getGoal_Ref();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.SoftgoalImpl <em>Softgoal</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.SoftgoalImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getSoftgoal()
+     * @generated
+     */
+    EClass SOFTGOAL = eINSTANCE.getSoftgoal();
+
+    /**
+     * The meta object literal for the '<em><b>Rationale</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SOFTGOAL__RATIONALE = eINSTANCE.getSoftgoal_Rationale();
+
+    /**
+     * The meta object literal for the '<em><b>Ref</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SOFTGOAL__REF = eINSTANCE.getSoftgoal_Ref();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.TaskImpl <em>Task</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.TaskImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getTask()
+     * @generated
+     */
+    EClass TASK = eINSTANCE.getTask();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl <em>Description</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescription()
+     * @generated
+     */
+    EClass DESCRIPTION = eINSTANCE.getDescription();
+
+    /**
+     * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute DESCRIPTION__TEXT = eINSTANCE.getDescription_Text();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.RationaleImpl <em>Rationale</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.RationaleImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRationale()
+     * @generated
+     */
+    EClass RATIONALE = eINSTANCE.getRationale();
+
+    /**
+     * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute RATIONALE__TEXT = eINSTANCE.getRationale_Text();
+
+    /**
+     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.ReferenceImpl <em>Reference</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see edu.cmu.sei.eebm.eEBM.impl.ReferenceImpl
+     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getReference()
+     * @generated
+     */
+    EClass REFERENCE = eINSTANCE.getReference();
+
+    /**
+     * The meta object literal for the '<em><b>Doc Reference</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute REFERENCE__DOC_REFERENCE = eINSTANCE.getReference_DocReference();
 
     /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.PreferenceImpl <em>Preference</em>}' class.
@@ -1487,94 +1660,6 @@ public interface EEBMPackage extends EPackage
      * @generated
      */
     EReference PREFERENCE__LAST = eINSTANCE.getPreference_Last();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl <em>Goal</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.GoalImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getGoal()
-     * @generated
-     */
-    EClass GOAL = eINSTANCE.getGoal();
-
-    /**
-     * The meta object literal for the '<em><b>Super Type</b></em>' reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference GOAL__SUPER_TYPE = eINSTANCE.getGoal_SuperType();
-
-    /**
-     * The meta object literal for the '<em><b>Rationale</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference GOAL__RATIONALE = eINSTANCE.getGoal_Rationale();
-
-    /**
-     * The meta object literal for the '<em><b>Doc Reference</b></em>' attribute list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute GOAL__DOC_REFERENCE = eINSTANCE.getGoal_DocReference();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl <em>Description</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescription()
-     * @generated
-     */
-    EClass DESCRIPTION = eINSTANCE.getDescription();
-
-    /**
-     * The meta object literal for the '<em><b>Description</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference DESCRIPTION__DESCRIPTION = eINSTANCE.getDescription_Description();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionElementImpl <em>Description Element</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.DescriptionElementImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getDescriptionElement()
-     * @generated
-     */
-    EClass DESCRIPTION_ELEMENT = eINSTANCE.getDescriptionElement();
-
-    /**
-     * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute DESCRIPTION_ELEMENT__TEXT = eINSTANCE.getDescriptionElement_Text();
-
-    /**
-     * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.impl.RationaleImpl <em>Rationale</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see edu.cmu.sei.eebm.eEBM.impl.RationaleImpl
-     * @see edu.cmu.sei.eebm.eEBM.impl.EEBMPackageImpl#getRationale()
-     * @generated
-     */
-    EClass RATIONALE = eINSTANCE.getRationale();
-
-    /**
-     * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute RATIONALE__TEXT = eINSTANCE.getRationale_Text();
 
     /**
      * The meta object literal for the '{@link edu.cmu.sei.eebm.eEBM.PriorityEnum <em>Priority Enum</em>}' enum.

@@ -86,55 +86,33 @@ public class EEBMSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EEBMPackage.PATH:
+      case EEBMPackage.REFINEMENT:
       {
-        Path path = (Path)theEObject;
-        T result = casePath(path);
+        Refinement refinement = (Refinement)theEObject;
+        T result = caseRefinement(refinement);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EEBMPackage.OPTION:
+      case EEBMPackage.AND_REFINEMENT:
       {
-        Option option = (Option)theEObject;
-        T result = caseOption(option);
-        if (result == null) result = caseIntentionalElement(option);
+        AndRefinement andRefinement = (AndRefinement)theEObject;
+        T result = caseAndRefinement(andRefinement);
+        if (result == null) result = caseRefinement(andRefinement);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EEBMPackage.STAKEHOLDER:
+      case EEBMPackage.OR_REFINEMENT:
       {
-        Stakeholder stakeholder = (Stakeholder)theEObject;
-        T result = caseStakeholder(stakeholder);
+        OrRefinement orRefinement = (OrRefinement)theEObject;
+        T result = caseOrRefinement(orRefinement);
+        if (result == null) result = caseRefinement(orRefinement);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EEBMPackage.PARTICIPANT:
+      case EEBMPackage.CONFLICT:
       {
-        Participant participant = (Participant)theEObject;
-        T result = caseParticipant(participant);
-        if (result == null) result = caseStakeholder(participant);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EEBMPackage.CONSULTANT:
-      {
-        Consultant consultant = (Consultant)theEObject;
-        T result = caseConsultant(consultant);
-        if (result == null) result = caseStakeholder(consultant);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EEBMPackage.DECISION:
-      {
-        Decision decision = (Decision)theEObject;
-        T result = caseDecision(decision);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EEBMPackage.PREFERENCE:
-      {
-        Preference preference = (Preference)theEObject;
-        T result = casePreference(preference);
+        Conflict conflict = (Conflict)theEObject;
+        T result = caseConflict(conflict);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -146,6 +124,22 @@ public class EEBMSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case EEBMPackage.SOFTGOAL:
+      {
+        Softgoal softgoal = (Softgoal)theEObject;
+        T result = caseSoftgoal(softgoal);
+        if (result == null) result = caseIntentionalElement(softgoal);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.TASK:
+      {
+        Task task = (Task)theEObject;
+        T result = caseTask(task);
+        if (result == null) result = caseIntentionalElement(task);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case EEBMPackage.DESCRIPTION:
       {
         Description description = (Description)theEObject;
@@ -153,17 +147,24 @@ public class EEBMSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EEBMPackage.DESCRIPTION_ELEMENT:
-      {
-        DescriptionElement descriptionElement = (DescriptionElement)theEObject;
-        T result = caseDescriptionElement(descriptionElement);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case EEBMPackage.RATIONALE:
       {
         Rationale rationale = (Rationale)theEObject;
         T result = caseRationale(rationale);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.REFERENCE:
+      {
+        Reference reference = (Reference)theEObject;
+        T result = caseReference(reference);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EEBMPackage.PREFERENCE:
+      {
+        Preference preference = (Preference)theEObject;
+        T result = casePreference(preference);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -204,113 +205,65 @@ public class EEBMSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Path</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Refinement</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Path</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Refinement</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T casePath(Path object)
+  public T caseRefinement(Refinement object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Option</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>And Refinement</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Option</em>'.
+   * @return the result of interpreting the object as an instance of '<em>And Refinement</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseOption(Option object)
+  public T caseAndRefinement(AndRefinement object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Stakeholder</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Or Refinement</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Stakeholder</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Or Refinement</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseStakeholder(Stakeholder object)
+  public T caseOrRefinement(OrRefinement object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Participant</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Conflict</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Participant</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Conflict</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseParticipant(Participant object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Consultant</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Consultant</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseConsultant(Consultant object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Decision</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Decision</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseDecision(Decision object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Preference</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Preference</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T casePreference(Preference object)
+  public T caseConflict(Conflict object)
   {
     return null;
   }
@@ -332,6 +285,38 @@ public class EEBMSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Softgoal</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Softgoal</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseSoftgoal(Softgoal object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Task</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Task</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseTask(Task object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Description</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -348,22 +333,6 @@ public class EEBMSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Description Element</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Description Element</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseDescriptionElement(DescriptionElement object)
-  {
-    return null;
-  }
-
-  /**
    * Returns the result of interpreting the object as an instance of '<em>Rationale</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -375,6 +344,38 @@ public class EEBMSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseRationale(Rationale object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Reference</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Reference</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseReference(Reference object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Preference</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Preference</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePreference(Preference object)
   {
     return null;
   }

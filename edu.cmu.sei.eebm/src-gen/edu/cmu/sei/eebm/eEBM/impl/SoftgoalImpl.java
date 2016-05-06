@@ -3,9 +3,9 @@
 package edu.cmu.sei.eebm.eEBM.impl;
 
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
-import edu.cmu.sei.eebm.eEBM.Goal;
 import edu.cmu.sei.eebm.eEBM.Rationale;
 import edu.cmu.sei.eebm.eEBM.Reference;
+import edu.cmu.sei.eebm.eEBM.Softgoal;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -17,19 +17,19 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Goal</b></em>'.
+ * An implementation of the model object '<em><b>Softgoal</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl#getRationale <em>Rationale</em>}</li>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.GoalImpl#getRef <em>Ref</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.SoftgoalImpl#getRationale <em>Rationale</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.SoftgoalImpl#getRef <em>Ref</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class GoalImpl extends IntentionalElementImpl implements Goal
+public class SoftgoalImpl extends IntentionalElementImpl implements Softgoal
 {
   /**
    * The cached value of the '{@link #getRationale() <em>Rationale</em>}' containment reference.
@@ -56,7 +56,7 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
    * <!-- end-user-doc -->
    * @generated
    */
-  protected GoalImpl()
+  protected SoftgoalImpl()
   {
     super();
   }
@@ -69,7 +69,7 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
   @Override
   protected EClass eStaticClass()
   {
-    return EEBMPackage.Literals.GOAL;
+    return EEBMPackage.Literals.SOFTGOAL;
   }
 
   /**
@@ -93,7 +93,7 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
     rationale = newRationale;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.GOAL__RATIONALE, oldRationale, newRationale);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.SOFTGOAL__RATIONALE, oldRationale, newRationale);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -110,14 +110,14 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
     {
       NotificationChain msgs = null;
       if (rationale != null)
-        msgs = ((InternalEObject)rationale).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.GOAL__RATIONALE, null, msgs);
+        msgs = ((InternalEObject)rationale).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.SOFTGOAL__RATIONALE, null, msgs);
       if (newRationale != null)
-        msgs = ((InternalEObject)newRationale).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.GOAL__RATIONALE, null, msgs);
+        msgs = ((InternalEObject)newRationale).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.SOFTGOAL__RATIONALE, null, msgs);
       msgs = basicSetRationale(newRationale, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.GOAL__RATIONALE, newRationale, newRationale));
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.SOFTGOAL__RATIONALE, newRationale, newRationale));
   }
 
   /**
@@ -141,7 +141,7 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
     ref = newRef;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.GOAL__REF, oldRef, newRef);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EEBMPackage.SOFTGOAL__REF, oldRef, newRef);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -158,14 +158,14 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
     {
       NotificationChain msgs = null;
       if (ref != null)
-        msgs = ((InternalEObject)ref).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.GOAL__REF, null, msgs);
+        msgs = ((InternalEObject)ref).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.SOFTGOAL__REF, null, msgs);
       if (newRef != null)
-        msgs = ((InternalEObject)newRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.GOAL__REF, null, msgs);
+        msgs = ((InternalEObject)newRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EEBMPackage.SOFTGOAL__REF, null, msgs);
       msgs = basicSetRef(newRef, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.GOAL__REF, newRef, newRef));
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.SOFTGOAL__REF, newRef, newRef));
   }
 
   /**
@@ -178,9 +178,9 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
   {
     switch (featureID)
     {
-      case EEBMPackage.GOAL__RATIONALE:
+      case EEBMPackage.SOFTGOAL__RATIONALE:
         return basicSetRationale(null, msgs);
-      case EEBMPackage.GOAL__REF:
+      case EEBMPackage.SOFTGOAL__REF:
         return basicSetRef(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -196,9 +196,9 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
   {
     switch (featureID)
     {
-      case EEBMPackage.GOAL__RATIONALE:
+      case EEBMPackage.SOFTGOAL__RATIONALE:
         return getRationale();
-      case EEBMPackage.GOAL__REF:
+      case EEBMPackage.SOFTGOAL__REF:
         return getRef();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -214,10 +214,10 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
   {
     switch (featureID)
     {
-      case EEBMPackage.GOAL__RATIONALE:
+      case EEBMPackage.SOFTGOAL__RATIONALE:
         setRationale((Rationale)newValue);
         return;
-      case EEBMPackage.GOAL__REF:
+      case EEBMPackage.SOFTGOAL__REF:
         setRef((Reference)newValue);
         return;
     }
@@ -234,10 +234,10 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
   {
     switch (featureID)
     {
-      case EEBMPackage.GOAL__RATIONALE:
+      case EEBMPackage.SOFTGOAL__RATIONALE:
         setRationale((Rationale)null);
         return;
-      case EEBMPackage.GOAL__REF:
+      case EEBMPackage.SOFTGOAL__REF:
         setRef((Reference)null);
         return;
     }
@@ -254,12 +254,12 @@ public class GoalImpl extends IntentionalElementImpl implements Goal
   {
     switch (featureID)
     {
-      case EEBMPackage.GOAL__RATIONALE:
+      case EEBMPackage.SOFTGOAL__RATIONALE:
         return rationale != null;
-      case EEBMPackage.GOAL__REF:
+      case EEBMPackage.SOFTGOAL__REF:
         return ref != null;
     }
     return super.eIsSet(featureID);
   }
 
-} //GoalImpl
+} //SoftgoalImpl

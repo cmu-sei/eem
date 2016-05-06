@@ -5,6 +5,7 @@ package edu.cmu.sei.eebm.eEBM.impl;
 import edu.cmu.sei.eebm.eEBM.Description;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 import edu.cmu.sei.eebm.eEBM.IntentionalElement;
+import edu.cmu.sei.eebm.eEBM.PriorityEnum;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -26,6 +27,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getName <em>Name</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getTitle <em>Title</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getPriority <em>Priority</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getTime <em>Time</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getCost <em>Cost</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getBenefit <em>Benefit</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getDate <em>Date</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.IntentionalElementImpl#getCod <em>Cod</em>}</li>
  * </ul>
  *
  * @generated
@@ -81,6 +88,126 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
    * @ordered
    */
   protected Description description;
+
+  /**
+   * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPriority()
+   * @generated
+   * @ordered
+   */
+  protected static final PriorityEnum PRIORITY_EDEFAULT = PriorityEnum.HIGH;
+
+  /**
+   * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPriority()
+   * @generated
+   * @ordered
+   */
+  protected PriorityEnum priority = PRIORITY_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getTime() <em>Time</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTime()
+   * @generated
+   * @ordered
+   */
+  protected static final int TIME_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getTime() <em>Time</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTime()
+   * @generated
+   * @ordered
+   */
+  protected int time = TIME_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getCost() <em>Cost</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCost()
+   * @generated
+   * @ordered
+   */
+  protected static final int COST_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getCost() <em>Cost</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCost()
+   * @generated
+   * @ordered
+   */
+  protected int cost = COST_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getBenefit() <em>Benefit</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getBenefit()
+   * @generated
+   * @ordered
+   */
+  protected static final int BENEFIT_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getBenefit() <em>Benefit</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getBenefit()
+   * @generated
+   * @ordered
+   */
+  protected int benefit = BENEFIT_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getDate() <em>Date</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDate()
+   * @generated
+   * @ordered
+   */
+  protected static final String DATE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getDate() <em>Date</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getDate()
+   * @generated
+   * @ordered
+   */
+  protected String date = DATE_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getCod() <em>Cod</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCod()
+   * @generated
+   * @ordered
+   */
+  protected static final int COD_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getCod() <em>Cod</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getCod()
+   * @generated
+   * @ordered
+   */
+  protected int cod = COD_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -202,6 +329,144 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
    * <!-- end-user-doc -->
    * @generated
    */
+  public PriorityEnum getPriority()
+  {
+    return priority;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setPriority(PriorityEnum newPriority)
+  {
+    PriorityEnum oldPriority = priority;
+    priority = newPriority == null ? PRIORITY_EDEFAULT : newPriority;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.INTENTIONAL_ELEMENT__PRIORITY, oldPriority, priority));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public int getTime()
+  {
+    return time;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setTime(int newTime)
+  {
+    int oldTime = time;
+    time = newTime;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.INTENTIONAL_ELEMENT__TIME, oldTime, time));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public int getCost()
+  {
+    return cost;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setCost(int newCost)
+  {
+    int oldCost = cost;
+    cost = newCost;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.INTENTIONAL_ELEMENT__COST, oldCost, cost));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public int getBenefit()
+  {
+    return benefit;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setBenefit(int newBenefit)
+  {
+    int oldBenefit = benefit;
+    benefit = newBenefit;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.INTENTIONAL_ELEMENT__BENEFIT, oldBenefit, benefit));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getDate()
+  {
+    return date;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setDate(String newDate)
+  {
+    String oldDate = date;
+    date = newDate;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.INTENTIONAL_ELEMENT__DATE, oldDate, date));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public int getCod()
+  {
+    return cod;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setCod(int newCod)
+  {
+    int oldCod = cod;
+    cod = newCod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.INTENTIONAL_ELEMENT__COD, oldCod, cod));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -229,6 +494,18 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
         return getTitle();
       case EEBMPackage.INTENTIONAL_ELEMENT__DESCRIPTION:
         return getDescription();
+      case EEBMPackage.INTENTIONAL_ELEMENT__PRIORITY:
+        return getPriority();
+      case EEBMPackage.INTENTIONAL_ELEMENT__TIME:
+        return getTime();
+      case EEBMPackage.INTENTIONAL_ELEMENT__COST:
+        return getCost();
+      case EEBMPackage.INTENTIONAL_ELEMENT__BENEFIT:
+        return getBenefit();
+      case EEBMPackage.INTENTIONAL_ELEMENT__DATE:
+        return getDate();
+      case EEBMPackage.INTENTIONAL_ELEMENT__COD:
+        return getCod();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -251,6 +528,24 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
         return;
       case EEBMPackage.INTENTIONAL_ELEMENT__DESCRIPTION:
         setDescription((Description)newValue);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__PRIORITY:
+        setPriority((PriorityEnum)newValue);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__TIME:
+        setTime((Integer)newValue);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__COST:
+        setCost((Integer)newValue);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__BENEFIT:
+        setBenefit((Integer)newValue);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__DATE:
+        setDate((String)newValue);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__COD:
+        setCod((Integer)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -275,6 +570,24 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
       case EEBMPackage.INTENTIONAL_ELEMENT__DESCRIPTION:
         setDescription((Description)null);
         return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__PRIORITY:
+        setPriority(PRIORITY_EDEFAULT);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__TIME:
+        setTime(TIME_EDEFAULT);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__COST:
+        setCost(COST_EDEFAULT);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__BENEFIT:
+        setBenefit(BENEFIT_EDEFAULT);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__DATE:
+        setDate(DATE_EDEFAULT);
+        return;
+      case EEBMPackage.INTENTIONAL_ELEMENT__COD:
+        setCod(COD_EDEFAULT);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -295,6 +608,18 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
         return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
       case EEBMPackage.INTENTIONAL_ELEMENT__DESCRIPTION:
         return description != null;
+      case EEBMPackage.INTENTIONAL_ELEMENT__PRIORITY:
+        return priority != PRIORITY_EDEFAULT;
+      case EEBMPackage.INTENTIONAL_ELEMENT__TIME:
+        return time != TIME_EDEFAULT;
+      case EEBMPackage.INTENTIONAL_ELEMENT__COST:
+        return cost != COST_EDEFAULT;
+      case EEBMPackage.INTENTIONAL_ELEMENT__BENEFIT:
+        return benefit != BENEFIT_EDEFAULT;
+      case EEBMPackage.INTENTIONAL_ELEMENT__DATE:
+        return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
+      case EEBMPackage.INTENTIONAL_ELEMENT__COD:
+        return cod != COD_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -314,6 +639,18 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
     result.append(name);
     result.append(", title: ");
     result.append(title);
+    result.append(", priority: ");
+    result.append(priority);
+    result.append(", time: ");
+    result.append(time);
+    result.append(", cost: ");
+    result.append(cost);
+    result.append(", benefit: ");
+    result.append(benefit);
+    result.append(", date: ");
+    result.append(date);
+    result.append(", cod: ");
+    result.append(cod);
     result.append(')');
     return result.toString();
   }

@@ -3,22 +3,14 @@
 package edu.cmu.sei.eebm.eEBM.impl;
 
 import edu.cmu.sei.eebm.eEBM.Description;
-import edu.cmu.sei.eebm.eEBM.DescriptionElement;
 import edu.cmu.sei.eebm.eEBM.EEBMPackage;
 
-import java.util.Collection;
-
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +20,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.DescriptionImpl#getText <em>Text</em>}</li>
  * </ul>
  *
  * @generated
@@ -36,14 +28,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class DescriptionImpl extends MinimalEObjectImpl.Container implements Description
 {
   /**
-   * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference list.
+   * The default value of the '{@link #getText() <em>Text</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDescription()
+   * @see #getText()
    * @generated
    * @ordered
    */
-  protected EList<DescriptionElement> description;
+  protected static final String TEXT_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getText()
+   * @generated
+   * @ordered
+   */
+  protected String text = TEXT_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -71,13 +73,9 @@ public class DescriptionImpl extends MinimalEObjectImpl.Container implements Des
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<DescriptionElement> getDescription()
+  public String getText()
   {
-    if (description == null)
-    {
-      description = new EObjectContainmentEList<DescriptionElement>(DescriptionElement.class, this, EEBMPackage.DESCRIPTION__DESCRIPTION);
-    }
-    return description;
+    return text;
   }
 
   /**
@@ -85,15 +83,12 @@ public class DescriptionImpl extends MinimalEObjectImpl.Container implements Des
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
-  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  public void setText(String newText)
   {
-    switch (featureID)
-    {
-      case EEBMPackage.DESCRIPTION__DESCRIPTION:
-        return ((InternalEList<?>)getDescription()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
+    String oldText = text;
+    text = newText;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.DESCRIPTION__TEXT, oldText, text));
   }
 
   /**
@@ -106,8 +101,8 @@ public class DescriptionImpl extends MinimalEObjectImpl.Container implements Des
   {
     switch (featureID)
     {
-      case EEBMPackage.DESCRIPTION__DESCRIPTION:
-        return getDescription();
+      case EEBMPackage.DESCRIPTION__TEXT:
+        return getText();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -117,15 +112,13 @@ public class DescriptionImpl extends MinimalEObjectImpl.Container implements Des
    * <!-- end-user-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case EEBMPackage.DESCRIPTION__DESCRIPTION:
-        getDescription().clear();
-        getDescription().addAll((Collection<? extends DescriptionElement>)newValue);
+      case EEBMPackage.DESCRIPTION__TEXT:
+        setText((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +134,8 @@ public class DescriptionImpl extends MinimalEObjectImpl.Container implements Des
   {
     switch (featureID)
     {
-      case EEBMPackage.DESCRIPTION__DESCRIPTION:
-        getDescription().clear();
+      case EEBMPackage.DESCRIPTION__TEXT:
+        setText(TEXT_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -158,10 +151,27 @@ public class DescriptionImpl extends MinimalEObjectImpl.Container implements Des
   {
     switch (featureID)
     {
-      case EEBMPackage.DESCRIPTION__DESCRIPTION:
-        return description != null && !description.isEmpty();
+      case EEBMPackage.DESCRIPTION__TEXT:
+        return TEXT_EDEFAULT == null ? text != null : !TEXT_EDEFAULT.equals(text);
     }
     return super.eIsSet(featureID);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String toString()
+  {
+    if (eIsProxy()) return super.toString();
+
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (text: ");
+    result.append(text);
+    result.append(')');
+    return result.toString();
   }
 
 } //DescriptionImpl
