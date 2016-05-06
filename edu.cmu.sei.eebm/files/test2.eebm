@@ -1,6 +1,8 @@
 //dramatically simpler working example of metamodel
 //essentially mimic what Neil sent to George for AOWS model
 
+Roadmap "r1"
+
 Goal hp : 'high performance' [
 	description "a Description"
 ]
@@ -11,32 +13,42 @@ Softgoal qfd: 'Quick Feature Delivery' [
 	
 Goal opt : 'use Oracle' [
 		priority HIGH
-		refines hp
 ]
 
-//the Techne version of this would say that X -> Y is all you need, so 
-//"AND" is expressible by saying X ^ Y -> Z, rather than (AND X Y Z) i.e. encoding the relationshop itself.
-//But that is complex to represent here because now X refines Z is incorrect; you need to say X ^
-// reified OR/AND links from http://cserg.site.uottawa.ca/ucm/pub/UCM/VirLibRIGiM09/RIGIM09-AmyotEtAl.pdf
-//Or is many-1
-Or e1 [
-	target hp
-	source [opt, opt2] // i.e. Opt1 || Opt2
-]
 
-//Conflict is 1-1
-Conflict e2 [
-	target n1
-	source n3
-]
-
-And e3 [
-	target n4
-	source [n5,n6] //i.e. n5 && n6
-	
 Goal opt2 : 'use IBM' [
 		priority HIGH
 		cost 14
 		completion '5/11/2015'
+]
+
+Goal n1 : "Boaty mcBoatface" []
+
+Task n2 []
+Task n3 []
+Task n4 []
+Task n5 []
+Task n6 []
+
+//the Techne version of this would say that X -> Y is all you need, so 
+//"AND" is expressible by saying X ^ Y -> Z, rather 	than (AND X Y Z) i.e. encoding the relationshop itself.
+//But that is complex to represent here because now X refines Z is incorrect; you need to say X ^
+// reified OR/AND links from http://cserg.site.uottawa.ca/ucm/pub/UCM/VirLibRIGiM09/RIGIM09-AmyotEtAl.pdf
+//Or is many-1
+Or e1 [
+	dest hp
+		source [opt, opt2] // i.e. Opt1 || Opt2
+	
+]
+
+//Conflict is 1-1
+Conflict e2 [
+	dest n1
+	source n3
+]
+
+And e3 [
+	source [ n5,n6 ]//i.e. n5 && n6
+	dest n4
 ]
 
