@@ -12,4 +12,5 @@ public class EEBMUiModule extends edu.cmu.sei.eebm.ui.AbstractEEBMUiModule {
 	public EEBMUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
 	}
+
 }

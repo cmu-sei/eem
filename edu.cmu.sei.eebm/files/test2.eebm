@@ -1,6 +1,3 @@
-//dramatically simpler working example of metamodel
-//essentially mimic what Neil sent to George for AOWS model
-
 Roadmap "r1"
 
 Goal hp : 'high performance' [
@@ -52,3 +49,5 @@ And e3 [
 	dest n4
 ]
 
+//dramatically simpler working example of metamodel
+//essentially mimic what Neil sent to George for AOWS model
