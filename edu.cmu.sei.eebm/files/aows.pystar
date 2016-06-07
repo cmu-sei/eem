@@ -1,0 +1,342 @@
+n11 = N + Softgoal(
+	"Easily Share Data W/ Partners"
+)
+n12 = N + Softgoal(
+	"Easily Share Data Internally"
+)
+n13 = N + Softgoal(
+	"Good example of Agile Government development"
+)
+n51 = N + Softgoal(
+	"Quick Feature Delivery"
+)
+n49 = N + Domain-Assumption(
+	"Documentation Tool"
+)
+n2 = N + Task(
+	"Choose Candidate System"
+)
+n14 = N + Task(
+	"Access Control Pilot"
+)
+n15 = N + Task(
+	"Access Control Assessed"
+)
+n16 = N + Task(
+	"Monitoring Pilot"
+)
+n17 = N + Task(
+	"J2EE Specification"
+)
+n18 = N + Task(
+	"Data Service Pilot"
+)
+n19 = N + Task(
+	"Data Service Spec"
+)
+n20 = N + Task(
+	"Data Model Pilot"
+)
+n21 = N + Task(
+	"Bakeoff Result"
+)
+n22 = N + Task(
+	"General Test Env"
+)
+n23 = N + Task(
+	"DB Vendor Test Env"
+)
+n24 = N + Task(
+	"Create Test Environment"
+)
+n50 = N + Task(
+	"Choose Doc Tool"
+)
+n0 = N + Goal(
+	"Svc layer w/ extracted biz logic (13)"
+	cost = 5
+	benefit = 3
+)
+n1 = N + Goal(
+	"Svc layer w/ existing biz logic in DB (12)"
+	cost = 3
+	benefit = 5
+)
+n3 = N + Goal(
+	"XXX coordinates and external client does whatever (20)"
+	cost = 5
+	benefit = 3
+)
+n4 = N + Goal(
+	"XXX coordinates and internal client does whatever (17)"
+	cost = 3
+	benefit = 3
+)
+n5 = N + Goal(
+	"External clients get exactly what they request (10)"
+	cost = 4
+	benefit = 3
+)
+n6 = N + Goal(
+	"External data model can be extended (19)"
+	cost = 4
+	benefit = 5
+)
+n7 = N + Goal(
+	"Build internal extensible data model (16)"
+	cost = 2
+	benefit = 3
+)
+n8 = N + Goal(
+	"Define ext. mandatory data std (18)"
+	cost = 3
+	benefit = 5
+)
+n9 = N + Goal(
+	"Define data model for all shared data (15)"
+	cost = 3
+	benefit = 3
+)
+n10 = N + Goal(
+	"Provide logical data schema internally (8)"
+	cost = 3
+	benefit = 3
+)
+n25 = N + Goal(
+	"Monitor (11)"
+	cost = 1
+	benefit = 5
+)
+n26 = N + Goal(
+	"App Framework (6)"
+	cost = 5
+	benefit = 5
+)
+n27 = N + Goal(
+	"Specific Data Model (10/17/20)"
+	cost = 
+	benefit = 
+)
+n28 = N + Goal(
+	"Extensible Data Model (16/19)"
+	cost = 
+	benefit = 
+)
+n29 = N + Goal(
+	"Comprehensive Data Model"
+	cost = 
+	benefit = 
+)
+n30 = N + Goal(
+	"Data Service (7)"
+	cost = 3
+	benefit = 5
+)
+n31 = N + Goal(
+	"Monitor"
+)
+n32 = N + Goal(
+	"App Framework"
+)
+n33 = N + Goal(
+	"Data Model"
+)
+n34 = N + Goal(
+	"Data Service"
+)
+n35 = N + Goal(
+	"PnP Framework (2)"
+	cost = 5
+	benefit = 5
+)
+n36 = N + Goal(
+	"New Database (14)"
+	cost = 6
+	benefit = 5
+)
+n37 = N + Goal(
+	"Layer Sequence"
+)
+n38 = N + Goal(
+	"Tiers w/ Service "
+	cost = 
+	benefit = 
+)
+n39 = N + Goal(
+	"3 Tier (5)"
+	cost = 5
+	benefit = 5
+)
+n40 = N + Goal(
+	"2 Tier (4)"
+	cost = 5
+	benefit = 5
+)
+n41 = N + Goal(
+	"Service Layer"
+	cost = 
+	benefit = 
+)
+n42 = N + Goal(
+	"Number Tiers"
+	cost = 
+	benefit = 
+)
+n43 = N + Goal(
+	"Modernize"
+)
+n44 = N + Goal(
+	"Existing Apps"
+)
+n45 = N + Goal(
+	"Support"
+)
+n46 = N + Goal(
+	"Incremental Rewrite"
+)
+n47 = N + Goal(
+	"Big Bang Rewrite"
+)
+n48 = N + Goal(
+	"Regression Test (3)"
+	cost = 3
+	benefit = 5
+)
+n52 = N + Goal(
+	"Documentation (1)"
+	cost = 3
+	benefit = 5
+)
+e1 = E + And(
+	target=n2,
+	source=[n21]
+)
+
+e2 = E + And(
+	target=n7,
+	source=[n20]
+)
+
+e3 = E + And(
+	target=n11,
+	source=[n34]
+)
+
+e4 = E + And(
+	target=n12,
+	source=[n44, n34, n33]
+)
+
+e5 = E + And(
+	target=n13,
+	source=[n11, n51]
+)
+
+e6 = E + And(
+	target=n24,
+	source=[n22, n23]
+)
+
+e7 = E + And(
+	target=n25,
+	source=[n16, n14, n15]
+)
+
+e8 = E + And(
+	target=n26,
+	source=[n17]
+)
+
+e9 = E + And(
+	target=n27,
+	source=[n5, n4, n3]
+)
+
+e10 = E + And(
+	target=n28,
+	source=[n7, n6]
+)
+
+e11 = E + And(
+	target=n29,
+	source=[n10, n9, n8]
+)
+
+e12 = E + And(
+	target=n30,
+	source=[n18, n19]
+)e13 = E + And(
+	target=n31,
+	source=[n25]
+)
+
+e14 = E + And(
+	target=n32,
+	source=[n26]
+)
+
+e15 = E + And(
+	target=n33,
+	source=[n27, n28, n29]
+)e16 = E + And(
+	target=n34,
+	source=[n30]
+)
+
+e17 = E + And(
+	target=n37,
+	source=[n36, n35]
+)e18 = E + And(
+	target=n38,
+	source=[n0, n1]
+)e19 = E + And(
+	target=n41,
+	source=[n38]
+)
+
+e20 = E + And(
+	target=n42,
+	source=[n39, n40]
+)e21 = E + And(
+	target=n43,
+	source=[n46, n47]
+)e22 = E + And(
+	target=n44,
+	source=[n2, n42]
+)
+
+e23 = E + And(
+	target=n45,
+	source=[n48, n52]
+)
+
+e24 = E + And(
+	target=n46,
+	source=[n31, n32, n33, n34, n44, n45]
+)
+
+e25 = E + And(
+	target=n47,
+	source=[n37]
+)
+
+e26 = E + And(
+	target=n48,
+	source=[n24]
+)
+
+e27 = E + And(
+	target=n50,
+	source=[n49]
+)
+
+e28 = E + And(
+	target=n51,
+	source=[n32, n45]
+)
+
+e29 = E + And(
+	target=n52,
+	source=[n50]
+)
+
