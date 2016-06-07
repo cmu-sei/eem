@@ -6,6 +6,7 @@ package edu.cmu.sei.eebm.generator
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess
+import edu.cmu.sei.eebm.eEBM.IntentionalElement
 
 /**
  * Generates code from your model files on save.
@@ -15,10 +16,10 @@ import org.eclipse.xtext.generator.IFileSystemAccess
 class EEBMGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-//		fsa.generateFile('greetings.txt', 'People to greet: ' + 
-//			resource.allContents
-//				.filter(typeof(Greeting))
-//				.map[name]
-//				.join(', '))
+		fsa.generateFile('test.pystar',  '''
+			«FOR ielement : resource.allContents.filter(IntentionalElement).toIterable»
+			Goal «ielement.name»
+            «ENDFOR»
+		''')
 	}
 }

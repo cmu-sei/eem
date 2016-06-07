@@ -3,9 +3,16 @@
  */
 package edu.cmu.sei.eebm.generator;
 
+import com.google.common.collect.Iterators;
+import edu.cmu.sei.eebm.eEBM.IntentionalElement;
+import java.util.Iterator;
+import org.eclipse.emf.common.util.TreeIterator;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
+import org.eclipse.xtext.xbase.lib.IteratorExtensions;
 
 /**
  * Generates code from your model files on save.
@@ -16,5 +23,18 @@ import org.eclipse.xtext.generator.IGenerator;
 public class EEBMGenerator implements IGenerator {
   @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
+    StringConcatenation _builder = new StringConcatenation();
+    {
+      TreeIterator<EObject> _allContents = resource.getAllContents();
+      Iterator<IntentionalElement> _filter = Iterators.<IntentionalElement>filter(_allContents, IntentionalElement.class);
+      Iterable<IntentionalElement> _iterable = IteratorExtensions.<IntentionalElement>toIterable(_filter);
+      for(final IntentionalElement ielement : _iterable) {
+        _builder.append("Goal ");
+        String _name = ielement.getName();
+        _builder.append(_name, "");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    fsa.generateFile("test.pystar", _builder);
   }
 }
