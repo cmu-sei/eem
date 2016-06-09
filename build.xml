@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project edu.cmu.sei.eebm with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
+    <!--ANT 1.7 is required-->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="/Users/nernst/Documents/workspaces/workspace-mars"/>
+    <property name="dir.jarfile" value="${dir.workspace}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.workspace}/eebm-compiler.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="edu.cmu.sei.eebm.generator.Main"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ org.eclipse.xtext_2.8.4.v201508050135.jar org.eclipse.emf.ecore.xmi_2.11.1.v20150805-0538.jar org.eclipse.emf.ecore_2.11.1.v20150805-0538.jar org.eclipse.emf.common_2.11.0.v20150805-0538.jar org.antlr.runtime_3.2.0.v201101311130.jar com.google.inject_3.0.0.v201312141243.jar org.eclipse.emf.mwe.core_1.3.11.v201508030321.jar org.apache.commons.cli_1.2.0.v201404270220.jar org.eclipse.emf.mwe2.runtime_2.8.1.v201508030321.jar org.eclipse.emf.mwe.utils_1.3.11.v201508030321.jar org.eclipse.xtext.util_2.8.4.v201508050135.jar com.google.guava_15.0.0.v201403281430.jar javax.inject_1.0.0.v20091030.jar org.eclipse.equinox.common_3.7.0.v20150402-1709.jar org.eclipse.xtext.xbase.lib_2.8.4.v201508050135.jar org.eclipse.xtext.common.types_2.8.4.v201508050135.jar org.objectweb.asm_5.0.1.v201404251740.jar org.eclipse.xtext.xbase_2.8.4.v201508050135.jar org.eclipse.xtend.lib_2.8.4.v201508050135.jar org.eclipse.xtend.lib.macro_2.8.4.v201508050135.jar org.eclipse.xtext.generator_2.8.4.v201508050135.jar org.eclipse.xtend_2.1.0.v201505260349.jar com.ibm.icu_54.1.1.v201501272100.jar org.eclipse.xpand_2.1.0.v201505260349.jar org.eclipse.xtend.typesystem.emf_2.1.0.v201505260349.jar org.eclipse.emf.codegen.ecore_2.11.0.v20150806-0404.jar org.eclipse.emf.codegen_2.11.0.v20150806-0404.jar org.eclipse.emf.mwe2.lib_2.8.1.v201508030321.jar org.apache.commons.logging_1.1.1.v201101211721.jar org.eclipse.emf.mwe2.launch_2.8.1.v201508030411.jar org.eclipse.emf.mwe2.language_2.8.1.v201508030411.jar org.apache.log4j_1.2.15.v201012070815.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.buildfile}/edu.cmu.sei.eebm/bin"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtext_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.ecore.xmi_2.11.1.v20150805-0538.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.ecore_2.11.1.v20150805-0538.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.common_2.11.0.v20150805-0538.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.antlr.runtime_3.2.0.v201101311130.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="com.google.inject_3.0.0.v201312141243.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.mwe.core_1.3.11.v201508030321.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.apache.commons.cli_1.2.0.v201404270220.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.mwe2.runtime_2.8.1.v201508030321.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.mwe.utils_1.3.11.v201508030321.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtext.util_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="com.google.guava_15.0.0.v201403281430.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="javax.inject_1.0.0.v20091030.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.equinox.common_3.7.0.v20150402-1709.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtext.xbase.lib_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtext.common.types_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.objectweb.asm_5.0.1.v201404251740.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtext.xbase_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtend.lib_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtend.lib.macro_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtext.generator_2.8.4.v201508050135.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtend_2.1.0.v201505260349.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="com.ibm.icu_54.1.1.v201501272100.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xpand_2.1.0.v201505260349.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.xtend.typesystem.emf_2.1.0.v201505260349.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.codegen.ecore_2.11.0.v20150806-0404.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.codegen_2.11.0.v20150806-0404.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.mwe2.lib_2.8.1.v201508030321.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.mwe2.launch_2.8.1.v201508030411.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.eclipse.emf.mwe2.language_2.8.1.v201508030411.jar"/>
+            <zipfileset dir="/Applications/Eclipse.app/Contents/Eclipse/plugins" includes="org.apache.log4j_1.2.15.v201012070815.jar"/>
+        </jar>
+    </target>
+</project>
