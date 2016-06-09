@@ -8,9 +8,10 @@
   <genPackages prefix="EEBM" basePackage="edu.cmu.sei.eebm" disposableProviderFactory="true"
       fileExtensions="eebm" ecorePackage="EEBM.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="EEBM.ecore#//PriorityEnum">
-      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/HIGH"/>
-      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/MED"/>
+      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/NA"/>
       <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/LOW"/>
+      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/MED"/>
+      <genEnumLiterals ecoreEnumLiteral="EEBM.ecore#//PriorityEnum/HIGH"/>
     </genEnums>
     <genClasses ecoreClass="EEBM.ecore#//Roadmap">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Roadmap/name"/>

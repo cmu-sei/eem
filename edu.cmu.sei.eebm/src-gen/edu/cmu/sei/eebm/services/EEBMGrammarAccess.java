@@ -32,9 +32,6 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cRelationsRefinementParserRuleCall_2_0_0 = (RuleCall)cRelationsAlternatives_2_0.eContents().get(0);
 		private final RuleCall cRelationsConflictParserRuleCall_2_0_1 = (RuleCall)cRelationsAlternatives_2_0.eContents().get(1);
 		
-		////import "http://www.eclipse.org/emf/2002/Ecore" as ecore
-		////import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
-		////import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 		//Roadmap:
 		//	(name="Roadmap" STRING)? components+=IntentionalElement* relations+=(Refinement | Conflict)*;
 		@Override public ParserRule getRule() { return rule; }
@@ -1076,37 +1073,46 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	public class PriorityEnumElements extends AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "PriorityEnum");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final EnumLiteralDeclaration cHIGHEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
-		private final Keyword cHIGHHIGHKeyword_0_0 = (Keyword)cHIGHEnumLiteralDeclaration_0.eContents().get(0);
-		private final EnumLiteralDeclaration cMEDEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
-		private final Keyword cMEDMEDKeyword_1_0 = (Keyword)cMEDEnumLiteralDeclaration_1.eContents().get(0);
-		private final EnumLiteralDeclaration cLOWEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
-		private final Keyword cLOWLOWKeyword_2_0 = (Keyword)cLOWEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cNAEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cNANAKeyword_0_0 = (Keyword)cNAEnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cLOWEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cLOWLOWKeyword_1_0 = (Keyword)cLOWEnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cMEDEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cMEDMEDKeyword_2_0 = (Keyword)cMEDEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cHIGHEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
+		private final Keyword cHIGHHIGHKeyword_3_0 = (Keyword)cHIGHEnumLiteralDeclaration_3.eContents().get(0);
 		
+		////turns out the 'default' is the first one. 
 		//enum PriorityEnum:
-		//	HIGH | MED | LOW;
+		//	NA | LOW | MED | HIGH;
 		public EnumRule getRule() { return rule; }
 
-		//HIGH | MED | LOW
+		//NA | LOW | MED | HIGH
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//HIGH
-		public EnumLiteralDeclaration getHIGHEnumLiteralDeclaration_0() { return cHIGHEnumLiteralDeclaration_0; }
+		//NA
+		public EnumLiteralDeclaration getNAEnumLiteralDeclaration_0() { return cNAEnumLiteralDeclaration_0; }
 
-		//"HIGH"
-		public Keyword getHIGHHIGHKeyword_0_0() { return cHIGHHIGHKeyword_0_0; }
-
-		//MED
-		public EnumLiteralDeclaration getMEDEnumLiteralDeclaration_1() { return cMEDEnumLiteralDeclaration_1; }
-
-		//"MED"
-		public Keyword getMEDMEDKeyword_1_0() { return cMEDMEDKeyword_1_0; }
+		//"NA"
+		public Keyword getNANAKeyword_0_0() { return cNANAKeyword_0_0; }
 
 		//LOW
-		public EnumLiteralDeclaration getLOWEnumLiteralDeclaration_2() { return cLOWEnumLiteralDeclaration_2; }
+		public EnumLiteralDeclaration getLOWEnumLiteralDeclaration_1() { return cLOWEnumLiteralDeclaration_1; }
 
 		//"LOW"
-		public Keyword getLOWLOWKeyword_2_0() { return cLOWLOWKeyword_2_0; }
+		public Keyword getLOWLOWKeyword_1_0() { return cLOWLOWKeyword_1_0; }
+
+		//MED
+		public EnumLiteralDeclaration getMEDEnumLiteralDeclaration_2() { return cMEDEnumLiteralDeclaration_2; }
+
+		//"MED"
+		public Keyword getMEDMEDKeyword_2_0() { return cMEDMEDKeyword_2_0; }
+
+		//HIGH
+		public EnumLiteralDeclaration getHIGHEnumLiteralDeclaration_3() { return cHIGHEnumLiteralDeclaration_3; }
+
+		//"HIGH"
+		public Keyword getHIGHHIGHKeyword_3_0() { return cHIGHHIGHKeyword_3_0; }
 	}
 	
 	private final RoadmapElements pRoadmap;
@@ -1176,9 +1182,6 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	////import "http://www.eclipse.org/emf/2002/Ecore" as ecore
-	////import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
-	////import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
 	//Roadmap:
 	//	(name="Roadmap" STRING)? components+=IntentionalElement* relations+=(Refinement | Conflict)*;
 	public RoadmapElements getRoadmapAccess() {
@@ -1320,8 +1323,9 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		return getReferenceAccess().getRule();
 	}
 
+	////turns out the 'default' is the first one. 
 	//enum PriorityEnum:
-	//	HIGH | MED | LOW;
+	//	NA | LOW | MED | HIGH;
 	public PriorityEnumElements getPriorityEnumAccess() {
 		return unknownRulePriorityEnum;
 	}

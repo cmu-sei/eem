@@ -2026,22 +2026,28 @@ ruleReference returns [EObject current=null]
 rulePriorityEnum returns [Enumerator current=null] 
     @init { enterRule(); }
     @after { leaveRule(); }:
-((	enumLiteral_0='HIGH' 
+((	enumLiteral_0='NA' 
 	{
-        $current = grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
-        newLeafNode(enumLiteral_0, grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_0()); 
+        $current = grammarAccess.getPriorityEnumAccess().getNAEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_0, grammarAccess.getPriorityEnumAccess().getNAEnumLiteralDeclaration_0()); 
     }
 )
-    |(	enumLiteral_1='MED' 
+    |(	enumLiteral_1='LOW' 
 	{
-        $current = grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
-        newLeafNode(enumLiteral_1, grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_1()); 
+        $current = grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_1, grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_1()); 
     }
 )
-    |(	enumLiteral_2='LOW' 
+    |(	enumLiteral_2='MED' 
 	{
-        $current = grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
-        newLeafNode(enumLiteral_2, grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_2()); 
+        $current = grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_2, grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_2()); 
+    }
+)
+    |(	enumLiteral_3='HIGH' 
+	{
+        $current = grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_3, grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_3()); 
     }
 ));
 

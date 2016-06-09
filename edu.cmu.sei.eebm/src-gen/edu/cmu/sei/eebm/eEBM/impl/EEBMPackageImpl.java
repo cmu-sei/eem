@@ -796,9 +796,10 @@ public class EEBMPackageImpl extends EPackageImpl implements EEBMPackage
 
     // Initialize enums and add enum literals
     initEEnum(priorityEnumEEnum, PriorityEnum.class, "PriorityEnum");
-    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.HIGH);
-    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.MED);
+    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.NA);
     addEEnumLiteral(priorityEnumEEnum, PriorityEnum.LOW);
+    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.MED);
+    addEEnumLiteral(priorityEnumEEnum, PriorityEnum.HIGH);
 
     // Create resource
     createResource(eNS_URI);

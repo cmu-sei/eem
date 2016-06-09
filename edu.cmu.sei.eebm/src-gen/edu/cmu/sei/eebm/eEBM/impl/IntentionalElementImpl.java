@@ -97,7 +97,7 @@ public class IntentionalElementImpl extends MinimalEObjectImpl.Container impleme
    * @generated
    * @ordered
    */
-  protected static final PriorityEnum PRIORITY_EDEFAULT = PriorityEnum.HIGH;
+  protected static final PriorityEnum PRIORITY_EDEFAULT = PriorityEnum.NA;
 
   /**
    * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.

@@ -61,9 +61,10 @@
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PriorityEnum">
-    <eLiterals name="HIGH" literal="HIGH"/>
-    <eLiterals name="MED" value="1" literal="MED"/>
-    <eLiterals name="LOW" value="2" literal="LOW"/>
+    <eLiterals name="NA" literal="NA"/>
+    <eLiterals name="LOW" value="1" literal="LOW"/>
+    <eLiterals name="MED" value="2" literal="MED"/>
+    <eLiterals name="HIGH" value="3" literal="HIGH"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Preference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="first" eType="#//IntentionalElement"/>

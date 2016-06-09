@@ -492,24 +492,31 @@ rule__PriorityEnum__Alternatives
     }
 :
 (
-{ before(grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_0()); }
-(	'HIGH' 
+{ before(grammarAccess.getPriorityEnumAccess().getNAEnumLiteralDeclaration_0()); }
+(	'NA' 
 )
-{ after(grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_0()); }
-)
-
-    |(
-{ before(grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_1()); }
-(	'MED' 
-)
-{ after(grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_1()); }
+{ after(grammarAccess.getPriorityEnumAccess().getNAEnumLiteralDeclaration_0()); }
 )
 
     |(
-{ before(grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_2()); }
+{ before(grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_1()); }
 (	'LOW' 
 )
-{ after(grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_2()); }
+{ after(grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_1()); }
+)
+
+    |(
+{ before(grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_2()); }
+(	'MED' 
+)
+{ after(grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_2()); }
+)
+
+    |(
+{ before(grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_3()); }
+(	'HIGH' 
+)
+{ after(grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_3()); }
 )
 
 ;

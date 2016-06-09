@@ -20,24 +20,14 @@ import org.eclipse.emf.common.util.Enumerator;
 public enum PriorityEnum implements Enumerator
 {
   /**
-   * The '<em><b>HIGH</b></em>' literal object.
+   * The '<em><b>NA</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #HIGH_VALUE
+   * @see #NA_VALUE
    * @generated
    * @ordered
    */
-  HIGH(0, "HIGH", "HIGH"),
-
-  /**
-   * The '<em><b>MED</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #MED_VALUE
-   * @generated
-   * @ordered
-   */
-  MED(1, "MED", "MED"),
+  NA(0, "NA", "NA"),
 
   /**
    * The '<em><b>LOW</b></em>' literal object.
@@ -47,37 +37,42 @@ public enum PriorityEnum implements Enumerator
    * @generated
    * @ordered
    */
-  LOW(2, "LOW", "LOW");
+  LOW(1, "LOW", "LOW"),
 
   /**
-   * The '<em><b>HIGH</b></em>' literal value.
+   * The '<em><b>MED</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #MED_VALUE
+   * @generated
+   * @ordered
+   */
+  MED(2, "MED", "MED"),
+
+  /**
+   * The '<em><b>HIGH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #HIGH_VALUE
+   * @generated
+   * @ordered
+   */
+  HIGH(3, "HIGH", "HIGH");
+
+  /**
+   * The '<em><b>NA</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of '<em><b>HIGH</b></em>' literal object isn't clear,
+   * If the meaning of '<em><b>NA</b></em>' literal object isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @see #HIGH
+   * @see #NA
    * @model
    * @generated
    * @ordered
    */
-  public static final int HIGH_VALUE = 0;
-
-  /**
-   * The '<em><b>MED</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of '<em><b>MED</b></em>' literal object isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @see #MED
-   * @model
-   * @generated
-   * @ordered
-   */
-  public static final int MED_VALUE = 1;
+  public static final int NA_VALUE = 0;
 
   /**
    * The '<em><b>LOW</b></em>' literal value.
@@ -92,7 +87,37 @@ public enum PriorityEnum implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int LOW_VALUE = 2;
+  public static final int LOW_VALUE = 1;
+
+  /**
+   * The '<em><b>MED</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>MED</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @see #MED
+   * @model
+   * @generated
+   * @ordered
+   */
+  public static final int MED_VALUE = 2;
+
+  /**
+   * The '<em><b>HIGH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>HIGH</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @see #HIGH
+   * @model
+   * @generated
+   * @ordered
+   */
+  public static final int HIGH_VALUE = 3;
 
   /**
    * An array of all the '<em><b>Priority Enum</b></em>' enumerators.
@@ -103,9 +128,10 @@ public enum PriorityEnum implements Enumerator
   private static final PriorityEnum[] VALUES_ARRAY =
     new PriorityEnum[]
     {
-      HIGH,
-      MED,
+      NA,
       LOW,
+      MED,
+      HIGH,
     };
 
   /**
@@ -170,9 +196,10 @@ public enum PriorityEnum implements Enumerator
   {
     switch (value)
     {
-      case HIGH_VALUE: return HIGH;
-      case MED_VALUE: return MED;
+      case NA_VALUE: return NA;
       case LOW_VALUE: return LOW;
+      case MED_VALUE: return MED;
+      case HIGH_VALUE: return HIGH;
     }
     return null;
   }

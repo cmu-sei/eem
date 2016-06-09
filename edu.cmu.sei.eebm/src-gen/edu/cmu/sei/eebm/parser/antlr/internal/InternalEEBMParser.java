@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalEEBMParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Roadmap'", "'And'", "'['", "'dest'", "'source'", "','", "']'", "'Or'", "'Conflict'", "'Goal'", "':'", "'priority'", "'time'", "'cost'", "'benefit'", "'completion'", "'delay cost'", "'Softgoal'", "'Task'", "'description'", "'rationale'", "'see document'", "'HIGH'", "'MED'", "'LOW'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Roadmap'", "'And'", "'['", "'dest'", "'source'", "','", "']'", "'Or'", "'Conflict'", "'Goal'", "':'", "'priority'", "'time'", "'cost'", "'benefit'", "'completion'", "'delay cost'", "'Softgoal'", "'Task'", "'description'", "'rationale'", "'see document'", "'NA'", "'LOW'", "'MED'", "'HIGH'"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -38,6 +38,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
     public static final int T__13=13;
     public static final int T__35=35;
     public static final int T__14=14;
+    public static final int T__36=36;
     public static final int EOF=-1;
     public static final int T__30=30;
     public static final int T__31=31;
@@ -204,7 +205,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                 int alt2=2;
                 int LA2_0 = input.LA(1);
 
-                if ( (LA2_0==17||LA2_0==20||(LA2_0>=22 && LA2_0<=29)||(LA2_0>=31 && LA2_0<=35)) ) {
+                if ( (LA2_0==17||LA2_0==20||(LA2_0>=22 && LA2_0<=29)||(LA2_0>=31 && LA2_0<=36)) ) {
                     alt2=1;
                 }
 
@@ -1998,6 +1999,17 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
 
             	            }
             	            break;
+            	        case 36:
+            	            {
+            	            int LA14_6 = input.LA(2);
+
+            	            if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup_1(), 1) ) {
+            	                alt14=2;
+            	            }
+
+
+            	            }
+            	            break;
 
             	        }
 
@@ -3044,6 +3056,17 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
             	        case 35:
             	            {
             	            int LA19_5 = input.LA(2);
+
+            	            if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup_1(), 1) ) {
+            	                alt19=2;
+            	            }
+
+
+            	            }
+            	            break;
+            	        case 36:
+            	            {
+            	            int LA19_6 = input.LA(2);
 
             	            if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup_1(), 1) ) {
             	                alt19=2;
@@ -4102,6 +4125,17 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
 
             	            }
             	            break;
+            	        case 36:
+            	            {
+            	            int LA24_6 = input.LA(2);
+
+            	            if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup_1(), 1) ) {
+            	                alt24=2;
+            	            }
+
+
+            	            }
+            	            break;
 
             	        }
 
@@ -4992,21 +5026,22 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePriorityEnum"
-    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2026:1: rulePriorityEnum returns [Enumerator current=null] : ( (enumLiteral_0= 'HIGH' ) | (enumLiteral_1= 'MED' ) | (enumLiteral_2= 'LOW' ) ) ;
+    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2026:1: rulePriorityEnum returns [Enumerator current=null] : ( (enumLiteral_0= 'NA' ) | (enumLiteral_1= 'LOW' ) | (enumLiteral_2= 'MED' ) | (enumLiteral_3= 'HIGH' ) ) ;
     public final Enumerator rulePriorityEnum() throws RecognitionException {
         Enumerator current = null;
 
         Token enumLiteral_0=null;
         Token enumLiteral_1=null;
         Token enumLiteral_2=null;
+        Token enumLiteral_3=null;
 
          enterRule(); 
         try {
-            // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2028:28: ( ( (enumLiteral_0= 'HIGH' ) | (enumLiteral_1= 'MED' ) | (enumLiteral_2= 'LOW' ) ) )
-            // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:1: ( (enumLiteral_0= 'HIGH' ) | (enumLiteral_1= 'MED' ) | (enumLiteral_2= 'LOW' ) )
+            // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2028:28: ( ( (enumLiteral_0= 'NA' ) | (enumLiteral_1= 'LOW' ) | (enumLiteral_2= 'MED' ) | (enumLiteral_3= 'HIGH' ) ) )
+            // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:1: ( (enumLiteral_0= 'NA' ) | (enumLiteral_1= 'LOW' ) | (enumLiteral_2= 'MED' ) | (enumLiteral_3= 'HIGH' ) )
             {
-            // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:1: ( (enumLiteral_0= 'HIGH' ) | (enumLiteral_1= 'MED' ) | (enumLiteral_2= 'LOW' ) )
-            int alt27=3;
+            // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:1: ( (enumLiteral_0= 'NA' ) | (enumLiteral_1= 'LOW' ) | (enumLiteral_2= 'MED' ) | (enumLiteral_3= 'HIGH' ) )
+            int alt27=4;
             switch ( input.LA(1) ) {
             case 33:
                 {
@@ -5023,6 +5058,11 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                 alt27=3;
                 }
                 break;
+            case 36:
+                {
+                alt27=4;
+                }
+                break;
             default:
                 NoViableAltException nvae =
                     new NoViableAltException("", 27, 0, input);
@@ -5032,15 +5072,15 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
 
             switch (alt27) {
                 case 1 :
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:2: (enumLiteral_0= 'HIGH' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:2: (enumLiteral_0= 'NA' )
                     {
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:2: (enumLiteral_0= 'HIGH' )
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:4: enumLiteral_0= 'HIGH'
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:2: (enumLiteral_0= 'NA' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2029:4: enumLiteral_0= 'NA'
                     {
                     enumLiteral_0=(Token)match(input,33,FOLLOW_33_in_rulePriorityEnum5196); 
 
-                            current = grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
-                            newLeafNode(enumLiteral_0, grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_0()); 
+                            current = grammarAccess.getPriorityEnumAccess().getNAEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+                            newLeafNode(enumLiteral_0, grammarAccess.getPriorityEnumAccess().getNAEnumLiteralDeclaration_0()); 
                         
 
                     }
@@ -5049,15 +5089,15 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2035:6: (enumLiteral_1= 'MED' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2035:6: (enumLiteral_1= 'LOW' )
                     {
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2035:6: (enumLiteral_1= 'MED' )
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2035:8: enumLiteral_1= 'MED'
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2035:6: (enumLiteral_1= 'LOW' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2035:8: enumLiteral_1= 'LOW'
                     {
                     enumLiteral_1=(Token)match(input,34,FOLLOW_34_in_rulePriorityEnum5213); 
 
-                            current = grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
-                            newLeafNode(enumLiteral_1, grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_1()); 
+                            current = grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+                            newLeafNode(enumLiteral_1, grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_1()); 
                         
 
                     }
@@ -5066,15 +5106,32 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2041:6: (enumLiteral_2= 'LOW' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2041:6: (enumLiteral_2= 'MED' )
                     {
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2041:6: (enumLiteral_2= 'LOW' )
-                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2041:8: enumLiteral_2= 'LOW'
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2041:6: (enumLiteral_2= 'MED' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2041:8: enumLiteral_2= 'MED'
                     {
                     enumLiteral_2=(Token)match(input,35,FOLLOW_35_in_rulePriorityEnum5230); 
 
-                            current = grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
-                            newLeafNode(enumLiteral_2, grammarAccess.getPriorityEnumAccess().getLOWEnumLiteralDeclaration_2()); 
+                            current = grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+                            newLeafNode(enumLiteral_2, grammarAccess.getPriorityEnumAccess().getMEDEnumLiteralDeclaration_2()); 
+                        
+
+                    }
+
+
+                    }
+                    break;
+                case 4 :
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2047:6: (enumLiteral_3= 'HIGH' )
+                    {
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2047:6: (enumLiteral_3= 'HIGH' )
+                    // ../edu.cmu.sei.eebm/src-gen/edu/cmu/sei/eebm/parser/antlr/internal/InternalEEBM.g:2047:8: enumLiteral_3= 'HIGH'
+                    {
+                    enumLiteral_3=(Token)match(input,36,FOLLOW_36_in_rulePriorityEnum5247); 
+
+                            current = grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+                            newLeafNode(enumLiteral_3, grammarAccess.getPriorityEnumAccess().getHIGHEnumLiteralDeclaration_3()); 
                         
 
                     }
@@ -5109,41 +5166,42 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
     protected DFA21 dfa21 = new DFA21(this);
     protected DFA26 dfa26 = new DFA26(this);
     static final String DFA5_eotS =
-        "\30\uffff";
+        "\31\uffff";
     static final String DFA5_eofS =
-        "\30\uffff";
+        "\31\uffff";
     static final String DFA5_minS =
-        "\1\21\5\uffff\3\6\1\4\1\6\2\4\11\uffff\1\21\1\uffff";
+        "\1\21\6\uffff\3\6\1\4\1\6\2\4\11\uffff\1\21\1\uffff";
     static final String DFA5_maxS =
-        "\1\43\5\uffff\3\6\1\4\1\6\2\4\11\uffff\1\21\1\uffff";
+        "\1\44\6\uffff\3\6\1\4\1\6\2\4\11\uffff\1\21\1\uffff";
     static final String DFA5_acceptS =
-        "\1\uffff\5\1\7\uffff\1\1\1\2\1\3\6\1\1\uffff\1\1";
+        "\1\uffff\6\1\7\uffff\1\1\1\2\1\3\6\1\1\uffff\1\1";
     static final String DFA5_specialS =
-        "\30\uffff}>";
+        "\31\uffff}>";
     static final String[] DFA5_transitionS = {
-            "\1\15\2\uffff\1\1\1\uffff\1\2\1\6\1\7\1\10\1\11\1\12\1\17\1\16\1\uffff\1\13\1\14\1\3\1\4\1\5",
+            "\1\16\2\uffff\1\1\1\uffff\1\2\1\7\1\10\1\11\1\12\1\13\1\20\1\17\1\uffff\1\14\1\15\1\3\1\4\1\5\1\6",
             "",
             "",
             "",
             "",
             "",
-            "\1\20",
+            "",
             "\1\21",
             "\1\22",
             "\1\23",
             "\1\24",
             "\1\25",
             "\1\26",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\27",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\30",
             ""
     };
 
@@ -5181,20 +5239,21 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
         }
     }
     static final String DFA16_eotS =
-        "\30\uffff";
+        "\31\uffff";
     static final String DFA16_eofS =
-        "\1\1\27\uffff";
+        "\1\1\30\uffff";
     static final String DFA16_minS =
-        "\1\14\1\uffff\15\0\11\uffff";
+        "\1\14\1\uffff\16\0\11\uffff";
     static final String DFA16_maxS =
-        "\1\43\1\uffff\15\0\11\uffff";
+        "\1\44\1\uffff\16\0\11\uffff";
     static final String DFA16_acceptS =
-        "\1\uffff\1\12\15\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11";
+        "\1\uffff\1\12\16\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11";
     static final String DFA16_specialS =
-        "\2\uffff\1\4\1\5\1\12\1\10\1\6\1\13\1\0\1\1\1\3\1\14\1\7\1\2\1\11\11\uffff}>";
+        "\2\uffff\1\10\1\5\1\12\1\4\1\15\1\6\1\14\1\0\1\1\1\3\1\7\1\13\1\2\1\11\11\uffff}>";
     static final String[] DFA16_transitionS = {
-            "\1\1\4\uffff\1\16\2\1\1\2\1\uffff\1\3\1\7\1\10\1\11\1\12\1\13\2\1\1\uffff\1\14\1\15\1\4\1\5\1\6",
+            "\1\1\4\uffff\1\17\2\1\1\2\1\uffff\1\3\1\10\1\11\1\12\1\13\1\14\2\1\1\uffff\1\15\1\16\1\4\1\5\1\6\1\7",
             "",
+            "\1\uffff",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -5256,28 +5315,13 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA16_8 = input.LA(1);
-
-                         
-                        int index16_8 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 18;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index16_8);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA16_9 = input.LA(1);
 
                          
                         int index16_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 19;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 3) ) {s = 19;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5285,29 +5329,14 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index16_9);
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
-                        int LA16_13 = input.LA(1);
-
-                         
-                        int index16_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 23;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index16_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
+                    case 1 : 
                         int LA16_10 = input.LA(1);
 
                          
                         int index16_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 20;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 4) ) {s = 20;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5315,19 +5344,49 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index16_10);
                         if ( s>=0 ) return s;
                         break;
-                    case 4 : 
-                        int LA16_2 = input.LA(1);
+                    case 2 : 
+                        int LA16_14 = input.LA(1);
 
                          
-                        int index16_2 = input.index();
+                        int index16_14 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 15;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 24;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index16_2);
+                        input.seek(index16_14);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA16_11 = input.LA(1);
+
+                         
+                        int index16_11 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 5) ) {s = 21;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index16_11);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA16_5 = input.LA(1);
+
+                         
+                        int index16_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 17;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index16_5);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
@@ -5337,7 +5396,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         int index16_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 17;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5346,18 +5405,18 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
-                        int LA16_6 = input.LA(1);
+                        int LA16_7 = input.LA(1);
 
                          
-                        int index16_6 = input.index();
+                        int index16_7 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 17;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index16_6);
+                        input.seek(index16_7);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
@@ -5367,7 +5426,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         int index16_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 22;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 22;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5376,33 +5435,33 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         if ( s>=0 ) return s;
                         break;
                     case 8 : 
-                        int LA16_5 = input.LA(1);
+                        int LA16_2 = input.LA(1);
 
                          
-                        int index16_5 = input.index();
+                        int index16_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 0) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index16_5);
+                        input.seek(index16_2);
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
-                        int LA16_14 = input.LA(1);
+                        int LA16_15 = input.LA(1);
 
                          
-                        int index16_14 = input.index();
+                        int index16_15 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 23;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 8) ) {s = 24;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index16_14);
+                        input.seek(index16_15);
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
@@ -5412,7 +5471,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         int index16_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 17;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5421,33 +5480,48 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         if ( s>=0 ) return s;
                         break;
                     case 11 : 
-                        int LA16_7 = input.LA(1);
+                        int LA16_13 = input.LA(1);
 
                          
-                        int index16_7 = input.index();
+                        int index16_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 17;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 7) ) {s = 23;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index16_7);
+                        input.seek(index16_13);
                         if ( s>=0 ) return s;
                         break;
                     case 12 : 
-                        int LA16_11 = input.LA(1);
+                        int LA16_8 = input.LA(1);
 
                          
-                        int index16_11 = input.index();
+                        int index16_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 6) ) {s = 21;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 2) ) {s = 18;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index16_11);
+                        input.seek(index16_8);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 13 : 
+                        int LA16_6 = input.LA(1);
+
+                         
+                        int index16_6 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getGoalAccess().getUnorderedGroup(), 1) ) {s = 17;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getGoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index16_6);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -5458,20 +5532,21 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
         }
     }
     static final String DFA21_eotS =
-        "\30\uffff";
+        "\31\uffff";
     static final String DFA21_eofS =
-        "\1\1\27\uffff";
+        "\1\1\30\uffff";
     static final String DFA21_minS =
-        "\1\14\1\uffff\15\0\11\uffff";
+        "\1\14\1\uffff\16\0\11\uffff";
     static final String DFA21_maxS =
-        "\1\43\1\uffff\15\0\11\uffff";
+        "\1\44\1\uffff\16\0\11\uffff";
     static final String DFA21_acceptS =
-        "\1\uffff\1\12\15\uffff\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\1";
+        "\1\uffff\1\12\16\uffff\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\1";
     static final String DFA21_specialS =
-        "\2\uffff\1\12\1\13\1\4\1\1\1\2\1\5\1\7\1\10\1\3\1\6\1\0\1\11\1\14\11\uffff}>";
+        "\2\uffff\1\11\1\5\1\0\1\14\1\3\1\6\1\7\1\12\1\13\1\2\1\10\1\1\1\4\1\15\11\uffff}>";
     static final String[] DFA21_transitionS = {
-            "\1\1\4\uffff\1\15\3\1\1\uffff\1\2\1\6\1\7\1\10\1\11\1\12\1\16\1\1\1\uffff\1\13\1\14\1\3\1\4\1\5",
+            "\1\1\4\uffff\1\16\3\1\1\uffff\1\2\1\7\1\10\1\11\1\12\1\13\1\17\1\1\1\uffff\1\14\1\15\1\3\1\4\1\5\1\6",
             "",
+            "\1\uffff",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -5533,73 +5608,13 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA21_12 = input.LA(1);
-
-                         
-                        int index21_12 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 22;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index21_12);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA21_5 = input.LA(1);
-
-                         
-                        int index21_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 15;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index21_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
-                        int LA21_6 = input.LA(1);
-
-                         
-                        int index21_6 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 16;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index21_6);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA21_10 = input.LA(1);
-
-                         
-                        int index21_10 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 20;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index21_10);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
                         int LA21_4 = input.LA(1);
 
                          
                         int index21_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 15;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5607,34 +5622,94 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index21_4);
                         if ( s>=0 ) return s;
                         break;
-                    case 5 : 
-                        int LA21_7 = input.LA(1);
+                    case 1 : 
+                        int LA21_13 = input.LA(1);
 
                          
-                        int index21_7 = input.index();
+                        int index21_13 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 17;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 23;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index21_7);
+                        input.seek(index21_13);
                         if ( s>=0 ) return s;
                         break;
-                    case 6 : 
+                    case 2 : 
                         int LA21_11 = input.LA(1);
 
                          
                         int index21_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 7) ) {s = 21;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6) ) {s = 21;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
                         input.seek(index21_11);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA21_6 = input.LA(1);
+
+                         
+                        int index21_6 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index21_6);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA21_14 = input.LA(1);
+
+                         
+                        int index21_14 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 23;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index21_14);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA21_3 = input.LA(1);
+
+                         
+                        int index21_3 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index21_3);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA21_7 = input.LA(1);
+
+                         
+                        int index21_7 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 2) ) {s = 17;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index21_7);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
@@ -5644,7 +5719,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         int index21_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 18;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 3) ) {s = 18;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5653,43 +5728,28 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         if ( s>=0 ) return s;
                         break;
                     case 8 : 
-                        int LA21_9 = input.LA(1);
+                        int LA21_12 = input.LA(1);
 
                          
-                        int index21_9 = input.index();
+                        int index21_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 19;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 7) ) {s = 22;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index21_9);
+                        input.seek(index21_12);
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
-                        int LA21_13 = input.LA(1);
-
-                         
-                        int index21_13 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 8) ) {s = 22;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index21_13);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 10 : 
                         int LA21_2 = input.LA(1);
 
                          
                         int index21_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 15;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5697,34 +5757,64 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index21_2);
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
-                        int LA21_3 = input.LA(1);
+                    case 10 : 
+                        int LA21_9 = input.LA(1);
 
                          
-                        int index21_3 = input.index();
+                        int index21_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 15;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 4) ) {s = 19;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index21_3);
+                        input.seek(index21_9);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA21_10 = input.LA(1);
+
+                         
+                        int index21_10 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 5) ) {s = 20;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index21_10);
                         if ( s>=0 ) return s;
                         break;
                     case 12 : 
-                        int LA21_14 = input.LA(1);
+                        int LA21_5 = input.LA(1);
 
                          
-                        int index21_14 = input.index();
+                        int index21_5 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 23;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 1) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index21_14);
+                        input.seek(index21_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 13 : 
+                        int LA21_15 = input.LA(1);
+
+                         
+                        int index21_15 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 0) ) {s = 24;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getSoftgoalAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index21_15);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -5735,20 +5825,21 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
         }
     }
     static final String DFA26_eotS =
-        "\24\uffff";
+        "\25\uffff";
     static final String DFA26_eofS =
-        "\1\1\23\uffff";
+        "\1\1\24\uffff";
     static final String DFA26_minS =
-        "\1\14\1\uffff\13\0\7\uffff";
+        "\1\14\1\uffff\14\0\7\uffff";
     static final String DFA26_maxS =
-        "\1\43\1\uffff\13\0\7\uffff";
+        "\1\44\1\uffff\14\0\7\uffff";
     static final String DFA26_acceptS =
-        "\1\uffff\1\10\13\uffff\1\2\1\3\1\4\1\5\1\6\1\7\1\1";
+        "\1\uffff\1\10\14\uffff\1\2\1\3\1\4\1\5\1\6\1\7\1\1";
     static final String DFA26_specialS =
-        "\2\uffff\1\5\1\3\1\0\1\7\1\6\1\10\1\11\1\12\1\4\1\2\1\1\7\uffff}>";
+        "\2\uffff\1\13\1\3\1\1\1\11\1\5\1\6\1\7\1\10\1\12\1\2\1\4\1\0\7\uffff}>";
     static final String[] DFA26_transitionS = {
-            "\1\1\4\uffff\1\13\3\1\1\uffff\1\2\1\6\1\7\1\10\1\11\1\12\1\1\1\14\1\uffff\2\1\1\3\1\4\1\5",
+            "\1\1\4\uffff\1\14\3\1\1\uffff\1\2\1\7\1\10\1\11\1\12\1\13\1\1\1\15\1\uffff\2\1\1\3\1\4\1\5\1\6",
             "",
+            "\1\uffff",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -5806,33 +5897,33 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA26_13 = input.LA(1);
+
+                         
+                        int index26_13 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 20;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index26_13);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
                         int LA26_4 = input.LA(1);
 
                          
                         int index26_4 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 13;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
                         input.seek(index26_4);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA26_12 = input.LA(1);
-
-                         
-                        int index26_12 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 0) ) {s = 19;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index26_12);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
@@ -5842,7 +5933,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         int index26_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 18;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 19;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5857,7 +5948,7 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         int index26_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 13;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5866,43 +5957,28 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
-                        int LA26_10 = input.LA(1);
+                        int LA26_12 = input.LA(1);
 
                          
-                        int index26_10 = input.index();
+                        int index26_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 18;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 6) ) {s = 19;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
-                        input.seek(index26_10);
+                        input.seek(index26_12);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
-                        int LA26_2 = input.LA(1);
-
-                         
-                        int index26_2 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 13;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index26_2);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
                         int LA26_6 = input.LA(1);
 
                          
                         int index26_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 14;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5910,29 +5986,14 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index26_6);
                         if ( s>=0 ) return s;
                         break;
-                    case 7 : 
-                        int LA26_5 = input.LA(1);
-
-                         
-                        int index26_5 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 13;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
-
-                         
-                        input.seek(index26_5);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
+                    case 6 : 
                         int LA26_7 = input.LA(1);
 
                          
                         int index26_7 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 15;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 2) ) {s = 15;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5940,14 +6001,14 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index26_7);
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
+                    case 7 : 
                         int LA26_8 = input.LA(1);
 
                          
                         int index26_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 16;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 3) ) {s = 16;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
@@ -5955,19 +6016,64 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
                         input.seek(index26_8);
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
+                    case 8 : 
                         int LA26_9 = input.LA(1);
 
                          
                         int index26_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 17;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 4) ) {s = 17;}
 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
 
                          
                         input.seek(index26_9);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
+                        int LA26_5 = input.LA(1);
+
+                         
+                        int index26_5 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index26_5);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 10 : 
+                        int LA26_10 = input.LA(1);
+
+                         
+                        int index26_10 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 5) ) {s = 18;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index26_10);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 11 : 
+                        int LA26_2 = input.LA(1);
+
+                         
+                        int index26_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getTaskAccess().getUnorderedGroup(), 1) ) {s = 14;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getTaskAccess().getUnorderedGroup()) ) {s = 1;}
+
+                         
+                        input.seek(index26_2);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -5982,8 +6088,8 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleRoadmap_in_entryRuleRoadmap75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleRoadmap85 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_11_in_ruleRoadmap129 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleRoadmap153 = new BitSet(new long[]{0x0000000FBFDE1002L});
-    public static final BitSet FOLLOW_ruleIntentionalElement_in_ruleRoadmap175 = new BitSet(new long[]{0x0000000FBFDE1002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleRoadmap153 = new BitSet(new long[]{0x0000001FBFDE1002L});
+    public static final BitSet FOLLOW_ruleIntentionalElement_in_ruleRoadmap175 = new BitSet(new long[]{0x0000001FBFDE1002L});
     public static final BitSet FOLLOW_ruleRefinement_in_ruleRoadmap199 = new BitSet(new long[]{0x00000000000C1002L});
     public static final BitSet FOLLOW_ruleConflict_in_ruleRoadmap218 = new BitSet(new long[]{0x00000000000C1002L});
     public static final BitSet FOLLOW_ruleIntentionalElement_in_entryRuleIntentionalElement258 = new BitSet(new long[]{0x0000000000000000L});
@@ -6039,67 +6145,67 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_RULE_ID_in_ruleGoal1776 = new BitSet(new long[]{0x0000000000202000L});
     public static final BitSet FOLLOW_21_in_ruleGoal1794 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_STRING_in_ruleGoal1811 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleGoal1830 = new BitSet(new long[]{0x0000000FCFD20002L});
-    public static final BitSet FOLLOW_ruleDescription_in_ruleGoal1851 = new BitSet(new long[]{0x0000000F8FD20002L});
-    public static final BitSet FOLLOW_22_in_ruleGoal1965 = new BitSet(new long[]{0x0000000F8FD20002L});
-    public static final BitSet FOLLOW_rulePriorityEnum_in_ruleGoal2041 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_13_in_ruleGoal1830 = new BitSet(new long[]{0x0000001FCFD20002L});
+    public static final BitSet FOLLOW_ruleDescription_in_ruleGoal1851 = new BitSet(new long[]{0x0000001F8FD20002L});
+    public static final BitSet FOLLOW_22_in_ruleGoal1965 = new BitSet(new long[]{0x0000001F8FD20002L});
+    public static final BitSet FOLLOW_rulePriorityEnum_in_ruleGoal2041 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_23_in_ruleGoal2154 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2171 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2171 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_24_in_ruleGoal2244 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2261 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2261 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_25_in_ruleGoal2334 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2351 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2351 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_26_in_ruleGoal2424 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleGoal2441 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleGoal2441 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_27_in_ruleGoal2514 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2531 = new BitSet(new long[]{0x0000000F8FD20002L});
-    public static final BitSet FOLLOW_ruleRationale_in_ruleGoal2612 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleGoal2531 = new BitSet(new long[]{0x0000001F8FD20002L});
+    public static final BitSet FOLLOW_ruleRationale_in_ruleGoal2612 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_ruleReference_in_ruleGoal2688 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleGoal2701 = new BitSet(new long[]{0x0000000F8FD20002L});
+    public static final BitSet FOLLOW_17_in_ruleGoal2701 = new BitSet(new long[]{0x0000001F8FD20002L});
     public static final BitSet FOLLOW_ruleSoftgoal_in_entryRuleSoftgoal2783 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleSoftgoal2793 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_28_in_ruleSoftgoal2875 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleSoftgoal2892 = new BitSet(new long[]{0x0000000000202000L});
     public static final BitSet FOLLOW_21_in_ruleSoftgoal2910 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_STRING_in_ruleSoftgoal2927 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleSoftgoal2946 = new BitSet(new long[]{0x0000000FDFC20002L});
-    public static final BitSet FOLLOW_ruleDescription_in_ruleSoftgoal2967 = new BitSet(new long[]{0x0000000F9FC20002L});
-    public static final BitSet FOLLOW_22_in_ruleSoftgoal3081 = new BitSet(new long[]{0x0000000F9FC20002L});
-    public static final BitSet FOLLOW_rulePriorityEnum_in_ruleSoftgoal3157 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_13_in_ruleSoftgoal2946 = new BitSet(new long[]{0x0000001FDFC20002L});
+    public static final BitSet FOLLOW_ruleDescription_in_ruleSoftgoal2967 = new BitSet(new long[]{0x0000001F9FC20002L});
+    public static final BitSet FOLLOW_22_in_ruleSoftgoal3081 = new BitSet(new long[]{0x0000001F9FC20002L});
+    public static final BitSet FOLLOW_rulePriorityEnum_in_ruleSoftgoal3157 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_23_in_ruleSoftgoal3270 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3287 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3287 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_24_in_ruleSoftgoal3360 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3377 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3377 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_25_in_ruleSoftgoal3450 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3467 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3467 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_26_in_ruleSoftgoal3540 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleSoftgoal3557 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleSoftgoal3557 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_27_in_ruleSoftgoal3630 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3647 = new BitSet(new long[]{0x0000000F9FC20002L});
-    public static final BitSet FOLLOW_ruleRationale_in_ruleSoftgoal3728 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleSoftgoal3647 = new BitSet(new long[]{0x0000001F9FC20002L});
+    public static final BitSet FOLLOW_ruleRationale_in_ruleSoftgoal3728 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_ruleReference_in_ruleSoftgoal3804 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleSoftgoal3817 = new BitSet(new long[]{0x0000000F9FC20002L});
+    public static final BitSet FOLLOW_17_in_ruleSoftgoal3817 = new BitSet(new long[]{0x0000001F9FC20002L});
     public static final BitSet FOLLOW_ruleTask_in_entryRuleTask3899 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleTask3909 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_29_in_ruleTask3991 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleTask4008 = new BitSet(new long[]{0x0000000000202000L});
     public static final BitSet FOLLOW_21_in_ruleTask4026 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_STRING_in_ruleTask4043 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleTask4062 = new BitSet(new long[]{0x0000000E6FC20002L});
-    public static final BitSet FOLLOW_ruleDescription_in_ruleTask4083 = new BitSet(new long[]{0x0000000E2FC20002L});
-    public static final BitSet FOLLOW_22_in_ruleTask4197 = new BitSet(new long[]{0x0000000E2FC20002L});
-    public static final BitSet FOLLOW_rulePriorityEnum_in_ruleTask4273 = new BitSet(new long[]{0x0000000E2FC20002L});
+    public static final BitSet FOLLOW_13_in_ruleTask4062 = new BitSet(new long[]{0x0000001E6FC20002L});
+    public static final BitSet FOLLOW_ruleDescription_in_ruleTask4083 = new BitSet(new long[]{0x0000001E2FC20002L});
+    public static final BitSet FOLLOW_22_in_ruleTask4197 = new BitSet(new long[]{0x0000001E2FC20002L});
+    public static final BitSet FOLLOW_rulePriorityEnum_in_ruleTask4273 = new BitSet(new long[]{0x0000001E2FC20002L});
     public static final BitSet FOLLOW_23_in_ruleTask4386 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleTask4403 = new BitSet(new long[]{0x0000000E2FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleTask4403 = new BitSet(new long[]{0x0000001E2FC20002L});
     public static final BitSet FOLLOW_24_in_ruleTask4476 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleTask4493 = new BitSet(new long[]{0x0000000E2FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleTask4493 = new BitSet(new long[]{0x0000001E2FC20002L});
     public static final BitSet FOLLOW_25_in_ruleTask4566 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleTask4583 = new BitSet(new long[]{0x0000000E2FC20002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleTask4583 = new BitSet(new long[]{0x0000001E2FC20002L});
     public static final BitSet FOLLOW_26_in_ruleTask4656 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleTask4673 = new BitSet(new long[]{0x0000000E2FC20002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleTask4673 = new BitSet(new long[]{0x0000001E2FC20002L});
     public static final BitSet FOLLOW_27_in_ruleTask4747 = new BitSet(new long[]{0x0000000000000040L});
     public static final BitSet FOLLOW_RULE_INT_in_ruleTask4764 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleTask4783 = new BitSet(new long[]{0x0000000E2FC20002L});
+    public static final BitSet FOLLOW_17_in_ruleTask4783 = new BitSet(new long[]{0x0000001E2FC20002L});
     public static final BitSet FOLLOW_ruleDescription_in_entryRuleDescription4865 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleDescription4875 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_30_in_ruleDescription4912 = new BitSet(new long[]{0x0000000000000010L});
@@ -6115,5 +6221,6 @@ public class InternalEEBMParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_33_in_rulePriorityEnum5196 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_34_in_rulePriorityEnum5213 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_35_in_rulePriorityEnum5230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rulePriorityEnum5247 = new BitSet(new long[]{0x0000000000000002L});
 
 }
