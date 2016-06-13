@@ -48,7 +48,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	@Override
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if(ruleCall.getRule() == grammarAccess.getSTRINGRule())
+		if (ruleCall.getRule() == grammarAccess.getSTRINGRule())
 			return getSTRINGToken(semanticObject, ruleCall, node);
 		return "";
 	}
@@ -71,23 +71,23 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if(match_Goal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__a.equals(syntax))
+			if (match_Goal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__a.equals(syntax))
 				emit_Goal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Goal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__p.equals(syntax))
+			else if (match_Goal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__p.equals(syntax))
 				emit_Goal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Goal___RightSquareBracketKeyword_8_1_PriorityKeyword_1_0_a__p.equals(syntax))
+			else if (match_Goal___RightSquareBracketKeyword_8_1_PriorityKeyword_1_0_a__p.equals(syntax))
 				emit_Goal___RightSquareBracketKeyword_8_1_PriorityKeyword_1_0_a__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Softgoal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__a.equals(syntax))
+			else if (match_Softgoal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__a.equals(syntax))
 				emit_Softgoal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Softgoal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__p.equals(syntax))
+			else if (match_Softgoal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__p.equals(syntax))
 				emit_Softgoal___PriorityKeyword_1_0_or_RightSquareBracketKeyword_8_1__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Softgoal___RightSquareBracketKeyword_8_1_PriorityKeyword_1_0_a__p.equals(syntax))
+			else if (match_Softgoal___RightSquareBracketKeyword_8_1_PriorityKeyword_1_0_a__p.equals(syntax))
 				emit_Softgoal___RightSquareBracketKeyword_8_1_PriorityKeyword_1_0_a__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Task___PriorityKeyword_1_0_or_RightSquareBracketKeyword_6_1__a.equals(syntax))
+			else if (match_Task___PriorityKeyword_1_0_or_RightSquareBracketKeyword_6_1__a.equals(syntax))
 				emit_Task___PriorityKeyword_1_0_or_RightSquareBracketKeyword_6_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Task___PriorityKeyword_1_0_or_RightSquareBracketKeyword_6_1__p.equals(syntax))
+			else if (match_Task___PriorityKeyword_1_0_or_RightSquareBracketKeyword_6_1__p.equals(syntax))
 				emit_Task___PriorityKeyword_1_0_or_RightSquareBracketKeyword_6_1__p(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Task___RightSquareBracketKeyword_6_1_PriorityKeyword_1_0_a__p.equals(syntax))
+			else if (match_Task___RightSquareBracketKeyword_6_1_PriorityKeyword_1_0_a__p.equals(syntax))
 				emit_Task___RightSquareBracketKeyword_6_1_PriorityKeyword_1_0_a__p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}

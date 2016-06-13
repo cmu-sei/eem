@@ -19,7 +19,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
 	public class RoadmapElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Roadmap");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Roadmap");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);
@@ -33,19 +33,21 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cRelationsConflictParserRuleCall_2_0_1 = (RuleCall)cRelationsAlternatives_2_0.eContents().get(1);
 		
 		//Roadmap:
-		//	(name="Roadmap" STRING)? components+=IntentionalElement* relations+=(Refinement | Conflict)*;
+		//	(name='Roadmap' STRING)?
+		//	components+=IntentionalElement*
+		//	relations+=(Refinement | Conflict)*;
 		@Override public ParserRule getRule() { return rule; }
 
-		//(name="Roadmap" STRING)? components+=IntentionalElement* relations+=(Refinement | Conflict)*
+		//(name='Roadmap' STRING)? components+=IntentionalElement* relations+=(Refinement | Conflict)*
 		public Group getGroup() { return cGroup; }
 
-		//(name="Roadmap" STRING)?
+		//(name='Roadmap' STRING)?
 		public Group getGroup_0() { return cGroup_0; }
 
-		//name="Roadmap"
+		//name='Roadmap'
 		public Assignment getNameAssignment_0_0() { return cNameAssignment_0_0; }
 
-		//"Roadmap"
+		//'Roadmap'
 		public Keyword getNameRoadmapKeyword_0_0_0() { return cNameRoadmapKeyword_0_0_0; }
 
 		//STRING
@@ -60,7 +62,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//relations+=(Refinement | Conflict)*
 		public Assignment getRelationsAssignment_2() { return cRelationsAssignment_2; }
 
-		//Refinement | Conflict
+		//(Refinement | Conflict)
 		public Alternatives getRelationsAlternatives_2_0() { return cRelationsAlternatives_2_0; }
 
 		//Refinement
@@ -71,20 +73,21 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class IntentionalElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntentionalElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.IntentionalElement");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cGoalParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cTaskParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		private final RuleCall cSoftgoalParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		
-		//// superclass. Implies Goals and Options are semantically equivalent ...
 		//IntentionalElement:
 		//	Goal | Task | Softgoal;
 		@Override public ParserRule getRule() { return rule; }
 
+		//// superclass. Implies Goals and Options are semantically equivalent ...
 		//Goal | Task | Softgoal
 		public Alternatives getAlternatives() { return cAlternatives; }
 
+		//// superclass. Implies Goals and Options are semantically equivalent ...
 		//Goal
 		public RuleCall getGoalParserRuleCall_0() { return cGoalParserRuleCall_0; }
 
@@ -96,7 +99,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class RefinementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Refinement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Refinement");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cAndRefinementParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cOrRefinementParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -122,7 +125,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class AndRefinementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AndRefinement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.AndRefinement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cAndKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -149,15 +152,17 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//AndRefinement:
-		//	"And" name=ID "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
-		//	dest+=[IntentionalElement])* "]") "]";
+		//	'And' name=ID
+		//	'[' ('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+		//	']')
+		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"And" name=ID "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
-		//dest+=[IntentionalElement])* "]") "]"
+		//'And' name=ID '[' ('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (','
+		//dest+=[IntentionalElement])* ']') ']'
 		public Group getGroup() { return cGroup; }
 
-		//"And"
+		//'And'
 		public Keyword getAndKeyword_0() { return cAndKeyword_0; }
 
 		//name=ID
@@ -166,16 +171,16 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 
-		//"["
+		//'['
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//"dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
+		//('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//"dest" source+=[IntentionalElement]
+		//'dest' source+=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
-		//"dest"
+		//'dest'
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
 		//source+=[IntentionalElement]
@@ -187,13 +192,13 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//"source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
+		//'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']'
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
-		//"source"
+		//'source'
 		public Keyword getSourceKeyword_3_1_0() { return cSourceKeyword_3_1_0; }
 
-		//"["
+		//'['
 		public Keyword getLeftSquareBracketKeyword_3_1_1() { return cLeftSquareBracketKeyword_3_1_1; }
 
 		//dest+=[IntentionalElement]
@@ -205,10 +210,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
 
-		//("," dest+=[IntentionalElement])*
+		//(',' dest+=[IntentionalElement])*
 		public Group getGroup_3_1_3() { return cGroup_3_1_3; }
 
-		//","
+		//','
 		public Keyword getCommaKeyword_3_1_3_0() { return cCommaKeyword_3_1_3_0; }
 
 		//dest+=[IntentionalElement]
@@ -220,15 +225,15 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_4() { return cRightSquareBracketKeyword_4; }
 	}
 
 	public class OrRefinementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "OrRefinement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.OrRefinement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cOrKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -255,15 +260,17 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//OrRefinement:
-		//	"Or" name=ID "[" ("dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
-		//	dest+=[IntentionalElement])* "]") "]";
+		//	'Or' name=ID
+		//	'[' ('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+		//	']')
+		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Or" name=ID "[" ("dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
-		//dest+=[IntentionalElement])* "]") "]"
+		//'Or' name=ID '[' ('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (','
+		//dest+=[IntentionalElement])* ']') ']'
 		public Group getGroup() { return cGroup; }
 
-		//"Or"
+		//'Or'
 		public Keyword getOrKeyword_0() { return cOrKeyword_0; }
 
 		//name=ID
@@ -272,16 +279,16 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 
-		//"["
+		//'['
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//"dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
+		//('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//"dest" source=[IntentionalElement]
+		//'dest' source=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
-		//"dest"
+		//'dest'
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
 		//source=[IntentionalElement]
@@ -293,13 +300,13 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//"source" "[" dest+=[IntentionalElement] ("," dest+=[IntentionalElement])* "]"
+		//'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']'
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
-		//"source"
+		//'source'
 		public Keyword getSourceKeyword_3_1_0() { return cSourceKeyword_3_1_0; }
 
-		//"["
+		//'['
 		public Keyword getLeftSquareBracketKeyword_3_1_1() { return cLeftSquareBracketKeyword_3_1_1; }
 
 		//dest+=[IntentionalElement]
@@ -311,10 +318,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
 
-		//("," dest+=[IntentionalElement])*
+		//(',' dest+=[IntentionalElement])*
 		public Group getGroup_3_1_3() { return cGroup_3_1_3; }
 
-		//","
+		//','
 		public Keyword getCommaKeyword_3_1_3_0() { return cCommaKeyword_3_1_3_0; }
 
 		//dest+=[IntentionalElement]
@@ -326,15 +333,15 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_4() { return cRightSquareBracketKeyword_4; }
 	}
 
 	public class ConflictElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Conflict");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Conflict");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cConflictKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -354,13 +361,14 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//Conflict:
-		//	"Conflict" name=ID "[" ("dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]) "]";
+		//	'Conflict' name=ID
+		//	'[' ('dest' source=[IntentionalElement] & 'source' dest=[IntentionalElement]) ']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Conflict" name=ID "[" ("dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]) "]"
+		//'Conflict' name=ID '[' ('dest' source=[IntentionalElement] & 'source' dest=[IntentionalElement]) ']'
 		public Group getGroup() { return cGroup; }
 
-		//"Conflict"
+		//'Conflict'
 		public Keyword getConflictKeyword_0() { return cConflictKeyword_0; }
 
 		//name=ID
@@ -369,16 +377,16 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 
-		//"["
+		//'['
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//"dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]
+		//('dest' source=[IntentionalElement] & 'source' dest=[IntentionalElement])
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//"dest" source=[IntentionalElement]
+		//'dest' source=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
-		//"dest"
+		//'dest'
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
 		//source=[IntentionalElement]
@@ -390,10 +398,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//"source" dest=[IntentionalElement]
+		//'source' dest=[IntentionalElement]
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
-		//"source"
+		//'source'
 		public Keyword getSourceKeyword_3_1_0() { return cSourceKeyword_3_1_0; }
 
 		//dest=[IntentionalElement]
@@ -405,12 +413,12 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_1_0_1; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_4() { return cRightSquareBracketKeyword_4; }
 	}
 
 	public class GoalElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Goal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Goal");
 		private final UnorderedGroup cUnorderedGroup = (UnorderedGroup)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cUnorderedGroup.eContents().get(0);
 		private final Keyword cGoalKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -455,25 +463,31 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightSquareBracketKeyword_8_1 = (Keyword)cGroup_8.eContents().get(1);
 		
 		//Goal:
-		//	"Goal" name=ID (":" title=STRING)? // short string for title
-		//	"[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-		//	//TODO: validate in custom validator
-		//	& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-		//	("completion" date=STRING)? & ("delay cost" cod=INT)? & rationale=Rationale? & ref=Reference? "]";
+		//	'Goal' name=ID (':' title=STRING)? // short string for title
+		//	'['
+		//	description=Description?
+		//	& ('priority' & priority=PriorityEnum)?
+		//	& ('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//	& ('cost' cost=INT)?
+		//	& ('benefit' benefit=INT)?
+		//	& ('completion' date=STRING)? //TODO: validate in custom validator
+		//	& ('delay cost' cod=INT)?
+		//	& rationale=Rationale?
+		//	& ref=Reference?
+		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Goal" name=ID (":" title=STRING)? // short string for title
-		//"[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-		////TODO: validate in custom validator
-		//& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-		//("completion" date=STRING)? & ("delay cost" cod=INT)? & rationale=Rationale? & ref=Reference? "]"
+		//'Goal' name=ID (':' title=STRING)? // short string for title
+		//'[' description=Description? & ('priority' & priority=PriorityEnum)? & ('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//& ('cost' cost=INT)? & ('benefit' benefit=INT)? & ('completion' date=STRING)? //TODO: validate in custom validator
+		//& ('delay cost' cod=INT)? & rationale=Rationale? & ref=Reference? ']'
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 
-		//"Goal" name=ID (":" title=STRING)? // short string for title
-		//"[" description=Description?
+		//'Goal' name=ID (':' title=STRING)? // short string for title
+		//'[' description=Description?
 		public Group getGroup_0() { return cGroup_0; }
 
-		//"Goal"
+		//'Goal'
 		public Keyword getGoalKeyword_0_0() { return cGoalKeyword_0_0; }
 
 		//name=ID
@@ -482,10 +496,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_0_1_0() { return cNameIDTerminalRuleCall_0_1_0; }
 
-		//(":" title=STRING)?
+		//(':' title=STRING)?
 		public Group getGroup_0_2() { return cGroup_0_2; }
 
-		//":"
+		//':'
 		public Keyword getColonKeyword_0_2_0() { return cColonKeyword_0_2_0; }
 
 		//title=STRING
@@ -494,7 +508,8 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getTitleSTRINGTerminalRuleCall_0_2_1_0() { return cTitleSTRINGTerminalRuleCall_0_2_1_0; }
 
-		//"["
+		//// short string for title
+		//'['
 		public Keyword getLeftSquareBracketKeyword_0_3() { return cLeftSquareBracketKeyword_0_3; }
 
 		//description=Description?
@@ -503,10 +518,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//Description
 		public RuleCall getDescriptionDescriptionParserRuleCall_0_4_0() { return cDescriptionDescriptionParserRuleCall_0_4_0; }
 
-		//("priority" & priority=PriorityEnum)?
+		//('priority' & priority=PriorityEnum)?
 		public UnorderedGroup getUnorderedGroup_1() { return cUnorderedGroup_1; }
 
-		//"priority"
+		//'priority'
 		public Keyword getPriorityKeyword_1_0() { return cPriorityKeyword_1_0; }
 
 		//priority=PriorityEnum
@@ -515,10 +530,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//PriorityEnum
 		public RuleCall getPriorityPriorityEnumEnumRuleCall_1_1_0() { return cPriorityPriorityEnumEnumRuleCall_1_1_0; }
 
-		//("time" time=INT)?
+		//('time' time=INT)?
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"time"
+		//'time'
 		public Keyword getTimeKeyword_2_0() { return cTimeKeyword_2_0; }
 
 		//time=INT
@@ -527,10 +542,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getTimeINTTerminalRuleCall_2_1_0() { return cTimeINTTerminalRuleCall_2_1_0; }
 
-		//("cost" cost=INT)?
+		//('cost' cost=INT)?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"cost"
+		//'cost'
 		public Keyword getCostKeyword_3_0() { return cCostKeyword_3_0; }
 
 		//cost=INT
@@ -539,10 +554,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getCostINTTerminalRuleCall_3_1_0() { return cCostINTTerminalRuleCall_3_1_0; }
 
-		//("benefit" benefit=INT)?
+		//('benefit' benefit=INT)?
 		public Group getGroup_4() { return cGroup_4; }
 
-		//"benefit"
+		//'benefit'
 		public Keyword getBenefitKeyword_4_0() { return cBenefitKeyword_4_0; }
 
 		//benefit=INT
@@ -551,10 +566,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getBenefitINTTerminalRuleCall_4_1_0() { return cBenefitINTTerminalRuleCall_4_1_0; }
 
-		//("completion" date=STRING)?
+		//('completion' date=STRING)?
 		public Group getGroup_5() { return cGroup_5; }
 
-		//"completion"
+		//'completion'
 		public Keyword getCompletionKeyword_5_0() { return cCompletionKeyword_5_0; }
 
 		//date=STRING
@@ -563,10 +578,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getDateSTRINGTerminalRuleCall_5_1_0() { return cDateSTRINGTerminalRuleCall_5_1_0; }
 
-		//("delay cost" cod=INT)?
+		//('delay cost' cod=INT)?
 		public Group getGroup_6() { return cGroup_6; }
 
-		//"delay cost"
+		//'delay cost'
 		public Keyword getDelayCostKeyword_6_0() { return cDelayCostKeyword_6_0; }
 
 		//cod=INT
@@ -581,7 +596,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//Rationale
 		public RuleCall getRationaleRationaleParserRuleCall_7_0() { return cRationaleRationaleParserRuleCall_7_0; }
 
-		//ref=Reference? "]"
+		//ref=Reference? ']'
 		public Group getGroup_8() { return cGroup_8; }
 
 		//ref=Reference?
@@ -590,12 +605,12 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//Reference
 		public RuleCall getRefReferenceParserRuleCall_8_0_0() { return cRefReferenceParserRuleCall_8_0_0; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_8_1() { return cRightSquareBracketKeyword_8_1; }
 	}
 
 	public class SoftgoalElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Softgoal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Softgoal");
 		private final UnorderedGroup cUnorderedGroup = (UnorderedGroup)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cUnorderedGroup.eContents().get(0);
 		private final Keyword cSoftgoalKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -640,27 +655,34 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightSquareBracketKeyword_8_1 = (Keyword)cGroup_8.eContents().get(1);
 		
 		//Softgoal:
-		//	"Softgoal" name=ID (":" title=STRING)? // short string for title
-		//	"[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//	'Softgoal' name=ID (':' title=STRING)? // short string for title
+		//	'['
+		//	description=Description?
+		//	& ('priority' & priority=PriorityEnum)?
+		//	//TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//	& ('time' time=INT)?
+		//	& ('cost' cost=INT)?
+		//	& ('benefit' benefit=INT)?
 		//	//TODO: validate in custom validator
-		//	& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-		//	("completion" date=STRING)? & ("delay cost" cod=INT)? & rationale=Rationale? & ref=Reference? //the document e.g. business strategy
-		//	"]";
+		//	& ('completion' date=STRING)?
+		//	& ('delay cost' cod=INT)?
+		//	& rationale=Rationale?
+		//	& ref=Reference? //the document e.g. business strategy
+		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Softgoal" name=ID (":" title=STRING)? // short string for title
-		//"[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-		////TODO: validate in custom validator
-		//& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-		//("completion" date=STRING)? & ("delay cost" cod=INT)? & rationale=Rationale? & ref=Reference? //the document e.g. business strategy
-		//"]"
+		//'Softgoal' name=ID (':' title=STRING)? // short string for title
+		//'[' description=Description? & ('priority' & priority=PriorityEnum)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//& ('time' time=INT)? & ('cost' cost=INT)? & ('benefit' benefit=INT)? //TODO: validate in custom validator
+		//& ('completion' date=STRING)? & ('delay cost' cod=INT)? & rationale=Rationale? & ref=Reference? //the document e.g. business strategy
+		//']'
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 
-		//"Softgoal" name=ID (":" title=STRING)? // short string for title
-		//"[" description=Description?
+		//'Softgoal' name=ID (':' title=STRING)? // short string for title
+		//'[' description=Description?
 		public Group getGroup_0() { return cGroup_0; }
 
-		//"Softgoal"
+		//'Softgoal'
 		public Keyword getSoftgoalKeyword_0_0() { return cSoftgoalKeyword_0_0; }
 
 		//name=ID
@@ -669,10 +691,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_0_1_0() { return cNameIDTerminalRuleCall_0_1_0; }
 
-		//(":" title=STRING)?
+		//(':' title=STRING)?
 		public Group getGroup_0_2() { return cGroup_0_2; }
 
-		//":"
+		//':'
 		public Keyword getColonKeyword_0_2_0() { return cColonKeyword_0_2_0; }
 
 		//title=STRING
@@ -681,7 +703,8 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getTitleSTRINGTerminalRuleCall_0_2_1_0() { return cTitleSTRINGTerminalRuleCall_0_2_1_0; }
 
-		//"["
+		//// short string for title
+		//'['
 		public Keyword getLeftSquareBracketKeyword_0_3() { return cLeftSquareBracketKeyword_0_3; }
 
 		//description=Description?
@@ -690,10 +713,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//Description
 		public RuleCall getDescriptionDescriptionParserRuleCall_0_4_0() { return cDescriptionDescriptionParserRuleCall_0_4_0; }
 
-		//("priority" & priority=PriorityEnum)?
+		//('priority' & priority=PriorityEnum)?
 		public UnorderedGroup getUnorderedGroup_1() { return cUnorderedGroup_1; }
 
-		//"priority"
+		//'priority'
 		public Keyword getPriorityKeyword_1_0() { return cPriorityKeyword_1_0; }
 
 		//priority=PriorityEnum
@@ -702,10 +725,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//PriorityEnum
 		public RuleCall getPriorityPriorityEnumEnumRuleCall_1_1_0() { return cPriorityPriorityEnumEnumRuleCall_1_1_0; }
 
-		//("time" time=INT)?
+		//('time' time=INT)?
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"time"
+		//'time'
 		public Keyword getTimeKeyword_2_0() { return cTimeKeyword_2_0; }
 
 		//time=INT
@@ -714,10 +737,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getTimeINTTerminalRuleCall_2_1_0() { return cTimeINTTerminalRuleCall_2_1_0; }
 
-		//("cost" cost=INT)?
+		//('cost' cost=INT)?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"cost"
+		//'cost'
 		public Keyword getCostKeyword_3_0() { return cCostKeyword_3_0; }
 
 		//cost=INT
@@ -726,10 +749,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getCostINTTerminalRuleCall_3_1_0() { return cCostINTTerminalRuleCall_3_1_0; }
 
-		//("benefit" benefit=INT)?
+		//('benefit' benefit=INT)?
 		public Group getGroup_4() { return cGroup_4; }
 
-		//"benefit"
+		//'benefit'
 		public Keyword getBenefitKeyword_4_0() { return cBenefitKeyword_4_0; }
 
 		//benefit=INT
@@ -738,10 +761,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getBenefitINTTerminalRuleCall_4_1_0() { return cBenefitINTTerminalRuleCall_4_1_0; }
 
-		//("completion" date=STRING)?
+		//('completion' date=STRING)?
 		public Group getGroup_5() { return cGroup_5; }
 
-		//"completion"
+		//'completion'
 		public Keyword getCompletionKeyword_5_0() { return cCompletionKeyword_5_0; }
 
 		//date=STRING
@@ -750,10 +773,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getDateSTRINGTerminalRuleCall_5_1_0() { return cDateSTRINGTerminalRuleCall_5_1_0; }
 
-		//("delay cost" cod=INT)?
+		//('delay cost' cod=INT)?
 		public Group getGroup_6() { return cGroup_6; }
 
-		//"delay cost"
+		//'delay cost'
 		public Keyword getDelayCostKeyword_6_0() { return cDelayCostKeyword_6_0; }
 
 		//cod=INT
@@ -769,7 +792,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		public RuleCall getRationaleRationaleParserRuleCall_7_0() { return cRationaleRationaleParserRuleCall_7_0; }
 
 		//ref=Reference? //the document e.g. business strategy
-		//"]"
+		//']'
 		public Group getGroup_8() { return cGroup_8; }
 
 		//ref=Reference?
@@ -778,12 +801,13 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//Reference
 		public RuleCall getRefReferenceParserRuleCall_8_0_0() { return cRefReferenceParserRuleCall_8_0_0; }
 
-		//"]"
+		////the document e.g. business strategy
+		//']'
 		public Keyword getRightSquareBracketKeyword_8_1() { return cRightSquareBracketKeyword_8_1; }
 	}
 
 	public class TaskElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Task");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Task");
 		private final UnorderedGroup cUnorderedGroup = (UnorderedGroup)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cUnorderedGroup.eContents().get(0);
 		private final Keyword cTaskKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -824,22 +848,28 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightSquareBracketKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
 		
 		//Task:
-		//	"Task" name=ID (":" title=STRING)? "[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-		//	//TODO: validate in custom validator
-		//	& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-		//	("completion" date=STRING)? & ("delay cost" cod=INT)? "]";
+		//	'Task' name=ID (':' title=STRING)?
+		//	'['
+		//	description=Description?
+		//	& ('priority' & priority=PriorityEnum)?
+		//	& ('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//	& ('cost' cost=INT)?
+		//	& ('benefit' benefit=INT)?
+		//	& ('completion' date=STRING)? //TODO: validate in custom validator
+		//	& ('delay cost' cod=INT)?
+		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"Task" name=ID (":" title=STRING)? "[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-		////TODO: validate in custom validator
-		//& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-		//("completion" date=STRING)? & ("delay cost" cod=INT)? "]"
+		//'Task' name=ID (':' title=STRING)? '[' description=Description? & ('priority' & priority=PriorityEnum)? & ('time'
+		//time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+		//& ('cost' cost=INT)? & ('benefit' benefit=INT)? & ('completion' date=STRING)? //TODO: validate in custom validator
+		//& ('delay cost' cod=INT)? ']'
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 
-		//"Task" name=ID (":" title=STRING)? "[" description=Description?
+		//'Task' name=ID (':' title=STRING)? '[' description=Description?
 		public Group getGroup_0() { return cGroup_0; }
 
-		//"Task"
+		//'Task'
 		public Keyword getTaskKeyword_0_0() { return cTaskKeyword_0_0; }
 
 		//name=ID
@@ -848,10 +878,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_0_1_0() { return cNameIDTerminalRuleCall_0_1_0; }
 
-		//(":" title=STRING)?
+		//(':' title=STRING)?
 		public Group getGroup_0_2() { return cGroup_0_2; }
 
-		//":"
+		//':'
 		public Keyword getColonKeyword_0_2_0() { return cColonKeyword_0_2_0; }
 
 		//title=STRING
@@ -860,7 +890,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getTitleSTRINGTerminalRuleCall_0_2_1_0() { return cTitleSTRINGTerminalRuleCall_0_2_1_0; }
 
-		//"["
+		//'['
 		public Keyword getLeftSquareBracketKeyword_0_3() { return cLeftSquareBracketKeyword_0_3; }
 
 		//description=Description?
@@ -869,10 +899,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//Description
 		public RuleCall getDescriptionDescriptionParserRuleCall_0_4_0() { return cDescriptionDescriptionParserRuleCall_0_4_0; }
 
-		//("priority" & priority=PriorityEnum)?
+		//('priority' & priority=PriorityEnum)?
 		public UnorderedGroup getUnorderedGroup_1() { return cUnorderedGroup_1; }
 
-		//"priority"
+		//'priority'
 		public Keyword getPriorityKeyword_1_0() { return cPriorityKeyword_1_0; }
 
 		//priority=PriorityEnum
@@ -881,10 +911,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//PriorityEnum
 		public RuleCall getPriorityPriorityEnumEnumRuleCall_1_1_0() { return cPriorityPriorityEnumEnumRuleCall_1_1_0; }
 
-		//("time" time=INT)?
+		//('time' time=INT)?
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"time"
+		//'time'
 		public Keyword getTimeKeyword_2_0() { return cTimeKeyword_2_0; }
 
 		//time=INT
@@ -893,10 +923,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getTimeINTTerminalRuleCall_2_1_0() { return cTimeINTTerminalRuleCall_2_1_0; }
 
-		//("cost" cost=INT)?
+		//('cost' cost=INT)?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"cost"
+		//'cost'
 		public Keyword getCostKeyword_3_0() { return cCostKeyword_3_0; }
 
 		//cost=INT
@@ -905,10 +935,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getCostINTTerminalRuleCall_3_1_0() { return cCostINTTerminalRuleCall_3_1_0; }
 
-		//("benefit" benefit=INT)?
+		//('benefit' benefit=INT)?
 		public Group getGroup_4() { return cGroup_4; }
 
-		//"benefit"
+		//'benefit'
 		public Keyword getBenefitKeyword_4_0() { return cBenefitKeyword_4_0; }
 
 		//benefit=INT
@@ -917,10 +947,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getBenefitINTTerminalRuleCall_4_1_0() { return cBenefitINTTerminalRuleCall_4_1_0; }
 
-		//("completion" date=STRING)?
+		//('completion' date=STRING)?
 		public Group getGroup_5() { return cGroup_5; }
 
-		//"completion"
+		//'completion'
 		public Keyword getCompletionKeyword_5_0() { return cCompletionKeyword_5_0; }
 
 		//date=STRING
@@ -929,13 +959,13 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getDateSTRINGTerminalRuleCall_5_1_0() { return cDateSTRINGTerminalRuleCall_5_1_0; }
 
-		//("delay cost" cod=INT)? "]"
+		//('delay cost' cod=INT)? ']'
 		public Group getGroup_6() { return cGroup_6; }
 
-		//("delay cost" cod=INT)?
+		//('delay cost' cod=INT)?
 		public Group getGroup_6_0() { return cGroup_6_0; }
 
-		//"delay cost"
+		//'delay cost'
 		public Keyword getDelayCostKeyword_6_0_0() { return cDelayCostKeyword_6_0_0; }
 
 		//cod=INT
@@ -944,25 +974,25 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getCodINTTerminalRuleCall_6_0_1_0() { return cCodINTTerminalRuleCall_6_0_1_0; }
 
-		//"]"
+		//']'
 		public Keyword getRightSquareBracketKeyword_6_1() { return cRightSquareBracketKeyword_6_1; }
 	}
 
 	public class DescriptionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Description");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Description");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDescriptionKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTextAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cTextSTRINGTerminalRuleCall_1_0 = (RuleCall)cTextAssignment_1.eContents().get(0);
 		
 		//Description:
-		//	"description" text=STRING;
+		//	'description' text=STRING;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"description" text=STRING
+		//'description' text=STRING
 		public Group getGroup() { return cGroup; }
 
-		//"description"
+		//'description'
 		public Keyword getDescriptionKeyword_0() { return cDescriptionKeyword_0; }
 
 		//text=STRING
@@ -973,20 +1003,20 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class RationaleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Rationale");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Rationale");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cRationaleKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTextAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cTextSTRINGTerminalRuleCall_1_0 = (RuleCall)cTextAssignment_1.eContents().get(0);
 		
 		//Rationale:
-		//	"rationale" text=STRING;
+		//	'rationale' text=STRING;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"rationale" text=STRING
+		//'rationale' text=STRING
 		public Group getGroup() { return cGroup; }
 
-		//"rationale"
+		//'rationale'
 		public Keyword getRationaleKeyword_0() { return cRationaleKeyword_0; }
 
 		//text=STRING
@@ -997,20 +1027,20 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class ReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Reference");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Reference");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSeeDocumentKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cDocReferenceAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cDocReferenceSTRINGTerminalRuleCall_1_0 = (RuleCall)cDocReferenceAssignment_1.eContents().get(0);
 		
 		//Reference:
-		//	"see document" docReference+=STRING;
+		//	'see document' docReference+=STRING;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"see document" docReference+=STRING
+		//'see document' docReference+=STRING
 		public Group getGroup() { return cGroup; }
 
-		//"see document"
+		//'see document'
 		public Keyword getSeeDocumentKeyword_0() { return cSeeDocumentKeyword_0; }
 
 		//docReference+=STRING
@@ -1021,7 +1051,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class PreferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Preference");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Preference");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cPrefersKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cFirstAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1033,15 +1063,16 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cLastIntentionalElementIDTerminalRuleCall_3_0_1 = (RuleCall)cLastIntentionalElementCrossReference_3_0.eContents().get(1);
 		private final Keyword cRightParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
+		////turns out the 'default' is the first one. 
 		////TODO: Semantic validation that first/last exist and are not equal
 		//Preference:
-		//	"prefers(" first=[IntentionalElement] "," last=[IntentionalElement] ")";
+		//	'prefers(' first=[IntentionalElement] ',' last=[IntentionalElement] ')';
 		@Override public ParserRule getRule() { return rule; }
 
-		//"prefers(" first=[IntentionalElement] "," last=[IntentionalElement] ")"
+		//'prefers(' first=[IntentionalElement] ',' last=[IntentionalElement] ')'
 		public Group getGroup() { return cGroup; }
 
-		//"prefers("
+		//'prefers('
 		public Keyword getPrefersKeyword_0() { return cPrefersKeyword_0; }
 
 		//first=[IntentionalElement]
@@ -1053,7 +1084,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getFirstIntentionalElementIDTerminalRuleCall_1_0_1() { return cFirstIntentionalElementIDTerminalRuleCall_1_0_1; }
 
-		//","
+		//','
 		public Keyword getCommaKeyword_2() { return cCommaKeyword_2; }
 
 		//last=[IntentionalElement]
@@ -1065,13 +1096,13 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getLastIntentionalElementIDTerminalRuleCall_3_0_1() { return cLastIntentionalElementIDTerminalRuleCall_3_0_1; }
 
-		//")"
+		//')'
 		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
 	}
 	
 	
 	public class PriorityEnumElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "PriorityEnum");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.PriorityEnum");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cNAEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cNANAKeyword_0_0 = (Keyword)cNAEnumLiteralDeclaration_0.eContents().get(0);
@@ -1082,7 +1113,6 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final EnumLiteralDeclaration cHIGHEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
 		private final Keyword cHIGHHIGHKeyword_3_0 = (Keyword)cHIGHEnumLiteralDeclaration_3.eContents().get(0);
 		
-		////turns out the 'default' is the first one. 
 		//enum PriorityEnum:
 		//	NA | LOW | MED | HIGH;
 		public EnumRule getRule() { return rule; }
@@ -1127,7 +1157,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	private final DescriptionElements pDescription;
 	private final RationaleElements pRationale;
 	private final ReferenceElements pReference;
-	private final PriorityEnumElements unknownRulePriorityEnum;
+	private final PriorityEnumElements ePriorityEnum;
 	private final PreferenceElements pPreference;
 	
 	private final Grammar grammar;
@@ -1151,7 +1181,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		this.pDescription = new DescriptionElements();
 		this.pRationale = new RationaleElements();
 		this.pReference = new ReferenceElements();
-		this.unknownRulePriorityEnum = new PriorityEnumElements();
+		this.ePriorityEnum = new PriorityEnumElements();
 		this.pPreference = new PreferenceElements();
 	}
 	
@@ -1183,7 +1213,9 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Roadmap:
-	//	(name="Roadmap" STRING)? components+=IntentionalElement* relations+=(Refinement | Conflict)*;
+	//	(name='Roadmap' STRING)?
+	//	components+=IntentionalElement*
+	//	relations+=(Refinement | Conflict)*;
 	public RoadmapElements getRoadmapAccess() {
 		return pRoadmap;
 	}
@@ -1192,7 +1224,6 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		return getRoadmapAccess().getRule();
 	}
 
-	//// superclass. Implies Goals and Options are semantically equivalent ...
 	//IntentionalElement:
 	//	Goal | Task | Softgoal;
 	public IntentionalElementElements getIntentionalElementAccess() {
@@ -1220,8 +1251,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//AndRefinement:
-	//	"And" name=ID "[" ("dest" source+=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
-	//	dest+=[IntentionalElement])* "]") "]";
+	//	'And' name=ID
+	//	'[' ('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+	//	']')
+	//	']';
 	public AndRefinementElements getAndRefinementAccess() {
 		return pAndRefinement;
 	}
@@ -1231,8 +1264,10 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//OrRefinement:
-	//	"Or" name=ID "[" ("dest" source=[IntentionalElement] & "source" "[" dest+=[IntentionalElement] (","
-	//	dest+=[IntentionalElement])* "]") "]";
+	//	'Or' name=ID
+	//	'[' ('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+	//	']')
+	//	']';
 	public OrRefinementElements getOrRefinementAccess() {
 		return pOrRefinement;
 	}
@@ -1242,7 +1277,8 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Conflict:
-	//	"Conflict" name=ID "[" ("dest" source=[IntentionalElement] & "source" dest=[IntentionalElement]) "]";
+	//	'Conflict' name=ID
+	//	'[' ('dest' source=[IntentionalElement] & 'source' dest=[IntentionalElement]) ']';
 	public ConflictElements getConflictAccess() {
 		return pConflict;
 	}
@@ -1252,11 +1288,18 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Goal:
-	//	"Goal" name=ID (":" title=STRING)? // short string for title
-	//	"[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-	//	//TODO: validate in custom validator
-	//	& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-	//	("completion" date=STRING)? & ("delay cost" cod=INT)? & rationale=Rationale? & ref=Reference? "]";
+	//	'Goal' name=ID (':' title=STRING)? // short string for title
+	//	'['
+	//	description=Description?
+	//	& ('priority' & priority=PriorityEnum)?
+	//	& ('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+	//	& ('cost' cost=INT)?
+	//	& ('benefit' benefit=INT)?
+	//	& ('completion' date=STRING)? //TODO: validate in custom validator
+	//	& ('delay cost' cod=INT)?
+	//	& rationale=Rationale?
+	//	& ref=Reference?
+	//	']';
 	public GoalElements getGoalAccess() {
 		return pGoal;
 	}
@@ -1266,12 +1309,20 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Softgoal:
-	//	"Softgoal" name=ID (":" title=STRING)? // short string for title
-	//	"[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+	//	'Softgoal' name=ID (':' title=STRING)? // short string for title
+	//	'['
+	//	description=Description?
+	//	& ('priority' & priority=PriorityEnum)?
+	//	//TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+	//	& ('time' time=INT)?
+	//	& ('cost' cost=INT)?
+	//	& ('benefit' benefit=INT)?
 	//	//TODO: validate in custom validator
-	//	& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-	//	("completion" date=STRING)? & ("delay cost" cod=INT)? & rationale=Rationale? & ref=Reference? //the document e.g. business strategy
-	//	"]";
+	//	& ('completion' date=STRING)?
+	//	& ('delay cost' cod=INT)?
+	//	& rationale=Rationale?
+	//	& ref=Reference? //the document e.g. business strategy
+	//	']';
 	public SoftgoalElements getSoftgoalAccess() {
 		return pSoftgoal;
 	}
@@ -1281,10 +1332,16 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Task:
-	//	"Task" name=ID (":" title=STRING)? "[" description=Description? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
-	//	//TODO: validate in custom validator
-	//	& ("priority" & priority=PriorityEnum)? & ("time" time=INT)? & ("cost" cost=INT)? & ("benefit" benefit=INT)? &
-	//	("completion" date=STRING)? & ("delay cost" cod=INT)? "]";
+	//	'Task' name=ID (':' title=STRING)?
+	//	'['
+	//	description=Description?
+	//	& ('priority' & priority=PriorityEnum)?
+	//	& ('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
+	//	& ('cost' cost=INT)?
+	//	& ('benefit' benefit=INT)?
+	//	& ('completion' date=STRING)? //TODO: validate in custom validator
+	//	& ('delay cost' cod=INT)?
+	//	']';
 	public TaskElements getTaskAccess() {
 		return pTask;
 	}
@@ -1294,7 +1351,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Description:
-	//	"description" text=STRING;
+	//	'description' text=STRING;
 	public DescriptionElements getDescriptionAccess() {
 		return pDescription;
 	}
@@ -1304,7 +1361,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Rationale:
-	//	"rationale" text=STRING;
+	//	'rationale' text=STRING;
 	public RationaleElements getRationaleAccess() {
 		return pRationale;
 	}
@@ -1314,7 +1371,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Reference:
-	//	"see document" docReference+=STRING;
+	//	'see document' docReference+=STRING;
 	public ReferenceElements getReferenceAccess() {
 		return pReference;
 	}
@@ -1323,20 +1380,20 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		return getReferenceAccess().getRule();
 	}
 
-	////turns out the 'default' is the first one. 
 	//enum PriorityEnum:
 	//	NA | LOW | MED | HIGH;
 	public PriorityEnumElements getPriorityEnumAccess() {
-		return unknownRulePriorityEnum;
+		return ePriorityEnum;
 	}
 	
 	public EnumRule getPriorityEnumRule() {
 		return getPriorityEnumAccess().getRule();
 	}
 
+	////turns out the 'default' is the first one. 
 	////TODO: Semantic validation that first/last exist and are not equal
 	//Preference:
-	//	"prefers(" first=[IntentionalElement] "," last=[IntentionalElement] ")";
+	//	'prefers(' first=[IntentionalElement] ',' last=[IntentionalElement] ')';
 	public PreferenceElements getPreferenceAccess() {
 		return pPreference;
 	}
@@ -1346,38 +1403,38 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//terminal ID:
-	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;
+	//	'^'? ('a'..'z' | 'A'..'Z' | '_') ('a'..'z' | 'A'..'Z' | '_' | '0'..'9')*;
 	public TerminalRule getIDRule() {
 		return gaTerminals.getIDRule();
 	} 
 
 	//terminal INT returns ecore::EInt:
-	//	"0".."9"+;
+	//	'0'..'9'+;
 	public TerminalRule getINTRule() {
 		return gaTerminals.getINTRule();
 	} 
 
 	//terminal STRING:
-	//	"\"" ("\\" . / * 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' * / | !("\\" | "\""))* "\"" | "\'" ("\\" .
-	//	/ * 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' * / | !("\\" | "\'"))* "\'";
+	//	'"' ('\\' . | !('\\' | '"'))* '"' |
+	//	"'" ('\\' . | !('\\' | "'"))* "'";
 	public TerminalRule getSTRINGRule() {
 		return gaTerminals.getSTRINGRule();
 	} 
 
 	//terminal ML_COMMENT:
-	//	"/ *"->"* /";
+	//	'/ *'->'* /';
 	public TerminalRule getML_COMMENTRule() {
 		return gaTerminals.getML_COMMENTRule();
 	} 
 
 	//terminal SL_COMMENT:
-	//	"//" !("\n" | "\r")* ("\r"? "\n")?;
+	//	'//' !('\n' | '\r')* ('\r'? '\n')?;
 	public TerminalRule getSL_COMMENTRule() {
 		return gaTerminals.getSL_COMMENTRule();
 	} 
 
 	//terminal WS:
-	//	(" " | "\t" | "\r" | "\n")+;
+	//	' ' | '\t' | '\r' | '\n'+;
 	public TerminalRule getWSRule() {
 		return gaTerminals.getWSRule();
 	} 

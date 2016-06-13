@@ -23,5 +23,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: edu.cmu.sei.eebm.ui.quickfix,
  edu.cmu.sei.eebm.ui.contentassist,
  edu.cmu.sei.eebm.ui.internal,
- edu.cmu.sei.eebm.ui.contentassist.antlr
+ edu.cmu.sei.eebm.ui.contentassist.antlr,
+ edu.cmu.sei.eebm.ui.contentassist.antlr.internal
 Bundle-Activator: edu.cmu.sei.eebm.ui.internal.EEBMActivator

@@ -110,7 +110,7 @@ ruleRoadmap returns [EObject current=null]
        			$current, 
        			"components",
         		lv_components_2_0, 
-        		"IntentionalElement");
+        		"edu.cmu.sei.eebm.EEBM.IntentionalElement");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -129,7 +129,7 @@ ruleRoadmap returns [EObject current=null]
        			$current, 
        			"relations",
         		lv_relations_3_1, 
-        		"Refinement");
+        		"edu.cmu.sei.eebm.EEBM.Refinement");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -144,7 +144,7 @@ ruleRoadmap returns [EObject current=null]
        			$current, 
        			"relations",
         		lv_relations_3_2, 
-        		"Conflict");
+        		"edu.cmu.sei.eebm.EEBM.Conflict");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -280,7 +280,7 @@ ruleAndRefinement returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -431,7 +431,7 @@ ruleOrRefinement returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -582,7 +582,7 @@ ruleConflict returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -722,7 +722,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_2_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -744,7 +744,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"title",
         		lv_title_4_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -765,7 +765,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"description",
         		lv_description_6_0, 
-        		"Description");
+        		"edu.cmu.sei.eebm.EEBM.Description");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -825,7 +825,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"priority",
         		lv_priority_9_0, 
-        		"PriorityEnum");
+        		"edu.cmu.sei.eebm.EEBM.PriorityEnum");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -875,7 +875,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"time",
         		lv_time_11_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -909,7 +909,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"cost",
         		lv_cost_13_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -943,7 +943,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"benefit",
         		lv_benefit_15_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -977,7 +977,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"date",
         		lv_date_17_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -1011,7 +1011,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"cod",
         		lv_cod_19_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1040,7 +1040,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"rationale",
         		lv_rationale_20_0, 
-        		"Rationale");
+        		"edu.cmu.sei.eebm.EEBM.Rationale");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1070,7 +1070,7 @@ ruleGoal returns [EObject current=null]
        			$current, 
        			"ref",
         		lv_ref_21_0, 
-        		"Reference");
+        		"edu.cmu.sei.eebm.EEBM.Reference");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1147,7 +1147,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_2_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -1169,7 +1169,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"title",
         		lv_title_4_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -1190,7 +1190,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"description",
         		lv_description_6_0, 
-        		"Description");
+        		"edu.cmu.sei.eebm.EEBM.Description");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1250,7 +1250,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"priority",
         		lv_priority_9_0, 
-        		"PriorityEnum");
+        		"edu.cmu.sei.eebm.EEBM.PriorityEnum");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1300,7 +1300,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"time",
         		lv_time_11_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1334,7 +1334,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"cost",
         		lv_cost_13_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1368,7 +1368,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"benefit",
         		lv_benefit_15_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1402,7 +1402,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"date",
         		lv_date_17_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -1436,7 +1436,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"cod",
         		lv_cod_19_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1465,7 +1465,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"rationale",
         		lv_rationale_20_0, 
-        		"Rationale");
+        		"edu.cmu.sei.eebm.EEBM.Rationale");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1495,7 +1495,7 @@ ruleSoftgoal returns [EObject current=null]
        			$current, 
        			"ref",
         		lv_ref_21_0, 
-        		"Reference");
+        		"edu.cmu.sei.eebm.EEBM.Reference");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1572,7 +1572,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_2_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -1594,7 +1594,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"title",
         		lv_title_4_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -1615,7 +1615,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"description",
         		lv_description_6_0, 
-        		"Description");
+        		"edu.cmu.sei.eebm.EEBM.Description");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1675,7 +1675,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"priority",
         		lv_priority_9_0, 
-        		"PriorityEnum");
+        		"edu.cmu.sei.eebm.EEBM.PriorityEnum");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1725,7 +1725,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"time",
         		lv_time_11_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1759,7 +1759,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"cost",
         		lv_cost_13_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1793,7 +1793,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"benefit",
         		lv_benefit_15_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1827,7 +1827,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"date",
         		lv_date_17_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -1861,7 +1861,7 @@ ruleTask returns [EObject current=null]
        			$current, 
        			"cod",
         		lv_cod_19_0, 
-        		"INT");
+        		"org.eclipse.xtext.common.Terminals.INT");
 	    }
 
 )
@@ -1923,7 +1923,7 @@ ruleDescription returns [EObject current=null]
        			$current, 
        			"text",
         		lv_text_1_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -1966,7 +1966,7 @@ ruleRationale returns [EObject current=null]
        			$current, 
        			"text",
         		lv_text_1_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )
@@ -2009,7 +2009,7 @@ ruleReference returns [EObject current=null]
        			$current, 
        			"docReference",
         		lv_docReference_1_0, 
-        		"STRING");
+        		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
 )

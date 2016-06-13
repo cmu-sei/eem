@@ -3,16 +3,16 @@
  */
 package edu.cmu.sei.eebm;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import org.eclipse.xtext.junit4.GlobalRegistries;
 import org.eclipse.xtext.junit4.GlobalRegistries.GlobalStateMemento;
 import org.eclipse.xtext.junit4.IInjectorProvider;
 import org.eclipse.xtext.junit4.IRegistryConfigurator;
 
-import com.google.inject.Injector;
-
 public class EEBMInjectorProvider implements IInjectorProvider, IRegistryConfigurator {
-	
-    protected GlobalStateMemento stateBeforeInjectorCreation;
+
+	protected GlobalStateMemento stateBeforeInjectorCreation;
 	protected GlobalStateMemento stateAfterInjectorCreation;
 	protected Injector injector;
 
@@ -30,9 +30,26 @@ public class EEBMInjectorProvider implements IInjectorProvider, IRegistryConfigu
 		}
 		return injector;
 	}
-	
+
 	protected Injector internalCreateInjector() {
-	    return new EEBMStandaloneSetup().createInjectorAndDoEMFRegistration();
+		return new EEBMStandaloneSetup() {
+			@Override
+			public Injector createInjector() {
+				return Guice.createInjector(createRuntimeModule());
+			}
+		}.createInjectorAndDoEMFRegistration();
+	}
+
+	protected EEBMRuntimeModule createRuntimeModule() {
+		// make it work also with Maven/Tycho and OSGI
+		// see https://bugs.eclipse.org/bugs/show_bug.cgi?id=493672
+		return new EEBMRuntimeModule() {
+			@Override
+			public ClassLoader bindClassLoaderToInstance() {
+				return EEBMInjectorProvider.class
+						.getClassLoader();
+			}
+		};
 	}
 
 	@Override
