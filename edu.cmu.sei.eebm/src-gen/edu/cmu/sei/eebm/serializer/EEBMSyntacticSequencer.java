@@ -102,7 +102,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) 'benefit' benefit=INT
 	 *     (rule start) (ambiguity) 'completion' date=STRING
 	 *     (rule start) (ambiguity) 'cost' cost=INT
-	 *     (rule start) (ambiguity) 'delay cost' cod=INT
+	 *     (rule start) (ambiguity) 'delaycost' cod=INT
 	 *     (rule start) (ambiguity) 'time' time=INT
 	 *     (rule start) (ambiguity) (rule start)
 	 *     (rule start) (ambiguity) priority=PriorityEnum
@@ -112,7 +112,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     benefit=INT (ambiguity) 'benefit' benefit=INT
 	 *     benefit=INT (ambiguity) 'completion' date=STRING
 	 *     benefit=INT (ambiguity) 'cost' cost=INT
-	 *     benefit=INT (ambiguity) 'delay cost' cod=INT
+	 *     benefit=INT (ambiguity) 'delaycost' cod=INT
 	 *     benefit=INT (ambiguity) 'time' time=INT
 	 *     benefit=INT (ambiguity) (rule end)
 	 *     benefit=INT (ambiguity) priority=PriorityEnum
@@ -122,7 +122,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cod=INT (ambiguity) 'benefit' benefit=INT
 	 *     cod=INT (ambiguity) 'completion' date=STRING
 	 *     cod=INT (ambiguity) 'cost' cost=INT
-	 *     cod=INT (ambiguity) 'delay cost' cod=INT
+	 *     cod=INT (ambiguity) 'delaycost' cod=INT
 	 *     cod=INT (ambiguity) 'time' time=INT
 	 *     cod=INT (ambiguity) (rule end)
 	 *     cod=INT (ambiguity) priority=PriorityEnum
@@ -132,7 +132,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cost=INT (ambiguity) 'benefit' benefit=INT
 	 *     cost=INT (ambiguity) 'completion' date=STRING
 	 *     cost=INT (ambiguity) 'cost' cost=INT
-	 *     cost=INT (ambiguity) 'delay cost' cod=INT
+	 *     cost=INT (ambiguity) 'delaycost' cod=INT
 	 *     cost=INT (ambiguity) 'time' time=INT
 	 *     cost=INT (ambiguity) (rule end)
 	 *     cost=INT (ambiguity) priority=PriorityEnum
@@ -142,7 +142,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     date=STRING (ambiguity) 'benefit' benefit=INT
 	 *     date=STRING (ambiguity) 'completion' date=STRING
 	 *     date=STRING (ambiguity) 'cost' cost=INT
-	 *     date=STRING (ambiguity) 'delay cost' cod=INT
+	 *     date=STRING (ambiguity) 'delaycost' cod=INT
 	 *     date=STRING (ambiguity) 'time' time=INT
 	 *     date=STRING (ambiguity) (rule end)
 	 *     date=STRING (ambiguity) priority=PriorityEnum
@@ -152,7 +152,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     description=Description (ambiguity) 'benefit' benefit=INT
 	 *     description=Description (ambiguity) 'completion' date=STRING
 	 *     description=Description (ambiguity) 'cost' cost=INT
-	 *     description=Description (ambiguity) 'delay cost' cod=INT
+	 *     description=Description (ambiguity) 'delaycost' cod=INT
 	 *     description=Description (ambiguity) 'time' time=INT
 	 *     description=Description (ambiguity) (rule end)
 	 *     description=Description (ambiguity) priority=PriorityEnum
@@ -162,7 +162,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     name=ID '[' (ambiguity) 'benefit' benefit=INT
 	 *     name=ID '[' (ambiguity) 'completion' date=STRING
 	 *     name=ID '[' (ambiguity) 'cost' cost=INT
-	 *     name=ID '[' (ambiguity) 'delay cost' cod=INT
+	 *     name=ID '[' (ambiguity) 'delaycost' cod=INT
 	 *     name=ID '[' (ambiguity) 'time' time=INT
 	 *     name=ID '[' (ambiguity) (rule end)
 	 *     name=ID '[' (ambiguity) priority=PriorityEnum
@@ -172,7 +172,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     priority=PriorityEnum (ambiguity) 'benefit' benefit=INT
 	 *     priority=PriorityEnum (ambiguity) 'completion' date=STRING
 	 *     priority=PriorityEnum (ambiguity) 'cost' cost=INT
-	 *     priority=PriorityEnum (ambiguity) 'delay cost' cod=INT
+	 *     priority=PriorityEnum (ambiguity) 'delaycost' cod=INT
 	 *     priority=PriorityEnum (ambiguity) 'time' time=INT
 	 *     priority=PriorityEnum (ambiguity) (rule end)
 	 *     priority=PriorityEnum (ambiguity) priority=PriorityEnum
@@ -182,7 +182,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     rationale=Rationale (ambiguity) 'benefit' benefit=INT
 	 *     rationale=Rationale (ambiguity) 'completion' date=STRING
 	 *     rationale=Rationale (ambiguity) 'cost' cost=INT
-	 *     rationale=Rationale (ambiguity) 'delay cost' cod=INT
+	 *     rationale=Rationale (ambiguity) 'delaycost' cod=INT
 	 *     rationale=Rationale (ambiguity) 'time' time=INT
 	 *     rationale=Rationale (ambiguity) (rule end)
 	 *     rationale=Rationale (ambiguity) priority=PriorityEnum
@@ -192,7 +192,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     time=INT (ambiguity) 'benefit' benefit=INT
 	 *     time=INT (ambiguity) 'completion' date=STRING
 	 *     time=INT (ambiguity) 'cost' cost=INT
-	 *     time=INT (ambiguity) 'delay cost' cod=INT
+	 *     time=INT (ambiguity) 'delaycost' cod=INT
 	 *     time=INT (ambiguity) 'time' time=INT
 	 *     time=INT (ambiguity) (rule end)
 	 *     time=INT (ambiguity) priority=PriorityEnum
@@ -202,7 +202,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     title=STRING '[' (ambiguity) 'benefit' benefit=INT
 	 *     title=STRING '[' (ambiguity) 'completion' date=STRING
 	 *     title=STRING '[' (ambiguity) 'cost' cost=INT
-	 *     title=STRING '[' (ambiguity) 'delay cost' cod=INT
+	 *     title=STRING '[' (ambiguity) 'delaycost' cod=INT
 	 *     title=STRING '[' (ambiguity) 'time' time=INT
 	 *     title=STRING '[' (ambiguity) (rule end)
 	 *     title=STRING '[' (ambiguity) priority=PriorityEnum
@@ -233,7 +233,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ref=Reference (ambiguity) 'benefit' benefit=INT
 	 *     ref=Reference (ambiguity) 'completion' date=STRING
 	 *     ref=Reference (ambiguity) 'cost' cost=INT
-	 *     ref=Reference (ambiguity) 'delay cost' cod=INT
+	 *     ref=Reference (ambiguity) 'delaycost' cod=INT
 	 *     ref=Reference (ambiguity) 'time' time=INT
 	 *     ref=Reference (ambiguity) (rule end)
 	 *     ref=Reference (ambiguity) priority=PriorityEnum
@@ -253,7 +253,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) 'benefit' benefit=INT
 	 *     (rule start) (ambiguity) 'completion' date=STRING
 	 *     (rule start) (ambiguity) 'cost' cost=INT
-	 *     (rule start) (ambiguity) 'delay cost' cod=INT
+	 *     (rule start) (ambiguity) 'delaycost' cod=INT
 	 *     (rule start) (ambiguity) 'time' time=INT
 	 *     (rule start) (ambiguity) (rule start)
 	 *     (rule start) (ambiguity) priority=PriorityEnum
@@ -263,7 +263,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     benefit=INT (ambiguity) 'benefit' benefit=INT
 	 *     benefit=INT (ambiguity) 'completion' date=STRING
 	 *     benefit=INT (ambiguity) 'cost' cost=INT
-	 *     benefit=INT (ambiguity) 'delay cost' cod=INT
+	 *     benefit=INT (ambiguity) 'delaycost' cod=INT
 	 *     benefit=INT (ambiguity) 'time' time=INT
 	 *     benefit=INT (ambiguity) (rule end)
 	 *     benefit=INT (ambiguity) priority=PriorityEnum
@@ -273,7 +273,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cod=INT (ambiguity) 'benefit' benefit=INT
 	 *     cod=INT (ambiguity) 'completion' date=STRING
 	 *     cod=INT (ambiguity) 'cost' cost=INT
-	 *     cod=INT (ambiguity) 'delay cost' cod=INT
+	 *     cod=INT (ambiguity) 'delaycost' cod=INT
 	 *     cod=INT (ambiguity) 'time' time=INT
 	 *     cod=INT (ambiguity) (rule end)
 	 *     cod=INT (ambiguity) priority=PriorityEnum
@@ -283,7 +283,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cost=INT (ambiguity) 'benefit' benefit=INT
 	 *     cost=INT (ambiguity) 'completion' date=STRING
 	 *     cost=INT (ambiguity) 'cost' cost=INT
-	 *     cost=INT (ambiguity) 'delay cost' cod=INT
+	 *     cost=INT (ambiguity) 'delaycost' cod=INT
 	 *     cost=INT (ambiguity) 'time' time=INT
 	 *     cost=INT (ambiguity) (rule end)
 	 *     cost=INT (ambiguity) priority=PriorityEnum
@@ -293,7 +293,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     date=STRING (ambiguity) 'benefit' benefit=INT
 	 *     date=STRING (ambiguity) 'completion' date=STRING
 	 *     date=STRING (ambiguity) 'cost' cost=INT
-	 *     date=STRING (ambiguity) 'delay cost' cod=INT
+	 *     date=STRING (ambiguity) 'delaycost' cod=INT
 	 *     date=STRING (ambiguity) 'time' time=INT
 	 *     date=STRING (ambiguity) (rule end)
 	 *     date=STRING (ambiguity) priority=PriorityEnum
@@ -303,7 +303,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     description=Description (ambiguity) 'benefit' benefit=INT
 	 *     description=Description (ambiguity) 'completion' date=STRING
 	 *     description=Description (ambiguity) 'cost' cost=INT
-	 *     description=Description (ambiguity) 'delay cost' cod=INT
+	 *     description=Description (ambiguity) 'delaycost' cod=INT
 	 *     description=Description (ambiguity) 'time' time=INT
 	 *     description=Description (ambiguity) (rule end)
 	 *     description=Description (ambiguity) priority=PriorityEnum
@@ -313,7 +313,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     name=ID '[' (ambiguity) 'benefit' benefit=INT
 	 *     name=ID '[' (ambiguity) 'completion' date=STRING
 	 *     name=ID '[' (ambiguity) 'cost' cost=INT
-	 *     name=ID '[' (ambiguity) 'delay cost' cod=INT
+	 *     name=ID '[' (ambiguity) 'delaycost' cod=INT
 	 *     name=ID '[' (ambiguity) 'time' time=INT
 	 *     name=ID '[' (ambiguity) (rule end)
 	 *     name=ID '[' (ambiguity) priority=PriorityEnum
@@ -323,7 +323,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     priority=PriorityEnum (ambiguity) 'benefit' benefit=INT
 	 *     priority=PriorityEnum (ambiguity) 'completion' date=STRING
 	 *     priority=PriorityEnum (ambiguity) 'cost' cost=INT
-	 *     priority=PriorityEnum (ambiguity) 'delay cost' cod=INT
+	 *     priority=PriorityEnum (ambiguity) 'delaycost' cod=INT
 	 *     priority=PriorityEnum (ambiguity) 'time' time=INT
 	 *     priority=PriorityEnum (ambiguity) (rule end)
 	 *     priority=PriorityEnum (ambiguity) priority=PriorityEnum
@@ -333,7 +333,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     rationale=Rationale (ambiguity) 'benefit' benefit=INT
 	 *     rationale=Rationale (ambiguity) 'completion' date=STRING
 	 *     rationale=Rationale (ambiguity) 'cost' cost=INT
-	 *     rationale=Rationale (ambiguity) 'delay cost' cod=INT
+	 *     rationale=Rationale (ambiguity) 'delaycost' cod=INT
 	 *     rationale=Rationale (ambiguity) 'time' time=INT
 	 *     rationale=Rationale (ambiguity) (rule end)
 	 *     rationale=Rationale (ambiguity) priority=PriorityEnum
@@ -343,7 +343,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     time=INT (ambiguity) 'benefit' benefit=INT
 	 *     time=INT (ambiguity) 'completion' date=STRING
 	 *     time=INT (ambiguity) 'cost' cost=INT
-	 *     time=INT (ambiguity) 'delay cost' cod=INT
+	 *     time=INT (ambiguity) 'delaycost' cod=INT
 	 *     time=INT (ambiguity) 'time' time=INT
 	 *     time=INT (ambiguity) (rule end)
 	 *     time=INT (ambiguity) priority=PriorityEnum
@@ -353,7 +353,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     title=STRING '[' (ambiguity) 'benefit' benefit=INT
 	 *     title=STRING '[' (ambiguity) 'completion' date=STRING
 	 *     title=STRING '[' (ambiguity) 'cost' cost=INT
-	 *     title=STRING '[' (ambiguity) 'delay cost' cod=INT
+	 *     title=STRING '[' (ambiguity) 'delaycost' cod=INT
 	 *     title=STRING '[' (ambiguity) 'time' time=INT
 	 *     title=STRING '[' (ambiguity) (rule end)
 	 *     title=STRING '[' (ambiguity) priority=PriorityEnum
@@ -384,7 +384,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ref=Reference (ambiguity) 'benefit' benefit=INT
 	 *     ref=Reference (ambiguity) 'completion' date=STRING
 	 *     ref=Reference (ambiguity) 'cost' cost=INT
-	 *     ref=Reference (ambiguity) 'delay cost' cod=INT
+	 *     ref=Reference (ambiguity) 'delaycost' cod=INT
 	 *     ref=Reference (ambiguity) 'time' time=INT
 	 *     ref=Reference (ambiguity) (rule end)
 	 *     ref=Reference (ambiguity) priority=PriorityEnum
@@ -404,7 +404,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) 'benefit' benefit=INT
 	 *     (rule start) (ambiguity) 'completion' date=STRING
 	 *     (rule start) (ambiguity) 'cost' cost=INT
-	 *     (rule start) (ambiguity) 'delay cost' cod=INT
+	 *     (rule start) (ambiguity) 'delaycost' cod=INT
 	 *     (rule start) (ambiguity) 'time' time=INT
 	 *     (rule start) (ambiguity) (rule start)
 	 *     (rule start) (ambiguity) priority=PriorityEnum
@@ -412,7 +412,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     benefit=INT (ambiguity) 'benefit' benefit=INT
 	 *     benefit=INT (ambiguity) 'completion' date=STRING
 	 *     benefit=INT (ambiguity) 'cost' cost=INT
-	 *     benefit=INT (ambiguity) 'delay cost' cod=INT
+	 *     benefit=INT (ambiguity) 'delaycost' cod=INT
 	 *     benefit=INT (ambiguity) 'time' time=INT
 	 *     benefit=INT (ambiguity) (rule end)
 	 *     benefit=INT (ambiguity) priority=PriorityEnum
@@ -420,7 +420,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cost=INT (ambiguity) 'benefit' benefit=INT
 	 *     cost=INT (ambiguity) 'completion' date=STRING
 	 *     cost=INT (ambiguity) 'cost' cost=INT
-	 *     cost=INT (ambiguity) 'delay cost' cod=INT
+	 *     cost=INT (ambiguity) 'delaycost' cod=INT
 	 *     cost=INT (ambiguity) 'time' time=INT
 	 *     cost=INT (ambiguity) (rule end)
 	 *     cost=INT (ambiguity) priority=PriorityEnum
@@ -428,7 +428,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     date=STRING (ambiguity) 'benefit' benefit=INT
 	 *     date=STRING (ambiguity) 'completion' date=STRING
 	 *     date=STRING (ambiguity) 'cost' cost=INT
-	 *     date=STRING (ambiguity) 'delay cost' cod=INT
+	 *     date=STRING (ambiguity) 'delaycost' cod=INT
 	 *     date=STRING (ambiguity) 'time' time=INT
 	 *     date=STRING (ambiguity) (rule end)
 	 *     date=STRING (ambiguity) priority=PriorityEnum
@@ -436,7 +436,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     description=Description (ambiguity) 'benefit' benefit=INT
 	 *     description=Description (ambiguity) 'completion' date=STRING
 	 *     description=Description (ambiguity) 'cost' cost=INT
-	 *     description=Description (ambiguity) 'delay cost' cod=INT
+	 *     description=Description (ambiguity) 'delaycost' cod=INT
 	 *     description=Description (ambiguity) 'time' time=INT
 	 *     description=Description (ambiguity) (rule end)
 	 *     description=Description (ambiguity) priority=PriorityEnum
@@ -444,7 +444,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     name=ID '[' (ambiguity) 'benefit' benefit=INT
 	 *     name=ID '[' (ambiguity) 'completion' date=STRING
 	 *     name=ID '[' (ambiguity) 'cost' cost=INT
-	 *     name=ID '[' (ambiguity) 'delay cost' cod=INT
+	 *     name=ID '[' (ambiguity) 'delaycost' cod=INT
 	 *     name=ID '[' (ambiguity) 'time' time=INT
 	 *     name=ID '[' (ambiguity) (rule end)
 	 *     name=ID '[' (ambiguity) priority=PriorityEnum
@@ -452,7 +452,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     priority=PriorityEnum (ambiguity) 'benefit' benefit=INT
 	 *     priority=PriorityEnum (ambiguity) 'completion' date=STRING
 	 *     priority=PriorityEnum (ambiguity) 'cost' cost=INT
-	 *     priority=PriorityEnum (ambiguity) 'delay cost' cod=INT
+	 *     priority=PriorityEnum (ambiguity) 'delaycost' cod=INT
 	 *     priority=PriorityEnum (ambiguity) 'time' time=INT
 	 *     priority=PriorityEnum (ambiguity) (rule end)
 	 *     priority=PriorityEnum (ambiguity) priority=PriorityEnum
@@ -460,7 +460,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     time=INT (ambiguity) 'benefit' benefit=INT
 	 *     time=INT (ambiguity) 'completion' date=STRING
 	 *     time=INT (ambiguity) 'cost' cost=INT
-	 *     time=INT (ambiguity) 'delay cost' cod=INT
+	 *     time=INT (ambiguity) 'delaycost' cod=INT
 	 *     time=INT (ambiguity) 'time' time=INT
 	 *     time=INT (ambiguity) (rule end)
 	 *     time=INT (ambiguity) priority=PriorityEnum
@@ -468,7 +468,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     title=STRING '[' (ambiguity) 'benefit' benefit=INT
 	 *     title=STRING '[' (ambiguity) 'completion' date=STRING
 	 *     title=STRING '[' (ambiguity) 'cost' cost=INT
-	 *     title=STRING '[' (ambiguity) 'delay cost' cod=INT
+	 *     title=STRING '[' (ambiguity) 'delaycost' cod=INT
 	 *     title=STRING '[' (ambiguity) 'time' time=INT
 	 *     title=STRING '[' (ambiguity) (rule end)
 	 *     title=STRING '[' (ambiguity) priority=PriorityEnum
@@ -497,7 +497,7 @@ public class EEBMSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cod=INT (ambiguity) 'benefit' benefit=INT
 	 *     cod=INT (ambiguity) 'completion' date=STRING
 	 *     cod=INT (ambiguity) 'cost' cost=INT
-	 *     cod=INT (ambiguity) 'delay cost' cod=INT
+	 *     cod=INT (ambiguity) 'delaycost' cod=INT
 	 *     cod=INT (ambiguity) 'time' time=INT
 	 *     cod=INT (ambiguity) (rule end)
 	 *     cod=INT (ambiguity) priority=PriorityEnum

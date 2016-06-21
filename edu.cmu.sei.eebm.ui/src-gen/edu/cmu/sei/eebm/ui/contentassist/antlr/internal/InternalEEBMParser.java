@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'NA'", "'LOW'", "'MED'", "'HIGH'", "'And'", "'['", "']'", "'dest'", "'source'", "','", "'Or'", "'Conflict'", "'Goal'", "':'", "'time'", "'cost'", "'benefit'", "'completion'", "'delay cost'", "'Softgoal'", "'Task'", "'description'", "'rationale'", "'see document'", "'priority'", "'Roadmap'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'NA'", "'LOW'", "'MED'", "'HIGH'", "'And'", "'['", "']'", "'dest'", "'source'", "','", "'Or'", "'Conflict'", "'Goal'", "':'", "'time'", "'cost'", "'benefit'", "'completion'", "'delaycost'", "'Softgoal'", "'Task'", "'description'", "'rationale'", "'see'", "'priority'", "'Roadmap'"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -2400,31 +2400,31 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndRefinement__Group_3_0__1__Impl"
-    // InternalEEBM.g:884:1: rule__AndRefinement__Group_3_0__1__Impl : ( ( rule__AndRefinement__SourceAssignment_3_0_1 ) ) ;
+    // InternalEEBM.g:884:1: rule__AndRefinement__Group_3_0__1__Impl : ( ( rule__AndRefinement__DestAssignment_3_0_1 ) ) ;
     public final void rule__AndRefinement__Group_3_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:888:1: ( ( ( rule__AndRefinement__SourceAssignment_3_0_1 ) ) )
-            // InternalEEBM.g:889:1: ( ( rule__AndRefinement__SourceAssignment_3_0_1 ) )
+            // InternalEEBM.g:888:1: ( ( ( rule__AndRefinement__DestAssignment_3_0_1 ) ) )
+            // InternalEEBM.g:889:1: ( ( rule__AndRefinement__DestAssignment_3_0_1 ) )
             {
-            // InternalEEBM.g:889:1: ( ( rule__AndRefinement__SourceAssignment_3_0_1 ) )
-            // InternalEEBM.g:890:1: ( rule__AndRefinement__SourceAssignment_3_0_1 )
+            // InternalEEBM.g:889:1: ( ( rule__AndRefinement__DestAssignment_3_0_1 ) )
+            // InternalEEBM.g:890:1: ( rule__AndRefinement__DestAssignment_3_0_1 )
             {
-             before(grammarAccess.getAndRefinementAccess().getSourceAssignment_3_0_1()); 
-            // InternalEEBM.g:891:1: ( rule__AndRefinement__SourceAssignment_3_0_1 )
-            // InternalEEBM.g:891:2: rule__AndRefinement__SourceAssignment_3_0_1
+             before(grammarAccess.getAndRefinementAccess().getDestAssignment_3_0_1()); 
+            // InternalEEBM.g:891:1: ( rule__AndRefinement__DestAssignment_3_0_1 )
+            // InternalEEBM.g:891:2: rule__AndRefinement__DestAssignment_3_0_1
             {
             pushFollow(FOLLOW_2);
-            rule__AndRefinement__SourceAssignment_3_0_1();
+            rule__AndRefinement__DestAssignment_3_0_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getAndRefinementAccess().getSourceAssignment_3_0_1()); 
+             after(grammarAccess.getAndRefinementAccess().getDestAssignment_3_0_1()); 
 
             }
 
@@ -2635,31 +2635,31 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndRefinement__Group_3_1__2__Impl"
-    // InternalEEBM.g:979:1: rule__AndRefinement__Group_3_1__2__Impl : ( ( rule__AndRefinement__DestAssignment_3_1_2 ) ) ;
+    // InternalEEBM.g:979:1: rule__AndRefinement__Group_3_1__2__Impl : ( ( rule__AndRefinement__SourceAssignment_3_1_2 ) ) ;
     public final void rule__AndRefinement__Group_3_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:983:1: ( ( ( rule__AndRefinement__DestAssignment_3_1_2 ) ) )
-            // InternalEEBM.g:984:1: ( ( rule__AndRefinement__DestAssignment_3_1_2 ) )
+            // InternalEEBM.g:983:1: ( ( ( rule__AndRefinement__SourceAssignment_3_1_2 ) ) )
+            // InternalEEBM.g:984:1: ( ( rule__AndRefinement__SourceAssignment_3_1_2 ) )
             {
-            // InternalEEBM.g:984:1: ( ( rule__AndRefinement__DestAssignment_3_1_2 ) )
-            // InternalEEBM.g:985:1: ( rule__AndRefinement__DestAssignment_3_1_2 )
+            // InternalEEBM.g:984:1: ( ( rule__AndRefinement__SourceAssignment_3_1_2 ) )
+            // InternalEEBM.g:985:1: ( rule__AndRefinement__SourceAssignment_3_1_2 )
             {
-             before(grammarAccess.getAndRefinementAccess().getDestAssignment_3_1_2()); 
-            // InternalEEBM.g:986:1: ( rule__AndRefinement__DestAssignment_3_1_2 )
-            // InternalEEBM.g:986:2: rule__AndRefinement__DestAssignment_3_1_2
+             before(grammarAccess.getAndRefinementAccess().getSourceAssignment_3_1_2()); 
+            // InternalEEBM.g:986:1: ( rule__AndRefinement__SourceAssignment_3_1_2 )
+            // InternalEEBM.g:986:2: rule__AndRefinement__SourceAssignment_3_1_2
             {
             pushFollow(FOLLOW_2);
-            rule__AndRefinement__DestAssignment_3_1_2();
+            rule__AndRefinement__SourceAssignment_3_1_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getAndRefinementAccess().getDestAssignment_3_1_2()); 
+             after(grammarAccess.getAndRefinementAccess().getSourceAssignment_3_1_2()); 
 
             }
 
@@ -2963,31 +2963,31 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndRefinement__Group_3_1_3__1__Impl"
-    // InternalEEBM.g:1107:1: rule__AndRefinement__Group_3_1_3__1__Impl : ( ( rule__AndRefinement__DestAssignment_3_1_3_1 ) ) ;
+    // InternalEEBM.g:1107:1: rule__AndRefinement__Group_3_1_3__1__Impl : ( ( rule__AndRefinement__SourceAssignment_3_1_3_1 ) ) ;
     public final void rule__AndRefinement__Group_3_1_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:1111:1: ( ( ( rule__AndRefinement__DestAssignment_3_1_3_1 ) ) )
-            // InternalEEBM.g:1112:1: ( ( rule__AndRefinement__DestAssignment_3_1_3_1 ) )
+            // InternalEEBM.g:1111:1: ( ( ( rule__AndRefinement__SourceAssignment_3_1_3_1 ) ) )
+            // InternalEEBM.g:1112:1: ( ( rule__AndRefinement__SourceAssignment_3_1_3_1 ) )
             {
-            // InternalEEBM.g:1112:1: ( ( rule__AndRefinement__DestAssignment_3_1_3_1 ) )
-            // InternalEEBM.g:1113:1: ( rule__AndRefinement__DestAssignment_3_1_3_1 )
+            // InternalEEBM.g:1112:1: ( ( rule__AndRefinement__SourceAssignment_3_1_3_1 ) )
+            // InternalEEBM.g:1113:1: ( rule__AndRefinement__SourceAssignment_3_1_3_1 )
             {
-             before(grammarAccess.getAndRefinementAccess().getDestAssignment_3_1_3_1()); 
-            // InternalEEBM.g:1114:1: ( rule__AndRefinement__DestAssignment_3_1_3_1 )
-            // InternalEEBM.g:1114:2: rule__AndRefinement__DestAssignment_3_1_3_1
+             before(grammarAccess.getAndRefinementAccess().getSourceAssignment_3_1_3_1()); 
+            // InternalEEBM.g:1114:1: ( rule__AndRefinement__SourceAssignment_3_1_3_1 )
+            // InternalEEBM.g:1114:2: rule__AndRefinement__SourceAssignment_3_1_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__AndRefinement__DestAssignment_3_1_3_1();
+            rule__AndRefinement__SourceAssignment_3_1_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getAndRefinementAccess().getDestAssignment_3_1_3_1()); 
+             after(grammarAccess.getAndRefinementAccess().getSourceAssignment_3_1_3_1()); 
 
             }
 
@@ -3508,31 +3508,31 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__Group_3_0__1__Impl"
-    // InternalEEBM.g:1330:1: rule__OrRefinement__Group_3_0__1__Impl : ( ( rule__OrRefinement__SourceAssignment_3_0_1 ) ) ;
+    // InternalEEBM.g:1330:1: rule__OrRefinement__Group_3_0__1__Impl : ( ( rule__OrRefinement__DestAssignment_3_0_1 ) ) ;
     public final void rule__OrRefinement__Group_3_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:1334:1: ( ( ( rule__OrRefinement__SourceAssignment_3_0_1 ) ) )
-            // InternalEEBM.g:1335:1: ( ( rule__OrRefinement__SourceAssignment_3_0_1 ) )
+            // InternalEEBM.g:1334:1: ( ( ( rule__OrRefinement__DestAssignment_3_0_1 ) ) )
+            // InternalEEBM.g:1335:1: ( ( rule__OrRefinement__DestAssignment_3_0_1 ) )
             {
-            // InternalEEBM.g:1335:1: ( ( rule__OrRefinement__SourceAssignment_3_0_1 ) )
-            // InternalEEBM.g:1336:1: ( rule__OrRefinement__SourceAssignment_3_0_1 )
+            // InternalEEBM.g:1335:1: ( ( rule__OrRefinement__DestAssignment_3_0_1 ) )
+            // InternalEEBM.g:1336:1: ( rule__OrRefinement__DestAssignment_3_0_1 )
             {
-             before(grammarAccess.getOrRefinementAccess().getSourceAssignment_3_0_1()); 
-            // InternalEEBM.g:1337:1: ( rule__OrRefinement__SourceAssignment_3_0_1 )
-            // InternalEEBM.g:1337:2: rule__OrRefinement__SourceAssignment_3_0_1
+             before(grammarAccess.getOrRefinementAccess().getDestAssignment_3_0_1()); 
+            // InternalEEBM.g:1337:1: ( rule__OrRefinement__DestAssignment_3_0_1 )
+            // InternalEEBM.g:1337:2: rule__OrRefinement__DestAssignment_3_0_1
             {
             pushFollow(FOLLOW_2);
-            rule__OrRefinement__SourceAssignment_3_0_1();
+            rule__OrRefinement__DestAssignment_3_0_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getOrRefinementAccess().getSourceAssignment_3_0_1()); 
+             after(grammarAccess.getOrRefinementAccess().getDestAssignment_3_0_1()); 
 
             }
 
@@ -3743,31 +3743,31 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__Group_3_1__2__Impl"
-    // InternalEEBM.g:1425:1: rule__OrRefinement__Group_3_1__2__Impl : ( ( rule__OrRefinement__DestAssignment_3_1_2 ) ) ;
+    // InternalEEBM.g:1425:1: rule__OrRefinement__Group_3_1__2__Impl : ( ( rule__OrRefinement__SourceAssignment_3_1_2 ) ) ;
     public final void rule__OrRefinement__Group_3_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:1429:1: ( ( ( rule__OrRefinement__DestAssignment_3_1_2 ) ) )
-            // InternalEEBM.g:1430:1: ( ( rule__OrRefinement__DestAssignment_3_1_2 ) )
+            // InternalEEBM.g:1429:1: ( ( ( rule__OrRefinement__SourceAssignment_3_1_2 ) ) )
+            // InternalEEBM.g:1430:1: ( ( rule__OrRefinement__SourceAssignment_3_1_2 ) )
             {
-            // InternalEEBM.g:1430:1: ( ( rule__OrRefinement__DestAssignment_3_1_2 ) )
-            // InternalEEBM.g:1431:1: ( rule__OrRefinement__DestAssignment_3_1_2 )
+            // InternalEEBM.g:1430:1: ( ( rule__OrRefinement__SourceAssignment_3_1_2 ) )
+            // InternalEEBM.g:1431:1: ( rule__OrRefinement__SourceAssignment_3_1_2 )
             {
-             before(grammarAccess.getOrRefinementAccess().getDestAssignment_3_1_2()); 
-            // InternalEEBM.g:1432:1: ( rule__OrRefinement__DestAssignment_3_1_2 )
-            // InternalEEBM.g:1432:2: rule__OrRefinement__DestAssignment_3_1_2
+             before(grammarAccess.getOrRefinementAccess().getSourceAssignment_3_1_2()); 
+            // InternalEEBM.g:1432:1: ( rule__OrRefinement__SourceAssignment_3_1_2 )
+            // InternalEEBM.g:1432:2: rule__OrRefinement__SourceAssignment_3_1_2
             {
             pushFollow(FOLLOW_2);
-            rule__OrRefinement__DestAssignment_3_1_2();
+            rule__OrRefinement__SourceAssignment_3_1_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getOrRefinementAccess().getDestAssignment_3_1_2()); 
+             after(grammarAccess.getOrRefinementAccess().getSourceAssignment_3_1_2()); 
 
             }
 
@@ -4071,31 +4071,31 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OrRefinement__Group_3_1_3__1__Impl"
-    // InternalEEBM.g:1553:1: rule__OrRefinement__Group_3_1_3__1__Impl : ( ( rule__OrRefinement__DestAssignment_3_1_3_1 ) ) ;
+    // InternalEEBM.g:1553:1: rule__OrRefinement__Group_3_1_3__1__Impl : ( ( rule__OrRefinement__SourceAssignment_3_1_3_1 ) ) ;
     public final void rule__OrRefinement__Group_3_1_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:1557:1: ( ( ( rule__OrRefinement__DestAssignment_3_1_3_1 ) ) )
-            // InternalEEBM.g:1558:1: ( ( rule__OrRefinement__DestAssignment_3_1_3_1 ) )
+            // InternalEEBM.g:1557:1: ( ( ( rule__OrRefinement__SourceAssignment_3_1_3_1 ) ) )
+            // InternalEEBM.g:1558:1: ( ( rule__OrRefinement__SourceAssignment_3_1_3_1 ) )
             {
-            // InternalEEBM.g:1558:1: ( ( rule__OrRefinement__DestAssignment_3_1_3_1 ) )
-            // InternalEEBM.g:1559:1: ( rule__OrRefinement__DestAssignment_3_1_3_1 )
+            // InternalEEBM.g:1558:1: ( ( rule__OrRefinement__SourceAssignment_3_1_3_1 ) )
+            // InternalEEBM.g:1559:1: ( rule__OrRefinement__SourceAssignment_3_1_3_1 )
             {
-             before(grammarAccess.getOrRefinementAccess().getDestAssignment_3_1_3_1()); 
-            // InternalEEBM.g:1560:1: ( rule__OrRefinement__DestAssignment_3_1_3_1 )
-            // InternalEEBM.g:1560:2: rule__OrRefinement__DestAssignment_3_1_3_1
+             before(grammarAccess.getOrRefinementAccess().getSourceAssignment_3_1_3_1()); 
+            // InternalEEBM.g:1560:1: ( rule__OrRefinement__SourceAssignment_3_1_3_1 )
+            // InternalEEBM.g:1560:2: rule__OrRefinement__SourceAssignment_3_1_3_1
             {
             pushFollow(FOLLOW_2);
-            rule__OrRefinement__DestAssignment_3_1_3_1();
+            rule__OrRefinement__SourceAssignment_3_1_3_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getOrRefinementAccess().getDestAssignment_3_1_3_1()); 
+             after(grammarAccess.getOrRefinementAccess().getSourceAssignment_3_1_3_1()); 
 
             }
 
@@ -6053,21 +6053,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Goal__Group_6__0__Impl"
-    // InternalEEBM.g:2345:1: rule__Goal__Group_6__0__Impl : ( 'delay cost' ) ;
+    // InternalEEBM.g:2345:1: rule__Goal__Group_6__0__Impl : ( 'delaycost' ) ;
     public final void rule__Goal__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:2349:1: ( ( 'delay cost' ) )
-            // InternalEEBM.g:2350:1: ( 'delay cost' )
+            // InternalEEBM.g:2349:1: ( ( 'delaycost' ) )
+            // InternalEEBM.g:2350:1: ( 'delaycost' )
             {
-            // InternalEEBM.g:2350:1: ( 'delay cost' )
-            // InternalEEBM.g:2351:1: 'delay cost'
+            // InternalEEBM.g:2350:1: ( 'delaycost' )
+            // InternalEEBM.g:2351:1: 'delaycost'
             {
-             before(grammarAccess.getGoalAccess().getDelayCostKeyword_6_0()); 
+             before(grammarAccess.getGoalAccess().getDelaycostKeyword_6_0()); 
             match(input,29,FOLLOW_2); 
-             after(grammarAccess.getGoalAccess().getDelayCostKeyword_6_0()); 
+             after(grammarAccess.getGoalAccess().getDelaycostKeyword_6_0()); 
 
             }
 
@@ -7571,21 +7571,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Softgoal__Group_6__0__Impl"
-    // InternalEEBM.g:2944:1: rule__Softgoal__Group_6__0__Impl : ( 'delay cost' ) ;
+    // InternalEEBM.g:2944:1: rule__Softgoal__Group_6__0__Impl : ( 'delaycost' ) ;
     public final void rule__Softgoal__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:2948:1: ( ( 'delay cost' ) )
-            // InternalEEBM.g:2949:1: ( 'delay cost' )
+            // InternalEEBM.g:2948:1: ( ( 'delaycost' ) )
+            // InternalEEBM.g:2949:1: ( 'delaycost' )
             {
-            // InternalEEBM.g:2949:1: ( 'delay cost' )
-            // InternalEEBM.g:2950:1: 'delay cost'
+            // InternalEEBM.g:2949:1: ( 'delaycost' )
+            // InternalEEBM.g:2950:1: 'delaycost'
             {
-             before(grammarAccess.getSoftgoalAccess().getDelayCostKeyword_6_0()); 
+             before(grammarAccess.getSoftgoalAccess().getDelaycostKeyword_6_0()); 
             match(input,29,FOLLOW_2); 
-             after(grammarAccess.getSoftgoalAccess().getDelayCostKeyword_6_0()); 
+             after(grammarAccess.getSoftgoalAccess().getDelaycostKeyword_6_0()); 
 
             }
 
@@ -9255,21 +9255,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Task__Group_6_0__0__Impl"
-    // InternalEEBM.g:3606:1: rule__Task__Group_6_0__0__Impl : ( 'delay cost' ) ;
+    // InternalEEBM.g:3606:1: rule__Task__Group_6_0__0__Impl : ( 'delaycost' ) ;
     public final void rule__Task__Group_6_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:3610:1: ( ( 'delay cost' ) )
-            // InternalEEBM.g:3611:1: ( 'delay cost' )
+            // InternalEEBM.g:3610:1: ( ( 'delaycost' ) )
+            // InternalEEBM.g:3611:1: ( 'delaycost' )
             {
-            // InternalEEBM.g:3611:1: ( 'delay cost' )
-            // InternalEEBM.g:3612:1: 'delay cost'
+            // InternalEEBM.g:3611:1: ( 'delaycost' )
+            // InternalEEBM.g:3612:1: 'delaycost'
             {
-             before(grammarAccess.getTaskAccess().getDelayCostKeyword_6_0_0()); 
+             before(grammarAccess.getTaskAccess().getDelaycostKeyword_6_0_0()); 
             match(input,29,FOLLOW_2); 
-             after(grammarAccess.getTaskAccess().getDelayCostKeyword_6_0_0()); 
+             after(grammarAccess.getTaskAccess().getDelaycostKeyword_6_0_0()); 
 
             }
 
@@ -9720,21 +9720,21 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Reference__Group__0__Impl"
-    // InternalEEBM.g:3795:1: rule__Reference__Group__0__Impl : ( 'see document' ) ;
+    // InternalEEBM.g:3795:1: rule__Reference__Group__0__Impl : ( 'see' ) ;
     public final void rule__Reference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // InternalEEBM.g:3799:1: ( ( 'see document' ) )
-            // InternalEEBM.g:3800:1: ( 'see document' )
+            // InternalEEBM.g:3799:1: ( ( 'see' ) )
+            // InternalEEBM.g:3800:1: ( 'see' )
             {
-            // InternalEEBM.g:3800:1: ( 'see document' )
-            // InternalEEBM.g:3801:1: 'see document'
+            // InternalEEBM.g:3800:1: ( 'see' )
+            // InternalEEBM.g:3801:1: 'see'
             {
-             before(grammarAccess.getReferenceAccess().getSeeDocumentKeyword_0()); 
+             before(grammarAccess.getReferenceAccess().getSeeKeyword_0()); 
             match(input,34,FOLLOW_2); 
-             after(grammarAccess.getReferenceAccess().getSeeDocumentKeyword_0()); 
+             after(grammarAccess.getReferenceAccess().getSeeKeyword_0()); 
 
             }
 
@@ -14373,9 +14373,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__AndRefinement__NameAssignment_1"
 
 
-    // $ANTLR start "rule__AndRefinement__SourceAssignment_3_0_1"
-    // InternalEEBM.g:5404:1: rule__AndRefinement__SourceAssignment_3_0_1 : ( ( RULE_ID ) ) ;
-    public final void rule__AndRefinement__SourceAssignment_3_0_1() throws RecognitionException {
+    // $ANTLR start "rule__AndRefinement__DestAssignment_3_0_1"
+    // InternalEEBM.g:5404:1: rule__AndRefinement__DestAssignment_3_0_1 : ( ( RULE_ID ) ) ;
+    public final void rule__AndRefinement__DestAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -14386,17 +14386,17 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
             // InternalEEBM.g:5409:1: ( ( RULE_ID ) )
             // InternalEEBM.g:5410:1: ( RULE_ID )
             {
-             before(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+             before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_0_1_0()); 
             // InternalEEBM.g:5411:1: ( RULE_ID )
             // InternalEEBM.g:5412:1: RULE_ID
             {
-             before(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
+             before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
-             after(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
+             after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
 
             }
 
-             after(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+             after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_0_1_0()); 
 
             }
 
@@ -14415,12 +14415,12 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__AndRefinement__SourceAssignment_3_0_1"
+    // $ANTLR end "rule__AndRefinement__DestAssignment_3_0_1"
 
 
-    // $ANTLR start "rule__AndRefinement__DestAssignment_3_1_2"
-    // InternalEEBM.g:5423:1: rule__AndRefinement__DestAssignment_3_1_2 : ( ( RULE_ID ) ) ;
-    public final void rule__AndRefinement__DestAssignment_3_1_2() throws RecognitionException {
+    // $ANTLR start "rule__AndRefinement__SourceAssignment_3_1_2"
+    // InternalEEBM.g:5423:1: rule__AndRefinement__SourceAssignment_3_1_2 : ( ( RULE_ID ) ) ;
+    public final void rule__AndRefinement__SourceAssignment_3_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -14431,17 +14431,17 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
             // InternalEEBM.g:5428:1: ( ( RULE_ID ) )
             // InternalEEBM.g:5429:1: ( RULE_ID )
             {
-             before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+             before(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_1_2_0()); 
             // InternalEEBM.g:5430:1: ( RULE_ID )
             // InternalEEBM.g:5431:1: RULE_ID
             {
-             before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+             before(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
-             after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+             after(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
 
             }
 
-             after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+             after(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_1_2_0()); 
 
             }
 
@@ -14460,12 +14460,12 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__AndRefinement__DestAssignment_3_1_2"
+    // $ANTLR end "rule__AndRefinement__SourceAssignment_3_1_2"
 
 
-    // $ANTLR start "rule__AndRefinement__DestAssignment_3_1_3_1"
-    // InternalEEBM.g:5442:1: rule__AndRefinement__DestAssignment_3_1_3_1 : ( ( RULE_ID ) ) ;
-    public final void rule__AndRefinement__DestAssignment_3_1_3_1() throws RecognitionException {
+    // $ANTLR start "rule__AndRefinement__SourceAssignment_3_1_3_1"
+    // InternalEEBM.g:5442:1: rule__AndRefinement__SourceAssignment_3_1_3_1 : ( ( RULE_ID ) ) ;
+    public final void rule__AndRefinement__SourceAssignment_3_1_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -14476,17 +14476,17 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
             // InternalEEBM.g:5447:1: ( ( RULE_ID ) )
             // InternalEEBM.g:5448:1: ( RULE_ID )
             {
-             before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+             before(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_1_3_1_0()); 
             // InternalEEBM.g:5449:1: ( RULE_ID )
             // InternalEEBM.g:5450:1: RULE_ID
             {
-             before(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+             before(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
-             after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+             after(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
 
             }
 
-             after(grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+             after(grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_1_3_1_0()); 
 
             }
 
@@ -14505,7 +14505,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__AndRefinement__DestAssignment_3_1_3_1"
+    // $ANTLR end "rule__AndRefinement__SourceAssignment_3_1_3_1"
 
 
     // $ANTLR start "rule__OrRefinement__NameAssignment_1"
@@ -14545,9 +14545,9 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__OrRefinement__NameAssignment_1"
 
 
-    // $ANTLR start "rule__OrRefinement__SourceAssignment_3_0_1"
-    // InternalEEBM.g:5476:1: rule__OrRefinement__SourceAssignment_3_0_1 : ( ( RULE_ID ) ) ;
-    public final void rule__OrRefinement__SourceAssignment_3_0_1() throws RecognitionException {
+    // $ANTLR start "rule__OrRefinement__DestAssignment_3_0_1"
+    // InternalEEBM.g:5476:1: rule__OrRefinement__DestAssignment_3_0_1 : ( ( RULE_ID ) ) ;
+    public final void rule__OrRefinement__DestAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -14558,17 +14558,17 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
             // InternalEEBM.g:5481:1: ( ( RULE_ID ) )
             // InternalEEBM.g:5482:1: ( RULE_ID )
             {
-             before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+             before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_0_1_0()); 
             // InternalEEBM.g:5483:1: ( RULE_ID )
             // InternalEEBM.g:5484:1: RULE_ID
             {
-             before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
+             before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
-             after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
+             after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1()); 
 
             }
 
-             after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+             after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_0_1_0()); 
 
             }
 
@@ -14587,12 +14587,12 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__OrRefinement__SourceAssignment_3_0_1"
+    // $ANTLR end "rule__OrRefinement__DestAssignment_3_0_1"
 
 
-    // $ANTLR start "rule__OrRefinement__DestAssignment_3_1_2"
-    // InternalEEBM.g:5495:1: rule__OrRefinement__DestAssignment_3_1_2 : ( ( RULE_ID ) ) ;
-    public final void rule__OrRefinement__DestAssignment_3_1_2() throws RecognitionException {
+    // $ANTLR start "rule__OrRefinement__SourceAssignment_3_1_2"
+    // InternalEEBM.g:5495:1: rule__OrRefinement__SourceAssignment_3_1_2 : ( ( RULE_ID ) ) ;
+    public final void rule__OrRefinement__SourceAssignment_3_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -14603,17 +14603,17 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
             // InternalEEBM.g:5500:1: ( ( RULE_ID ) )
             // InternalEEBM.g:5501:1: ( RULE_ID )
             {
-             before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+             before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_1_2_0()); 
             // InternalEEBM.g:5502:1: ( RULE_ID )
             // InternalEEBM.g:5503:1: RULE_ID
             {
-             before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+             before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
-             after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
+             after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1()); 
 
             }
 
-             after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+             after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_1_2_0()); 
 
             }
 
@@ -14632,12 +14632,12 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__OrRefinement__DestAssignment_3_1_2"
+    // $ANTLR end "rule__OrRefinement__SourceAssignment_3_1_2"
 
 
-    // $ANTLR start "rule__OrRefinement__DestAssignment_3_1_3_1"
-    // InternalEEBM.g:5514:1: rule__OrRefinement__DestAssignment_3_1_3_1 : ( ( RULE_ID ) ) ;
-    public final void rule__OrRefinement__DestAssignment_3_1_3_1() throws RecognitionException {
+    // $ANTLR start "rule__OrRefinement__SourceAssignment_3_1_3_1"
+    // InternalEEBM.g:5514:1: rule__OrRefinement__SourceAssignment_3_1_3_1 : ( ( RULE_ID ) ) ;
+    public final void rule__OrRefinement__SourceAssignment_3_1_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -14648,17 +14648,17 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
             // InternalEEBM.g:5519:1: ( ( RULE_ID ) )
             // InternalEEBM.g:5520:1: ( RULE_ID )
             {
-             before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+             before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_1_3_1_0()); 
             // InternalEEBM.g:5521:1: ( RULE_ID )
             // InternalEEBM.g:5522:1: RULE_ID
             {
-             before(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+             before(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
             match(input,RULE_ID,FOLLOW_2); 
-             after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
+             after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1()); 
 
             }
 
-             after(grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+             after(grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_1_3_1_0()); 
 
             }
 
@@ -14677,7 +14677,7 @@ public class InternalEEBMParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__OrRefinement__DestAssignment_3_1_3_1"
+    // $ANTLR end "rule__OrRefinement__SourceAssignment_3_1_3_1"
 
 
     // $ANTLR start "rule__Conflict__NameAssignment_1"

@@ -16,12 +16,12 @@
 'benefit'=27
 'completion'=28
 'cost'=26
-'delay cost'=29
+'delaycost'=29
 'description'=32
 'dest'=18
 'priority'=35
 'rationale'=33
-'see document'=34
+'see'=34
 'source'=19
 'time'=25
 RULE_ANY_OTHER=10

@@ -134,32 +134,32 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final UnorderedGroup cUnorderedGroup_3 = (UnorderedGroup)cGroup.eContents().get(3);
 		private final Group cGroup_3_0 = (Group)cUnorderedGroup_3.eContents().get(0);
 		private final Keyword cDestKeyword_3_0_0 = (Keyword)cGroup_3_0.eContents().get(0);
-		private final Assignment cSourceAssignment_3_0_1 = (Assignment)cGroup_3_0.eContents().get(1);
-		private final CrossReference cSourceIntentionalElementCrossReference_3_0_1_0 = (CrossReference)cSourceAssignment_3_0_1.eContents().get(0);
-		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_0_1_0.eContents().get(1);
+		private final Assignment cDestAssignment_3_0_1 = (Assignment)cGroup_3_0.eContents().get(1);
+		private final CrossReference cDestIntentionalElementCrossReference_3_0_1_0 = (CrossReference)cDestAssignment_3_0_1.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_0_1_0.eContents().get(1);
 		private final Group cGroup_3_1 = (Group)cUnorderedGroup_3.eContents().get(1);
 		private final Keyword cSourceKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
-		private final Assignment cDestAssignment_3_1_2 = (Assignment)cGroup_3_1.eContents().get(2);
-		private final CrossReference cDestIntentionalElementCrossReference_3_1_2_0 = (CrossReference)cDestAssignment_3_1_2.eContents().get(0);
-		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_2_0.eContents().get(1);
+		private final Assignment cSourceAssignment_3_1_2 = (Assignment)cGroup_3_1.eContents().get(2);
+		private final CrossReference cSourceIntentionalElementCrossReference_3_1_2_0 = (CrossReference)cSourceAssignment_3_1_2.eContents().get(0);
+		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_1_2_0.eContents().get(1);
 		private final Group cGroup_3_1_3 = (Group)cGroup_3_1.eContents().get(3);
 		private final Keyword cCommaKeyword_3_1_3_0 = (Keyword)cGroup_3_1_3.eContents().get(0);
-		private final Assignment cDestAssignment_3_1_3_1 = (Assignment)cGroup_3_1_3.eContents().get(1);
-		private final CrossReference cDestIntentionalElementCrossReference_3_1_3_1_0 = (CrossReference)cDestAssignment_3_1_3_1.eContents().get(0);
-		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_3_1_0.eContents().get(1);
+		private final Assignment cSourceAssignment_3_1_3_1 = (Assignment)cGroup_3_1_3.eContents().get(1);
+		private final CrossReference cSourceIntentionalElementCrossReference_3_1_3_1_0 = (CrossReference)cSourceAssignment_3_1_3_1.eContents().get(0);
+		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_1_3_1_0.eContents().get(1);
 		private final Keyword cRightSquareBracketKeyword_3_1_4 = (Keyword)cGroup_3_1.eContents().get(4);
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//AndRefinement:
 		//	'And' name=ID
-		//	'[' ('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+		//	'[' ('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])*
 		//	']')
 		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//'And' name=ID '[' ('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (','
-		//dest+=[IntentionalElement])* ']') ']'
+		//'And' name=ID '[' ('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (','
+		//source+=[IntentionalElement])* ']') ']'
 		public Group getGroup() { return cGroup; }
 
 		//'And'
@@ -174,25 +174,25 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//'['
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
+		//('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])* ']')
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//'dest' source+=[IntentionalElement]
+		//'dest' dest=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
 		//'dest'
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
-		//source+=[IntentionalElement]
-		public Assignment getSourceAssignment_3_0_1() { return cSourceAssignment_3_0_1; }
+		//dest=[IntentionalElement]
+		public Assignment getDestAssignment_3_0_1() { return cDestAssignment_3_0_1; }
 
 		//[IntentionalElement]
-		public CrossReference getSourceIntentionalElementCrossReference_3_0_1_0() { return cSourceIntentionalElementCrossReference_3_0_1_0; }
+		public CrossReference getDestIntentionalElementCrossReference_3_0_1_0() { return cDestIntentionalElementCrossReference_3_0_1_0; }
 
 		//ID
-		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']'
+		//'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])* ']'
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
 		//'source'
@@ -201,29 +201,29 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//'['
 		public Keyword getLeftSquareBracketKeyword_3_1_1() { return cLeftSquareBracketKeyword_3_1_1; }
 
-		//dest+=[IntentionalElement]
-		public Assignment getDestAssignment_3_1_2() { return cDestAssignment_3_1_2; }
+		//source+=[IntentionalElement]
+		public Assignment getSourceAssignment_3_1_2() { return cSourceAssignment_3_1_2; }
 
 		//[IntentionalElement]
-		public CrossReference getDestIntentionalElementCrossReference_3_1_2_0() { return cDestIntentionalElementCrossReference_3_1_2_0; }
+		public CrossReference getSourceIntentionalElementCrossReference_3_1_2_0() { return cSourceIntentionalElementCrossReference_3_1_2_0; }
 
 		//ID
-		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
+		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
 
-		//(',' dest+=[IntentionalElement])*
+		//(',' source+=[IntentionalElement])*
 		public Group getGroup_3_1_3() { return cGroup_3_1_3; }
 
 		//','
 		public Keyword getCommaKeyword_3_1_3_0() { return cCommaKeyword_3_1_3_0; }
 
-		//dest+=[IntentionalElement]
-		public Assignment getDestAssignment_3_1_3_1() { return cDestAssignment_3_1_3_1; }
+		//source+=[IntentionalElement]
+		public Assignment getSourceAssignment_3_1_3_1() { return cSourceAssignment_3_1_3_1; }
 
 		//[IntentionalElement]
-		public CrossReference getDestIntentionalElementCrossReference_3_1_3_1_0() { return cDestIntentionalElementCrossReference_3_1_3_1_0; }
+		public CrossReference getSourceIntentionalElementCrossReference_3_1_3_1_0() { return cSourceIntentionalElementCrossReference_3_1_3_1_0; }
 
 		//ID
-		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
+		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
 
 		//']'
 		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
@@ -242,32 +242,32 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final UnorderedGroup cUnorderedGroup_3 = (UnorderedGroup)cGroup.eContents().get(3);
 		private final Group cGroup_3_0 = (Group)cUnorderedGroup_3.eContents().get(0);
 		private final Keyword cDestKeyword_3_0_0 = (Keyword)cGroup_3_0.eContents().get(0);
-		private final Assignment cSourceAssignment_3_0_1 = (Assignment)cGroup_3_0.eContents().get(1);
-		private final CrossReference cSourceIntentionalElementCrossReference_3_0_1_0 = (CrossReference)cSourceAssignment_3_0_1.eContents().get(0);
-		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_0_1_0.eContents().get(1);
+		private final Assignment cDestAssignment_3_0_1 = (Assignment)cGroup_3_0.eContents().get(1);
+		private final CrossReference cDestIntentionalElementCrossReference_3_0_1_0 = (CrossReference)cDestAssignment_3_0_1.eContents().get(0);
+		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_0_1_0.eContents().get(1);
 		private final Group cGroup_3_1 = (Group)cUnorderedGroup_3.eContents().get(1);
 		private final Keyword cSourceKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_3_1_1 = (Keyword)cGroup_3_1.eContents().get(1);
-		private final Assignment cDestAssignment_3_1_2 = (Assignment)cGroup_3_1.eContents().get(2);
-		private final CrossReference cDestIntentionalElementCrossReference_3_1_2_0 = (CrossReference)cDestAssignment_3_1_2.eContents().get(0);
-		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_2_0.eContents().get(1);
+		private final Assignment cSourceAssignment_3_1_2 = (Assignment)cGroup_3_1.eContents().get(2);
+		private final CrossReference cSourceIntentionalElementCrossReference_3_1_2_0 = (CrossReference)cSourceAssignment_3_1_2.eContents().get(0);
+		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_1_2_0.eContents().get(1);
 		private final Group cGroup_3_1_3 = (Group)cGroup_3_1.eContents().get(3);
 		private final Keyword cCommaKeyword_3_1_3_0 = (Keyword)cGroup_3_1_3.eContents().get(0);
-		private final Assignment cDestAssignment_3_1_3_1 = (Assignment)cGroup_3_1_3.eContents().get(1);
-		private final CrossReference cDestIntentionalElementCrossReference_3_1_3_1_0 = (CrossReference)cDestAssignment_3_1_3_1.eContents().get(0);
-		private final RuleCall cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1 = (RuleCall)cDestIntentionalElementCrossReference_3_1_3_1_0.eContents().get(1);
+		private final Assignment cSourceAssignment_3_1_3_1 = (Assignment)cGroup_3_1_3.eContents().get(1);
+		private final CrossReference cSourceIntentionalElementCrossReference_3_1_3_1_0 = (CrossReference)cSourceAssignment_3_1_3_1.eContents().get(0);
+		private final RuleCall cSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1 = (RuleCall)cSourceIntentionalElementCrossReference_3_1_3_1_0.eContents().get(1);
 		private final Keyword cRightSquareBracketKeyword_3_1_4 = (Keyword)cGroup_3_1.eContents().get(4);
 		private final Keyword cRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//OrRefinement:
 		//	'Or' name=ID
-		//	'[' ('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+		//	'[' ('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])*
 		//	']')
 		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
-		//'Or' name=ID '[' ('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (','
-		//dest+=[IntentionalElement])* ']') ']'
+		//'Or' name=ID '[' ('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (','
+		//source+=[IntentionalElement])* ']') ']'
 		public Group getGroup() { return cGroup; }
 
 		//'Or'
@@ -282,25 +282,25 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//'['
 		public Keyword getLeftSquareBracketKeyword_2() { return cLeftSquareBracketKeyword_2; }
 
-		//('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
+		//('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])* ']')
 		public UnorderedGroup getUnorderedGroup_3() { return cUnorderedGroup_3; }
 
-		//'dest' source=[IntentionalElement]
+		//'dest' dest=[IntentionalElement]
 		public Group getGroup_3_0() { return cGroup_3_0; }
 
 		//'dest'
 		public Keyword getDestKeyword_3_0_0() { return cDestKeyword_3_0_0; }
 
-		//source=[IntentionalElement]
-		public Assignment getSourceAssignment_3_0_1() { return cSourceAssignment_3_0_1; }
+		//dest=[IntentionalElement]
+		public Assignment getDestAssignment_3_0_1() { return cDestAssignment_3_0_1; }
 
 		//[IntentionalElement]
-		public CrossReference getSourceIntentionalElementCrossReference_3_0_1_0() { return cSourceIntentionalElementCrossReference_3_0_1_0; }
+		public CrossReference getDestIntentionalElementCrossReference_3_0_1_0() { return cDestIntentionalElementCrossReference_3_0_1_0; }
 
 		//ID
-		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
+		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_0_1_0_1; }
 
-		//'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']'
+		//'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])* ']'
 		public Group getGroup_3_1() { return cGroup_3_1; }
 
 		//'source'
@@ -309,29 +309,29 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//'['
 		public Keyword getLeftSquareBracketKeyword_3_1_1() { return cLeftSquareBracketKeyword_3_1_1; }
 
-		//dest+=[IntentionalElement]
-		public Assignment getDestAssignment_3_1_2() { return cDestAssignment_3_1_2; }
+		//source+=[IntentionalElement]
+		public Assignment getSourceAssignment_3_1_2() { return cSourceAssignment_3_1_2; }
 
 		//[IntentionalElement]
-		public CrossReference getDestIntentionalElementCrossReference_3_1_2_0() { return cDestIntentionalElementCrossReference_3_1_2_0; }
+		public CrossReference getSourceIntentionalElementCrossReference_3_1_2_0() { return cSourceIntentionalElementCrossReference_3_1_2_0; }
 
 		//ID
-		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
+		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_1_2_0_1; }
 
-		//(',' dest+=[IntentionalElement])*
+		//(',' source+=[IntentionalElement])*
 		public Group getGroup_3_1_3() { return cGroup_3_1_3; }
 
 		//','
 		public Keyword getCommaKeyword_3_1_3_0() { return cCommaKeyword_3_1_3_0; }
 
-		//dest+=[IntentionalElement]
-		public Assignment getDestAssignment_3_1_3_1() { return cDestAssignment_3_1_3_1; }
+		//source+=[IntentionalElement]
+		public Assignment getSourceAssignment_3_1_3_1() { return cSourceAssignment_3_1_3_1; }
 
 		//[IntentionalElement]
-		public CrossReference getDestIntentionalElementCrossReference_3_1_3_1_0() { return cDestIntentionalElementCrossReference_3_1_3_1_0; }
+		public CrossReference getSourceIntentionalElementCrossReference_3_1_3_1_0() { return cSourceIntentionalElementCrossReference_3_1_3_1_0; }
 
 		//ID
-		public RuleCall getDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cDestIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
+		public RuleCall getSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1() { return cSourceIntentionalElementIDTerminalRuleCall_3_1_3_1_0_1; }
 
 		//']'
 		public Keyword getRightSquareBracketKeyword_3_1_4() { return cRightSquareBracketKeyword_3_1_4; }
@@ -452,7 +452,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cDateAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
 		private final RuleCall cDateSTRINGTerminalRuleCall_5_1_0 = (RuleCall)cDateAssignment_5_1.eContents().get(0);
 		private final Group cGroup_6 = (Group)cUnorderedGroup.eContents().get(6);
-		private final Keyword cDelayCostKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Keyword cDelaycostKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
 		private final Assignment cCodAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
 		private final RuleCall cCodINTTerminalRuleCall_6_1_0 = (RuleCall)cCodAssignment_6_1.eContents().get(0);
 		private final Assignment cRationaleAssignment_7 = (Assignment)cUnorderedGroup.eContents().get(7);
@@ -471,7 +471,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//	& ('cost' cost=INT)?
 		//	& ('benefit' benefit=INT)?
 		//	& ('completion' date=STRING)? //TODO: validate in custom validator
-		//	& ('delay cost' cod=INT)?
+		//	& ('delaycost' cod=INT)?
 		//	& rationale=Rationale?
 		//	& ref=Reference?
 		//	']';
@@ -480,7 +480,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//'Goal' name=ID (':' title=STRING)? // short string for title
 		//'[' description=Description? & ('priority' & priority=PriorityEnum)? & ('time' time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
 		//& ('cost' cost=INT)? & ('benefit' benefit=INT)? & ('completion' date=STRING)? //TODO: validate in custom validator
-		//& ('delay cost' cod=INT)? & rationale=Rationale? & ref=Reference? ']'
+		//& ('delaycost' cod=INT)? & rationale=Rationale? & ref=Reference? ']'
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 
 		//'Goal' name=ID (':' title=STRING)? // short string for title
@@ -578,11 +578,11 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getDateSTRINGTerminalRuleCall_5_1_0() { return cDateSTRINGTerminalRuleCall_5_1_0; }
 
-		//('delay cost' cod=INT)?
+		//('delaycost' cod=INT)?
 		public Group getGroup_6() { return cGroup_6; }
 
-		//'delay cost'
-		public Keyword getDelayCostKeyword_6_0() { return cDelayCostKeyword_6_0; }
+		//'delaycost'
+		public Keyword getDelaycostKeyword_6_0() { return cDelaycostKeyword_6_0; }
 
 		//cod=INT
 		public Assignment getCodAssignment_6_1() { return cCodAssignment_6_1; }
@@ -644,7 +644,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cDateAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
 		private final RuleCall cDateSTRINGTerminalRuleCall_5_1_0 = (RuleCall)cDateAssignment_5_1.eContents().get(0);
 		private final Group cGroup_6 = (Group)cUnorderedGroup.eContents().get(6);
-		private final Keyword cDelayCostKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Keyword cDelaycostKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
 		private final Assignment cCodAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
 		private final RuleCall cCodINTTerminalRuleCall_6_1_0 = (RuleCall)cCodAssignment_6_1.eContents().get(0);
 		private final Assignment cRationaleAssignment_7 = (Assignment)cUnorderedGroup.eContents().get(7);
@@ -665,7 +665,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//	& ('benefit' benefit=INT)?
 		//	//TODO: validate in custom validator
 		//	& ('completion' date=STRING)?
-		//	& ('delay cost' cod=INT)?
+		//	& ('delaycost' cod=INT)?
 		//	& rationale=Rationale?
 		//	& ref=Reference? //the document e.g. business strategy
 		//	']';
@@ -674,7 +674,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//'Softgoal' name=ID (':' title=STRING)? // short string for title
 		//'[' description=Description? & ('priority' & priority=PriorityEnum)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
 		//& ('time' time=INT)? & ('cost' cost=INT)? & ('benefit' benefit=INT)? //TODO: validate in custom validator
-		//& ('completion' date=STRING)? & ('delay cost' cod=INT)? & rationale=Rationale? & ref=Reference? //the document e.g. business strategy
+		//& ('completion' date=STRING)? & ('delaycost' cod=INT)? & rationale=Rationale? & ref=Reference? //the document e.g. business strategy
 		//']'
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 
@@ -773,11 +773,11 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getDateSTRINGTerminalRuleCall_5_1_0() { return cDateSTRINGTerminalRuleCall_5_1_0; }
 
-		//('delay cost' cod=INT)?
+		//('delaycost' cod=INT)?
 		public Group getGroup_6() { return cGroup_6; }
 
-		//'delay cost'
-		public Keyword getDelayCostKeyword_6_0() { return cDelayCostKeyword_6_0; }
+		//'delaycost'
+		public Keyword getDelaycostKeyword_6_0() { return cDelaycostKeyword_6_0; }
 
 		//cod=INT
 		public Assignment getCodAssignment_6_1() { return cCodAssignment_6_1; }
@@ -842,7 +842,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cDateSTRINGTerminalRuleCall_5_1_0 = (RuleCall)cDateAssignment_5_1.eContents().get(0);
 		private final Group cGroup_6 = (Group)cUnorderedGroup.eContents().get(6);
 		private final Group cGroup_6_0 = (Group)cGroup_6.eContents().get(0);
-		private final Keyword cDelayCostKeyword_6_0_0 = (Keyword)cGroup_6_0.eContents().get(0);
+		private final Keyword cDelaycostKeyword_6_0_0 = (Keyword)cGroup_6_0.eContents().get(0);
 		private final Assignment cCodAssignment_6_0_1 = (Assignment)cGroup_6_0.eContents().get(1);
 		private final RuleCall cCodINTTerminalRuleCall_6_0_1_0 = (RuleCall)cCodAssignment_6_0_1.eContents().get(0);
 		private final Keyword cRightSquareBracketKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
@@ -856,14 +856,14 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//	& ('cost' cost=INT)?
 		//	& ('benefit' benefit=INT)?
 		//	& ('completion' date=STRING)? //TODO: validate in custom validator
-		//	& ('delay cost' cod=INT)?
+		//	& ('delaycost' cod=INT)?
 		//	']';
 		@Override public ParserRule getRule() { return rule; }
 
 		//'Task' name=ID (':' title=STRING)? '[' description=Description? & ('priority' & priority=PriorityEnum)? & ('time'
 		//time=INT)? //TODO: Validation should implement what an integer time reflects, e.g.seconds, weeks
 		//& ('cost' cost=INT)? & ('benefit' benefit=INT)? & ('completion' date=STRING)? //TODO: validate in custom validator
-		//& ('delay cost' cod=INT)? ']'
+		//& ('delaycost' cod=INT)? ']'
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 
 		//'Task' name=ID (':' title=STRING)? '[' description=Description?
@@ -959,14 +959,14 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 		//STRING
 		public RuleCall getDateSTRINGTerminalRuleCall_5_1_0() { return cDateSTRINGTerminalRuleCall_5_1_0; }
 
-		//('delay cost' cod=INT)? ']'
+		//('delaycost' cod=INT)? ']'
 		public Group getGroup_6() { return cGroup_6; }
 
-		//('delay cost' cod=INT)?
+		//('delaycost' cod=INT)?
 		public Group getGroup_6_0() { return cGroup_6_0; }
 
-		//'delay cost'
-		public Keyword getDelayCostKeyword_6_0_0() { return cDelayCostKeyword_6_0_0; }
+		//'delaycost'
+		public Keyword getDelaycostKeyword_6_0_0() { return cDelaycostKeyword_6_0_0; }
 
 		//cod=INT
 		public Assignment getCodAssignment_6_0_1() { return cCodAssignment_6_0_1; }
@@ -1029,19 +1029,19 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	public class ReferenceElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "edu.cmu.sei.eebm.EEBM.Reference");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cSeeDocumentKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cSeeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cDocReferenceAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cDocReferenceSTRINGTerminalRuleCall_1_0 = (RuleCall)cDocReferenceAssignment_1.eContents().get(0);
 		
 		//Reference:
-		//	'see document' docReference+=STRING;
+		//	'see' docReference+=STRING;
 		@Override public ParserRule getRule() { return rule; }
 
-		//'see document' docReference+=STRING
+		//'see' docReference+=STRING
 		public Group getGroup() { return cGroup; }
 
-		//'see document'
-		public Keyword getSeeDocumentKeyword_0() { return cSeeDocumentKeyword_0; }
+		//'see'
+		public Keyword getSeeKeyword_0() { return cSeeKeyword_0; }
 
 		//docReference+=STRING
 		public Assignment getDocReferenceAssignment_1() { return cDocReferenceAssignment_1; }
@@ -1252,7 +1252,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 
 	//AndRefinement:
 	//	'And' name=ID
-	//	'[' ('dest' source+=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+	//	'[' ('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])*
 	//	']')
 	//	']';
 	public AndRefinementElements getAndRefinementAccess() {
@@ -1265,7 +1265,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 
 	//OrRefinement:
 	//	'Or' name=ID
-	//	'[' ('dest' source=[IntentionalElement] & 'source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])*
+	//	'[' ('dest' dest=[IntentionalElement] & 'source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])*
 	//	']')
 	//	']';
 	public OrRefinementElements getOrRefinementAccess() {
@@ -1296,7 +1296,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	//	& ('cost' cost=INT)?
 	//	& ('benefit' benefit=INT)?
 	//	& ('completion' date=STRING)? //TODO: validate in custom validator
-	//	& ('delay cost' cod=INT)?
+	//	& ('delaycost' cod=INT)?
 	//	& rationale=Rationale?
 	//	& ref=Reference?
 	//	']';
@@ -1319,7 +1319,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	//	& ('benefit' benefit=INT)?
 	//	//TODO: validate in custom validator
 	//	& ('completion' date=STRING)?
-	//	& ('delay cost' cod=INT)?
+	//	& ('delaycost' cod=INT)?
 	//	& rationale=Rationale?
 	//	& ref=Reference? //the document e.g. business strategy
 	//	']';
@@ -1340,7 +1340,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	//	& ('cost' cost=INT)?
 	//	& ('benefit' benefit=INT)?
 	//	& ('completion' date=STRING)? //TODO: validate in custom validator
-	//	& ('delay cost' cod=INT)?
+	//	& ('delaycost' cod=INT)?
 	//	']';
 	public TaskElements getTaskAccess() {
 		return pTask;
@@ -1371,7 +1371,7 @@ public class EEBMGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Reference:
-	//	'see document' docReference+=STRING;
+	//	'see' docReference+=STRING;
 	public ReferenceElements getReferenceAccess() {
 		return pReference;
 	}

@@ -22,7 +22,7 @@
  *
  */
  
- grammar edu.cmu.sei.eebm.EEBM  with org.eclipse.xtext.common.Terminals
+grammar edu.cmu.sei.eebm.EEBM  with org.eclipse.xtext.common.Terminals
 
 generate eEBM "http://www.cmu.edu/sei/eebm/EEBM"
 
@@ -33,6 +33,7 @@ Roadmap:
 ;
 IntentionalElement: // superclass. Implies Goals and Options are semantically equivalent ...
 	Goal | Task | Softgoal
+	
 ;
 
 //Relationship:
@@ -49,16 +50,16 @@ Refinement:
 
 AndRefinement returns AndRefinement: 'And' name=ID
 	'[' (
-		('dest' source+=[IntentionalElement])
-		&('source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
+		('dest' dest=[IntentionalElement])
+		&('source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])* ']')
 	)
 	']'
 ;
 
 OrRefinement returns OrRefinement: 'Or' name=ID
 	'[' (
-		('dest' source=[IntentionalElement])
-		&('source' '[' dest+=[IntentionalElement] (',' dest+=[IntentionalElement])* ']')
+		('dest' dest=[IntentionalElement])
+		&('source' '[' source+=[IntentionalElement] (',' source+=[IntentionalElement])* ']')
 	)
 	']'
 ;
@@ -66,7 +67,7 @@ OrRefinement returns OrRefinement: 'Or' name=ID
 Conflict returns Conflict: 'Conflict' name=ID
 	'[' (
 		('dest' source=[IntentionalElement])
-		&('source' dest=[IntentionalElement])
+		&('source' dest=[IntentionalElement]) //only 1 for conflict
 	) ']'
 ;
 
@@ -79,7 +80,7 @@ Goal returns Goal:
       	&('cost' cost=INT)?
       	&('benefit' benefit=INT)?
       	&('completion' date=STRING)? //TODO: validate in custom validator
-      	&('delay cost' cod=INT)? 
+      	&('delaycost' cod=INT)? 
 	 	&(rationale=Rationale)? 
 	 	&(ref=Reference)?  
 	']';
@@ -95,7 +96,7 @@ Softgoal returns Softgoal:
       	&('benefit' benefit=INT)?
       	//TODO: validate in custom validator
       	&('completion' date=STRING)? 
-      	&('delay cost' cod=INT)? 
+      	&('delaycost' cod=INT)? 
 	 	&(rationale=Rationale)? 
 	 	&(ref=Reference)?  //the document e.g. business strategy
 	 ']';
@@ -109,12 +110,12 @@ Task returns Task:
       	&('cost' cost=INT)?
       	&('benefit' benefit=INT)?
       	&('completion' date=STRING)? //TODO: validate in custom validator
-      	&('delay cost' cod=INT)? 
+      	&('delaycost' cod=INT)? 
 	']';
 	 
 Description : 'description' text = STRING ;
 Rationale: 'rationale' text=STRING ;
-Reference: 'see document'  docReference+=STRING;
+Reference: 'see'  docReference+=STRING;
 
 enum PriorityEnum:	NA | LOW | MED | HIGH; //turns out the 'default' is the first one. 
 

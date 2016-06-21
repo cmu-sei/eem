@@ -34,6 +34,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
@@ -50,6 +51,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <ul>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl#getName <em>Name</em>}</li>
  *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl#getDest <em>Dest</em>}</li>
+ *   <li>{@link edu.cmu.sei.eebm.eEBM.impl.RefinementImpl#getSource <em>Source</em>}</li>
  * </ul>
  *
  * @generated
@@ -77,14 +79,24 @@ public class RefinementImpl extends MinimalEObjectImpl.Container implements Refi
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getDest() <em>Dest</em>}' reference list.
+   * The cached value of the '{@link #getDest() <em>Dest</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getDest()
    * @generated
    * @ordered
    */
-  protected EList<IntentionalElement> dest;
+  protected IntentionalElement dest;
+
+  /**
+   * The cached value of the '{@link #getSource() <em>Source</em>}' reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getSource()
+   * @generated
+   * @ordered
+   */
+  protected EList<IntentionalElement> source;
 
   /**
    * <!-- begin-user-doc -->
@@ -135,13 +147,56 @@ public class RefinementImpl extends MinimalEObjectImpl.Container implements Refi
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<IntentionalElement> getDest()
+  public IntentionalElement getDest()
   {
-    if (dest == null)
+    if (dest != null && dest.eIsProxy())
     {
-      dest = new EObjectResolvingEList<IntentionalElement>(IntentionalElement.class, this, EEBMPackage.REFINEMENT__DEST);
+      InternalEObject oldDest = (InternalEObject)dest;
+      dest = (IntentionalElement)eResolveProxy(oldDest);
+      if (dest != oldDest)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, EEBMPackage.REFINEMENT__DEST, oldDest, dest));
+      }
     }
     return dest;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public IntentionalElement basicGetDest()
+  {
+    return dest;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setDest(IntentionalElement newDest)
+  {
+    IntentionalElement oldDest = dest;
+    dest = newDest;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EEBMPackage.REFINEMENT__DEST, oldDest, dest));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<IntentionalElement> getSource()
+  {
+    if (source == null)
+    {
+      source = new EObjectResolvingEList<IntentionalElement>(IntentionalElement.class, this, EEBMPackage.REFINEMENT__SOURCE);
+    }
+    return source;
   }
 
   /**
@@ -157,7 +212,10 @@ public class RefinementImpl extends MinimalEObjectImpl.Container implements Refi
       case EEBMPackage.REFINEMENT__NAME:
         return getName();
       case EEBMPackage.REFINEMENT__DEST:
-        return getDest();
+        if (resolve) return getDest();
+        return basicGetDest();
+      case EEBMPackage.REFINEMENT__SOURCE:
+        return getSource();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -177,8 +235,11 @@ public class RefinementImpl extends MinimalEObjectImpl.Container implements Refi
         setName((String)newValue);
         return;
       case EEBMPackage.REFINEMENT__DEST:
-        getDest().clear();
-        getDest().addAll((Collection<? extends IntentionalElement>)newValue);
+        setDest((IntentionalElement)newValue);
+        return;
+      case EEBMPackage.REFINEMENT__SOURCE:
+        getSource().clear();
+        getSource().addAll((Collection<? extends IntentionalElement>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -198,7 +259,10 @@ public class RefinementImpl extends MinimalEObjectImpl.Container implements Refi
         setName(NAME_EDEFAULT);
         return;
       case EEBMPackage.REFINEMENT__DEST:
-        getDest().clear();
+        setDest((IntentionalElement)null);
+        return;
+      case EEBMPackage.REFINEMENT__SOURCE:
+        getSource().clear();
         return;
     }
     super.eUnset(featureID);
@@ -217,7 +281,9 @@ public class RefinementImpl extends MinimalEObjectImpl.Container implements Refi
       case EEBMPackage.REFINEMENT__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case EEBMPackage.REFINEMENT__DEST:
-        return dest != null && !dest.isEmpty();
+        return dest != null;
+      case EEBMPackage.REFINEMENT__SOURCE:
+        return source != null && !source.isEmpty();
     }
     return super.eIsSet(featureID);
   }

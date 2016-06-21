@@ -86,7 +86,7 @@ public class EEBMSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     AndRefinement returns AndRefinement
 	 *
 	 * Constraint:
-	 *     (name=ID (source+=[IntentionalElement|ID] | (dest+=[IntentionalElement|ID] dest+=[IntentionalElement|ID]*))+)
+	 *     (name=ID (dest=[IntentionalElement|ID] | (source+=[IntentionalElement|ID] source+=[IntentionalElement|ID]*))+)
 	 */
 	protected void sequence_AndRefinement(ISerializationContext context, AndRefinement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -154,7 +154,7 @@ public class EEBMSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     OrRefinement returns OrRefinement
 	 *
 	 * Constraint:
-	 *     (name=ID (source=[IntentionalElement|ID] | (dest+=[IntentionalElement|ID] dest+=[IntentionalElement|ID]*))+)
+	 *     (name=ID (dest=[IntentionalElement|ID] | (source+=[IntentionalElement|ID] source+=[IntentionalElement|ID]*))+)
 	 */
 	protected void sequence_OrRefinement(ISerializationContext context, OrRefinement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

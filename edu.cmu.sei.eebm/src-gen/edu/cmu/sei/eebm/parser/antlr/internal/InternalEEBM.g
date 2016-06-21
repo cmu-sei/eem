@@ -315,7 +315,7 @@ ruleAndRefinement returns [EObject current=null]
         }
 	otherlv_5=RULE_ID
 	{
-		newLeafNode(otherlv_5, grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+		newLeafNode(otherlv_5, grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_0_1_0()); 
 	}
 
 )
@@ -348,7 +348,7 @@ ruleAndRefinement returns [EObject current=null]
         }
 	otherlv_8=RULE_ID
 	{
-		newLeafNode(otherlv_8, grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+		newLeafNode(otherlv_8, grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_1_2_0()); 
 	}
 
 )
@@ -365,7 +365,7 @@ ruleAndRefinement returns [EObject current=null]
         }
 	otherlv_10=RULE_ID
 	{
-		newLeafNode(otherlv_10, grammarAccess.getAndRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+		newLeafNode(otherlv_10, grammarAccess.getAndRefinementAccess().getSourceIntentionalElementCrossReference_3_1_3_1_0()); 
 	}
 
 )
@@ -466,7 +466,7 @@ ruleOrRefinement returns [EObject current=null]
         }
 	otherlv_5=RULE_ID
 	{
-		newLeafNode(otherlv_5, grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_0_1_0()); 
+		newLeafNode(otherlv_5, grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_0_1_0()); 
 	}
 
 )
@@ -499,7 +499,7 @@ ruleOrRefinement returns [EObject current=null]
         }
 	otherlv_8=RULE_ID
 	{
-		newLeafNode(otherlv_8, grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_2_0()); 
+		newLeafNode(otherlv_8, grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_1_2_0()); 
 	}
 
 )
@@ -516,7 +516,7 @@ ruleOrRefinement returns [EObject current=null]
         }
 	otherlv_10=RULE_ID
 	{
-		newLeafNode(otherlv_10, grammarAccess.getOrRefinementAccess().getDestIntentionalElementCrossReference_3_1_3_1_0()); 
+		newLeafNode(otherlv_10, grammarAccess.getOrRefinementAccess().getSourceIntentionalElementCrossReference_3_1_3_1_0()); 
 	}
 
 )
@@ -993,9 +993,9 @@ ruleGoal returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getGoalAccess().getUnorderedGroup(), 6);
 	 				}
-					({true}?=>(	otherlv_18='delay cost' 
+					({true}?=>(	otherlv_18='delaycost' 
     {
-    	newLeafNode(otherlv_18, grammarAccess.getGoalAccess().getDelayCostKeyword_6_0());
+    	newLeafNode(otherlv_18, grammarAccess.getGoalAccess().getDelaycostKeyword_6_0());
     }
 (
 (
@@ -1418,9 +1418,9 @@ ruleSoftgoal returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getSoftgoalAccess().getUnorderedGroup(), 6);
 	 				}
-					({true}?=>(	otherlv_18='delay cost' 
+					({true}?=>(	otherlv_18='delaycost' 
     {
-    	newLeafNode(otherlv_18, grammarAccess.getSoftgoalAccess().getDelayCostKeyword_6_0());
+    	newLeafNode(otherlv_18, grammarAccess.getSoftgoalAccess().getDelaycostKeyword_6_0());
     }
 (
 (
@@ -1843,9 +1843,9 @@ ruleTask returns [EObject current=null]
 					{ 
 	 				  getUnorderedGroupHelper().select(grammarAccess.getTaskAccess().getUnorderedGroup(), 6);
 	 				}
-					({true}?=>((	otherlv_18='delay cost' 
+					({true}?=>((	otherlv_18='delaycost' 
     {
-    	newLeafNode(otherlv_18, grammarAccess.getTaskAccess().getDelayCostKeyword_6_0_0());
+    	newLeafNode(otherlv_18, grammarAccess.getTaskAccess().getDelaycostKeyword_6_0_0());
     }
 (
 (
@@ -1991,9 +1991,9 @@ ruleReference returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='see document' 
+(	otherlv_0='see' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getReferenceAccess().getSeeDocumentKeyword_0());
+    	newLeafNode(otherlv_0, grammarAccess.getReferenceAccess().getSeeKeyword_0());
     }
 (
 (

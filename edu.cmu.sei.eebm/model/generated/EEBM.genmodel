@@ -33,13 +33,10 @@
     <genClasses ecoreClass="EEBM.ecore#//Refinement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Refinement/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Refinement/dest"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Refinement/source"/>
     </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//AndRefinement">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//AndRefinement/source"/>
-    </genClasses>
-    <genClasses ecoreClass="EEBM.ecore#//OrRefinement">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//OrRefinement/source"/>
-    </genClasses>
+    <genClasses ecoreClass="EEBM.ecore#//AndRefinement"/>
+    <genClasses ecoreClass="EEBM.ecore#//OrRefinement"/>
     <genClasses ecoreClass="EEBM.ecore#//Conflict">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EEBM.ecore#//Conflict/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EEBM.ecore#//Conflict/source"/>
