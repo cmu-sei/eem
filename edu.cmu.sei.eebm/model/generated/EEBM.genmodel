@@ -5,7 +5,7 @@
     editorDirectory="/edu.cmu.sei.eebm.editor/src" modelPluginID="edu.cmu.sei.eebm"
     forceOverwrite="true" modelName="EEBM" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="6.0" copyrightFields="false" editPluginID="edu.cmu.sei.eebm.edit"
-    editorPluginID="edu.cmu.sei.eebm.editor" runtimeVersion="2.11">
+    editorPluginID="edu.cmu.sei.eebm.editor" runtimeVersion="2.12">
   <genPackages prefix="EEBM" basePackage="edu.cmu.sei.eebm" disposableProviderFactory="true"
       fileExtensions="eebm" ecorePackage="EEBM.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="EEBM.ecore#//PriorityEnum">
