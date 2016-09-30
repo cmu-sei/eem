@@ -1,0 +1,68 @@
+hp = N + Goal (
+	"high performance",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+qfd = N + Softgoal (
+	"Quick Feature Delivery",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+opt = N + Goal (
+	"use Oracle",
+	priority = HIGH,
+	cost = 0,
+	benefit = 0
+)
+opt2 = N + Goal (
+	"use IBM",
+	priority = HIGH,
+	cost = 14,
+	benefit = 0
+)
+n1 = N + Goal (
+	"Boaty mcBoatface",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+n2 = N + Task (
+	"",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+n3 = N + Task (
+	"",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+n4 = N + Task (
+	"",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+n5 = N + Task (
+	"",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+n6 = N + Task (
+	"",
+	priority = NA,
+	cost = 0,
+	benefit = 0
+)
+e0 = E + Or(
+	target = hp,
+	source = [opt,opt2]
+)
+e1 = E + And(
+	target = n4,
+	source = [n5,n6]
+)
